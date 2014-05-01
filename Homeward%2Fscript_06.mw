@@ -1,0 +1,965 @@
+<pre>
+    
+    $ renpy.music.stop(fadeout=1.0)
+    window hide dissolve
+    scene bg black with dissolvelong
+    show eyecatchlogo with dissolve
+    $ renpy.pause (4.0)
+    hide eyecatchlogo with dissolve
+    window show dissolve
+    
+    scene bg beach3 with dissolve
+    play music "Music/Beach_Party.ogg" loop
+    
+    "I waited underneath our parasol, waiting for the girls to finish changing."
+    "Time sure went by quickly. It was already summer vacation."
+    "We had decided to make a day trip to the beach, so this morning we all met in front of the station and took the train to the sea."
+    "Even though it wasn't the Dominican Republic (we had scrapped those plans for various reasons), this really felt like some sort of a dream vacation."
+    if dontgiveletter:
+        "Coming to the beach with Haruka, Nonami, and Sora..."
+        
+    if giveletter:
+        "Coming to the beach with everyone..."
+        
+    "I couldn't help but imagine how lovely the girls would look in their swim suits. My heart was going thump-thump-thump inside my chest in anticipation."
+    
+    if dontgiveletter:
+        "Haruka had wonderfully pale skin, like the cream on top of a birthday cake, didn't she?"
+        "Not only that, but her hair was so..."
+        
+    if giveletter:
+        "I can't even remember the last time I saw Nonami in a swim suit."
+        "She's changed so much since that time..."
+        
+    "Woah, get a hold of yourself, Rii-kun..."
+    "This train of thought was leading to a dangerous place..."
+    "Yeah, so what if we were on a nice, sunny beach and you had a bucketful of hormones swimming through you... This was no time to be perverted!"
+    "I distracted myself by setting up our spot."
+
+    scene bg black with screenwipe
+    scene bg beach3 with screenwipe
+    
+    show nonami beach neutral happy with dissolve
+    show sora beach neutral with dissolve:
+        xanchor 0.5
+        xpos 0.2
+    show haruka beach neutral with dissolve:
+        xanchor 0.5
+        xpos 0.8
+
+    no "Rii-kun, we're back!"
+    "Ack, they were back. I was deep in my own thoughts and caught off guard."
+    
+    show haruka beach handfront happy with dissolve:
+        xpos 0.8
+    
+    ha "Sorry to keep you waiting, Riku-kun."
+    "Now that they returned, I felt a little embarrassed to see them without their regular clothes."
+    "Even though I might have been fantasizing about them just a bit earlier, maybe actually seeing them was a little bit more embarrassing."
+    
+    show nonami beach excited happy with dissolve
+    
+    no "Uwahaha! So whatdaya think, Rii-kun?"
+    ri "E-eh?"
+    "Urk, getting right to the chase, was she?"
+    ri "W-well, I... errr..."
+    
+    if dontgiveletter:
+        "Nonami suddenly grabbed Haruka and held her in front of her."
+        show nonami beach neutral smile2 behind haruka with dissolve:
+            xanchor 0.5
+            xpos 0.75
+        show haruka beach handfront embarassed with dissolve:
+            xpos 0.8
+        no "Haru-chan's really cute, don't you think so?"
+        "I was too embarrassed to really respond to that."
+        "Shesh, what was Nonami doing, asking direct questions like that..."
+        ri "U-uhn..."
+        show nonami beach excited smile2 with dissolve:
+            xpos 0.5
+        no "Uwaaahhh! He said \"uhn,\" Haru-chan, he said \"uhn!\""
+        show haruka beach handfront blushforcedsmile with dissolve:
+            xpos 0.8
+        ha "U-uhn... Eh-heh..."
+        show sora beach armscrossed irritated with dissolve:
+            xpos 0.2
+        so "Stupid Riku..."
+
+    if giveletter:
+        show nonami beach excited smile2 with dissolve:        
+        no "This beach spot's really the best, huh?"
+        ri "O-oh yeah, the beach spot. Ahahahaha..."
+        "Oh crap, that was only a narrowly averted awkward moment there..."
+        "Please don't confuse me with those kinds of misleading questions, Nonami..."
+    
+    show haruka beach neutral with dissolve:
+        xpos 0.8
+    ha "Ah, we shouldn't forget this."
+    "Haruka reached into her bag and retrieved a bottle of UV protection lotion."
+    ri "Yeah, I brought my bottle too."
+    "Sora reached into our bag and grabbed our bottle as well."
+    "After she put the lotion on her face, she came around and laid face down on the mat."
+    
+    scene cg sorabeach with dissolve
+    so "Riku, help me put some sun lotion on my back."
+    "Err... was that a perfectly normal thing for a brother and sister to do?"
+    "I honestly had no idea, considering that I had only had a younger sister for four months now..."
+    
+menu:
+    "Sure, I'll do it.":
+        jump oniichanwilldoit
+        
+    "Maybe Haruka can help...":
+        jump harukawilldoit
+        
+    "Maybe Nonami can help...":
+        jump nonamiwilldoit
+        
+label oniichanwilldoit:
+    "Well, I guess it wouldn't be a problem... She was family, after all."
+    "I grabbed the sun lotion container and squirted some its contents onto my hands."
+    so "Make sure you get enough everywhere, or else I'll get burned."
+    ri "Uhn, okay."
+    "I started on Sora's neck and worked my way down."
+    no "Oh! We should put on some sun lotion too. You wouldn't want your pretty white skin damaged, huh Haru-chan?"
+    ha "Uhn. I burn so easily..."
+    "Good thing Sora's back was turned against me, because I would be too embarrassed to do this while facing her."
+    "Sora's back was surprisingly soft, like a small puppy."
+    "Did all girls feel this delicate? I honestly wouldn't really know..."
+    "As I made my way down her back, I noted nervously that I was getting dangerously close to certain locales on Sora's body that not even the closest of siblings would dare touching."
+    ri "Sora, just how far do you want the lotion?"
+    so "Everywhere. And don't miss a spot, because I burn really quickly."
+    ri "O-okay..."
+    "Ho boy... Just how was I supposed to interpret that!?"
+    "I nervously finished putting the sun lotion on Sora's shoulders."
+    
+menu:
+    "Continue putting the lotion on Sora.":
+        jump lotioncontinueone
+        
+    "All finished.":
+        jump lotionfinishedone
+
+label lotionfinishedone:
+    so "Don't be silly, you haven't even begun yet. Keep rubbing."
+    "Uh oh... Sora didn't sound pleased."
+    "I better keep going if I don't want to make her mad..."
+    jump lotioncontinueone
+        
+label lotioncontinueone:
+    "I continued to work my way down, rubbing the lotion on Sora's upper back."
+    "As I was doing so, my hands accidentally clipped against her bikini strap."
+    "I gulped. In some really perverted scenarios, don't girls unclip their straps while getting sun lotion on their backs?"
+    "As if I was going to do that for Sora though. Not in a million years!"
+    
+menu:
+    "Continue putting the lotion on Sora.":
+        jump lotioncontinuetwo
+        
+    "All finished.":
+        jump lotionfinishedbad
+
+label lotioncontinuetwo:
+    "I began to turn red as I moved my hands along her sides, putting the lotion on her rib cage."
+    "Entirely by accident, the furthest edge of my hands grazed against her breasts."
+    "The fact that we were siblings did nothing to calm me down... I had only just met her this spring! The Westermarck Effect didn't work in this kind of situation!"
+
+menu:
+    "Continue putting the lotion on Sora.":
+        jump lotioncontinuethree
+        
+    "All finished.":
+        jump lotionfinishedbad
+
+label lotioncontinuethree:
+    "I gulped and continued my work."
+    "By now, I had reached all the way down to where her back arced downwards and meet her buttocks."
+    "Just how far down did she want me to go?"
+    
+menu:
+    "Continue putting the lotion on Sora.":
+        jump lotioncontinuefour
+        
+    "All finished.":
+        jump lotionfinishedgood
+        
+label lotioncontinuefour:
+    "This was getting awfully risky!"
+    "This area of Sora's body definitely had a lot more flesh attached to it."
+    "If I go any lower, I was definitely going to be groping her butt now..."
+    "E-er, I mean rubbing sun lotion on her buttocks."
+    "Wait, wasn't that exactly the same thing!?"
+    "My mind screamed at me to halt, by my hands wanted more."
+    "Uwah, not good, not good!"
+    "soraismyyoungersistersoraismyyoungersistersoraismyyoungersister..."
+    
+menu:
+    "Continue putting the lotion on Sora.":
+        jump lotioncontinuefive
+        
+    "All finished.":
+        jump lotionfinishedgood
+        
+label lotioncontinuefive:
+    $ lotiongood = True
+    "Urk... Well, she did say that she wanted the lotion everywhere, right?"
+    "Besides, it wouldn't be good if every part of Sora's body was perfectly fine, but just her butt was totally burnt to a crisp."
+    "I would never hear the end of it were something like that to happen..."
+    "Ah, here goes nothing!"
+    "I slid my hands further south, and came right on the border of no return. Any further than this, and I would definitely hit Sora's tail bone."
+    "Not good, not good... Never before in my life had I ever touched a girl's body like this..."
+    "Who know that suddenly getting a little sister would turn out like this?"
+    "Eah, what the hell, here I go!"
+
+    play music "Music/Gold_Rush.ogg" fadeout 1.5 loop
+    scene bg beach3 with dissolve
+    show nonami beach excited happy with dissolve
+    
+    no "Rii-kun, it's time for your turn now!"
+    "Suddenly, I heard a loud \"thwack\" behind me and a glorious amount of pain."
+    ri "Ah! No-na-mi!"
+    
+    show nonami beach excited smile2 with dissolve
+    
+    no "Relax, relax! I can't rub this on your back if you keep moving around so much!"
+    ri "How am I supposed to relax after you slapped me on my back so hard!?"
+    "I felt Nonami's hands run up and down my back. If she went any faster, I was positive she was going to peel off the skin."
+    ri "B-be careful! Slow down a bit"
+    no "Eah, I can't believe how much Rii-kun's grown. I have a pretty huge area to cover now!"
+    "Sora rolled back up and sat with Mr. Tanuki on front of her."
+    "For the better or worse, it looks like she was satisfied now."
+    "I felt a weird feeling in my gut, as if I had missed out on something really great."
+    "Eeaah. Just what was I thinking... Was I really disappointed that I had missed an opportunity to grope my own sister?"
+    "I felt a bit ashamed of myself. Maybe I should be thanking Nonami for snapping me out of my perversion instead."
+    "Fuu... As usual, Nonami turned out being a pretty good friend again..."
+    jump beachgo
+    
+label lotionfinishedbad:
+    $ lotiongood = False
+    "This seemed good enough. Besides, I wasn't going to risk going any further down Sora's back."
+    ri "I think I'm done now, Sora."
+    
+    scene cg sorabeach2 with dissolve
+    
+    so "Uhn. Thanks, Riku."
+    jump beachgo
+    
+label lotionfinishedgood:
+    
+    $ lotiongood = True
+    "This seemed good enough. Besides, I wasn't going to risk going any further down Sora's back."
+    "It really was getting kind of dangerous there..."
+    ri "I think I'm done now, Sora."
+    
+    scene cg sorabeach2 with dissolve
+    
+    so "Uhn. Thanks, Riku."
+    jump beachgo
+
+label harukawilldoit:
+    $ lotiongood = True
+    ha "Uhn, I can help you, Sora-chan."
+    
+    scene cg sorabeach2 with dissolve
+    
+    so "Uhn, thanks."
+    "I was a little relieved that Haruka was going to help Sora."
+    "It would have been a little embarrassing to do something like that myself."
+    jump beachgo
+        
+label nonamiwilldoit:
+    $ lotiongood = True
+    no "Oh! Lemme help!"
+    
+    scene cg sorabeach2 with dissolve
+    
+    so "Uhn, thanks."
+    "I was a little relieved that Nonami was going to help Sora."
+    "It would have been a little embarrassing to do something like that myself."
+    jump beachgo
+
+label beachgo:
+    
+    scene bg beach1 with dissolve
+    play music "Music/On_the_Beach.ogg" fadeout 1.5 loop
+    show nonami beach neutral happy with dissolve
+    show sora beach neutral with dissolve:
+        xanchor 0.5
+        xpos 0.2
+    show haruka beach neutral with dissolve:
+        xanchor 0.5
+        xpos 0.8
+    
+    "Pretty soon, everyone was finished with putting on sun lotion."
+    
+    show nonami beach excited happy with dissolve
+    no "All right, let's go!"
+    
+    hide sora with dissolve
+    "Nonami went running towards the sea with her arms outstretched and splashed into the water."
+    show nonami beach excited smile2 with dissolve
+    no "Uwaaahh, the water's great!"
+    "Haruka dipped her legs into the water."
+    
+    show haruka beach handfront smile with dissolve:
+        xpos 0.8
+    ha "Ehhh... That feels nice..."
+    "I looked behind me and saw Sora already lying on our beach mat with Mr. Tanuki, ready to take a nap."
+    "I guess everyone enjoys a day at the beach in their own different way."
+    "All of a sudden, I felt a cold splash of water hit my back."
+    ri "Eah! What was that!?"
+    
+    show nonami beach excited focustalk with dissolve
+    no "Uwahahaha! It's a duel, Rii-kun!"
+    ri "Oy! A sneak attack is a cowardly way to begin a duel!"
+    "I ran into the water and tried to splash Nonami back."
+    
+    show nonami beach neutral focustalk with dissolve:
+        xanchor 0.5
+        xpos 0.4
+    show nonami beach neutral focustalk with dissolve:
+        xpos 0.5
+
+    no "Hoo-yah!"
+    "She evaded my attack with a spinning parry and splashed me in the face again."
+    "I tasted salt water in my mouth."
+    "No more Mr. Nice Guy! I was going to get serious now!"
+    "I tried to splash her more, except she dodged them exactly like last time."
+    
+    show nonami beach excited happy with dissolve
+    no "Uwahahaha! Can't hit me, Rii-kun!"
+    ri "Youu!!"
+    no "Ooohohohohohoho!! I am indestructible!"
+    "Just then, a rouge tidal wave appeared from out of nowhere behind Nonami."
+    ri "W-woah..."
+    
+    show haruka beach handfront forcedsmilesweatdrop with dissolve:
+        xpos 0.8
+    
+    ha "Ummm... Nona-chan..."
+    ri "Eh? What's wrong? Hey, why's it suddenly turning dark?"
+    "All of a sudden, Nonami realized that a looming shadow had fallen upon her. She turned around, only to helplessly witness the approaching wall of ocean."
+    
+    show nonami beach neutral surprise with dissolve
+    
+    no "O-ooohhh...!"
+    
+    hide nonami with dissolve
+    
+    "Haruka and I ran for shore, leaving Nonami behind."
+    "Sorry Nona-chan... But this was farewell!"
+    "With a thunderous crash, the wave crashed into Nonami. She disappeared into the ocean for a moment, before getting washed up shore, face down."
+    
+    scene cg orz with dissolve
+    $ renpy.music.stop (fadeout=1.0)
+    
+    no "Uuuuuuu..."
+    "Not only was she soaked from head to toe, but she had a long strand of seaweed hanging from her head and was missing one of her hair ribbons."
+    ha "N-Nona-chan! Are you okay?"
+    
+    play music "Music/Evening.ogg" fadeout 1.5 loop
+    
+    no "Uuu... M-my hair ribbon..."
+    "She attempted to pick herself back up, but fell back down onto the beach."
+    "Was this really..."
+    "The end of Nonami?"
+    no "My precious hair ribbon... It's gone..."
+    ha "E-eh!? T-then Haru-chan will help Nona-chan look for it!"
+    no "N-no... It's too late now..."
+    "All of a sudden, Nonami went into fetal position on the beach."
+    no "T-that ribbon was the last memento of my dear grandmother..."
+    no "W-without it, an irreplaceable piece of me will be forever lost!"
+    
+    scene bg beach1 with dissolve
+    show nonami beach excited regretseaweed with dissolve:
+        xanchor 0.5
+        xpos 0.3
+    show haruka beach handfront concern with dissolve:
+        xanchor 0.5
+        xpos 0.7
+    
+    "All of a sudden, she dragged herself up and collapsed into my arms, the seaweed still hanging from her head."
+    no "WHAT WILL I DO WITHOUT MY PRECIOUS MEMENTO, RII-KUN!? PLEASE TELL ME HOW I CONTINUE THIS WRETCHED EXISTENCE!"
+    ri "You can visit your grandmother tomorrow and ask her to buy you a new one."
+    
+    show haruka beach neutral surprise with dissolve:
+        xpos 0.7
+    
+    ha "E-eh?"
+    "And that brought an quick end to Nonami's impromptu sob story."
+    
+    play music "Music/Merry_Go_Around.ogg" fadeout 1.5 loop
+    show nonami beach excited angryseaweed with dissolve:
+        xpos 0.3
+    
+    no "Eeehh!? Rii-kun, way to ruin a perfectly good story!"
+    ri "It was already ruined to begin with when you had that ridiculous looking seaweed hanging from your head!" 
+    "Nonami reached into her hair and finally realized that she had a long, slimy mess of green matter tangled in her hair."
+
+    show nonami beach neutral surpriseseaweed with dissolve:
+        xpos 0.3
+    
+    no "EEEEHHHHHHHHH!?!?!"
+    
+    show nonami beach excited surpriseseaweed with dissolve:
+        xpos 0.3
+    
+    no "EAAAHH!!! Get it offa me!"
+    
+    hide nonami with dissolve
+    
+    "She ran around the beach like a headless chicken, trying to untangle the seaweed and succeeding in only making it even more messy."
+    "Nonami..."
+    "She really was hopeless sometimes."
+    
+    scene bg beach2 with dissolve
+    play music "Music/My_Love.ogg" fadeout 1.5 loop
+    show nonami beach neutral gloom with dissolve
+    
+    "I stood behind Nonami, removing the last of the seaweed from her hair."
+    ri "Fuu... It really is tangled in there tight, huh..."
+    no "Uuu..."
+    "The seaweed felt pretty much like uncooked squid tentacles."
+    "It looked so gross that even Haruka looked kind of reluctant to help and I had to get it off of Nonami's head by myself."
+    ri "You know, it wouldn't have been that bad if you hadn't messed around with it so much."
+    no "Sorry..."
+    "I managed to pull all of it out."
+    ri "Okay, I'm all done now."
+    
+    show nonami beach neutral smilehalftail with dissolve
+    
+    no "Eh-heh... Thanks Rii-kun. Eaaahhh, it feels all better now!"
+    
+    show nonami beach neutralhalftail with dissolve
+    
+    no "Mm... Well, I might as well just take the other hair band off now."
+    
+    show nonami beach neutralhairdown with dissolve
+    
+    "Nonami untied the other tail and let her hair flow loosely down."
+    "Eh... It was the first time that I had seen Nonami without her hair tied into tails."
+    
+    show nonami beach neutral smilehairdown with dissolve
+    
+    no "How do I look, Rii-kun?"
+    
+menu:
+    "Twin tails really are the best, right?":
+        jump twintailsbest
+        
+    "I never knew how good you looked with your hair down.":
+        jump hairdownbest
+        
+label twintailsbest:
+    $ twintails = True
+    $ hairdown = False
+    
+    show nonami beach armscrossed confidenthairdown with dissolve
+    
+    no "Ufufufu... Just as I thought, Rii-kun's a twin tails man."
+    ri "Oy, oy... I'm just saying, I like your usual look the best..."
+    
+    show nonami beach neutral smile2hairdown with dissolve
+    
+    no "Ah well. I guess I like twin tails too. Eh-heh... Dontchaya think they make me look so cute, Rii-kun?"
+    ri "U-uhn..."
+    jump beachsecondpart
+    
+label hairdownbest:
+    $ hairdown = True
+    
+    show nonami beach neutral surprisehairdown with dissolve
+    
+    no "Eehhhhh?"
+    
+    show nonami beach neutral smile2hairdown with dissolve
+    
+    no "Eah, quit it Rii-kun! You're suddenly getting so mushy on me!"
+    ri "Sorry."
+    "But it really was true. Nonami really did look nice with her hair down."
+    "I couldn't help but be taken with how Nonami's hair was gently swaying against the ocean breeze."
+    if giveletter:
+        
+        show nonami beach neutralhairdown with dissolve
+        
+        no "But you know, thanks, Rii-kun."
+    jump beachsecondpart
+    
+label beachsecondpart:
+    
+    scene bg beach1 with dissolve
+    play music "Music/Beach_Party.ogg" fadeout 1.5 loop
+    
+    show nonami beach neutralhairdown with dissolve
+    "Nonami spread out her arms and turned to face the ocean."
+    no "The ocean wind really is something, huh?"
+    ri "Uhn..."
+    
+    show nonami beach excited happyhairdown with dissolve
+    
+    no "Oooyy! Haru-chan! Sora-chan! Over here, over here!"
+    "The rest of our group appeared and joined Nonami and I at the shore front."
+    
+    show nonami beach excited happyhairdown with dissolve:
+        xanchor 0.5
+        xpos 0.8
+    show haruka beach neutral smile with dissolve
+    show sora beach tanuki sleep with dissolve:
+        xanchor 0.5
+        xpos 0.2
+    
+    ha "Eh... The seaweed's all gone."
+    
+    show nonami beach neutral smilehairdown with dissolve:
+        xpos 0.8
+    
+    no "Uhn, Rii-kun took it all out."
+    "Sora rubbed her eyes as she held Mr. Tanuki with her other hand."
+    so "Still sleepy..."
+    
+    show nonami beach neutral happyhairdown with dissolve:
+        xpos 0.8
+    
+    no "Eeaahhhh! Everyone, feel the ocean breeze!"
+    
+    show haruka beach handfront smile with dissolve
+    
+    ha "Eh-heh... So nice..."
+    "Nonami grabbed a round pebble from the ground and skipped it along the sea."
+    no "Ah hah! Three jumps!"
+    
+    show haruka beach neutral happy with dissolve
+    
+    ha "Let me try."
+    "Haruka threw a pebble and succeeded in dunking it into the water."
+    
+    show haruka beach handfront forcedsmile with dissolve
+    
+    ha "Eh-heh... I guess not."
+    
+    show nonami beach neutral focustalkhairdown with dissolve:
+        xpos 0.8
+    
+    no "Hooyah!"
+    "This time, Nonami managed to get five jumps."
+    
+    show nonami beach excited happyhairdown with dissolve:
+        xpos 0.8
+    
+    no "All right! And that's a new world record!"
+    "As if doing something like that was easy!"
+    
+    show nonami beach neutral smilehairdown with dissolve:
+        xpos 0.8
+    
+    no "Here, you try, Rii-kun!"
+    "I tried throwing one, except I only managed to get a single jump before it disappeared into the ocean."
+    
+    show nonami beach armscrossed irritatedhairdown with dissolve:
+        xpos 0.8
+    
+    no "Eaaah? You can do better than that!"
+    ri "Here, let me try finding a better rock..."
+    "I dug around the sand and tried to find one that might be more suitable."
+    "Don't they say that really worn down, white stones skip on the water the best?"
+    "Finally, I found a piece of stone that was as smooth as ivory."
+    ri "Here, let me try with this."
+    "I flung it through the air and succeeded in getting two more jumps than last time."
+    
+    show nonami beach excited happyhairdown with dissolve:
+        xpos 0.8
+    
+    no "Oooh! That's better, Rii-kun!" 
+    "Beside us, Haruka and Sora started working on a sand castle."
+    
+    show haruka beach neutral smile with dissolve
+    
+    ha "Hmm... As expected, Himeji Castle is just too difficult to make, huh..."
+    
+    show sora beach tanuki neutral with dissolve:
+        xpos 0.2
+    
+    so "Mm, mm. Let's try making an European styled one."
+    
+    show haruka beach neutral with dissolve
+    
+    ha "Hold on a bit, let me bring my stuff."
+    "Haruka ran off for a bit and returned with a bucket and some small handheld shovels."
+    "And so our day at the beach continued."
+    
+    scene bg black with screenwipe
+    scene bg beach1 with screenwipe
+    
+    show nonami beach neutralhairdown with dissolve
+    
+    no "Oy, by the way, Rii-kun, isn't it kinda weird that you don't have any buddies?"
+    ri "Eh? What do you mean? I have you guys, don't I?"
+    
+    show nonami beach armscrossed neutralhairdown with dissolve
+    
+    no "I don't mean like that... Like, some stupid guy friend who always hangs around you."
+    ri "Oh, you mean like that. You're right, I guess I really don't have one of those."
+    
+    show nonami beach armscrossed suspicioushairdown with dissolve
+    
+    no "Eeehhh... How shocking."
+    ri "W-what's so surprising about it...?"
+    
+    show nonami beach neutral smilehairdown with dissolve
+    
+    no "Wellll, I was just thinkin', it sure is strange that Rii-kun only hangs around girls..."
+    no "I mean, don't you need a guy friend to talk about perverted boy stuff sometimes? Besides, life just doesn't have enough comic relief without a stupid male friend."
+    ri "Oy, oy, just what kind of a person do you think I am? Besides, if I ever need comic relief, I can just call you on your phone."
+    
+    show nonami beach neutral surprisehairdown with dissolve
+    
+    no "Eeehhhhh!? So... I'm the comic relief?"
+    "Yes, completely, 100 percent."
+    ri "W-well, sometimes it does end up being that way..."
+    
+    show nonami beach neutral tearshairdown with dissolve
+    
+    no "No way! Uuuu..."
+    ri "B-but you know, at least this way you won't ever be lonely..."
+    ri "Speaking of unusual, we sure are taking it easy in this school, aren't we?"
+    
+    show nonami beach neutralhairdown with dissolve
+    
+    no "Eh? What do you mean?"
+    ri "Like, we're in our third year. Shouldn't we be buried underneath exams and studying for college right now?"
+    
+    show nonami beach neutral smilehairdown with dissolve
+    
+    no "Oh, that! Don't worry, don't worry! Since we're on an elevator system, as long as we pass our final exams, we're pretty much guaranteed to get accepted into Minamikawa International University."
+    ri "Eehhh... Really?"
+    
+    show nonami beach neutral smile2hairdown with dissolve
+    
+    no "Uhn. Uwaahhh, I sure don't envy the rest of Japan, who are at home right now, giving it their all for a chance to get accepted into their university of choice."
+    no "By the way, Rii-kun, how'd you get into this school? I bet the entrance exam was supeeerrr hard!"
+    ri "Oh. Actually, it wasn't too bad, since I was already pretty good with English and I had good grades back in America."
+    
+    show nonami beach neutral gloomhairdown with dissolve
+    
+    no "No way! Uuuu..."
+    
+    show haruka beach neutral smile with dissolve:
+        xanchor 0.5
+        xpos 0.8
+    
+    "Haruka looked up from her sand castle."
+    ha "Eh-heh... I remember back when we were finishing elementary school, Nona-chan was studying with a hachimaki around her head every night so she would get accepted..."
+    
+    show nonami beach armscrossed gloomhairdown with dissolve
+    
+    no "Uuu... Haru-chan! You're embarrassing me..."
+    
+    show haruka beach handfront smile with dissolve:
+        xpos 0.8
+    
+    ha "Ehehehe... Sorry, sorry..."
+    
+    hide haruka with dissolve
+    
+    "... ... ..."
+    ri "Come to think of it, we haven't exactly split a watermelon on the beach either."
+    
+    show nonami beach neutral surprisehairdown with dissolve
+    
+    no "Get your head on straight, Rii-kun. Consider how much a watermelon costs!"
+    "Good point. Paying roughly 5000 yen for a single watermelon really was ridiculous."
+    "I could get a much bigger one in America for not even half that price."
+    
+    show nonami beach neutral smilehairdown with dissolve
+    
+    no "I did bring this though."
+    "All of a sudden, Nonami pulled out a bokken from her bag."
+    ri "Eh? Why'd you bring a bokken if we weren't going to smash a watermelon?"
+    
+    show nonami beach neutral smile2hairdown with dissolve
+    
+    no "Just for the mood! 'sides, this bokken was just lying around in my house and I saw it on my way out, and I said to myself, \"why not?\""
+    "Sometimes, I really couldn't understand Nonami's train of thought..."
+    ri "We sure are unconventional people, aren't we?"
+    no "Uhn."
+    
+    $ renpy.music.stop(fadeout=3.0)
+    hide nonami with dissolve
+    show nonami beach neutral smile2hairdown with dissolve:
+        xanchor 0.5
+        xpos 0.8
+    show haruka beach excited happy with dissolve:
+        xanchor 0.5
+        xpos 0.5
+    show sora beach tanuki neutral with dissolve:
+        xanchor 0.5
+        xpos 0.2
+    
+    ha "We're finished!"
+    
+    show nonami beach neutral happyhairdown with dissolve:
+        xpos 0.8
+    
+    no "Uwaahhh... I never knew Haru-chan was so good at making sand castles."
+    
+    show haruka beach neutral smile with dissolve
+    
+    ha "Sora-chan helped too."
+    
+    show sora beach tanuki smile with dissolve:
+        xpos 0.2
+    
+    so "Uhn, uhn."
+    no "Oh! Let's take a picture with it."
+    ha "Uhn, good idea."
+    
+    play music "Music/Merry_Go_Around.ogg" fadeout 1.5 loop
+    
+    "Haruka set her camera on the sand and set up the timer while we gathered around the castle."
+    
+    show haruka beach excited happy with dissolve
+    
+    ha "Mmm... okay, I'll set it for three seconds... Ready... go!"
+    "Oh no..."
+    "I immediately recognized the danger as soon as Haruka started running back to us on the loose sand."
+
+menu:
+    "Hurry! Save the castle before it's too late!":
+        jump savethecastle
+    "Hurry! Save Haruka before it's too late!":
+        jump saveharuka
+        
+label savethecastle:
+    $ savecastle = True
+    $ saveharuka = False
+    "Just as expected, Haruka began to stumble on the sand while she was running back."
+    
+    show haruka beach excited surprise with dissolve
+
+    ha "O-ohh..."
+    "Time to take drastic action!"
+    "I leapt in front of the castle and outstretched my arms."
+    "This castle was not going to fall! Not on my watch!"
+    "Haruka lost her footing and fell directly for me."
+    
+    scene cg beachcrash with dissolve
+    
+    ha "Eaaahhhh!"
+    "I felt the wind rush out from my gut as Haruka slammed face first into my chest."
+    ri "Mmpff..."
+    "All of a sudden, I felt Haruka's hands run down my sides and latch onto my swimming trunks as she was falling down."
+    "Oh no! Haru-chan, you can't grab on to-"
+    "It was too late."
+    "She fell all the way down to the sand and brought my trunks down with her."
+    "With all of my manhood exposed, I stood bravely defending the castle from the invading Haru-chan as the camera flashed and took our group picture."
+    
+    scene cg beachcrash5 with dissolve
+    
+    no "Uwah..."
+    ha "Uuuu... I'm sorry..."
+    "In a daze, Haruka, raised her head and saw up my ugly undercarriage."
+    "Dazzled by the unfamiliar waterworks, her eyes darted wildly from my manhood to the pair of swimming trunks that she was now holding in her hands, back and forth, back and forth."
+    ha "Eh...? Eh...? Eh...? EHHH!?"
+    
+    scene cg beachcrash with dissolve
+    
+    no "I guess she finally got her revenge for Golden Week, huh..."
+    
+    scene bg white with dissolve
+    
+    ha "EEEEAAAAHHHHHHHHHHHHHHHHH!!!!!!!!!!!!"
+    jump beachend
+    
+label saveharuka:
+    $ saveharuka = True
+    $ savecastle = False
+    "Just as expected, Haruka began to stumble on the sand while she was running back."
+    
+    show haruka beach excited surprise with dissolve
+    
+    ha "O-ohh..."
+    "Time to take drastic action!"
+    "I leapt in front of the castle and tried to break her fall."
+    ri "B-be careful, Haruka!"
+    "It was too late. She gloriously lost her footing and fell right towards me."
+    
+    scene cg beachcrash with dissolve
+    
+    "By now, all the warning lights were flashing inside my head. I knew it! Now, I was probably going to accidentally unhook her bikini strap or grope her boobs and cause a scandal!"
+    "I outstretched my arms as far away from Haruka as possible right before I received a full bodied Haru-chan slam to my body."
+    "I felt the wind rush out from my gut as Haruka slammed face first into my chest."
+    "We fell backwards, butt first into the sand castle."
+    "The majestic castle came crumbling down as it bore the full weight of our bodies."
+    
+    scene cg beachcrash2 with dissolve
+    
+    so "Uurk. M-my castle..."
+    
+    scene cg beachcrash with dissolve    
+    
+    "I blinked in disbelief as I laid on the crumpled remains of the castle, with Haruka piled on top of me."
+    "Had I... done it?"
+    "I raised my hands and saw them against the clear blue sky."
+    "Yes... Yes... I had done it!"
+    "They weren't attached to Haruka's boobs, butt, or any other part of her body!"
+    "Hahaha... Hahahahaha..."
+    "AHAHAHAHAHAHA!!!"
+    "Take that, hand magnet!"
+    
+    scene cg beachcrash3 with dissolve
+    
+    no "Uwah! Rii-kun..."
+    ri "What?"
+    "All of a sudden, I realized that I felt a weird sensation between my legs."
+    "Aw no..."
+    "Beside me, Haruka blinked in a daze."
+    ha "Uuu... What's this?"
+    "All of a sudden, I realized that while Haruka had caused one castle to collapse, her hands were now clasped around a tower of an entirely different variety."
+    
+    scene cg beachcrash4 with dissolve
+    
+    no "I guess she finally got her revenge for Golden Week, huh..."
+    ri "U-u-uaaahh!"
+    
+    scene bg white with dissolve
+    
+    ri "NNNNNNOOOOOOOOOOOOOOOOOOOOOOOO!!!!!!!!"
+    jump beachend
+    
+label beachend:
+    "... ... ..."
+    "... ..."
+    "..."
+    "I think that was more than enough fun for one day..."
+    "We packed our bags and made our way back to the train station."
+    
+label beachreturnhome:
+
+    play music "Music/Thanks.ogg" fadeout 1.5 loop    
+    scene bg rikuroomnight with dissolvelong
+    
+    "I was looking at various photographs of the day's events when Sora came into my room."
+    
+    show sora casual tanuki irritated with dissolve
+    
+    so "Muu... Riku looks so stupid in this photo."
+    
+    if saveharuka:
+        "My heart did a somersault when I saw that Sora had in her hand the photograph of Haruka groping me."
+        
+    if savecastle:
+        "My heart did a somersault when I saw that Sora had in her hand the photograph of me posing naked in front of the castle."
+
+    ri "WHAATT!? Burn this and delete the file right away!"
+    
+    show sora casual tanuki confident with dissolve
+    
+    so "Hmph. It's mostly Riku's fault for being so stupid."
+    
+    if saveharuka:
+        
+        show sora casual tanuki irritated with dissolve
+        so "You also destroyed my castle too..."
+        
+    ri "Still, that's no reason to keep something like that to yourself!"
+    
+    
+    show sora casual tanuki irritated with dissolve
+    so "It's mine now! If you're not nice to me from now, I'll upload it on the net, and then you'll see!"
+    "I reached for Sora and tried to wrestle the photo away from her."
+    
+    if lotiongood:
+        jump lotiongoodending
+        
+    "As soon as I touched her, she had an expression of absolute agony on her face."
+    
+    show sora casual tanuki surprise with dissolve
+    
+    so "Urk..."
+    ri "Huh? W-what's wrong, Sora? Are you hurt somewhere?"
+    
+    show sora casual tanuki irritated with dissolve
+    
+    so "Muuu..."
+    "Oh oh... It looked like I wasn't going to like this..."
+    
+    show sora casual tanuki point angry with dissolve
+    
+    so "Since you did such a lousy job at putting sun lotion on me today, I got totally burned!"
+    ri "W-wait... really?"
+    so "Eeevveeerrrryyyyyy part of my body!"
+    ri "S-sorry! I-I... erm... was kind of... ahhh... well, you know... I couldn't..."
+    "There was no polite way of telling your younger sister that you were too scared of groping her in order to put sun lotion on her back properly, was there?"
+    so "Muuuuu..."
+    
+    scene bg black with dissolve
+    
+    so "RIKU'S A DUMMMMMYYY!!!!!!!!!"
+    
+    $ renpy.music.stop(fadeout=1.0)
+    window hide dissolve
+    show eyecatchlogo with dissolve
+    $ renpy.pause (4.0)
+    hide eyecatchlogo with dissolve
+    window show dissolve
+    
+    jump harukagravevist
+
+label lotiongoodending:
+    "Sora leapt on top of my bed and held the photograph above her head."
+    
+    show sora casual tanuki point angry with dissolve
+    
+    so "Hmph. Mine!"
+    ri "Eaah!"
+    "I jumped up and wrestled her down onto the bed."
+    
+    play music "Music/Stroll.ogg" fadeout 1.5 loop
+    scene cg soratickle1 with dissolve
+    
+    so "Eah! Quit it, you pervert! Touching your sister like this!"
+    ri "You were the one who wanted me to rub the sun lotion on your back in front of everyone earlier today!"
+    "I grabbed onto both of her hands and held them against the bed while holding her pinned down between my legs."
+    so "Iya, it tickles!"
+    ri "In fact, if it hadn't been for me, you'd be burnt to a crisp right now! So you're gonna thank onii-chan for a change and give back the photo!"
+    so "Don't wanna!"
+    ri "Then taste this!"
+    
+    scene cg soratickle2 with dissolve
+    
+    "I poked Sora in the neck and heard her squeal."
+    "Her entire body squirmed underneath me. So she was really ticklish, was she?"
+    so "Iyya! Eh-hehehe... N-no! Riku's a dummy!"
+    ri "I'm not stopping until you give back the photo!"
+    "I slid my finger on the area between her hips and her rib cage and felt Sora suddenly twist underneath me. She was already laughing hysterically."
+    "Absolutely no mercy!!! I grabbed onto her hands and kept her from moving."
+    so "Iyaaa!!!... Ahaha-haha... Tickles... Ehehehehe..."
+    "I poked Sora's sides with both of my hands. She was driven so mad that she couldn't even resist me even if both of her arms were free."
+    so "S-stop!!! IIIIYAA!!! Ahahahahaha!!! Hey! Hahahahaa!!!"
+    ri "Do you want to surrender!?"
+    "By now, her body was so sensitive that I could slide my finger along any part of her body and still have her laugh louder than a mad scientist with a world domination plan."
+    so "N-never!!"
+    "I gave her another poke between her armpits so that she would reconsider her position."
+    ri "Don't disobey onii-chan!"
+    so "Iyyaaaaa!! Hahaha... haha... Hah... hah... hack..."
+    "It looked like she approaching her limit."
+    "I released my grip and let her lay against my bed's headrest."
+    "Her chest was heaving inside and out and the only thing she could do was breathe."
+    "As soon as she had enough air, she began to laugh again."
+    so "Hahaaa... M-my tummy's... hehe... about to die... Hah... hah..."
+    "She doubled over on the bed and laughed into my blanket."
+    so "Riku's... hehe-hahahaha... such a... hahahahaha!!"
+    "Seeing her like this all of a sudden made her look a little bit cuter."
+    "I had never seen Sora laughing like this."
+    ri "So, give the photograph back?"
+    "Sora withdrew the photo and placed it on the bed while still laughing hysterically into my blanket."
+    "I guess I had found Sora's weakness."
+    "I made a mental note of it: Sora = weak against tickling."
+    "I took a look at the photograph now that it was finally in my possession."
+    "... ... ..."
+    "Wow, I really do look like a complete moron in this picture."
+    "Oh well." 
+    "Instead of tearing it up like I had originally planned, I posted it up to my study table next to all of my other photos."
+    "I guess this was a part of our memories together too."
+	
+</pre>

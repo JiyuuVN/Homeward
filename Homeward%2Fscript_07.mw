@@ -1,0 +1,244 @@
+<pre>
+    
+    $ renpy.music.stop(fadeout=2.0)
+    scene bg black with dissolvelong
+    window hide dissolve
+    show eyecatchlogo with dissolve
+    $ renpy.pause (4.0)
+    hide eyecatchlogo with dissolve
+    window show dissolve
+    
+label harukagravevist:
+    
+    play music "Music/Dream_of_a_Butterfly.ogg" loop
+    scene bg rikuroomday with dissolve
+    "It was the beginning of autumn, while the green leaves were beginning to turn red, when that event happened."
+    "I lied on my bed, frustrated that I was bored, but too lazy to do anything. The daylight was peering through my shades, but only seemed to make my dimly lit room darker."
+    "Through the walls, I could hear distant electronic music as Sora played a game downstairs."
+    "It seemed like a quiet, dull day. Then my cellphone vibrated in my pocket, startling me."
+    "I flipped it open and saw a text from Haruka asking me if I was free. I texted her back that I wasn't doing anything for the whole day."
+    "Pretty soon, I got a response asking if I could meet her at the train station."
+    "I wonder what was going on. Since I didn't have anything to do, I texted her back that I would meet her in half an hour and got out of my bed."
+    "It was unusual for Haruka to text me out of the blue and ask me to meet her."
+    "Usually, Nonami would come over to my house and throw a pebble at my window to get my attention (I never understood why she never knocked, that girl...) and then we'd go meet up Haruka at the station by default."
+    "Whatever it was, it was probably important, so I better not keep Haruka waiting."
+    
+    scene bg mall with dissolve
+    show haruka uniform neutral with dissolve
+    "Haruka was waiting for me in front of the train station when I arrived."
+    ha "Ah, Riku-kun, over here."
+    ri "Hey, Haru-chan."
+    
+    show haruka uniform handstogether smile with dissolve
+    
+    ha "Good day to you, Riku-kun."
+    ri "What's up? Are we going to wait here for Nonami?"
+    ha "Ah, Nona-chan's not going to come today."
+    ri "Really? Eeehhh... That's pretty unusual, for her to not show her face."
+    ha "Eh-heh..."
+    ri "So where are we going?"
+    ha "Umm... It's a little bit of a secret."
+    ri "Really?"
+    ha "Uhn."
+    "Haruka wasn't spilling her beans, so it looks like I was going to be totally in the dark about what was going on."
+    "Oh well. Knowing Haruka, she probably wasn't going to lead me anywhere weird."
+    "I just decided to play along and follow her."
+    
+    scene bg black with screenwipe
+    scene bg farm with screenwipe
+    show haruka uniform neutral with dissolve
+    
+    "We got on the train and headed north. After about an hour, we got off at a rural train stop."
+    ri "Eah, we're sure in the boondocks now."
+    ri "Come to think of it, I think my grandparents used to live somewhere around here. They passed away a long time ago though."
+    ha "Eehh... I see..."
+    ri "So can you tell me why we came out here now?"
+    ri "Oh! Don't tell me that you have a secret passion for hiking, Haru-chan?"
+    
+    show haruka uniform forcedsmile with dissolve
+    
+    ha "Uu-uhn, that's not it."
+    
+    show haruka uniform handstogether distantsmile with dissolve
+    
+    ha "Actually, today's my younger brother's birthday."
+    ri "Younger brother? I never knew you had a sibling."
+    
+    show haruka uniform handstogether distant with dissolve
+    
+    ha "Uhn... I guess I don't really talk about him much."
+    ri "Does he live out here?"
+    ha "Mmm... I guess you could say that."
+    
+    show haruka uniform handsbehind smile with dissolve
+    
+    ha "Ah, speaking of which, how's Sora-chan doing?"
+    ri "She's been talking more now. I guess we're like normal siblings now. Or at least something close to it."
+    ri "Still, I'd appreciate it if she could be more honest about her feelings sometimes. Fuu... Sometimes, I have no idea whether she likes me or hates me."
+    ri "Not to mention she can go from being warm to icy cold in a matter of seconds."
+    ha "Ehehehe... It sounds like you have your hands full."
+    ri "Tell me about it."
+    ri "Ah, still, I don't mind working extra hard to take care of her."
+    ri "You can say that... well, she makes me feel important. I'm kind of flattered she's counting on me. I guess it's nice to know that you're trustworthy enough for someone else to put their faith in you."
+    
+    show haruka uniform handstogether distantsmile with dissolve
+    
+    ha "Eehhh..."
+    ha "It must be so nice, having that feeling."
+    
+    show haruka uniform handstogether distant with dissolve    
+    
+    ha "I..."
+    ha "I wish it could have been like that with my younger brother."
+    
+    show haruka uniform handstogether distantsmileclosedeyes with dissolve
+    
+    ha "Eh-heh... but I guess we can't have everything in life."
+    
+    scene bg grave with dissolve
+    show haruka uniform handstogether distant with dissolve
+    
+    "... ... ..."
+    "... ..."
+    "..."
+    "Eventually, we arrived at a quiet grave. It had a sad but serene aura around it."
+    "Haruka knelt by one of the small graves and gave a prayer."
+    
+    stop music fadeout 4.0
+    
+    ha "Ta-kun, it's your onee-san again. Happy birthday."
+    ha "I brought you some dango. I'm not sure if you like them... but I think we would have enjoyed eating them together."
+    ha "You would probably having been starting middle school around now, wouldn't you? Eh-heh... Onee-san's almost about to go to college."
+    ha "Ah... and this is my friend, Riku-kun. We've had a lot of fun times together."
+    ha "Get along well with him from now, okay? He's quite important to me."
+    "Haruka finished her prayer and laid a package of dangos and some flowers in front of the grave."
+    ri "Sorry. I didn't know your brother was..."
+    
+    show haruka uniform handstogether distantsmile with dissolve
+    
+    ha "Uu-uhn. Don't worry, Riku-kun. I was too young to even understand what had happened when he died."
+    
+    show haruka uniform handstogether distant with dissolve
+    
+    ha "All I knew was that my mom had to go to the hospital for a long time, and when she came back, she was crying."
+    ha "I never even saw my younger brother. I guess... It's better that way."
+    
+    show haruka uniform handsbehind smile with dissolve
+    
+    ha "Thank-you for coming with me. My parents were too busy today and I didn't want to do this alone."
+    ri "It wasn't a problem."
+    
+    show haruka uniform handstogether distant with dissolve
+    
+    ha "Sometimes... I wonder what it'd be like if Tatsuhiro was still alive. How different my life would be."
+    ha "But... I guess those are just dreams."
+    ri "Dreams... huh..."
+    
+    show haruka uniform handfront distantsmile with dissolve
+    
+    ha "Uhn... Pretty ones."
+    
+    scene bg farm2 with dissolve
+    show haruka uniform neutral with dissolve
+    play music "Music/One_Summer_Night.ogg" fadein 2.0 loop
+    
+    "We walked out of the grave and back down the trail."
+    ha "... ... ..."
+    
+    show haruka uniform handfront distantsmile with dissolve
+    
+    ha "Wouldn't it be nice to be a mountain stream?"
+    ri "A stream?"
+    ha "Uhn..."
+    ri "Why's that?"
+    ha "It's always going somewhere... And no matter what stands in its way, the stream always flows around it."
+    ha "It's always calm and never violent... it just bends and flows through all of its obstacles."
+    ha "But... something so weak can carve through mountains and eventually make a valley."
+    ri "That sounds really deep."
+    ha "Uhn. I like it though..."
+    ha "Even though we have our sad days, we're always going somewhere."
+    ha "Even if things stand in our way... and they seem impossible to overcome..."
+    ha "The answer lies is just... flowing. Not in opposing it. Not in fighting... But in just doing what you would do naturally..."
+    ha "And eventually, even though you can't really tell, you've made a really big difference."
+    "... ... ..."
+    "A butterfly drifted in the sky."
+    "Where would it end up? Wherever the wind sent it."
+    "But... did the butterfly really have to hate that?"
+    "Who knew what sights and adventures the next wind would bring."
+    "Sure, sometimes the wind blew it somewhere it didn't want to go... But all it could do was flap its wings with the next breeze, to somewhere else happier."
+    "Maybe... if all it did was try to fly against the wind... It would just end up going nowhere at all. When all along, the next breeze could have taken it somewhere better."
+    "... ... ..."
+    ri "Thanks, Haru-chan. That makes a lot of sense."
+    ha "Mm?"
+    ri "I'll try to be more like a mountain stream from now on."
+    
+    show haruka uniform handraised smile with dissolve
+    
+    ha "Ehehehe... You're being silly."
+    "I smiled and walked down the trail with Haruka."
+    
+    scene bg train2 with dissolve
+    show haruka uniform neutral with dissolve
+    
+    "As we walked back, I noticed it was unusually quiet. I guess it was only because Nonami wasn't here today."
+    "Being with just Haruka had a different feel. It was nice being able to listen to Haruka without having Nonami's voice overpower everything."
+    "But sometimes, I felt uneasy. As if I should say something just to break into the silence."
+    "I guess grave visits weren't exactly Nonami's cup of tea though. No wonder Haruka didn't ask her."
+    "... ... ..."
+    "... ..."
+    "..."
+    
+    scene bg mall with dissolve
+    scene bg livingroom with dissolve
+    
+    "After bidding Haruka good-bye at the train station, I returned home."
+    
+    show sora casual tanuki irritated with dissolve
+    
+    "Sora looked at me from her game."
+    so "Where were you?"
+    ri "I went out on a trip with Haru-chan."
+    so "Eehh..."
+    ri "Are you hungry?"
+    so "Uhn."
+    ri "Alright, I'll get cooking..."
+    
+    hide sora with dissolve
+    
+    "That night, I decided to work extra hard and cook Sora a better dinner than usual."
+    "I guess after what happened today, I felt a little bit inspired to try a little bit harder to take care of Sora."
+    "After all, she was counting on me."
+    
+    show sora casual tanuki pout with dissolve
+    
+    so "Uuu..."
+    ri "What?"
+    so "You have a weird look on your face. Did something happen today?"
+    ri "Mmm..."
+    ri "Nah, not really."
+    ri "Everything's all right."
+    "And that really was the truth."
+    "Everything was all right. Sora was home. I would see Nonami and Haruka again when I went to school tomorrow."
+    "All was right."
+    
+    show sora casual point pout  with dissolve
+    
+    so "Uuu... Something definitely not right! I'm gonna have to eat tonight's dinner carefully, in case you've put something weird in it!"
+    ri "Hey now, I wouldn't do that. You're my dear sister, after all!"
+    
+    show sora casual tanuki point angry with dissolve
+    
+    so "Hmph! I still remember that eggplant you tried feeding me last Monday!"
+    ri "Are you still mad about that? It was supposed to be good for you!"
+    "Sora made a face and made farting noises with her mouth."
+    "I farted back by pressing my arm into my mouth and blowing into it."
+    "Not to be out done, Sora pressed her hands to her face and blew raspberries at me until she turned red from oxygen deprivation."
+    "I pretended to smell her fart and waved my hands in front of my nose and gagged."
+    "Sora only stuck her tongue out and raised her butt over the back of the sofa at me."
+    ri "Oh, that's a lovely sight."
+    so "Shut up!"
+    "She pretended to fart at me by making more noises with her mouth."
+    "Ay..."
+    "The happy days at the Saionji household continued..."
+	
+</pre>

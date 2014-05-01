@@ -1,0 +1,2104 @@
+<pre>
+
+    "I laid on my bed. It was now 4 AM and I still had not gotten a moment of sleep."
+    "So... it really was all over now."
+    "My mother had been released from the hospital... Apparently, the doctors had called her recovery a miracle."
+    "However, for me, it was more of a curse."
+    "She had come last night to inform us that she was going to take Sora back. She was going to move out in two weeks."
+    "And as for me..."
+    "I was going to be relocated back to America at that time as well."
+    "As always, my opinion didn't matter."
+    "It was told to me as a fact that I had no future in Japan."
+    "This was all apparently supposed to be the best for me. Why waste time learning English in Japan when you could just live in America?"
+    "Why waste time fooling around with some girl when you should be thinking about your future?"
+    "I was overwhelmed with the urge to punch my fist into the wall."
+    
+    if nonamidance:
+        "I had absolutely no idea how I could possibly face Nonami tomorrow..."
+        "And... after I had said all that..."
+        "Ugh... I was an absolute moron... Why did I have to say all of that to her...?"
+        "I should have known..."
+        "That something like this would happen."
+        "It was just how my life worked."
+        "Tearing me from Nonami on the night she confessed..."
+        
+    if harukadance:
+        "I had absolutely no idea how I could possibly face Haruka tomorrow..."
+        "And... after everything that had happened..."
+        "This was impossible... Why did something like this have to happen now?"
+        "I should have known..."
+        "That something like this would happen."
+        "It was just how my life worked."
+        "Tearing me from Haruka on the night she confessed..."
+
+    "Blowing out the most precious night of my life so easily..."
+    "And to stamp out any last trace of hope, not even letting me graduate from high school with everyone."
+    "...Somehow... perhaps this was just my destiny."
+    "Destined to wander the world alone forever... always to slowly build up my life, slowly, agonizingly slowly, only to have it mercilessly torn apart in an instant..."
+    "And then... to slowly rebuild again... even slower than before... only to have it destroyed again in a flash."
+    "And this cycle would repeat... again... and again... for eternity, until I finally gave away to the horror."
+    "What truly was the purpose of such a life?"
+    "Why bother making friends? Why bother make memories?"
+    
+    if nonamidance:
+        "Why bother... with Nonami...?"
+        
+    if harukadance:
+        "Why bother... with Haruka...?"
+        
+    "I felt... tears running down my face, but I could not make a sound."
+    "I wanted to howl. I wanted to scream. I wanted to smash everything in my room to pieces. To tear up all of my school books and to shred my uniform to pieces."
+    "But... how pathetic. I only had the will to cry."
+    "I..."
+    "Really was the worst."
+    
+    if harukadance:
+        jump harukaroutestart
+
+    if nonamidance:
+        jump nonamiroutestart
+        
+    if nodance:
+        jump soraroutestart
+
+###############################################################################################
+###############################################################################################
+        
+label harukaroutestart:
+    
+    scene bg black with screenwipe
+    scene bg rikuroomceiling with screenwipe
+    
+    "I must have passed the entire weekend in a daze on top of my bed."
+    
+    play sound "Sound/cellphone.ogg"
+    
+    "All of a sudden, I heard my cell phone ring."
+    "I looked at the caller id. It was Haruka."
+    
+    stop sound
+    
+    ri "Hello...?"
+    ha "Riku-kun?"
+    ri "Yeah."
+    ha "Umm... I was wondering if we could meet sometime..."
+    ri "I don't know..."
+    ha "Are you okay? Your voice seems a little..."
+    ri "I don't think I'm feeling very well today..."
+    ha "Ehh, I see. I'm sorry to bother you."
+    ri "I'm sorry. Maybe sometime later..."
+    ha "Uhn. Get better soon, Riku-kun."
+    ri "Thanks, Haru-chan..."
+    "I hung up."
+    "Ugh, what a coward I was. I couldn't tell her."
+    "There was no way I could just break something like this to her so simply."
+    "What was I going to do?"
+    "Gripped by frustration, I pulled the pillow over on my head and squeezed my eyes shut."
+    
+    scene bg black with screenwipe
+    scene bg rikuroomnight2 with screenwipe
+    
+    "I heard a knock on my door."
+    ri "Sora, is that you?"
+    so "Uhn."
+    ri "You can come in."
+    
+    show sora casual tanuki distantleft with dissolve
+    
+    "I heard my door creak open. Sora took a seat next to me on my bed."
+    so "... ... ..."
+    ri "... ... ..."
+    "The two of us just sat there without speaking."
+    ri "Did you get tired of locking yourself in your room?"
+    so "Uhn..."
+    ri "So you decided to lock yourself in my room instead?"
+    
+    show sora casual tanuki onearmdown distantright mouthopen with dissolve
+    
+    so "Misery likes company."
+    ri "That's right, huh..."
+    ri "We must look pretty miserable, the two of us."
+    so "Uhn..."
+    
+    show sora casual tanuki onearmdown distantleft with dissolve
+    
+    so "Hey, I don't want to go to school tomorrow."
+    ri "Yeah... Let's play hooky, the two of us."
+    so "Uhn."
+    "It's not like there was any point in going to school any more anyways..."
+    "I wanted to talk to Sora about leaving... and how I felt about Haruka..."
+    "But... I guess it was impossible to bring something like that up."
+    "It hurt too much to talk about. Besides, what difference could words make?"
+    "They couldn't change the fact that I was going to leave here in less than two weeks."
+    "All they did was just make things more painful."
+    "Neither of us could face the pain of talking about leaving... so we talked about everything except that."
+    ri "Do you want to go anywhere?"
+    
+    show sora casual tanuki distantleft with dissolve
+    
+    so "Uu-uhn."
+    ri "Me neither..."
+    so "Let's just stay here."
+    ri "Yeah... I'll bring the Xbox from downstairs."
+    so "Uhn. I can also bring some manga."
+    "The truth was... we were both lonely."
+    "We couldn't tell our friends that we were leaving... because neither of us could admit it ourselves."
+    "We wanted our days together to continue. Somehow, if we told our friends that we were leaving, it would only make our departure more absolute."
+    
+    scene bg black with dissolve
+    scene bg rikuroomnight2 with dissolve
+    show sora casual tanuki neutral with dissolve
+    
+    "Sora and I ended up spending all of Monday locked in my room."
+    "I felt torn inside. A part of me wanted to see Haruka and Nonami again."
+    "We were just wasting precious time that we could be using to have fun with everyone..."
+    "However, I knew that I couldn't bare to tell them that we would never see each other again in just a couple of days."
+    "... ... ..."
+    
+    play sound "Sound/Doorbell.wav"
+    
+    "All of a sudden, the doorbell went off."
+    so "Are you going to get that?"
+    ri "I guess..."
+    "I went downstairs and opened the door."
+    
+    play music "Music/Disabled_Emotions_Part5.ogg" fadeout 1.5 loop
+    scene bg outsidehome with dissolve
+    show haruka uniform concerned with dissolve
+    
+    ha "Riku-kun...?"
+    "So it was Haruka after all..."
+    
+    show haruka uniform handstogether sad2 with dissolve
+    
+    ha "What's the matter? You didn't come to school today..."
+    ri "Yeah... I'm sorry."
+    
+    show haruka uniform handfront sad2 with dissolve
+    
+    ha "Are you feeling okay? Did you catch a cold?"
+    ri "Not really... it's not that..."
+    
+    show haruka uniform handfront sad with dissolve
+    
+    ha "Then what's the matter?"
+    ri "... ... ..."
+    "I wanted to tell Haruka everything... but just where did I even start?"
+    "I needed to tell her everything about my mother... and Sora... and who knew what else."
+    
+    show haruka uniform handstogether sad with dissolve    
+    
+    ha "... ... ..."
+    ha "So... It must be that..."
+    
+    show haruka uniform handsbehind sadtear with dissolve
+    
+    ha "I think I've made a mistake."
+    ha "I'm sorry, Riku-kun. For being such a bother."
+    ri "What?"    
+    ha "I-it really was unfair asking Riku-kun out in a situation like that... I really didn't know that there were going to be fireworks..."
+    
+    show haruka uniform handsbehind forcedsmiletear with dissolve
+    
+    ha "If Riku-kun really isn't interested, he should just say so..."
+    ha "It's really no reason to skip school to avoid being with me..."
+    ri "Stop it, Haruka. It's not that at all."
+    
+    show haruka uniform handsbehind sadtear with dissolve
+    
+    ha "Then... what is it?"
+    ri "The truth is..."
+    "... ... ..."
+    "... ..."
+    "..."
+    "In the end, I told Haruka everything about it."
+    "About my mother. About Sora. About leaving."
+    ri "My parents divorced right after Sora was born. I don't have any childhood memories of my mother, or of my sister."
+    ri "I would never even have gotten the chance to live with Sora again had my mother not gotten ill."
+    
+    show haruka uniform handfront sad with dissolve
+    
+    ha "I see..."
+    ri "But now that she's out of the hospital, that's all over now. She's going to take Sora away in just a few days."
+    ri "Now that we don't have to watch over Sora any more, we're going to return to America. I don't think I'll ever be able to come back here again."
+    ri "I'm sorry. I didn't mean to make you worry..."
+    ri "It's just that... something like this..."
+    
+    show haruka uniform handstogether distantsmile with dissolve
+    
+    ha "Uu-uhn. I understand."
+    ri "My father won't listen to me no matter how much I tell him I don't want to move..."
+    ri "It's really hopeless..."
+    
+    show haruka uniform handfront sad with dissolve
+    
+    ha "But... you can't stay alone until you leave."
+    
+    show haruka uniform handfront distantsmile with dissolve
+    
+    ha "Come to school, Riku. I want to be with you."
+    ri "... ... ..."
+    
+    show haruka uniform handstogether distantsmileclosedeyes with dissolve
+    
+    ha "Everyone misses you. Nona-chan's worried too."
+    ri "But it's too late..."
+    ri "I won't be able to see you guys ever again in just a few days now."
+    
+    show haruka uniform handfront distantsmile with dissolve
+    
+    ha "Uu-uhn. As long as you don't give up, there's always hope."
+    "But what could we possibly do?"
+    "Something like this was beyond anyone's ability to control."
+    
+    show haruka uniform handfront distantsmileclosedeyes with dissolve
+    
+    ha "Don't give up, Riku. Haruka will find a way. It's a promise."
+    ri "... ... ..."
+    "Haruka was always more cheerful than me."
+    "However, no matter how reliable she was, she was still just a high schooler. There wasn't anything she could do to make me stay in Japan."
+    "Still... her optimism gave me a glimmer of hope."
+    ri "You have a point..."
+    ri "Even if I'm going to have to leave... I can't just ignore everyone..."
+    ri "You and Nonami are my most important friends... I can't just leave without at least making our last days together memorable."
+    
+    show haruka uniform excited neutral with dissolve
+    
+    ha "Uhn. You need to keep trying, Riku."
+    
+    $ renpy.music.stop (fadeout=1.5)
+    
+    ri "I'll come to school tomorrow."
+    ri "I'm sorry for making you worry. Thanks for coming to see me..."
+    
+    show haruka uniform neutral smile with dissolve
+    
+    ha "It wasn't a problem at all."
+    ha "I'm glad that Riku's coming to school after all..."
+    
+    show haruka uniform handstogether neutral with dissolve
+    
+    ha "Ah, by the way, here you go."
+    "Haruka reached into her bag and withdrew a pile of homework."
+    ha "Here's the material you missed today. As iinchou, it's my duty to make sure that you're caught up by tomorrow."
+    "Heh... Even at a time like this, Haruka was still serious about her job..."
+    ri "Sorry, sorry... I'll make sure to do it..."
+    
+    show haruka uniform handstogether smile with dissolve
+    
+    ha "Uhn."
+    ri "Then, I'll see you tomorrow..."
+    ha "I'll see you tomorrow, Riku."
+    
+    scene bg rikuroomnight2 with dissolve
+    show sora casual tanuki neutral with dissolve
+    
+    "After waving Haruka good-bye, I went back to my room."
+    "I slammed down the make-up homework on my desk and got working, prompting weird looks from Sora."
+    so "... ... ..."
+    ri "I changed my mind. Let's go to school after all."
+    
+    show sora casual tanuki pout with dissolve
+    
+    so "...uuuuuu..."
+    
+    play music "Music/Heaven.ogg" fadeout 1.5 loop
+    scene bg rikuroomday2 with dissolve
+    
+    "The next morning, I woke up and got ready to go to school."
+    "I didn't hear any activity from Sora's room. I guess she was still asleep."
+    "I should just leave her alone for now. She still probably needed time to decide what she was going to do."
+    "After washing up and getting dressed, I left the house."
+    
+    scene bg outsidehomealt with dissolve
+    
+    "However, I was in for a surprise when I saw a familiar face waiting for me not that far from the house.."
+    
+    show sora uniform armscrossed pout with dissolve
+    
+    so "Hmph. It took you long enough."
+    ri "Sora?"
+    
+    show sora uniform armscrossed irritated with dissolve
+    
+    so "Stupid Riku, making me wait so long..."
+    ri "S-sorry... I didn't think that you'd..."
+    
+    show sora uniform armscrossed tsundere with dissolve
+    
+    so "Mah, if Riku's going to school, then it's probably gonna be too boring to stay at home by myself."
+    
+    show sora uniform neutral irritated with dissolve
+    
+    so "Here. I bought this because you were taking so long."
+    "Sora handed me a grocery bag, which contained a pair of melon bread and two bottles of green tea."
+    ri "Thanks..."
+    "I felt grateful not only for the fact that Sora had bought me breakfast, but that she was going to school with me."
+    "Even though this wasn't going to be easy, I was glad that she decided to come to school."
+    "We walked to school while eating our melon bread."
+    
+    scene bg classroom2 with dissolve
+    
+    "Nonami poked her head into my class at the beginning of lunch period."
+    
+    show nonami uniform armscrossed smile with dissolve
+    
+    no "Eeehh... it's Rii-kun."
+    ri "Yeah, it's me."
+    no "Eh-heh..."
+    "She approached me with a sheepish look on her face."
+    
+    show nonami uniform armscrossed with dissolve
+    
+    no "Mmmmmm... About today's bento..."
+    ri "Did you not make it? It's not a problem at all."
+    
+    show nonami uniform armscrossed mockhappy with dissolve
+    
+    no "Not make it? Oh no, no, no, no! As if a travesty like that would ever happen!"
+    
+    show nonami uniform armscrossed confident with dissolve
+    
+    no "In fact, I worked all night making it... and the ingredients are so classified, top secret, hush-hush, this never happened material that I can't open the bento in this class!"
+    ri "Eh?"
+    
+    show nonami uniform excited with dissolve
+    
+    no "That's why you're coming with me!"
+    "All of a sudden, Nonami grabbed my hand and pulled me off of my chair."
+    
+    show nonami uniform armscrossed forcedsmile with dissolve
+    
+    no "We're gonna go eat somewhere else!"
+    "Before I could even protest, we were already out of my class and heading to the far stairway that led to the roof."
+     
+    $ renpy.music.stop(fadeout=1.0)
+    scene bg stairs3 with dissolve
+    
+    "Nonami marched up the stairs until we were out of sight and faced me."
+    
+    play music "Music/Disabled_Emotions_Part5.ogg" fadeout 1.5 loop
+    show nonami uniform armscrossed focussad with dissolve
+    
+    ri "H-hey..."
+    "She now had a rare serious look on her face."
+    "By now, it was pretty obvious this had absolutely nothing to do with the bento."
+    no "Haru-chan told me what happened. Is it really true?"
+    ri "... ... ..."
+    ri "Yeah, it's true."
+    
+    show nonami uniform armscrossed sad with dissolve
+    
+    no "... ... ..."
+    ri "I'm really going to move back to America in just ten days now."
+    no "No way..."
+    ri "That's what I keep thinking too... but it's really come to this."
+    
+    show nonami uniform armscrossed sadlookleft with dissolve
+    
+    no "But... that's too soon..."
+    ri "My father still has work to do in America. The only reason we came back to Japan was to take care of Sora..."
+    ri "But now that my mother's out of the hospital, we're going to move back as soon as possible."
+    
+    show nonami uniform armscrossed sad with dissolve
+    
+    no "Is that it then...? You're just going to leave?"
+    ri "... ... ..."
+    ri "I want to stay... but... there's nothing I can do about it."
+    
+    show nonami uniform armscrossed sadtearsblush with dissolve
+    
+    no "Hey Rii-kun, that's not fair... I want you to stay here..."
+    ri "That's what I'm saying here... it's not like I want to move either. In fact, I hate the thought of moving even more than you do."
+    ri "But you know, I can't do anything."
+    ri "There's just... nothing..."
+    no "... ... ..."
+    
+    show nonami uniform armscrossed sadtearsclosedeyesblush with dissolve
+    
+    no "Sorry."
+    "Nonami turned away from me."
+    
+    hide nonami with dissolve
+    
+    no "I..."
+    no "... ... ..."
+    no "It's not fair, coming back and then leaving again."
+    no "Making me wait so long... I really missed you, you know."
+    no "I... don't know anymore..."
+    "Not knowing how exactly to comfort her, I placed my hand on her shoulder."
+    ri "It really is unfair..."
+    ri "Even if I want to change it... there's just nothing I can do."
+    ri "Maybe this... is just how my life is supposed to be..."
+    no "Tsch... Stupid Rii-kun."
+    "Nonami turned around and embraced me."
+    
+    show nonami uniform armscrossed sadcry with dissolve
+    
+    no "Stupid Rii-kun..."
+    ri "... ... ..."
+    "I felt Nonami's hand gripping the back of my head."
+    "Somehow... The closeness of Nonami's heart made the bitter pain that was within me subside for just a moment."
+    "We parted. Nonami's cheeks were wet with tears."
+    "I reached into my bag and withdrew a tissue pack."
+    ri "Here."
+    
+    show nonami uniform armscrossed sadcrysmile with dissolve
+    
+    no "Thanks..."
+    ri "Y-you know, those ladies who hand these things out in front of the train station really ended up being useful after all..."
+    no "Eh-heh...heh..."
+    "Nonami laughed in between her tears."
+    "I guess in a moment like this, you needed to laugh even at a lame comment like that..."
+    ri "We should be heading back soon... Afternoon classes are going to begin soon."
+    
+    show nonami uniform armscrossed sadsmileclosedeyes with dissolve
+    
+    no "H-here..."
+    "Nonami brought out an anpan package."
+    
+    show nonami uniform armscrossed sadsmileblush with dissolve
+    
+    no "Sorry. I didn't actually prepare a bento."
+    ri "Thanks, you saved me."
+    no "Uu-uhn."
+    ri "Are you going to be okay, Nonami?"
+    no "Uhn, probably. I can make it through classes, at least."
+    ri "Okay..."
+    "We went downstairs and headed back to our classes before we would be late."
+    
+    $ renpy.music.stop (fadeout=1.5)
+    scene bg classroom2 with dissolve
+
+    "When I returned to my classroom, I slipped the anpan to my bag. All of a sudden, I didn't have much of an appetite."
+    "I rested my head against my table and closed my eyes. I once again realized the despair of the situation and felt exhausted."
+    "Maybe coming back to school was a mistake after all..."
+    "I wanted nothing more than to stay here with everyone... Just thinking about leaving made my insides twist."
+    "Seeing Nonami like that only added to my pain."
+    "Soon, lunch period ended and classes resumed. However, I couldn't really get into any of them and just dazed through the rest of the day."
+    
+    play music "Music/Forgotten.ogg" fadeout 1.5 loop
+    scene bg black with dissolvelong
+    scene bg classroom3 with dissolvelong
+    show haruka uniform concerned with dissolve
+    
+    ha "Umm... Riku-kun... Are you okay?"
+    ri "Huh? Haru-chan?"
+    "The sound of Haruka's voice woke me from my distant daydream."
+    ha "Classes are over now."
+    "I realized that Haruka was right. Everyone was packing up to leave. I really was out of it..."
+    ri "I think I'll just go home today..."
+    
+    show haruka uniform handraised forcedsmile with dissolve
+    
+    ha "U-uhn..."
+    "I put my belongings into my bag and got up to leave."
+    
+    show haruka uniform concerned with dissolve
+    
+    ha "A-actually, I think I'll walk with you home."
+    ri "Really? Don't you have club activities?"
+    
+    show haruka uniform handstogether neutral with dissolve
+    
+    ha "It's okay. Riku-kun's more important today."
+    ri "T-thanks..."
+    "We walked out of the classroom together."
+    
+    scene bg schoolfieldevening2 with dissolve
+    show haruka uniform handstogether neutral with dissolve
+    
+    "The sun was already beginning to set once we got into the school yard. The days were really becoming short now."
+    ri "It's a lot more tiring than I thought it would be... coming to school..."
+    ri "I guess... it was naive of me to believe that our old days would just return."
+    
+    show haruka uniform handstogether sad with dissolve
+    
+    ha "Uhn... "
+    "All of a sudden, I heard Sora's voice behind me."
+    
+    show sora uniform neutral distantright with dissolve:
+        xanchor 0.5
+        xpos 0.8
+    
+    so "Riku."
+    ri "Sora. Are you finished with classes?"
+    so "Uhn."
+    "That's right. Usually, Sora goes home earlier than me because I'm busy with club activities."
+    "Today, I guess we'll all be going home together."
+    
+    show haruka uniform handraised with dissolve
+    
+    ha "How are you doing, Sora-chan."
+    
+    show sora uniform neutral with dissolve:
+        xpos 0.8
+    
+    so "Haruka-senpai. Hello."
+    
+    scene bg street3gray with dissolve
+    show haruka uniform handstogether neutral with dissolve:
+        xanchor 0.5
+        xpos 0.7
+    show sora uniform neutral distantright with dissolve:
+        xanchor 0.5
+        xpos 0.3
+    
+    "The three of us made our way home."
+    ri "Haruka's going to walk with us home, Sora."
+    so "... ... ..."
+    "She remained as nonchalant as usual."
+    "Maybe her day wasn't any better than mine. I better let Sora be for now..."
+    
+    hide sora with dissolve
+    hide haruka with dissolve
+    show haruka uniform handsbehind with dissolve:
+        xanchor 0.5
+        xpos 0.5
+    
+    ha "By the way Riku, where are you going to go to university in America?"
+    ri "I'll be going to Philadelphia International University."
+    ha "So Riku's going to live in Pennsylvania?"
+    ri "Yeah. It's really far from Japan."
+    ri "It's not somewhere like Seattle or San Fransisco, where you can visit during Golden Week..."
+    
+    show haruka uniform handsbehind sad with dissolve
+    
+    ha "I see..."
+    ri "... ... ..."
+    "All of a sudden, I realized that I didn't have much more to talk about."
+    "Haruka was the first girlfriend I ever had... and yet something like this had to happen."
+    "If only I wasn't moving... then we'd probably be happily talking right now..."
+    "I looked down at Haruka's frail looking fingers. To think, a couple days ago, deciding whether or not to hold them was the biggest problem that I faced."
+    "How stupid I was then."
+    "Foolishly living in my little happy world... Completely oblivious to the truth."
+    "I should have known something like this would happen. It always did, didn't it?"
+    "Happiness belonged to some other world than the one I lived."
+    "Our happy memories... they seemed like distant dreams. Did they... actually even happen?"
+    "Did we really go to Seattle together?"
+    "Was it really me who made a fool out of myself at the sports festival?"
+    "It must... all have been some pleasant day dream."
+    
+    show haruka uniform handstogether concern with dissolve
+    
+    ha "Riku-kun, are you feeling all right?"
+    ri "... ... ..."
+    
+    show haruka uniform excited surprise with dissolve:
+    
+    ha "R-Riku!"
+    ri "...h-huh?"
+    
+    show haruka uniform handfront sad2 with dissolve
+    
+    ha "Get a hold yourself. Moouu..."
+    ri "Sorry..."
+    "Ah great, now I got scolded by Haruka, of all people."
+    "I wanted to give up. At least if I resigned myself to the inevitable, I wouldn't have to face the pain of leaving everyone anymore."
+    "It was too tiring to stupidly hope that some last second miracle would save me."
+    "I guess... at this point, all that was left to do was just accept reality."
+    "It's not like any of us could do anything about it. Everything was already decided for me by my parents."
+    
+    scene bg outsidehomealt2 with dissolve
+    show haruka uniform handfront sad2 with dissolve
+    
+    "Pretty soon, we arrived at my house."
+    "Sora walked in without saying anything, obviously in a bad mood."
+    ri "Thanks for coming with us, Haruka... Even though you don't live anywhere near here..."
+    
+    show haruka uniform handfront distantsmile with dissolve
+    
+    ha "Uu-uhn, it was no problem. Are you going to be okay?"
+    ri "... ... ..."
+    
+    show haruka uniform handfront sad with dissolve
+    
+    ha "Not good, huh..."
+    
+    show haruka uniform handstogether distant with dissolve
+    
+    ha "Do you have anything to eat for dinner?"
+    ri "I'm not sure... I don't think I have much of an appetite..."
+    
+    show haruka uniform handstogether sad2 with dissolve
+    
+    ha "You can't do that, Riku. Come on, I'll make you something."
+    ri "Are you sure? You don't need to..."
+    
+    show haruka uniform handraised smile with dissolve
+    
+    ha "Uhn. I can't let you and Sora starve."
+    "At her insistence, I let Haruka enter the house."
+    
+    scene bg kitchen with dissolve
+    
+    ha "Pardon the intrusion."
+    "We entered the kitchen. Soon, Haruka started preparing our dinner."
+    "I sat at the table while Haruka worked."
+    "Somewhere inside of me, I ruminated how my usual self would have been overflowing with happiness at a moment like this."
+    "I, Riku Saionji, was living the happy couple life of my dreams."
+    "Dating a girl like Haruka... having her walk home with me... and then to have her cook dinner for me..."
+    "I wanted to talk to her cheerfully about my day. To tell her that Sora woke up early today and bought me breakfast. To tell her that Nonami was up to her usual silly antics."
+    "But... the reality that surrounded me was just too distant from that fantasy world."
+    "In the end, all I could manage was silence. I gazed distantly off to nowhere, my eyes devoid of the light that I wished it to have."
+    
+    $ renpy.music.stop (fadeout=1.5)
+    scene bg black with screenwipe
+    scene bg kitchen with screenwipe
+    
+    "After a while, Haruka finished cooking and placed three bowls of udon on the table."
+    
+    show haruka uniform handfront distantsmile with dissolve
+    
+    ha "Thanks for waiting. Eat and cheer up."
+    ri "Thanks..."
+    ha "Let me call Sora down..."
+    "Haruka went upstairs and knocked on Sora's door, but didn't get a response."
+    
+    scene bg closeddoor2 with dissolve
+    
+    "After hearing her try a couple more times without any success, I walked up next to her."
+    ri "Sometimes, she's like this..."
+    ri "It's usually best to leave her alone. I usually leave her food on a tray in front of the door and she eventually eats it."
+    ha "But..."
+    ri "It really couldn't be helped. Sorry, Haruka."
+    ha "I guess..."
+    "Haruka went back downstairs and returned with Sora's bowl on a tray."
+    "After placing it in front of her door, we went back to the kitchen."
+    
+    scene bg kitchen with dissolve
+    
+    "We took our seats on the table. Haruka looked at me with concern as I grabbed a noodle and slurped it up."
+    
+    show haruka uniform onehandraised embarassed with dissolve
+    
+    ha "How is it...?"
+    ri "It's good..."
+    "It really did taste good."
+    "The warm aroma of the udon filled me with the taste of Haruka's kindness."
+    "Haruka's cooking abilities really were unparalleled..."
+    "I must be... so lucky to have a girl like her cook for me."
+    "All of a sudden, I felt my eyes hurt."
+    
+    play music "Music/Sad_Farewell.ogg"
+    
+    "I began to blink rapidly. My face felt as if it was burning."
+    "I wonder... why tears were coming out of my eyes now."
+    ri "It's.... really good...."
+    "Haruka jumped out of her chair and knelt down beside me, surprised at my tears."
+    
+    show haruka uniform handraised surprise with dissolve
+    
+    ha "A-are you okay, Riku?"
+    ri "Uhn..."
+    "I felt ashamed, crying in front of a girl, but there was no way I could hide my face."
+    
+    show haruka uniform facecover sad with dissolve
+    
+    ha "I-I'm sorry... M-maybe this wasn't such a good..."
+    ri "No.... I'm really happy, Haruka...."
+    ri "I... would have been... so lucky.... with you..."
+    "I squeezed my fist and cried into the table."
+    "There was nothing I could do to explain to Haruka how I felt."
+    "Today... I had my girlfriend cook for me for the first time in my life."
+    "And yet, I knew this was something that I could never do again."
+    "It was a happy event..... that only made our inevitable farewell even more unbearable."
+    "If all I had was despair, then maybe I could stand losing everything and starting over."
+    "But... with happiness... it was too horrifying, watching it all break, completely helpless to everything..."
+    "Happiness.... was a painful feeling when I knew that it would be broken just a moment later....."
+    ri "I want... this to continue forever..."
+    ri "But.... it's impossible!"
+    "My shoulders shuddered as I sobbed."
+    "I felt Haruka wrap her arms around me and stroke my head."
+    
+    show haruka uniform handfront distantsmiletearblush with dissolve
+    
+    ha "I'm sorry Riku...... I'll...... always be there for you..... even if......"
+    ri "Haruka... whenever.... I think of leaving..."
+    ri "....I can't...!"
+    
+    show haruka uniform handfront distantsmilecryblush with dissolve
+    
+    ha "Shhh.... you don't need to worry about anything...."
+    
+    show haruka uniform handfront distantsmilecryclosedeyesblush with dissolve
+    
+    ha "...I'll take care of you, Riku....."
+    ha "No matter what it takes...... I'll make you happy again......"
+    ha "I promise you that..... Riku......"
+    ri "I'm sorry....... I must... look so uncool right now..."
+    "Haruka handed me the tissue box."
+    ha "Uu-uuhn.... You're.... the kindest person I know.... You're...."
+    ri "I'm sorry....... I wanted.... I wanted to be your boyfriend......."
+    ri "But now...... I won't even have a chance at it...!"
+    "I squeezed my hands into fists and stared at my bowl of udon. I didn't really want to eat it any more."
+    ri "... ... ..."
+    
+    show haruka uniform handfront distantsmilecryblush with dissolve
+    
+    ha "Here.... Riku...."
+    "Haruka wrapped a string of noodle around her chopsticks and raised it to my mouth."
+    ha "Say \"ahh...\""
+    "I opened my mouth and was fed by Haruka."
+    ha "Is it okay? Do you want some more?"
+    "I managed to slightly nod my head."
+    "She scooped up some of the soup with a spoon and softly blew on it."
+    ha "Tell me if it's too hot, okay?"
+    ri "Uhn....."
+    "I drank the soup from the spoon."
+    ri "Thanks..."
+    
+    show haruka uniform handfront distantsmilecryclosedeyesblush with dissolve
+    
+    ha "Uu-uhn..."
+    "Once again, Haruka spun the noodle around her chopsticks and fed me."
+    "She never gave up until I was finished with the entire bowl."
+    ha "Riku-kun...... Shhh....."
+    ha "Don't worry about a thing..."
+    ha "I... still think Riku-kun's the coolest person ever..."
+    ha "I don't... regret anything."
+    ri "But... it's all ruined."
+    ha "Shh..."
+    
+    scene bg livingroomfade with dissolve
+    show haruka uniform handsbehind distantsmiletear with dissolve
+    
+    "After I was finished, Haruka grabbed onto my hand and led me to the living room."
+    "She laid me down on the sofa and let me rest my head on her shoulder."
+    "I felt her hand gently stroking my hair."
+    ha "Riku...?"
+    ri "Mm...?"
+    ha "I don't want you to be sad anymore..."
+    
+    show haruka uniform handstogether distantsmileblush with dissolve
+    
+    ha "Do you remember when you bought me this?"
+    
+    if harukaring:
+        "Haruka showed me the ring that I had bought for her during the culture festival."
+        
+    if harukahairribbon:
+        "Haruka pointed to her hair ribbon."
+
+    if harukanecklace:
+        "Haruka showed me the necklace that I had bought for her during the culture festival."
+        
+    ri "Yeah..."
+    "Even though it just been a week ago, it felt as if an eternity had passed since then."
+    ha "It was really fun that day... I wish we could be like that again..."
+    ri "So do I..."
+    "I closed my eyes as Haruka gently patted my forehead."
+    "Her touch felt... nice. Almost nice enough to make the throbbing pain in my head recede."
+    ha "I haven't know Riku-kun for as long as Nona-chan, but I think I got used to the happy days we had together."
+    ha "And eventually, I came to admire Riku-kun..."
+    ri "Admire me... huh..."
+    ha "But there was always something..."
+    ha "Even when Riku-kun was happy... there was some kind of trouble in his eyes. As if he knew some truth about the world that we were all blissfully ignorant of."
+    ri "Maybe... I knew all along something like this would have happened..."
+    ri "I should have seen it coming..."
+    ri "I'm sorry... If I had only known better... I wouldn't have ruined your hopes like this. I should have known..."
+    ha "Shh... You haven't ruined anything, Riku-kun..."
+    ha "There are happy times... but in between those times, there are sad ones."
+    
+    show haruka uniform handsbehind distantsmiletear with dissolve
+    
+    ha "We just... have to learn to live with it, I suppose."
+    ri "I..."
+    ri "I can't ever accept it."
+    ri "Why... my life has to be like this."
+    ri "Why can't I just graduate like everyone else? Why can't I just go to the same college as everyone else?"
+    ri "Just why... am I never allowed? Why...?"
+    ha "... ... ..."
+    ha "Riku-kun... close your eyes."
+    
+    scene cg harukakiss with dissolve
+    
+    "I did as I was told. Then I felt a tender sensation on my lips, soft like cake and bittersweet like an old melody from a childhood music box."
+    "Our tongues grazed each other, like a puppy lapping up milk. Was that a mere accident or did she intend to do that?"
+    "Haruka separated our lips and whispered softly into my ears."
+    ha "That's one experience you didn't miss out on."
+    ri "... ... ..."
+    "Slowly, I reached up and touched Haruka's lips with my finger, gradually coming to the realization that just a moment ago, they were connected with mine."
+    "I stared into Haruka's eyes. For a moment, I was captivated by the intricate pattern her blue iris made. My consciousness spiraled around her peacock blue eyes and eventually settled at their black center."
+    "It felt as if I could fall into them and never wake up, my heart forever trapped inside the endless abyss of those eyes."
+    "Inside, I saw just a flicker of an embarrassed smile."
+    "I grabbed onto her hands."
+    ha "That was my first kiss, you know..."
+    ha "I don't give out things like that every day..."
+    ri "...What about your second kiss?"
+    ha "Maybe... but only to Riku-kun."
+    "Our arms wrapped around each other. I reached for her lips hesitantly."
+    "When they grazed each other, we withdrew, nervous to do it while looking at each other. Hesitant, frightened, but longing, we reached for each other again."
+    "Our lips met. I closed my eyes and lost myself in the moment, our arms wrapped around each other."
+    "For just a brief moment, it felt as if our two streams of consciousness had merged into a single pool. We had become one."
+    "It lasted but for a flutter of a moment. I wanted more."
+    "I wanted to know that I was not alone. That I would not be cold and lonely, but that I would feel the warmth of Haruka's embrace around me. That someone would be there with me even when the whole world seemed to rumble and quake."
+    "I just wanted... someone who cared. About me. Someone who would not turn me into just a forgotten memory."
+    ri "Haru-chan... You'll be with me forever, right?"
+    ha "Uhn..."
+    ri "Really?"
+    ha "So long as Riku-kun wants me... I'll always be with Riku-kun."
+    ha "It's a promise."
+    ri "Thanks..."
+    ri "Nobody's made that promise but you."
+    ha "Of course... Because... I'm the one who loves Riku-kun..."
+    ha "I'm the one who'll make sure he never gets hurt... who'll always be there to support him..."
+    ri "Thanks..."
+    "But..."
+    "No matter how much I wanted to believe those words, I knew Haruka was making a promise that she could never keep."
+    "It wasn't as if she could magically change the past and make it so that my parents weren't divorced."
+    "Nor could she slow down the flow of time so that I could stay in Japan forever."
+    "In the end, I knew there wasn't really anything she could do..."
+    "Her words were just sweet deceptions... Sweet."
+    "But... deceptions."
+    "...maybe that's why I loved her. Only Haruka could make false promises so soft and tender, so warm and believable."
+    "I closed my eyes and met her lips. I wanted to lose myself in her words. I wanted to forget everything that was going on around me... And just be left alone with Haruka."
+    
+    play music "Music/Disabled_Emotions_Part1.ogg" fadeout 1.5 loop
+    scene cg harukah1 with dissolve
+    
+    "Her body went weak in my embrace. She fell down on her back, her cheeks flushed pink, her pretty lips slightly parted, and her eyes tinged with fear and anticipation."
+    "Entranced by her beauty, I slipped my fingers in between the sliver of skin between her skirt and her shirt and gently rubbed her soft tummy."
+    "Haruka hesitantly slipped her hands inside of my shirt and stroked my back."
+    "At the soft sensation of Haruka's skin, my hand slowly inched upwards."
+    ha "Ah... Riku-kun..."
+    ri "Sorry. Do you want me to stop?"
+    ha "... ... ..."
+    ha "Not really."
+    "My heart pounding, I unbuttoned Haruka's shirt and exposed her bra."
+    "I slipped my hand inside of Haruka's bra and caressed her breast."
+    "Her body trembled as I fingered her nipple. It was much smaller than what I expected and didn't really stand erect when I touched it."
+    ri "Are you okay?"
+    ha "Uhn... i-it's just embarrassing....."
+    ri "Don't worry... it's just me...."
+    ri "Here... I'm going to take your bra off now, okay...?"
+    ha "Uhn... Here..."
+    "Haruka arched her back so that I could reach in behind her and unclip her bra."
+    
+    scene cg harukah2 with dissolve
+    
+    "Her breasts were softer than anything I had felt before."
+    "Haruka's delicate frame felt so fragile underneath me that I was afraid that I would accidentally break something if I were not careful."
+    "Overcome with love at seeing Haruka's petite body, I kissed her again and held her breasts with my hands."
+    ri "Haruka..."
+    ha "Mm..."
+    "I slid my hand down her belly and wrapped my fingers around her upper thigh while still keeping the other one on her breast."
+    "Slowly, I moved my hand upward and gently rubbed her underwear where her legs met."
+    "Haruka gasped softly."
+    ha "Ah... Riku...."
+    "It was still hard to tell where exactly I was... for all I knew, I could be rubbing the wrong spot entirely."
+    "Afraid of making a mistake, I reached into Haruka's underwear."
+    ha "Hah..."
+    "Haruka shyly covered her face with her hand."
+    ri "Shhhh... it's okay..."
+    ha "Uhn...."
+    ha "I... I trust Riku...."
+    "With her approval, I reached further and slipped one of my fingers into Haruka."
+    "Her narrow entrance was much slipperier than I expected and my finger slid almost immediately back out."
+    "Being more careful this time, I slowly pushed my finger inward, managing to put it in about halfway."
+    "Worried that I might hurt Haruka's delicate insides, I was reluctant to push my finger in any further. I softly pulled the finger out and pushed it back in, trying to rub her interior as gently as possible."
+    "I took Haruka's hand away from her face and held it in my other hand. I kissed her again, locking our lips together."
+    "After kissing her, I unzipped my pants and slipped Haruka's hand into my underwear."
+    "I whispered softly into her ear."
+    ri "Here... you can do it too..."
+    ha "Ah... Riku's...."
+    "I felt Haruka's fingers timidly grasp around me. She was too clumsy for it to feel good, but my heart fluttered at the thought of a girl touching it for the first time in my life."
+    "I unbuttoned Haruka's skirt and pulled down her underwear."
+    ri "Here... can you raise yourself one second?"
+    
+    scene cg harukah3 with dissolve
+    
+    "I pulled the top of Haruka's uniform off, finally exposing her fully naked body."
+    "I felt Haruka tug at my sleeve."
+    ha "Riku too..."
+    ri "Oh, sorry..."
+    "I pulled off my uniform as well."
+    "The two of us were now completely naked."
+    "For a moment, we stared at each other. At this point, there was only one thing left for us to do."
+    ri "Hey Haruka........ do you want to do it?"
+    "It was probably too late to even ask. It wasn't as if we could just walk away after coming this far."
+    ha "Be gentle, okay?"
+    ri "Okay..."
+    "I tried to push myself into Haruka, but then I realized it wasn't really possible to see where I was aiming from this position."
+    "If I knelt on my knees while still keeping my body upright, I'd be able to see, but then, that would mean I would have to lift Haruka up by the legs to get her high enough... and I didn't want to do that."
+    "Clumsily, I tried to guess where I would need to align myself, but ended up missing completely."
+    ri "S-sorry Haruka..."
+    ri "I can't really see down there from here... Can you put it in for me?"
+    ha "Ah..."
+    "Haruka reached down and guided me to her entrance."
+    ha "Here..... try it now..."
+    "I pushed myself in, but slipped out against the surface almost instantly."
+    ri "S-sorry.... I don't know how to do this....."
+    ha "Uu-uhn... it's okay..."
+    "We tried again."
+    ha "Here.... I think this is it..."
+    "I pushed myself in slowly, being more careful this time."
+    
+    scene cg harukah4 with dissolve
+    
+    ha "A-Ahhh...!"
+    "Was there supposed to be this much pressure? Even though it was hard getting in, I didn't want to push too hard and accidentally hurt Haruka."
+    "I tried as far as I could and leaned down to Haruka's face."
+    ri "Okay... I think it's in..."
+    "Trying to rub against Haruka's warm interior, I tried pulling back a little."
+    "However, our luck ran out when I pulled back further than what I wanted and slipped back out."
+    ri "Sorry..."
+    
+    scene cg harukah3 with dissolve
+    
+    ha "Uu-uhn.... D-don't worry, we can try again."
+    "Once again, Haruka led me back in."
+    "However, I pretty much repeated the same mistake again."
+    ri "Ugh...... this is a lot harder than what I expected."
+    ha "eh-heh..."
+    "Haruka smiled sheepishly and stroked my hair."
+    ri "Okay, one more time."
+    "Now I was starting to get impatient."
+    "I'd be a complete failure of a man if I couldn't figure out how to have sex. Failure was absolutely not an option right now."
+    "I tried to rest my nerves as Haruka tried to lead me in a third time."
+    "Maybe I wasn't pushing myself in far enough on the first try."
+    "Running out of patience and definitely not wanting to screw up again, I pushed myself in as far as I could manage."
+    
+    scene cg harukah4 with dissolve
+    
+    ha "Ah....!"
+    "I felt warmth encapsulate my whole body. I wrapped my arms behind Haruka's head and began to kiss her."
+    "Our tongues softly caressed each other. The comparative ease of kissing filled me with relief."
+    "I held onto Haruka and began to push against her."
+    "Even though the actual movement inside was minimal, I still needed to exert an enormous amount of strength to keep going."
+    "My thigh muscles began to hurt as I pushed myself into Haruka again and again. My chest was beginning feel tight."
+    "I began to breath heavily as we kissed."
+    ri "Ha... ha... Haruka..."
+    "Despite my best efforts, I still fell out and I found myself rubbing against nothing."
+    "Frustrated and overloaded with hormones, I reached down and tried to find Haruka's opening again."
+    "I ran my fingers down between Haruka's legs, but failed to find it in my rush."
+    ri "Where...?"
+    ha "A-ah!"
+    ha "Stop it Riku... or else you're going to touch the other..."
+    ri "O-oh! Sorry..."
+    "I sighed at my own stupidity and just let Haruka handle the rest."
+    ha "Okay... now try."
+    "I pushed myself in, now with a little bit more ease. I was starting to get used to that part, at least."
+    "The pauses when I had to put it back in were completely breaking the momentum though."
+    "Trying to regain the lost time, I leaned down and kissed Haruka as soon as I began to clumsily push against her again."
+    "I ran my hands down Haruka's pretty white skin as our bodies joined."
+    "It took a lot of effort to keep pushing and Haruka's skin was now beginning to get a little sticky with perspiration."
+    "Slowly, I could feel pleasure coming from my pelvis, intermixed with the ache I felt in my thighs as I kept pushing."
+    ha "Ah... Riku....."    
+    "I pushed harder, chasing after the thin trail of pleasure that was beginning to come from within Haruka."
+    "My legs felt as if they were about to snap in half from the incessant pushing, but the pleasure I felt kept me going."
+    "I wrapped my arms around Haruka and embraced her, basking in the soft touch of her body."
+    "Haruka turned her head and nibbled on my ears with her tender lips. A new, relaxing sensation spread from my ears to my head, then to my chest."
+    ri "Haruka...."
+    
+    scene cg harukah3 with dissolve
+    
+    "Just when it felt as if the pleasure was increasing, I fell out again. All of a sudden, the pain in my thighs was unbearable and I collapsed on top of Haruka, completely out of breath."
+    "My chest heaved in and out as I tried to catch my breath. Both our bodies were beginning to get covered with sweat now."
+    ha "Are you okay?"
+    ri "Yeah... it's no problem..."
+    ri "I don't think... this is working out..."
+    ri "Here... let's try a new position. I'll try coming in from the behind this time."
+    "Maybe if we changed our positions, this would be easier."
+    ha "Okay... like this?"
+    "Haruka spun around and stood on the couch on all fours, her behind facing me."
+    ri "Yeah, I think so..."
+    "Now, I needed to figure out what to do myself."
+    "All of a sudden, I realized that I actually had no idea what I was doing."
+    "Compared with the daunting task of doing it from the behind, all of a sudden, the regular position seemed a lot easier."
+    ri "... ... ..."
+    ri "Never mind. Maybe this wasn't a good idea after all..."
+    ha "Uhn... it was a little embarrassing too, standing like that..."
+    "We returned to our regular position. I let Haruka guide me in again."
+    "Trying to return to where we were before as quickly as possible, I pushed myself in and locked our mouths together."
+    "Even if this was turning out to be a lot more difficult than I imagined it would be, there was no way I was going to leave this half finished."
+    "Our tongues met and embraced each other as my hands ran against every part of Haruka's body."
+    
+    scene cg harukah4 with dissolve
+    
+    ha "Ah... ah... ah..."
+    "Haruka closed her eyes as she gasped in ecstasy and wrapped her legs around my waist."
+    "I felt the pleasure build up. With Haruka's legs wrapped around me, it was easier to push without falling out."
+    "Gathering all of my strength, I exerted myself into Haruka, euphoria gathering within me with each thrust."
+    ha "Ah... ah... ah... Riku!"
+    ri "Haruka...!"
+    "Wanting more of the delirious pleasure, I accelerated the pace of my thrusts. I lowered my head and kissed my way down Haruka's neck and her breasts."
+    "It felt as if my thighs were lit on fire and that my lungs would explode, but the pleasure was overwhelming. I pushed harder, feeling the joy intensify."
+    "The joy was beginning to peak... at this rate, I might really-"
+    
+    $ renpy.music.stop(fadeout=1.0)
+    
+    "All of a sudden, I heard the sound of the door opening upstairs."
+    ri "Uck...!"
+    "It felt as if somebody had just punched into my gut and squeezed my internal organs."
+    
+    scene bg livingroomfade with dissolve
+    
+    "I immediately leap off of the coach and grabbed my clothes."
+    ri "Q-quick... hide!"
+    "I heard the sound of Sora walking downstairs."
+    "I put on my underwear and pants double time and leaped up from behind the sofa to face her."
+    
+    show sora casual tanuki irritated with dissolve
+    
+    so "Stupid Riku. You forgot to give me the chopsticks with the udon."
+    ri "O-oh... really?"
+    so "And just what are you doing there half naked?"
+    ri "Err... I just... threw my uniform into the laundry basket. It turns out that something was on it."
+    
+    show sora casual tanuki pout with dissolve
+    
+    so "... ... ..."
+    so "Is that really the truth?"
+    ri "Yeah..... why would I lie to you, Sora?"
+    "Sora eyed me suspiciously and walked towards the living room."
+    so "By the way, where's Haruka-senpai?"
+    ri "S-she went home now."
+    so "Is that so?"
+    "It was obvious Sora was still not entirely believing me."
+    ri "Yeah. Are you... doubting your older brother?"
+    so "Hmmm..."
+    
+    show sora casual tanuki tsundere with dissolve
+    
+    so "Mah, whatever. I'm hungry."
+    
+    hide sora with dissolve
+    
+    "Sora turned around, grabbed a pair of chopsticks from the kitchen, and went back upstairs into her room."
+    "As soon as I heard her door close, I sighed in relief and collapsed onto the sofa."
+    
+    play music "Music/Lullaby_to_the_World.ogg" fadeout 1.5 loop
+    
+    "Haruka stood from where she was hiding and sat next to me."
+    
+    show haruka uniform handraised forcedsmileblush with dissolve
+    
+    ha "That was really close..."
+    ri "If Sora had caught us then, I don't even want to imagine what would have happened..."
+    "We looked at each other, looking thoroughly shaken by the experience, and couldn't help but laugh."
+    "Haruka grabbed the rest of her clothes and put them on."
+    ha "I'm sorry Riku, but I think I should get going now."
+    ri "Uhn... thanks for coming here, Haruka."
+    
+    show haruka uniform handstogether happyreallyblush with dissolve
+    
+    ha "It was... nice."
+    "I was really disappointed that we were interrupted, but it was probably too dangerous to continue now with Sora's suspicion aroused."
+    "It was mostly my fault. If I hadn't wasted so much time trying to figure out what to do, then we would have been able to finish."
+    "I tried my best to swallow my disappointment. We'll just have to continue some other time."
+    "After getting fully dressed again, I walked Haruka to the door."
+    ri "I'll see you Haruka..."
+    
+    show haruka uniform handraised with dissolve
+    
+    ha "Uhn. I'll see you tomorrow."
+    ri "Thanks for coming... I feel better now."
+    
+    show haruka uniform handstogether smile with dissolve
+    
+    ha "Really? That's a relief..."
+    ri "Yeah... you really helped me."
+    ha "Eh-heh... no, no, it was nothing. Then..."
+    "Haruka leaned in and gently kissed me on the cheek."
+    
+    show haruka uniform handstogether embarrassed with dissolve
+    
+    ha "Good night, Riku..."
+    
+    $ renpy.music.stop(fadeout=1.0)
+    window hide dissolve
+    scene bg black with dissolvelong
+    show eyecatchlogo with dissolve
+    $ renpy.pause (4.0)
+    hide eyecatchlogo with dissolve
+    window show dissolve
+    
+    scene bg classroom3 with dissolvelong
+    play music "Music/Heaven.ogg" fadeout 1.5 loop
+    
+    "I went to school again the next day."
+    "Even though I didn't really want to go, the thought of seeing Haruka again encouraged me."
+    "However, when I actually arrived in class and saw Haruka, it was suddenly difficult to talk with her."
+    "A part of me was still in disbelief at what we had done last evening. I guess I just couldn't believe it that we had actually done it."
+    "Just the slightest thought of what we did made my heart start racing and blood to rush to between my legs."
+    "Ugh, now was not the time for that. I needed to focus so that I could talk to Haruka."
+    "Somehow, I was afraid of how she would react to me now."
+    "Finally, lunch period came and I got an opportunity to talk with her."
+    
+    show haruka uniform handsbehind with dissolve
+    
+    ri "Hey Haruka."
+    
+    show haruka uniform handsbehind forcedsmileblush with dissolve
+    
+    ha "Ah, Riku."
+    "... ... ..."
+    "Ah, I wonder what I should say after that?"
+    ri "Do you want to meet some time after school? I'll take you somewhere..."
+    
+    show haruka uniform handstogether sad2 with dissolve
+    
+    ha "A-ah..."
+    ha "I'm really sorry, Riku, but today's just a bit..."
+    ri "I see. You have something else going on?"
+    
+    show haruka uniform concerned with dissolve
+    
+    ha "Uhn.... I'm really sorry."
+    ri "No, no, don't worry about it."
+    "I was disappointed Haruka couldn't meet me, but I brushed it off. It couldn't have been helped that she had other things to do..."
+    
+    show haruka uniform neutral with dissolve
+    
+    ha "Ah, Nona-chan told me earlier that she won't be eating lunch with us today."
+    ri "Really? Then we should go to the cafeteria. I need to buy something to eat."
+    
+    show haruka uniform handraised smile with dissolve
+    
+    ha "Uhn, let's go."
+    "We went to the cafeteria to eat."
+    "In the end, it was just too awkward to talk about what we did yesterday in a public place like that, so we ended up skirting around the topic and having nothing but casual, every day conversation."
+    "Moreover, the two of us were probably too embarrassed to talk to each other about it even if we were alone..."
+    "No matter how you look at it, it was pretty unbelievable, what happened. Haruka and I were probably the last two people on Earth anybody would expect to be doing stuff like that..."
+    "Nothing particularly unusual happened during lunch and we returned to class after."
+    
+    $ renpy.music.stop(fadeout=1.0)
+    scene bg black with dissolve
+    
+    "I thought Haruka would speak to me eventually, but she never did."
+    "I kept asking Haruka out... but she would turn me down every time."
+    "What was going on...? Why was she avoiding me all of a sudden?"
+    "By Friday, my worries were beginning to return, even worse than before."
+    "Maybe she was beginning to change her mind about me..."
+    "Could it be that she thinks that I took things too far? It could be that Haruka was really embarrassed to do something like that... and she's decided to distance herself from me."
+    "Worse, I only had six short days left with her... I couldn't possibly let things end this way."
+    "Getting brushed off by Haruka filled me with heart ache... Added on top of the fact that I was going to leave her in just six days now, it felt as if I was going to really lose my mind."
+    "But... still, I had to wait, just a little bit longer..."
+    "Even if she ignored me, Haruka was my very first girlfriend. I had to..."
+    "I just wanted to be in her arms... It was the only place where..."
+    
+    scene bg rikuroomday3 with dissolve
+    
+    "I woke up on Saturday in a daze."
+    "I wonder... what I should do today?"
+    "Maybe I should try giving Haruka a call..... Maybe... just maybe, she'll agree to see me this time."
+    
+    play sound "Sound/Doorbell.wav"
+    
+    "Just as I was about to reach for my cell phone, I heard the door bell ring."
+    "My hopes immediately rose. Perhaps it was Haruka." 
+    "I rushed downstairs to get it, even though I was still in my pajamas."
+    
+    play music "Music/Fragments_of_Stars.ogg" fadeout 1.5 loop
+    scene bg livingroomfade with dissolve
+    
+    show nonami casual neutral happy with dissolve
+    no "Morning Rii-kun! Uwah, did you just get out of bed? That's some serious bed hair you have there..."
+    ri "Pah, it's only you."
+    
+    show nonami casual armscrossed mad with dissolve
+    
+    no "Oy, what's that supposed to mean!? Arent'cha glad to see your ol' friend Nona-chan!?"
+    ri "Yeah, yeah, I know. Well, come on in."
+    "I let Nonami into my house and walked back upstairs to get washed up and changed."
+    "Nonami shouted at me from down the stairs as I got ready."
+    
+    show nonami casual excited happy with dissolve
+    
+    no "Hey, hey, Rii-kun! It's the weekend!"
+    ri "Yeah, I know it is."
+    no "Let's go out! Just look at the sun and the blue sky! It's all a sign telling us to enjoy the great outdoors!"
+    ri "And freeze our butts off? It's getting really cold now, you know."
+    
+    show nonami casual excited smile with dissolve
+    
+    no "I'm sure it'll be a lot of fun!"
+    "As usual, she wasn't listening to me."
+    "Still, I was happy to hear someone's cheerful voice."
+    "It seemed like Nonami was feeling a lot better now compared to when I last saw her. I was relieved that she returned to being her usual self."
+    "After getting washed up and dressed, I went back downstairs."
+    ri "Still, I guess a little bit of time off can't be too bad."
+    
+    show nonami casual excited happy with dissolve
+    
+    no "Uhn, uhn! You can't take life too seriously, you know."
+    ri "Let's get going then."
+    
+    scene bg mallfade with dissolve
+    
+    "We ended up going to the shopping center."
+    
+    show nonami casual excited happy with dissolve
+    
+    no "Here we are, Rii-kun! Come on, come on, let's go check this place out!"
+    "Before I knew it, Nonami was already running off to a Uniqlo shop."
+    ri "H-hey, wait-"
+    
+    scene bg uniqlo with dissolve
+    
+    "I followed Nonami in, but found her nowhere in sight."
+    "Just where did she go off to..."
+    "All of a sudden, she reappeared with a ridiculous set of sunglasses on her."
+    
+    show nonami casual armscrossed happyshades with dissolve
+    
+    no "How do I look with these?"
+    "Like a walking fashion disaster."
+    
+    show nonami casual armscrossed gloomshades with dissolve
+    
+    no "Uu... not good, huh?"
+    ri "Uhn..."
+    "She ran off and then came back looking even more ludicrous."
+    
+    show nonami casual excited happyhat with dissolve
+    
+    no "Uwahaha! Now what do you think?"
+    ri "Uhhh..."
+    "She was now beginning to look like some sort of alien mutant..."
+    ri "Oy... you're doing this on purpose, aren't you?"
+    
+    show nonami casual armscrossed irritatedhat with dissolve
+    
+    no "Uuu... Hey, you're supposed to be taken by my innocent and playful personality and be overflowing with warm feelings by now!"
+    "I admit it, I couldn't help but smile at Nonami's antics."
+    ri "All right... but you're still totally acting."
+    no "Uwah, Rii-kun's as cold as ever, huh?"
+    ri "Alright, alright. Sorry."
+    
+    show nonami casual armscrossed smilehat with dissolve
+    
+    no "Eh-hehehe... that's what I thought."
+    
+    show nonami casual excited happyhat with dissolve
+    
+    no "Come on, come on, let's take a look around!"
+    "We walked around the shop, checking out the new clothes."
+    "It felt nice to be here with Nonami."
+    "Listening to her cheerful and energetic voice made me, for just a moment, forget that I was going to leave this place forever in just six days."
+    "It let me forget about the troubles with Haruka..."
+    "But I guess it was only for a moment."
+    
+    scene bg mallfade with dissolve
+    
+    "We spent the entire day touring the shopping center. By late afternoon, we were both carrying an overstuffed shopping bag."
+    
+    show nonami casual armsraised smile2 with dissolve
+    
+    no "Eaaahhh... that was fun!"
+    ri "Uhn..."
+    
+    show nonami casual neutral happy with dissolve
+    
+    no "See Rii-kun? I told you that this was a good idea!"
+    "We took a seat on a circular stone bench while waiting for the bus to arrive."
+    
+    show nonami casual armscrossed smile with dissolve
+    
+    no "Hey, hey, we should do this more often."
+    ri "Yeah..."
+    
+    $ renpy.music.stop(fadeout=1.0)
+    show nonami casual armscrossed neutral with dissolve
+    
+    no "After all, Rii-kun's not going to be with us for much longer, huh..."
+    ri "...Yeah."
+    "All of a sudden, mentioning my departure sobered the mood."
+    
+    play music "Music/Disabled_Emotions_Part5.ogg" fadeout 1.5 loop
+    
+    show nonami casual armscrossed sad with dissolve
+    no "I'll... really miss Rii-kun."
+    ri "... ... ..."
+    "The change in atmosphere made all of my worries return to me. Once again, I felt my face harden and my throat constrict."
+    
+    show nonami casual armscrossed sadsmile with dissolve
+    
+    no "But you know, even though there are going to be sad days.... you can't let yourself get down."
+    no "Because then... you'll miss out on all the fun you can be having if you only try."
+    ri "I wish... it was that simple."
+    ri "But you know, the world doesn't work like that."
+    ri "... ... ..."
+    "I could feel myself filling with emotions."
+    ri "All fun memories do... is just make the final departure more painful."
+    ri "Even if I try to make new friends and do fun things... in the end, I just end up losing them again."
+    ri "It's just... unfair, Nonami..."
+    no "But... you just have to keep going forward, Rii-kun. You can't let yourself get-"
+    ri "Look, it's not that easy, okay? Even if I try, there's still so many things that go wrong!"
+    
+    show nonami casual armscrossed sadlookleft with dissolve
+    
+    no "... ... ..."
+    ri "... ... ..."
+    ri "Sorry. I didn't mean to shout."
+    
+    show nonami casual armscrossed sadsmile with dissolve
+    
+    no "Uu-uhn. It's better to let it all out than keep it in."
+    ri "It's just..... I'll be leaving everyone so soon and yet..."
+    ri "Sora's been different lately... she's returning to how she used to be when she first came here."
+    ri "All she does now is just stay in her room... she hasn't been going to school at all..."
+    ri "Not only that... but Haruka..."
+    ri "Things... haven't been going very well with her."
+    
+    show nonami casual armscrossed sad with dissolve
+    
+    no "I see... I'm sorry, Rii-kun."
+    ri "I can't leave here when everything's so broken... but I'm running out of time..."
+    no "I guess I didn't really understand how bad the situation's gotten. Sorry Rii-kun."
+    ri "It's okay... I don't think there's much you can do right now anyways... I don't even know how to fix all of this."
+    no "Do you want me to talk with Haru-chan at least?"
+    ri "Maybe not... it's kind of a personal issue. Sorry."
+    no "Ah, it's okay."
+    "At that moment, the bus arrived. We got off of the bench and walked towards the station."
+    ri "Thanks for taking me out here. I... really needed it."
+    
+    show nonami casual armscrossed sadsmile with dissolve
+    
+    no "Uu-uhn, it was my pleasure."
+    ri "Let's do this again sometime, okay?"
+    no "Uhn."
+    "We got on the bus and made our way back home."
+    
+    scene bg rikuroomnight3 with dissolve
+    play music "Music/Commemoration.ogg" fadeout 1.5 loop
+    
+    "By the time I returned home, it was already dark."
+    "After leaving Sora her dinner in front of her door, I entered my room and sat on my bed."
+    "All I could still think about was Haruka's sudden change in attitude."
+    "I got out my cellphone and made a call to her. Maybe just this once, I could reach her..."
+    
+    play sound "Sound/Dial.wav"
+    
+    ri "Hello? Haruka?"
+    ha "Riku?"
+    ri "Hey... we haven't talked in awhile..."
+    ha "I'm really sorry Riku... It's just that I've been really busy lately..."
+    ri "I see..."
+    ha "Uhn..."
+    ri "Did something come up? Is it a big problem, like some family issue or something like that?"
+    ha "Uu-uhn, it's not something like that."
+    ri "Then just what's wrong?"
+    ha "Sorry Riku, but I can't talk about it right now... I'm really sorry."
+    ri "It's just... it feels as if you've been brushing me off lately..."
+    ha "I..."
+    "I sighed in frustration. I was beginning to feel exasperated by Haruka's inability to say anything."
+    ri "Hey, tell me, just who am I to you?"
+    ha "R-Riku?"
+    ri "Yeah."
+    ha "Riku's my... boyfriend, of course... the most important person in my life."
+    ri "Is that... really true?"
+    ha "Riku... you have to believe me... I..."
+    ri "You know, if I've done something wrong, you can just tell me. Why are you suddenly avoiding me so much?"
+    ha "I... I..."
+    ri "Don't I at least mean something to you? I'm going to leave in just five days now, you know."
+    "I heard Haruka's voice crack on the other side."
+    "My grip on my cell tightened."
+    "This wasn't how I wanted this conversation to go... I hadn't meant to make Haruka upset."
+    ha "I'm sorry."
+    ri "... ... ..."
+    ri "Sorry. I don't want to talk any more. Good night."
+    ha "Good night, Riku. I'm sorry."
+    ri "Sorry."
+    "With that, I hung up. I dropped my cell phone to the ground, stunned at the mess I just made, and buried my face into my bed."
+    "What a disaster. I must have been a complete fool to have screwed that up so badly."
+    "I had only wanted to hear the sound of Haruka's voice again..."
+    "That soft, soothing voice that told me everything was going to be all right..."
+    "But instead... I only made her upset..."
+    "I wonder if she was crying because of me right now."
+    "I raised my fist and pounded my bed. Why was all of this happening?"
+    "Why couldn't I have been just some regular guy who didn't have to deal with moving every other year of his life?"
+    "If only I had been allowed to just live in one, regular home... with a mother, a father, and a younger sister..."
+    "Then... who knew how happy I would be?"
+    "I knew for certain that I would be a lot more happier than I was now."
+    "I numbly undressed and went to take a shower."
+    "After getting washed, I collapsed onto my bed."
+    "Maybe at least in my dreams, I would be able to live in the home that I never had."
+    
+    scene bg black with dissolve
+    
+    "I dazed uncomfortably in between sleep and consciousness for the rest of the night."
+    
+    scene bg rikuroomday3 with dissolve
+    
+    "I woke up early the next day, but couldn't find the will to get out of bed."
+    "By the time I felt like doing anything, it was already past noon."
+    "I numbly reached for my cell phone and opened it."
+    "Maybe I should call somebody..."
+    "I definitely couldn't call Haruka again after what had happened last night, and I already knew Sora was in a bad mood."
+    "By elimination, I guess that only left Nonami."
+    "I tried giving her a call."
+    
+    $ renpy.music.stop(fadeout=1.0)
+    play sound "Sound/Dial.wav"
+    
+    ri "Nonami?"
+    no "Hey Rii-kun, what's up?"
+    ri "Nothing much... How about you?"
+    no "Mmm... I'm not really doing anything right now either."
+    ri "Hey... how about I take up your offer for hanging out again?"
+    no "Really? Sure thing."
+    ri "Where do you want to go?"
+    no "Oh! That reminds me, I got a pair of coupons for the amusement park."
+    "Amusement park, huh..."
+    "It seemed like hardly the place to go in this kind of situation. But I really needed to take my mind off things."
+    "There wasn't going to be many days I could spend with Nonami, so I needed to take this chance."
+    ri "The amusement park? Sure, let's go."
+    no "Uhn, how about we meet in front of the train station in an hour?"
+    ri "Okay, I'll see you then."
+    no "Uhn, uhn, I'll see you, Rii-kun!"
+    "I hung up, feeling a little bit revitalized after hearing Nonami's cheerful voice."
+    "Maybe today, I'll be able to forget about leaving for just a little bit, like last time."
+    "At this point, I would give anything to distract myself from the coming separation."
+    "I got off of my bed and got ready to meet Nonami."
+    
+    play music "Music/Fragments_of_Stars.ogg" fadeout 1.5 loop
+    scene bg amusementpark with dissolve
+    
+    "Later that day, we arrived at the amusement park."
+    
+    show nonami casual neutral happy with dissolve
+    
+    no "Eh-heh... it feels like it's been forever since we've come here."
+    ri "It's been more like ten years, hasn't I?"
+    
+    show nonami casual neutral surprise with dissolve
+    
+    no "Uhn. Uwah, I can't believe so much time's passed since then!"
+    ri "This place looks really different now. When I was a kid, all of the rides looked so big."
+    
+    show nonami casual armscrossed smile2 with dissolve
+    
+    no "Ehehehe... I can still remember that one time you cried on the swinging ship."
+    ri "H-hey... that was a long time ago, okay?"
+    no "\"Stop the riiiddeee! Stop the rriiiiddeee!!\" Ahahahaha!"
+    ri "I totally did not scream that!"
+    
+    show nonami casual armscrossed confident with dissolve
+    
+    no "U-fufufu... so are you telling me that you can handle your rides now?"
+    ri "Yes, I can, as a matter of fact. In America, there are a lot of fast and scary roller coasters, you know! Haven't you ever heard of the Millennium Force?"
+    
+    show nonami casual neutral baffled with dissolve
+    
+    no "The what?"
+    ri "Only the fastest and the scariest ride ever built! Not only that, but there's the Beast and the Hulk."
+    
+    show nonami casual armscrossed smile with dissolve
+    
+    no "Eeeehhh... Rii-kun's become quite the amusement park expert, huh?"
+    "Not really, I just happened to see a special about roller coasters on the travel channel while I was in America."
+    ri "Of course! So a silly ride like the swinging ship won't even faze me."
+    
+    show nonami casual excited happy with dissolve
+    
+    no "Then... let's try that out!"
+    "Nonami pointed to the tallest tower ride in the entire park."
+    "I arched my neck to see the riders being lifted up the tower. They were so high that I could just barely make out their bodies."
+    "They seemed to keep getting smaller and smaller... until they finally reached the very top."
+    "They just hung there for what seemed like eternity... and then suddenly, without warning, they were dropped the entire length of the tower."
+    
+    show nonami casual armscrossed smile2 with dissolve
+    
+    no "Something like that should be a piece of cake for Rii-kun, huh?"
+    ri "Uuhhh... O-o-of course it is!"
+    "Actually, I could already feel my legs shaking."
+    
+    show nonami casual excited happy with dissolve
+    
+    no "Uwahahaha! Let's go, let's go!"
+    
+    scene bg towerdrop with dissolve
+    
+    "Nonami marched off enthusiastically towards the beginning of the line. Not wanting to fail to live up to her expectations, I tagged along."
+    
+    show nonami casual armsraised smile2 with dissolve
+    
+    no "Eaahh, it sure is great coming here with Rii-kun! Haru-chan can't handle thrill rides at all, so all we can do is ride the merry-go-around and play mini-golf."
+    ri "Y-yeah..."
+    "I wasn't really listening to Nonami any more. Instead, I was looking up the tower and... appreciating its formidable height."
+    "I saw another group of victims, errr riders, reach the top. I waited for the drop with abated breath."
+    "At last, the moment came. The rider platform plummeted to the ground, bringing the riders hurtling back towards the earth."
+    "At the last second, the ride's brakes applied, slowing down their descent."
+    "All of a sudden, I felt a tidal wave of wind hit me, ruffling my hair. It must have been because of the amount of air displaced by the falling platform. Did they seriously fall that fast!?"
+    "Not good. Not good at all."
+    ri "H-hey... Nonami...."
+    
+    show nonami casual neutral smile with dissolve
+    
+    no "Uhn, what's up Rii-kun?"
+    ri "M-maybe we should ride something else first..."
+    
+    show nonami casual armscrossed smilesweatdrop with dissolve
+    
+    no "Eh-heh... about that."
+    "Nonami pointed behind me."
+    "Ah great. An enormous line had already formed behind us, blocking off any possibility for escape."
+    "I hung my head and accepted the inevitable."
+    
+    play music "Music/Investigations.ogg" fadeout 1.5 loop
+    
+    "Before I knew it, our turn finally arrived."
+    
+    hide nonami with dissolve
+    
+    "I locked myself into my seat, looking slightly pale."
+    ri "H-hey Nonami, this isn't dangerous, isn't it?"
+    "I could hear Nonami talking in the seat beside me."
+    no "Dangerous?"
+    ri "L-like... nobody's died on this ride, right?"
+    no "Mmmmmm... actually, now that I think about it, I do recall hearing on the news once about some person who died while on an amusement park ride..."
+    ri "Seriously!?"
+    no "Eh-heh, don't worry, don't worry! I don't think it was this ride or even at this park."
+    ri "Uuuu..."
+    "That still totally didn't reassure me at all."
+    
+    scene bg towersky with dissolve:
+        yalign 1.0
+        linear 45.0 yalign 0.0
+    
+    "All of a sudden, the platform lurched and we started going up."
+    ri "Oooooooohhh boy..."
+    no "Ehehehe..."
+    "Beside me, Nonami cheerfully waved her legs underneath her. She was way too relaxed for this kind of situation!"
+    "We kept going up, with no end in sight."
+    ri "... ... ..."
+    "Further... further..."
+    no "We're up pretty high now, huh Rii-kun?"
+    ri "Yeah... pretty... high."
+    "I looked down and immediately got dizzy. The people below me looked like a bunch of dots that walked around the ground."
+    "It felt like we were already at least 500 meters in the air..."
+    "To my disbelief, we just kept going higher and higher... All of a sudden, I was filled with a new terror that the ride had malfunctioned and that pretty soon, we were going to fall off the top of the tower."
+    ri "J-just when does this thing stop!?"
+    no "Mmm... I think we're about halfway there."
+    ri "H-halfway!?"
+    "I felt like I was about to faint."
+    no "Eh-heh. Just kiddin'! I think we're almost at the top now."
+    ri "Ugggh..."
+    
+    scene bg towersky with dissolve:
+        yalign 0.0
+    
+    "All of a sudden, the platform stopped."
+    ri "Oh no. Oh no. We're at the top now, aren't we?"
+    no "I guess so!"
+    ri "And now... we're gonna..."
+    "I couldn't even bare to look down."
+    no "Don't worry, don't worry! It'll be fun!"
+    ri "Uwaaa....."
+    "The wait was now killing me... At any moment... we cou-"
+    
+    play music "Music/Gold_Rush.ogg" fadeout 1.5 loop
+    scene bg towersky with dissolve:
+        yalign 0.0
+        linear 5.0 yalign 1.0
+    
+    "All of a sudden, the platform plummeted back towards the Earth."
+    "The sound of the wind rushing past my ears was deafening."
+    ri "UUUWAAAAAAAAAAAAAHHHHHHHHHHHHHHHH!!!!!!!!!!!!!!!"
+    "The ground came flying upwards to meet me. Just when it felt like I was about to hit the ground, the ride decelerated and came to a stop."
+    
+    scene bg towerdrop with dissolve
+    
+    ri "Oh... oh...! Oh...!!"
+    ri "Whooooo!"
+    no "Ehehehehe... See? Told you it was fun!"
+    "I couldn't believe that I actually survived that. The thought of having braved the fearsome tower filled me with exhilaration."
+    ri "That was crazy!"
+    "Soon, we were back on terra firma. Our safety restraints rose and people started to disembark."
+    "I unbuckled my seat belt and walked towards the exit with Nonami."
+    ri "I can't believe we actually did that! We were going up forever!"
+    
+    show nonami casual armsraised smile2 with dissolve
+    
+    no "Ehehehe..."
+    ri "That was amazing!"
+    
+    play music "Music/Radio_Martini.ogg" fadeout 1.5 loop
+    scene bg amusementpark2 with dissolve
+    show nonami casual excited happy with dissolve
+    
+    no "Now Rii-kun should decide what to ride!"
+    ri "Really?"
+    
+    show nonami casual neutral smile with dissolve
+    
+    no "Uhn."
+    ri "Then, let's try the inverter."
+    
+    show nonami casual excited happy with dissolve
+    
+    no "Oh! Good choice!"
+    
+    scene bg black with screenwipe
+    scene bg amusementpark2 with screenwipe
+    show nonami casual neutral with dissolve
+    
+    "We rode many rides after that and had a fun afternoon at the amusement park."
+    "Before we knew it, the sun was coming down and it was almost time to leave."
+    "I was disappointed that the day was already coming to an end. I guess now I would have to return to reality..."
+    ri "I guess it's almost time to leave, huh."
+    
+    show nonami casual armscrossed smile with dissolve
+    
+    no "Uhn. I had a lot of fun today, Rii-kun."
+    ri "Yeah, same here."
+    
+    play music "Music/Heaven.ogg" fadeout 1.5 loop
+    scene bg amusementpark with dissolve
+    
+    "We started walking back towards the exit."
+    "I didn't want to leave this place. It felt like a small sanctuary where I could be protected from the sadness."
+    "If only I could somehow slow down time... and just extend the time it would take to walk out by just a second..."
+    "All of a sudden, I heard Nonami's voice."
+    
+    show nonami casual neutral smile with dissolve
+    
+    no "Say Rii-kun, do you want to ride that before we leave?"
+    
+    scene bg ferriswheel with dissolve
+    
+    "She pointed to the ferris wheel."
+    no "I heard that the night view from the top was really nice."
+    "Wanting to take any opportunity to delay our departure, I nodded my head immediately."
+    ri "Yeah... let's ride that."
+    
+    scene bg ferriswheelfront with dissolve
+    show nonami casual neutral with dissolve
+    
+    "We took a detour and joined the line for the ferris wheel."
+    
+    play music "Music/My_Love.ogg" fadeout 1.5 loop    
+    scene cg nonamiferriswheel with dissolve
+    
+    "After a little bit of waiting, we entered our carriage."
+    "I looked out the window, glad to take any chance to extend the time that I could spend with Nonami."
+    no "Today was really fun, huh, Rii-kun?"
+    ri "Yeah."
+    no "It's too bad we won't be able to do it again..."
+    ri "Yeah..."
+    "We were beginning to be high enough to see the city now. The setting sun had disappeared behind the mountains, dabbing the city with a faint, pink glow."
+    "On the opposite side of the sun, the first evening stars could be seen on the approaching night sky."
+    
+    scene cg nonamiferriswheel2 with dissolve
+    
+    no "I'll... really miss Rii-kun."
+    ri "... ... ..."
+    no "Hey, do you remember how we first met?"
+    ri "Uhn, of course I still remember."
+    no "We were looking at the city like this that day, weren't we?"
+    no "It's been so long since then... and so many things have happened..."
+    no "It really isn't fair, huh. Why couldn't you have just stayed with us? That way..."
+    ri "Sorry... I wish I could have. With all of my heart."
+    no "...stupid Rii-kun..."
+    no "...if you say stuff like that..."
+    
+    scene cg nonamiferriswheel3 with dissolve
+    $ renpy.music.stop(fadeout=3.0)
+    
+    "I went over to Nonami's side and put my hand on her on the shoulder."
+    ri "It's true..... the days I spent here with you were the happiest times of my life."
+    ri "For the first time in my life... I had an old friend like you at my side."
+    no "Rii-kun's really... kind, huh?"
+    "We reached the top of the wheel's rotation. The glittering city was now fully visible out the window."
+    ri "It's... pretty."
+    no "Uhn. Really pretty."
+    "I felt Nonami wrap her fingers around my hand."
+    no "Hey... Rii-kun..."
+    "She slowly leaned forward to me, her eyes gently closed, her lips slightly parted."
+    no "Why... are you here with me?"
+    ri "... ... ..."
+    no "Aren't you supposed to be doing these things with Haru-chan...?"
+    no "Shopping together... going to amusement parts... riding the ferris wheel..."
+    ri "... ... ..."
+    ri "She's..."
+    no "Hey..."
+    no "Kiss me, Rii-kun."
+    
+    play music "Music/Disabled_Emotions_Part6.ogg" fadeout 1.5 loop
+    scene cg nonamiferriswheel4 with dissolve
+    
+    "My heart began to pound as I reached for Nonami's pink lips."
+    "It wasn't like they said it would be."
+    "I didn't see any last minute visions of Haruka, warning me to stop... I couldn't turn away at the last second, imagining how devastated she would be when she found out..."
+    "I closed my eyes and slightly parted my lips."
+    "There was no last second save. No interruption that would somehow stop us."
+    "Our mouths met, filling me with the sweet touch of Nonami's tender lips."
+    "And so... this was how I cheated on my first girlfriend."
+    "I had heard stories of other boyfriends who had cheated..."
+    "They always sounded like cold, unfeeling monsters, who took advantage of innocent and trusting girlfriends for their own ends."
+    "I had always sworn that I couldn't possibly become one of them."
+    "Besides, such a thing seemed so... impossible. For most of my life, I hadn't even been able to kiss a single girl... The mere notion that I would be able to kiss two seemed so implausible."
+    "And yet... as I kissed Nonami..."
+    "I realized how easy it was."
+    "There was no nefarious plan to take advantage of as many girls as I wanted. No scheme, no evil smiles, no need to be the grand puppet master..."
+    "All I had to do was kiss."
+    ri "Nonami..."
+    no "I'm sorry, Rii-kun."
+    ri "Uu-uhn."
+    ri "I was... happy today..."
+    ri "For the first time in a long while."
+    ri "So... you don't have to say \"sorry.\""
+    
+    scene cg nonamiferriswheel3 with dissolve
+    
+    "For the first time I had met her, Nonami spoke not a word as we watched the evening cityscape, our hands intertwined."
+    "Soon, the ride ended and we left our carriage."
+    
+    $ renpy.music.stop(fadeout=2.0)
+    
+    "We made our way to the exit without saying a word."
+    
+    scene bg black with dissolvelong
+    scene bg rikuroomceiling with dissolvelong
+    play music "Music/Longing.ogg" fadeout 1.5 loop
+    
+    "That night, I collapsed into my bed, once again stunned by what had occurred."
+    "There must... be some way I could stop this. If things carried on like this... I knew that I was headed for disaster."
+    "I had to call Haruka... Even after what happened last night... I needed to somehow tell her about today."
+    
+    play sound "Sound/Dial.wav"
+    
+    "I opened my cell phone and dialed her number."
+    ha "Hello."
+    ri "Haruka-"
+    ha "I'm sorry, but I'm not available to talk right now. Please leave a message after the tone. Thank-you."
+    "I hung up and dropped my cell to the ground. So she wasn't there..."
+    "Could she have... abandoned me?"
+    "All of a sudden, I could feel resentment creep into my mind."
+    "Just where was she? If only she had cared enough about me to just see me... then today wouldn't even have happened."
+    "It wasn't as if I didn't try to let her know that I wanted to see her... In fact, I've asked her out so many times already, but every single time, she's turned me down."
+    "If this continued... maybe Haruka will ignore me until I leave Japan."
+    "Did our time together mean so little to her?"
+    "Why could she possibly be acting this way...? Why was she... so cold to me now?"
+    "I looked down at my hands. Just a few days ago, these hands had touched..."
+    "Was it... because of that? Was she ashamed?"
+    "After having exposed so much of her naked flesh to me, was she too embarrassed to continue to see me?"
+    "I stuffed my face into my pillow."
+    "Nonami wasn't like that."
+    "She'd never suddenly stop seeing me without telling me what I've done wrong..."
+    "I should have known... Haruka was just too reserved to make a good girlfriend."
+    "I needed somebody like Nonami, who could be honest about her feelings."
+    "Under any other circumstances, I could have forgiven Haruka... I could have waited an entire month for her to gather the strength to see me again..."
+    "Not only that, but I would have taken things much more slowly..."
+    "If only I wasn't moving... then I wouldn't have invited Haruka into my house and we wouldn't even have slept together."
+    "Honestly... something like that came later in a relationship."
+    "But... I couldn't escape the truth that I was going to leave this place in less than a week now."
+    "Why... couldn't Haruka understand that? It's not like I wanted to rush anything either. I could have given her all the time in the world to decide her feelings."
+    "It's just that I didn't have that luxury of time right now! If Haruka didn't understand that and kept ignoring me..."
+    "Then... how could I bear leaving my home alone...?"
+    "I couldn't... let that happen."
+    "I..."
+    "wasn't....."
+    "going to be a victim again."
+    
+    $ renpy.music.stop(fadeout=1.5)
+    scene bg black with dissolvelong
+    scene bg classroom3 with dissolvelong
+    
+    "The next day, I daydreamed through all of my classes."
+    "I didn't see Haruka during lunch period. As usual, she must be avoiding me."
+    
+    scene bg hallwayfade with dissolve
+    
+    "After what felt like a painful eternity, classes were finally over. As I walked out of my class, I saw Nonami waiting for me outside."
+    
+    show nonami uniform greet smile with dissolve
+    
+    no "Hey, Rii-kun."
+    ri "Hey, Nonami."
+    
+    show nonami uniform neutral with dissolve
+    
+    no "Let's walk together for a bit, okay?"
+    ri "Okay."
+    
+    scene bg schoolbackfade with dissolve
+    
+    "I followed Nonami out of the school and to a secluded area behind the storage shed."
+    "As soon as we disappeared behind the shadow of the wooden shed, Nonami tightly wrapped her arms around me."
+    
+    play music "Music/Sad_Farewell.ogg" fadeout 1.5 loop    
+    
+    "I heard her choke with sorrow. Upon seeing her tears, I stiffly placed my arms around her, at a loss as to what to do."
+    ri "Shhh... Nonami... it's okay..."
+    
+    show nonami uniform neutral sadcry with dissolve
+    
+    no "I... I... thought... I wouldn't..."
+    "I held onto Nonami and sat her down against the shed."
+    ri "You can tell me everything... just don't cry..."
+    
+    show nonami uniform neutral sadcryclosedeyes with dissolve
+    
+    no "Sorry, Rii-kun..."
+    ri "I just don't want... my Nonami to cry..."
+    no "I'm sorry..."
+    
+    show nonami uniform neutral sadcry with dissolve
+    
+    no "After what happened yesterday..."
+    no "I was thinking all night..."
+    no "I... I... thought... I could just... be with Rii-kun from afar..."
+    no "That... even if... he dated Haru-chan... it would be okay... as long as I could be with him..."
+    no "B-because... Haru-chan was... my best friend... I couldn't possibly..."
+    "Nonami looked down and sobbed. I wrapped my arms around her and stroked her head."
+    no "I couldn't... possibly... take Rii-kun away from her..."
+    no "Even if... I've liked Rii-kun... ever since... much, much longer than Haru-chan..."
+    no "But... that was all before... Before I knew Rii-kun would be gone from me again..."
+    no "I kept thinking to myself... that if I only tried... happier days would come..."
+    no "That I couldn't get down... because then... because then..."
+    
+    show nonami uniform neutral sadcryclosedeyes with dissolve
+    
+    no "Because then........"
+    ri "I'm sorry Nonami...... I was a complete fool..."
+    ri "Going out with Haruka... asking her out for the dance..."
+    ri "When I had you by my side all this time...!"
+    "I felt tears running down my eyes now. We sobbed together and embraced."
+    
+    show nonami uniform neutral sadcry with dissolve
+    
+    no "It's all too sad..... I thought... I thought Rii-kun would be with me forever..."
+    no "That... even if he was going out with Haru-chan, we'd still be able to see each other every day and laugh together..."
+    ri "I'm sorry... I... really was... stupid."
+    ri "I should... just have spent all of my time with Nonami... because you're the only one who cares about me in the end..."
+    ri "Thank-you, Nonami... for loving a fool like me."
+    "Our lips met, filling our mouths with the saline taste of our tears. Gradually, the acrid taste dissolved and all we could feel was the supple touch of our tongues."
+    "We separated, gasping for air."
+    "For a while, we sat there, on that late autumn afternoon, watching our breaths condense in the cold air."
+    
+    show snow1 behind nonami
+    show snow2 behind nonami
+    show snow3 behind nonami
+    show snow4
+    
+    "All of a sudden, a white snowflake fell from the sky."
+    
+    show nonami uniform neutral sadcrysmile with dissolve
+    
+    no "...look Rii-kun..."
+    no "It's snowing."
+    ri "Yeah..."
+    "Soon, more clumps of frozen ice particles fluttered down from the grey sky, enveloping us in a net of falling snowflakes."
+    
+    show nonami uniform armscrossed sadcrysmile with dissolve
+    
+    no "I'm... cold."
+    ri "Here..."
+    "I took off my coat and put it on Nonami."
+    no "Thanks..."
+    ri "Come on... let's go somewhere warmer."
+    
+    show nonami uniform armscrossed sadsmileclosedeyes with dissolve
+    
+    no "Take me somewhere far away... where we can be together... Just us two."
+    ri "All right..."
+    "I helped Nonami up and walked to the bus station with her."
+    
+    play music "Music/Disabled_Emotions_Part6.ogg" fadeout 1.5 loop
+    scene bg citynight
+    show snow1s behind nonami
+    show snow2s behind nonami
+    show snow3s behind nonami
+    show snow4s
+    with dissolve
+    show nonami uniform armscrossed saddead with dissolve
+    
+    "We arrived at the city center by evening time."
+    "I stopped at a small outdoor clothing vendor and bought a scarf, the snow still falling all around us."
+    ri "Here Nonami..."
+    "I wrapped it around her neck."
+    ri "Are you feeling better?"
+    
+    show nonami uniform armscrossed sadsmiledead with dissolve
+    
+    no "Uhn, thanks Rii-kun."
+    ri "It's no problem."
+    "The colourful city lights illuminated the snow as it fell from the night sky, filling the city plaza with an ethereal atmosphere."
+    "Leaning against each other, we walked through the street, our hands intertwined."
+    "As we walked by a motel, Nonami whispered softly into my ears."
+    no "Rii-kun, I'm cold. Let's go inside."
+    "I looked at the small motel. Somewhere in my mind, I knew I shouldn't go in there with Nonami."
+    "If we went in there... I knew I would cross a line from which I could never return."
+    "Every single time I would look into the mirror, I would be seeing the face of an adulterer."
+    "But... tonight, I felt distant from that part of my mind."
+    ri "All right..."
+    "Haruka had abandoned me, hadn't she?"
+    "Nonami was the only person who stood by me to the very end."
+    "I thought... for certain that Haruka would always be here for me... but just one look at the past week told me otherwise."
+    "How could she have possibly left me when I needed her most?"
+    no "Here, I have some money..."
+    "Nonami handed me some bills. With this, we should be able to buy a room."
+    "I stepped towards the motel, my arms wrapped around Nonami."
+    "Just what did it matter anyways..."
+    "In just... five days, I would never see either Nonami or Haruka ever again..."
+    "So... I was going to do this..."
+    "I longed to believe that I wasn't alone. That there was somebody in this world who cared for me."
+    "Lost in sorrow... confused by the uncertainty of the future..."
+    "I longed to feel the warm comfort of Nonami's embrace... even if it was only for tonight... even if I had to betray every shred of humanity I had within me..."
+    "Because it was only in her arms where I could feel safe."
+    
+    scene bg motel with dissolve
+    show nonami uniform armscrossed saddead with dissolve
+    
+    "I locked the door behind us as we entered our room."
+    "Nonami unwrapped her scarf and took off my coat as I turned on the heater."
+    ri "Are you okay? Do you want to take a shower?"
+    
+    show nonami uniform neutral sadsmiledead with dissolve
+    
+    no "Uu-uhn. It's fine now."
+    "While I was busy with the thermostat, I felt Nonami's weight against my back. She wrapped her arms around me and sweetly rubbed her palms against my chest."
+    "Her flagrance drowned out whatever reservation I had remaining. I turned around and locked our mouths together, our arms bound to each other."
+    "Distantly, I saw myself wandering towards the bed."
+    "Should I be doing this? What was happening here?"
+    "Those thoughts were not on my mind as I lost myself in the tender sensation of Nonami's lips and crashed on top of her upon reaching the bed."
+    
+    scene cg harukahnonami1 with dissolve
+    
+    no "Hey Rii-kun..."
+    "Nonami wrapped her fingers around my wrist."
+    "She lifted my hand and placed them over her chest."    
+    no "Feel my heart... it's going \"doki doki doki.\""
+    "She was right. I could feel Nonami's heart softly pulsating against the palm of my hand."
+    no "It's because I'm so nervous..."
+    "I gently caressed her breasts, running my fingers along her wool vest."
+    no "Ah..."
+    no "I... really love Rii-kun, you know... Enough to even betray my best friend..."
+    no "But... it's still scary..."
+    ri "Haruka's already left me. I don't even think she cares about me any more."
+    no "Uu-uhn... that's not true..."
+    no "Haru-chan... really does still care..."
+    no "She may not look like it... but I'm sure she's still worried about you..."
+    "Trying to get a closer feel, I reached into Nonami's vest. The warmth of her body heat soothed my hand as I rubbed against her thin shirt."
+    ri "Shhh... You don't need to worry."
+    "We bent in and locked our mouths together."
+    no "Mmmm...!"
+    "Nonami gasped for air as we separated."
+    no "I can't control myself anymore Rii-kun... I have to..."
+    "Nonami quickly grabbed onto my vest and unbuttoned my shirt in a rush."
+    no "Ah..."
+    "I raised my arms and let her take off my vest. She undid my tie in a panic and almost tore my shirt off."
+    "Nonami ran her palms against my bare chest and kissed every inch of my skin."
+    ri "A-ah... Nonami..."
+    "I dug my hands into her hair as she stroked my nipple with her tongue. She traveled up my neck, my chin, and finally to my lips, kissing me every step of the way."
+    no "Uynn... Rii-kun...! Rii-kun...! I can't... hold it in..."
+    "Nonami grabbed my hand and led it inside of her skirt."
+    
+    scene cg harukahnonami2 with dissolve
+    
+    "I reached inside of her underwear and slipped my finger into her slippery entrance."
+    no "Ah... Rii-kun..."
+    no "I was... I was... really jealous."
+    no "That Haruka took my precious Rii-kun away from me... Ah..!"
+    no "But... as I thought... it really was too hard... hiding it... It only made it... mmm! So much worse!"
+    no "Hah... hah... Rii-kun..."
+    "Nonami reached up and kissed my chest, lapping my nipple up like a puppy drinking out of a bowl of water."
+    "I made Nonami raise her arms and pulled off her vest and shirt."
+    
+    scene cg harukahnonami3 with dissolve
+    
+    "Finding her bra strap, I undid it and cupped her bear breasts inside my hands."
+    no "I'm... despicable..."
+    no "Come on, Rii-kun... Hurry up...!"
+    no "I can't take it any more!"
+    "With trembling fingers, Nonami reached for my pants and undid my belt."
+    no "Ruin me! Go ahead... faster!"    
+    "I undid my pants and pushed Nonami down onto the bed."
+    "She pulled off her underwear and divided her legs, exposing herself to me."
+    no "Screw me Rii-kun... hurry up..."
+    ri "I... should have known..."
+    ri "I was... too happy here... The time I spent with everyone... were the best moments of my life."
+    "It truly... had felt as if I had accidentally wandered into paradise."
+    ri "I should have known that it all be taken from me..."
+    
+    play music "Music/Disabled_Emotions_Part5.ogg" fadeout 1.5 loop
+    scene cg harukahnonami5 with dissolve
+    
+    no "I... give up..."
+    no "I'm sorry Rii-kun... I was wrong about everything."
+    no"There actually is no better tomorrow waiting for us."
+    no "All the next sunrise will bring is another day of suffering."
+    no "With this... we'll destroy all the happy days we've had with our own hands..."
+    no "The days... when we laughed together."
+    no "The days... when we thought we'd be together forever."
+    no "It's too painful..... the happy memories of those days..."
+    
+    scene cg harukahnonami6 with dissolve
+    
+    no "So destroy them all with me!!! Come on!!!!"
+    "Nonami wrapped her arms around me and forced her tongue into my throat."
+    no "Hah... hah... fuck me. Shatter all your memories and leave this place as if you've never met me or Haruka..."
+    no "Don't you regret it all!? Then just screw us both then leave as if nothing matters!"
+    ri "... ... ..."
+    "Upon seeing Nonami's tears, I suddenly felt remorse."
+    "What was I... doing? Were those tears my fault...?"
+    "... ... ..."
+    "No matter how hopeless... No matter how sad..."
+    "I couldn't do this..... Not while she was crying.... Not while she was looking at me like that....."
+    ri "Stop it Nonami..."
+    no "You coward!! I SAID FUCK ME!!!"
+    ri "Stop it!"
+    "I reached down and embraced Nonami."    
+    ri "I... can't...!"
+    ri "The Nonami I know would never say things like that..."
+    ri "She'd... never lose hope like this..."
+    no "... ... ..."
+    ri "I forgot..."
+    ri "Even if it hurts so much......"
+    ri "I still love you... I still love everyone."
+    ri "Our happy memories..."
+    ri "Even if hurts to leave them behind..."
+    ri "I can't destroy them...."
+    "I felt tears running down my cheeks."
+    "My knees gave out and I sobbed into Nonami's chest."
+    ri "You can't be so down, Nonami......."
+    ri "....because then, you miss out on all the fun you can have tomorrow."
+    no "... ... ..."
+    "That's right..."
+    "Even though it was horrible... even if I was abandoned..."
+    "In the end, what I was doing was hurting Nonami..."
+    "I... couldn't do that... No matter what happened...."
+    "Slowly, I felt my senses return to me."
+    "Nonami's face tightened. She raised her finger to her eyes and wiped away a tear."
+    no "Rii-kun..."
+    
+    scene cg harukahnonami7 with dissolve
+    
+    "I picked myself off of her and put a blanket on top of Nonami."
+    no "I..."
+    "Nonami wrapped her arms around me and sobbed."
+    no "...I'm so... sorry..."
+    "I felt her shoulders heave as we both cried together."
+    "Upon realizing what we were about to do, all we could do was cry."
+    
+    scene cg harukahnonami8 with dissolve
+    
+    no "I was... so sad... I couldn't control myself."
+    ri "Me too..."
+    no "Thank-you, Rii-kun... for loving me."
+    no "But from now on... we... can't....."
+    ri "I understand..."
+    no "I'm sorry..."
+    ri "Uu-uhn..."
+    ri "We need to.... we need to... tell Haruka..."
+    no "Uhn..."
+    "We sobbed together for what seemed like an eternity..."
+    "...Until we had absolutely nothing left in us and we collapsed on the bed."
+    "I dully looked out the window as I laid in the bed, Nonami at my side."
+    "The snow was falling."
+    "The world was freezing over... I wonder if... tomorrow, everything will be white."
+    
+    scene cg harukahnonami9 with dissolvelong
+    
+    "Slowly, I felt sleep come. I closed my eyes..."
+    ri "Nonami...?"
+    no "Mmm?"
+    ri "I don't regret having met you."
+    no "... ... ..."
+    no "Me neither, Rii-kun."
+    "I lost consciousness and fell asleep sprawled out on the bed."
+	
+</pre>

@@ -1,0 +1,84 @@
+[[Категория:Переводы]]
+{{Рамка|text=[[Файл:Homeward_art.png|right]]
+<poem>
+'''Название:''' Дорога домой (?)
+'''Исходное название:''' Homeward
+'''Жанр:''' Романтика, повседневность
+'''Возрастной рейтинг:''' <font color=#FF0000>18+</font>
+'''Продолжительность:''' Малая (2 - 10 часов)
+[http://vndb.org/v7536 '''Страница на vndb.org'''] {{VNDB}}
+'''Направление перевода:''' {{ENG}} → {{RUS}}
+
+'''Описание:'''
+Рик, сын дипломата, покинувшего Японию несколько лет назад, живёт в Соединённых Штатах. Неожиданная болезнь матери, заставила Рика и его отца вернуться в Японию чтобы позаботиться о младшей сестре, которую он совсем не помнит, и закончить старшую школу, в том самом городе, где он встретил свою первую подругу, когда был ещё ребёнком...
+
+
+
+----
+*'''<u>Участники</u>'''
+**'''Перевод:''' Jack, ‎Haru-chan
+**'''Редактура:''' ikaR
+**'''Графика:''' ikaR
+**'''Инструменты:''' [http://www.renpy.org/ Ren'Py.]
+
+
+</poem>
+----
+
+<gallery>
+
+</gallery>
+----
+
+*{{RUS}} {{Win}} {{Mac}} {{Lin}} — '''TBA'''
+*{{ENG}} {{Win}} {{Mac}} {{Lin}} — http://homeward.renai.us
+
+}}
+* [[Homeward/Glossary|Глоссарий]]
+* [[Homeward/Tech Script|Технический текст]]
+* [[Homeward/Script|Полный текст новеллы]]
+
+Перевод
+<br>{{Progress|2=#700|7=4|8=11}}
+<br>Правка 
+<br>{{Progress|2=#070|7=0|8=11}}
+
+{|style="text-align:center"
+ |- valign="top"
+ |
+	{|class="wikitable" style="background: #ffffff;"
+	!Готово !!Ведётся работа!! Не начато
+	|-
+	| {{OK}} || {{Work}} || {{No}}
+	|}
+|}
+
+{|style="text-align:center"
+ |- valign="top"
+ |
+	{|class="wikitable" style="background: #ffffff;"
+	! !! Перевод !! Правка !!  Загрузка в игру
+	|-
+	| [[Homeward/script 01]] || {{OK}} || {{No}} || {{No}}
+	|-
+	| [[Homeward/script 02]] || {{OK}} || {{No}} || {{No}}
+	|-
+	| [[Homeward/script 03]] || {{No}} || {{No}} || {{No}}
+	|-
+	| [[Homeward/script 04]] || {{OK}} || {{No}} || {{No}}
+	|-
+	| [[Homeward/script 05]] || {{OK}} || {{No}} || {{No}}
+	|-
+	| [[Homeward/script 06]] || {{Work}} || {{No}} || {{No}}
+	|-
+	| [[Homeward/script 07]] || {{No}} || {{No}} || {{No}}
+	|-
+	| [[Homeward/script 08]] || {{No}} || {{No}} || {{No}}
+	|-
+	| [[Homeward/script 09]] || {{No}} || {{No}} || {{No}}
+	|-
+	| [[Homeward/script 10]] || {{No}} || {{No}} || {{No}}
+	|-
+	| [[Homeward/script 11]] || {{No}} || {{No}} || {{No}}
+	|}
+|}

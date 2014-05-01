@@ -1,0 +1,3613 @@
+<pre>
+   
+    $ renpy.music.stop(fadeout=2.0)
+    scene bg black with dissolvelong
+    window hide dissolve
+    show eyecatchlogo with dissolve
+    $ renpy.pause (4.0)
+    hide eyecatchlogo with dissolve
+    window show dissolve
+    
+label lookoutwindow:
+    
+    play music "Music/Fragments_of_Stars.ogg" fadeout 1.5 loop
+    scene bg classroom with dissolve
+    
+    $ hauntedhouse = False
+    
+    "I looked out the window before home room began."
+    "It was already autumn, huh."
+    "The leaves outside were turning red and the weather was getting cooler by the day."
+    "I guess we were going change into our winter uniforms pretty soon."
+    "Just then, the teacher walked in and began home room."
+    "After announcements, Haruka went up to the front of the room."
+    
+    show haruka uniform handstogether neutral with dissolve
+    
+    ha "Umm... Since the culture festival is coming up, our class is going to conduct a vote to decide what we are going to do this year."
+    
+    show haruka uniform handfront happy with dissolve
+    
+    ha "As our final year at Minamikawa High School, we should all combine our efforts and make a fun and exciting event."
+    ha "So... please volunteer your ideas and I'll write them up on the board."
+    "Ehh... I guess this will be my first high school culture festival in Japan."
+    "I wonder what we should do..."
+    
+menu:
+    "How about something conventional, like a haunted house?":
+        jump hauntedhouse
+        
+    "Let's do something really unusual.":
+        jump reallyunusual
+        
+label hauntedhouse:
+    $ hauntedhouse = True
+    "Since this was my first culture festival, it would be nice to do something traditional."
+    "After all, it was best to have a good grasp of the basics."
+    
+    if kendoclub:
+        "That's what they always say in the kendo club, anyways."
+        
+    jump reallyunusual
+        
+label reallyunusual:
+    "All of a sudden, a rowdy boy suggested a maid cafe, much to the girls' chagrin."
+    "Shesh, what was he thinking, suggesting something like that..."
+    "Imagine the amount of work it would take to get the costumes ready, what with all the frills and the thigh highs, and the aprons..."
+    
+    if dontgiveletter:
+        "... ... ..."
+        "All of a sudden, the image of Haruka in a maid costume came to my head."
+        "C-come to think of it, maybe a maid cafe wouldn't be such a bad idea..."
+        "I certainly wouldn't mind it if all the girls wore cute costumes for a day..."
+        "It really was boring, wearing nothing but our uniforms all the time."
+        "They seemed kinda cool at the beginning, but seeing nothing but the same clothing for months really was getting tiresome."
+        
+        if hauntedhouse:
+            "Still, a maid cafe did sound kind of extravagant..."
+            "Since it was my first culture festival here, I kind of wanted to see something really traditional."
+            "What should I do?"
+            
+            menu:
+                "A haunted house would be best.":
+                    jump votehauntedhouse
+                    
+                "Let's do a maid cafe!":
+                    jump votemaidcafe
+
+    if hauntedhouse:
+        "Besides, for someone like me, that sounded just too extravagant."
+        "Since I had never seen a culture festival before, even something usual like a haunted house seemed pretty exciting."
+        "There was no need to do something weird when I was happy enough with just doing something normal!"
+        jump votehauntedhouse
+        
+    "On the other hand, I wouldn't mind if it all of the girls wore cute costumes for a day..."
+    "It really was boring wearing nothing but our uniforms every day."
+    "They seemed kinda cool at the beginning, but seeing nothing but the same clothing for months really was getting tiresome."
+    "C-come to think of it, maybe a maid cafe wouldn't be such a bad idea..."
+    jump votemaidcafe
+
+label votehauntedhouse:
+    $ votehauntedhouse = True
+    $ votemaidcafe = False
+    "I volunteered my hand and suggested that we do a haunted house. Even though nobody else seemed to notice amidst the clamor of my classmates, Haruka faithfully wrote \"haunted house\" on the black board."
+    
+    hide haruka with dissolve
+    
+    "After a few more minutes of shouting out ideas, Haruka passed out a slip of paper to each student and asked everyone to vote."
+    "I wrote \"haunted house\" on my slip and dropped it into the box."
+    jump culturefestivalafterclass
+        
+label votemaidcafe:
+    $ votemaidcafe = True
+    $ votehauntedhouse = False
+    "Besides, since somebody else already offered up the idea, nobody would even know if I were to vote for it..."
+    "One little vote couldn't possibly hurt anyone..."
+    "After a few more minutes of shouting out ideas, Haruka passed out a slip of paper to each student and asked everyone to vote."
+    
+    hide haruka with dissolve
+    
+    "I wrote \"maid cafe\" on my slip and dropped it into the box."
+    jump culturefestivalafterclass
+
+label culturefestivalafterclass:
+    
+    scene bg black with screenwipe
+    scene bg classroom with screenwipe
+    
+    "In the end, the haunted house ended up getting the majority of the votes."
+    "Even though some of the guys were disappointed, I guess doing something like a maid cafe really was impossible..."
+    
+    if votehauntedhouse:
+        "Oh well. Since I never wanted a maid cafe to begin with, I wasn't disappointed."
+        
+    if votemaidcafe:
+        "I was a little disappointed that I couldn't see Haruka in a maid costume, but I suppose it would have been mean to force all of the girls to embarrass themselves for our sakes."
+
+    scene bg hallway with dissolve
+
+    show sora uniform neutral with dissolve:
+        xanchor 0.5
+        xpos 0.2
+    show haruka uniform neutral with dissolve:
+        xanchor 0.5
+        xpos 0.5
+    show nonami uniform neutral with dissolve:
+        xanchor 0.5
+        xpos 0.8
+    
+    "We met up with Nonami and Sora during passing period to talk about what our classes were doing."
+    
+    show nonami uniform armscrossed gloom with dissolve
+    
+    no "Ehh... A haunted house? How boring."
+
+    if votehauntedhouse:
+        
+        show haruka uniform handsbehind forcedsmile with dissolve
+        
+        ha "Eh-heh... It was kind of a close call, since the maid cafe was only three votes from winning..."
+
+    if votemaidcafe:
+        
+        show haruka uniform handsbehind forcedsmile with dissolve
+        
+        ha "Eh-heh... It was kind of a close call, since the maid cafe was only two votes from winning..."
+
+    show nonami uniform excited happy with dissolve:
+        xpos 0.8
+        
+    no "Our class is gonna do a scavenger hunt!"
+    
+    show haruka uniform neutral with dissolve
+    
+    ha "I remember when my class did something like that two years ago."
+    "Nonami nodded her nod seriously."
+    
+    show nonami uniform armscrossed confident with dissolve:
+        xpos 0.8
+    
+    no "Mm, mm. Except this is going to be no ordinary scavenger hunt, 'cause we're gonna hide a bunch of stuffed animals and you'll be able to keep what you find."
+    
+    show haruka uniform handraised smile with dissolve
+    
+    ha "Eeehh... Sounds interesting."
+    ri "What's Sora's class going to be doing?"
+    
+    show sora uniform neutral with dissolve:
+        xpos 0.2
+    
+    so "Maze."
+    
+    show nonami uniform armscrossed with dissolve:
+        xpos 0.8
+    
+    no "Eh? What's that?"
+    so "We're going to turn our classroom into one giant maze. Many dead ends and only one way out."
+    
+    show haruka uniform neutral with dissolve
+    
+    ha "I've never heard of anyone doing anything like that..."
+    
+    show sora uniform neutral eyesclosed with dissolve:
+        xpos 0.2
+    
+    so "Mm, mm. We were trying to do something unique."
+    
+    show nonami uniform excited smile with dissolve:
+        xpos 0.8
+    
+    no "That sounds fun! We should all check it out!"
+    "There were two weeks left until the culture festival."
+    "Apparently, the culture festival at Minamikawa was pretty serious business."
+    "For two days, the gates of Minamikawa were open for the entire community."
+    "On the first day, all of the clubs hold their own special exhibitions, while on the second day, all of the classes had their events."
+    "Best of all, our classes were going to be shortened until the festival so that we had time to prepare."
+    "I sure needed this break! Every day, it was always the same boring routine here."
+    "Wear the same uniform, take the same classes, follow the same rules."
+    "Everyone was looking forward to the change in pace."
+    
+    $ renpy.music.stop(fadeout=1.0)    
+    scene bg black with screenwipe
+    scene bg hallway2 with screenwipe
+    
+    "Before I knew it, it was already time for lunch."
+    "I left my classroom and was headed towards the cafeteria when I happened to notice a poster."
+    "\"Special Moonlight Dance for Graduating Seniors\""
+    "Ehh... I never heard anything about this."
+    "It looked like there was going to be a dance by the bonfire on the final day of the culture festival."
+    "Behind me, I could hear a pair of girls talking about it."
+    "Girl A" "So who do you want to go out with for the dance?"
+    "Girl B" "I don't know! Besides, I'm not going to ask anyone out or anything. I'll just wait until someone asks me out."
+    "That's right... I needed to find a dance partner!"
+    "Since the school year was almost over, I guess this will be one of my final memories of high school."
+    "I should really think hard about who I ask out..."
+    "With that in mind, I continued to the cafeteria."
+    
+    scene bg black with dissolve
+    
+    "Our fun filled days passed quickly."
+    "Every day was spent preparing for the culture festival."
+    "However, I still couldn't figure out who I should ask out to the dance."
+    "Haruka really was good looking, and not only that, but she had perfect grades and was also a skilled cook."
+    "There was honestly no way to fault her for anything."
+    "As our class representative, she really stood out as the best girl in our class."
+    "In fact, maybe I was a little undeserving of her."
+    "On the other hand, Nonami was my best friend."
+    "She always had a cheerful smile on her face and had the energy to do anything."
+    "I admit, she was a little bit of a loose cannon, but I guess that was also a part of her charm too."
+    
+    scene bg white
+    show haruka ghost scary
+    $ renpy.pause (0.1)
+    scene bg classroom
+    show haruka ghost scary
+    with dissolve
+    
+    "!!!"
+    "All of a sudden, a ghastly wraith appeared in front of me, knocking me from my thoughts."
+    ri "Woah!"
+    
+    show haruka ghost surprise with dissolve
+    
+    ha "Eh? Riku-kun?"
+    ri "Huh? Is that you, Haru-chan?"
+    
+    play music "Music/Lullaby_To_the_World.ogg"
+    show haruka ghost embarassed with dissolve
+    
+    ha "I'm sorry. Did I scare you?"
+    "Getting scared by a cheap wig like that... I felt embarrassed."
+    ri "N-no, not really..."
+    "Our class was in the middle of decorating our room. Rows of plywood sheets stood against the wall, waiting to be arranged throughout the classroom and decorated."
+    
+    show haruka ghost forcedsmileblush with dissolve
+    
+    ha "Eh-heh... To tell the truth, I was a little scared myself when I first saw myself on the mirror..."
+    "To illustrate, Haruka waved her arms around and moaned in a deep voice."
+    
+    show haruka ghost focused with dissolve
+    
+    ha "Ooouwaaaahhhh... Pleeeaaassseeee gggiivveee mmmeeeeee yoouurrrr sooouuuuuulllllllll..."
+    "To tell the truth, maybe she was more scary just not saying anything..."
+    "As for me, I was in charge of the lights, so there was no need for me to get into a costume."
+    "A bunch of boys grabbed the plywood walls and made the path through which the spectators would walk through."
+    "Now that our desks and chairs were removed, our classroom seemed surprisingly large."
+    "Using a overhead map of what the haunted house was supposed to look like, we managed to lay the plywood into place."
+    "After finishing with the walls, it was time for decoration..."
+    "I grabbed a bunch of red and blue lights and set up the rigging."
+    "After a couple of hours, it seemed like our classroom was thoroughly starting to look haunted."
+        
+    scene bg black with dissolve
+    $ renpy.music.stop(fadeout=1.0)        
+    
+    "The days following that were all spent preparing for the festival too."
+    "I still didn't know who I was going to ask out for the dance though..."
+    
+label dayoffestival:
+    "At last, it was the day of the festival."
+    "I entered the wildly decorated gates of Minamikawa High School at the crack of dawn to get ready for the day's events."
+    if kendoclub:
+        "Since the first day of the festival was dedicated to just clubs, I headed straight to the kendo dojo."
+        jump festivalkendo
+        
+    if cookingclub:
+        "Since the first day of the festival was dedicated to just clubs, I headed straight to the cooking club's food stand."
+        jump festivalcooking
+        
+label festivalkendo:
+    
+    scene bg dojo with dissolve
+    play music "Music/Investigations.ogg" fadeout 1.5 loop
+    
+    "As soon as I entered the dojo, Nonami stuffed an armful of inflatable swords into my hands."
+    
+    show nonami kendo happy alt with dissolve
+    
+    no "Oh, Rii-kun! Good timing! Take this to our stand, wouldcha?"
+    "I was so distracted by our haunted house that I nearly forgot the kendo club was going to have its own special activities for today."
+    "That's right... We were going to have a inflatable sword duel ring."
+    "To describe it in more detail, two people were going to stand on top of small circular stands exactly one sword's length apart from each other and whoever manages to knock the other person off was the winner."
+    "I think I saw something similar in a festival in America..."
+    "I carried the inflatable swords to our stand, taking care not to drop any."
+    
+    scene bg trackfieldfar with dissolve
+    
+    "The kendo club's stand was located quite a bit away from the dojo, in front of the track field."
+    "Upon arrival, I dropped the swords into a wooden box. Nearby, a group of kohai were taping a sign to the top of our stand."
+    "Kohai" "Thanks for the work, Saionji-sempai."
+    ri "It was no problem."
+    "Behind me, Nonami appeared from seemingly nowhere, a circular stand under each of her arms."
+    
+    show nonami kendo smile alt with dissolve
+    
+    no "Here, we can use these!"
+    "...now that I thought about it, those stands looked kind of familiar..."
+    ri "Hey... those wouldn't be..."
+    
+    show nonami kendo happy alt with dissolve
+    
+    no "Yup! They're the little seats that you use in the washroom to squat while taking a shower."
+    ri "Just as I thought..."
+    
+    show nonami kendo irritated with dissolve
+    
+    no "Oy, I had to buy these, ya know!"
+    "Well, good to know that they weren't used ones."
+    "By the time the sun was up, we finished putting the final touches on our stand."
+    "There was even an elaborate sign featuring an illustration of two gekiga-styled muscle men beating the living snots out of each other. Must be Nonami's handiwork."
+    "Now, all we had to do was wait for the festival to begin..."
+    
+    scene bg black with screenwipe
+    scene bg culturefestfield with screenwipe
+    
+    "By 11 AM, the school grounds were already filled with visitors."
+    "Our stand was pretty popular with other students, so Nonami and I had our hands full selling tickets."
+    "Out of the blue, Nonami tapped me rapidly on the shoulder and pointed towards the crowd."
+    
+    show nonami kendo irritated with dissolve
+    
+    no "Oh! Rii-kun, check that lovey-dovey couple out!"
+    ri "Eh?"
+    "Now that she mentioned it, there was a young couple wandering around not far from us."
+    no "Uuuuuuu! Doesn't looking at them just make you sick to your stomach?"
+    "No, not really."
+    
+    show nonami kendo frustrated with dissolve
+    
+    no "Holding each other by the arms... eating ice cream from the same cone... Quuaaahhh!!! I bet they've already done it already!"
+    "That's one too many \"alreadies,\" Nonami..."
+    
+    show nonami kendo focused with dissolve
+    
+    no "All right! Looks like we have no choice but to split them up!"
+    "All of a sudden, Nonami grabbed a pair of inflated swords and stomped towards them."
+    
+    show nonami kendo neutral explode with dissolve
+    
+    no "Ufufufu... Let's see how long their lovey-lovey life continues... when they're locked in MORTAL COMBAT!"
+    "...This girl clearly had not a trace of sensibility."
+    
+    hide nonami with dissolve
+    
+    "Not really eager to get involved in whatever she was planning, I stayed at the stand and kept watch."
+    
+    show sora uniform neutral with dissolve
+    
+    so "... ... ..."
+    "I spotted Sora walking by my stand with a small plate of takoyaki on her palm."
+    ri "Oh, Sora!"
+    
+    show sora uniform neutral eyesclosed with dissolve    
+    
+    so "Mm."
+    ri "Aren't you doing anything today?"
+    
+    show sora uniform neutral with dissolve    
+    
+    so "Uu-uhn. The \"going home after school\" club doesn't have a stand."
+    "I kind of saw what Sora meant."
+    ri "I wouldn't mind being able to see more of the stands myself..."
+    "But I wasn't about to leave our stand alone with Nonami. Who knew what might happen!"
+    "On an unrelated note, I noticed that Sora was wearing a new pair of ear rings."
+    "That's strange. I didn't know her ears were pierced."
+    ri "By the way, when'd you get your ears pierced?"
+    
+    show sora uniform neutral eyesclosed with dissolve    
+    
+    so "No pierce. Clip on."
+    "To demonstrate, she undid one of the ear rings."
+    ri "They're pretty nice. Did you win them at a stand?"    
+    so "Uu-uhn."
+    "All of a sudden, a crash interrupted our conversation."
+    
+    hide sora with dissolve
+    show nonami kendo neutral surprise with dissolve:
+        xanchor 0.5
+        xpos 0.7
+    show sora uniform neutral with dissolve:
+        xanchor 0.5
+        xpos 0.3
+    
+    no "Eah, mission failure!"
+    "Nonami gripped our stand and hung her head low, as if she had just finished a grueling marathon and come in last place."
+    ri "Hey, don't just interrupt other people's conversations..."
+    
+    show nonami kendo armhold tears with dissolve:
+        xpos 0.7
+    
+    no "Rii-kun, their love meter was too high for me!"
+    "She wasn't even listening to me."
+    "All of a sudden, Nonami turned to me with a serious look on her face."
+    
+    show nonami kendo neutral serious with dissolve:
+        xpos 0.7
+    
+    no "I was a fool, Rii-kun..."
+    
+    show nonami kendo excited explode with dissolve:
+        xpos 0.7
+    
+    no "A fool to trifle with the power of love!"
+    "I didn't even know where to touch this..."
+    
+    show nonami kendo neutral explode with dissolve:
+        xpos 0.7
+    
+    no "Yes indeed... the light of love shall show the way of justice!"
+    "She continued to babble on about love and justice, apparently trapped in her own little world."
+    "Finally, she snapped out of it when she noticed Sora."
+    
+    show nonami kendo greet with dissolve:
+        xpos 0.7
+    
+    no "Oh! Hiya, Sora-chan!"
+    "Well, it's about time you noticed!"
+    
+    show nonami kendo smile2 alt with dissolve:
+        xpos 0.7
+    
+    no "Hey, hey, so how's that coming along?"
+    
+    show sora uniform armscrossed eyesclosed with dissolve:
+        xpos 0.3
+    
+    so "Uhn. No problems."
+    "I wasn't really sure what they were talking about, but just then, a group of people came to our stand."
+    
+    hide nonami with dissolve
+    hide sora with dissolve
+    
+    "Preoccupied with selling tickets, I took my attention off of the girls. It seemed like Nonami and Sora were going to talk about girl matters anyways."
+    
+    scene bg black with screenwipe
+    scene bg culturefestfield with screenwipe
+    
+    "By the afternoon, our shift was finally over."
+    "As soon as her kohai arrived to relieve her, Nonami cheerfully ran towards the other stands, looking as if she had not a care in the world."
+    "I reminded myself of the dance. I still needed to ask somebody out, didn't I?"
+    "Ugh, even though I wasn't sure I was ready for something like that, if I didn't ask somebody today, I guess it would be too late."
+    "I wonder what I should do?"
+    
+    menu:
+        "Check out the other stands with Nonami.":
+            jump checkstandsnonami
+            
+        "See what Haruka's doing.":
+            jump checkharukadoing
+            
+        "See what Sora's doing.":
+            jump checksoradoing
+            
+label checkharukadoing:
+    "With all of the stuff that I had to do for the kendo club, I couldn't see Haruka at all today."
+    "Now that I finally had free time, I really wanted to talk to her again."
+    
+    scene bg culturefestgym with dissolve
+    
+    "I walked to where the cooking club's stand was located and looked around for Haruka."
+    
+    show haruka uniform neutral with dissolve
+    
+    "Finally, I saw her getting ready to leave."
+    ri "Haru-chan. Are you done with your shift?"
+    
+    show haruka uniform handsbehind smile with dissolve
+    
+    ha "Ah, Riku-kun. Uhn, I just finished right now."
+    ri "Do you want to take a look around the school grounds together?"
+    
+    show haruka uniform handfront happy with dissolve
+    
+    ha "Ehh, it looks like I got lucky. I was afraid I'd have to look around by myself. Uhn, let's go."
+    jump lookaroundwithharuka
+            
+label checkstandsnonami:
+    "I chased after Nonami, not wanting to get left behind."
+    "She turned around and waved at me."
+    
+    show nonami kendo greet with dissolve
+    
+    no "C'mon, c'mon Rii-kun! Let's get changed and then have some fun!"
+    jump lookaroundwithnonami
+    
+label checknonamidoing:
+    "With all of the stuff that I had to do for the cooking club, I couldn't see Nonami at all today."
+    "Now that I finally had free time, I really wanted to talk to her again."
+    
+    scene bg culturefestfield with dissolve
+    
+    "I walked to where the kendo club's stand was located and looked around for Nonami."
+    
+    show nonami kendo neutral alt with dissolve
+    
+    "Finally, I saw her getting ready to leave."
+    
+    show nonami kendo greet with dissolve
+    
+    no "Oh! It's Rii-kun!"
+    ri "Yo. Are you done with your shift?"
+    
+    show nonami kendo excited smile2 with dissolve
+    
+    no "Uhn! Let's take a look around together."
+    ri "Sure thing."
+    
+    show nonami kendo smile alt with dissolve
+    
+    no "Eh heh... Just let me get changed first. I guess I don't need my kendogi any more now that my shift's over."
+    jump lookaroundwithnonami
+    
+label lookaroundwithnonami:
+    
+    scene bg culturefestgrounds with dissolve
+    show nonami uniform neutral with dissolve
+    
+    "We strolled through the festival grounds, checking out what the other clubs were up to."
+    
+    show nonami uniform happy with dissolve
+    
+    no "Uwah, check it out, Rii-kun!"
+    "Nonami pointed to the archery club's stand. It was one of those carnival games where you had to pop balloons using a miniature set of bow and arrows."
+
+    show nonami uniform excited with dissolve
+
+    no "All right! It's 100 yen for five arrows."
+    "Nonami handed one of the club members a 100 yen coin and was handed a set of arrows."
+    "I watched on with interest. It was somewhat nostalgic, seeing such a classical carnival game at school."
+    
+    show nonami uniform armscrossed confident with dissolve
+    
+    no "Ufufufu... Watch this, Rii-kun! The grand prize is as good as mine!"
+    "Nonami took aim and fired."
+    
+    show nonami uniform neutral focustalk with dissolve
+    
+    no "Hiyah!"
+    "The arrow went wide and bounced against the wooden wall."
+    
+    show nonami uniform neutral with dissolve
+    
+    no "Aw, I missed."
+    
+    show nonami uniform happy with dissolve
+    
+    no "Oh well! There's still the second place prize!"
+    "She let loose another arrow and missed again."
+    
+    show nonami uniform armscrossed irritated with dissolve    
+    
+    no "Uuuuuu!"
+    no "I'm gonna get it next time, okay?"
+    "Yet again, another arrow went wide."
+    
+    show nonami uniform excited frustrated with dissolve
+    
+    no "Kwwwuuaaahhh!!!"
+    "Nonami hopped up and down in frustration."
+    "The gap between her confidence and actual skill level was comically amusing."
+    "I was trying my best not to laugh at the sight."
+    "The fourth arrow also missed all of the balloons."
+    "At this rate, Nonami was going to miss all five of her arrows and waste her money."
+    "Maybe it was time that I tried."
+    ri "Here, let me help."
+    
+    show nonami uniform surprise with dissolve
+    
+    no "No, wait, wait! I've got this!"
+    "She obviously didn't."
+    
+    show nonami uniform neutral irritated with dissolve
+    
+    ri "H-hold it..."
+    ri "Come on, hold onto the bow like this... and aim here."
+    "I raised Nonami's arm a bit."
+    "Maybe if we tried adjusting the trajectory of the arrow, we could compensate for the pull of gravity..."
+    ri "Pull about this much..."
+    "I held Nonami's wrist back a little and knocked the arrow."
+    ri "And there!"
+    "I let go and the arrow sailed through the air."
+    
+    play sound "Sound/balloon.wav"
+    
+    "Pop!"
+    
+    show nonami uniform excited with dissolve
+    
+    no "All right, we did it!"
+    "Nonami jumped in celebration with both of her arms up in the air."
+    ri "Give me high five!"
+    
+    show nonami uniform neutral baffled with dissolve
+    
+    no "Eh? What's that?"
+    ri "Oh."
+    "Nevermind. Forgot that that didn't work here."
+    "One of the archery club members handed us our prize."
+    "Since we ended up missing four of the balloons, we only got a tiny key chain."
+    "Oh well. I guess it was better than nothing."
+    
+    show nonami uniform armscrossed focustalk with dissolve
+    
+    no "Hohoho! I totally knew I could pull it off!"
+    "Nonami laughed, mostly to herself. Just who was this girl trying to fool?"
+    
+    show nonami uniform armscrossed smile with dissolve
+    
+    no "But you know, thanks, Rii-kun!"
+   
+    if hairdown and giveletter:
+        "Come to think of it, hadn't she said something similar to me before?"
+        "Mmm... When could it have been? It really was at the tip of my tongue."
+        "Oh well. I didn't think it was that important anyways."
+   
+    "We continued to stroll through the school grounds, checking out the other stands."
+    
+    show nonami uniform armsraised smile with dissolve
+    
+    no "Uwah, I can't believe that we're gonna be going to university in a year!"
+    ri "This year did go by pretty quickly."
+    
+    show nonami uniform armsraised with dissolve
+    
+    no "Mmm... Come to think of it, maybe I should dye my hair once I graduate..."
+    
+    show nonami uniform armsraised happy with dissolve
+    
+    no "I'd look pretty good with red hair, don'tcha think?"
+    "Oy, oy, just what kind of look were you trying to go for? Some girl from a science fiction anime?"
+    
+    show nonami uniform armscrossed confident with dissolve
+    
+    no "Ufufufu... Not only that, but I'll have to upgrade my wardrobe... There'll be no more of this uniform business then!"
+    "We continued talking as we walked along."
+    "I ended up buying Nonami a wad of cotton candy and had fun with her for the rest of the festival."
+    "Maybe if a stranger were to see us now, maybe he would even think that we were going out?"
+    "Considering how angry Nonami was earlier today when she saw that couple, she sure had no problems acting all happy-go-lucky with a boy herself!"
+    "Hehh... maybe she was just jealous then."
+    
+    $ renpy.music.stop(fadeout=1.0)    
+    scene bg black with screenwipe
+    scene bg schoolfieldevening with screenwipe
+    
+    "Before we knew it, the sun was already setting and it was the end of the first day of the festival."
+    "Nonami and I returned to our stand and helped clean up."
+    "We disassembled our stand and returned all of our belongings to the dojo."
+    "The landscape was now drenched in red as the sun was disappearing underneath the mountains."
+    "I guess that meant time was running out..."
+    "The moonlight dance would be tomorrow, and I still didn't have a dance partner."
+    "Nonami would be a good partner for that night..."
+    "I reached into my pocket and pulled out the tiny key chain that we had won earlier that day."
+    "Nonami was my best friend. Sure, she was kind of silly and I admit, stupid, from time to time, but that's what made her Nonami."
+    "If she wasn't like that, then I think she would lose something really special about her."
+    "I wouldn't want her any other way than what she already was."
+    "... ... ..."
+    "I was going to do it."
+    
+    play music "Music/My_Love.ogg" fadeout 1.5 loop    
+    show nonami uniform neutral with dissolve    
+    
+    "Nonami came out of the dojo."
+    
+    show nonami uniform smile with dissolve
+    
+    no "Well then, let's get going home."
+    ri "Actually, can you wait a little bit?"
+    
+    show nonami uniform neutral with dissolve
+    
+    no "Eh? What's up, Rii-kun?"
+    "My heart was now starting to pound inside of my chest. I took a gulp."    
+    ri "I was just thinking..."
+    ri "This year really was a lot of fun."
+    
+    show nonami uniform excited smile with dissolve
+    
+    no "Uhn! I had a lot of fun too!"
+    ri "When I first arrived here, I didn't think that I was going to make that many new friends."
+    ri "To tell the truth... when I was living in America, I didn't really get along with other people that well..."
+    
+    show nonami uniform smile with dissolve
+    
+    no "Ehhh? What do you mean, not get along?"
+    ri "It's kind of hard to explain... But you know, it's hard when everyone else has known each other for a really long time, like they were childhood friends, and you just arrive in the middle of everything."
+    ri "i guess... I was just a stranger to everyone."
+    ri "For the longest time, I really wished for someone like that. Someone who's known me for a really long time, who I could always be friends with..."
+    
+    show nonami uniform excited focustalk with dissolve
+    
+    no "Don't worry, Rii-kun! You'll always have me to back you up in cases like that now!"
+    ri "Uhn. So basically, what I'm basically saying is..."
+    ri "I don't feel lonely any more."
+    ri "It's all thanks to you, Nonami. So... thanks. For always being there."
+    
+    show nonami uniform neutral happyblush with dissolve
+    
+    no "Eeehhh? S-stop it, Rii-kun! You're embarrassing me all of a sudden. Ehehehe..."
+    
+    menu:
+        "Do it.":
+            jump asknonamiout
+            
+        "I can't do this...":
+            jump dontasknonamiout
+            
+label asknonamiout:
+    
+    $ nonamidance = True
+    $ harukadance = False
+    $ nodance = False
+
+    ri "So... so... will you go out with me to the moonlight dance!?"
+    
+    show nonami uniform surprise with dissolve
+    no "... ... ..."
+    "Silence hung in the air."
+    "Oh oh... Did I ask the wrong question? Did Nonami not want to go out together?"
+    "Cold sweat began to drip down my back."
+    ri "O-of course, i-it's okay if you don't want to..."
+    
+    show nonami uniform neutral embarassed with dissolve
+    
+    no "Uu-uhn. Thanks, Rii-kun."
+    no "To tell the truth, I was wondering if you had already found someone."
+    
+    show nonami uniform neutral smileblush with dissolve
+    
+    no "Eheh..."
+    no "Maybe I was even a little bit worried."
+    no "But... it makes me happy. I'm glad I was the one Rii-kun asked."
+    
+    show nonami uniform neutral happyblush with dissolve
+    
+    no "So, I'll accept your offer."
+    "W-wait... so does that mean...?"
+    ri "R-really?"
+    
+    show nonami uniform armscrossed smileblush with dissolve
+    
+    no "Uhn."
+    ri "T-thanks! I... erm... This is the only thing I have. Sorry, I should have planned things out a bit more..."
+    "I handed Nonami the small key chain that we had won earlier that day."
+    
+    show nonami uniform armscrossed embarassed with dissolve
+    
+    no "It's okay... the memory of today is enough."
+    
+    show nonami uniform armscrossed smileblush with dissolve    
+    
+    no "Thanks Rii-kun... for not leaving me."
+    "I smiled. The burning pressure on my chest was disappearing and I felt surprisingly light now."
+    
+    show nonami uniform neutral embarassed with dissolve    
+    
+    no "Now, should we get going?"
+    ri "Yeah..."
+    ri "Let's go back home."
+    jump festivalsecondday
+    
+label dontasknonamiout:
+    
+    $ nodance = True
+    $ nonamidance = False
+    $ harukadance = False
+
+    ri "Uhn... Haha... I was getting a little embarrassed myself."
+    
+    show nonami uniform smile with dissolve
+    
+    no "Ehehehehe..."
+    ri "So, should we get going?"
+    
+    show nonami uniform excited smile with dissolve
+    
+    no "Uhn! Let's go back home!"
+    jump festivalsecondday
+    
+label festivalcooking:
+    
+    play music "Music/Investigations.ogg" fadeout 1.5 loop    
+    scene bg gym with dissolve
+    show haruka cook neutral with dissolve
+    
+    "I saw Haruka setting up the cooking club's food stand with a group of other girls in front of the gymnasium."
+    
+    show haruka cook handsbehind smile with dissolve
+    
+    ha "Ah Riku-kun. Good morning."
+    ri "Good morning. Do you need any help?"
+    
+    show haruka cook onehandraised forcedsmile with dissolve
+    
+    ha "Eh-heh... Actually, you came just in time. We need to bring our box of supplies down from the club room."
+    ri "Okay, I'll go get that right away."
+    
+    scene bg homeeconroom with dissolve
+    
+    "I jogged into the school and went up to the home economics room."
+    "Urk. An enormous wooden crate awaited me on top of the table."
+    "So much for a little box... This looked more like one of those UN aid packages that they parachute into impoverished nations!"
+    "Inside, it was stuffed with pots, pans, spatulas, and portable burners."
+    "It looked like it could easily weigh twice my weight. No wonder none of the girls could move this to the school yard..."
+    "I groaned as I grabbed onto the crate and put it down on the floor."
+    "This wasn't going to be easy..."
+    "I bent over and pushed the crate along the floor. Ah good, now I could drag it along..."
+    "I left the club room, pushing the crate in front of me."
+    
+    scene bg hallway3 with dissolve
+    
+    "Unfortunately, a new challenge awaited me at the stairs."
+    "Oh boy..."
+    "Well, I guess there was no avoiding it. It's not like our school had elevators."
+    "I hoisted the crate in front of me and wobbled down the stairs."
+    "Somehow, I managed to reach the halfway point where the stairs reversed directions."
+    "Whew. I crumbled down on top of the crate."
+    "This monstrously heavy thing..."
+    "After catching my breath, I hoisted the crate up again. Ugghh... my fingers hurt."
+    
+    scene bg stars2 with dissolve
+    
+    "I stumbled down the rest of the stairs and accidentally slammed the crate down onto the floor at the bottom."
+    "Ah crap. I sure hope nothing in there broke!"
+    
+    show haruka cook onehandraised surprise with dissolve
+    
+    ha "E-ehhh!? Are you okay, Riku-kun?"
+    
+    show haruka cook handsbehind concern with dissolve
+    
+    ha "Just as I thought, it's too heavy, huh..."
+    "Ah, it was Haruka. Good thing she came to check on me..."
+    ri "Yeah... I'm beginning to think that carrying all of this stuff all the way out to the gym is impossible."
+    
+    show haruka cook handfront neutral with dissolve
+    
+    ha "Mmm... I got an idea. Hold on one moment."
+    
+    hide haruka with dissolve
+    
+    "Haruka walked away for a moment."
+    "... ... ...:"
+    "A few minutes later, she reappeared with a trolley."
+    
+    show haruka cook smile with dissolve
+    
+    ha "I borrowed this from the student council."
+    "As expected of Haruka. She was still as reliable as ever."
+    "I hoisted the crate on top of the trolley. Together, we shipped the crate to our food stand."
+    
+    play music "Music/Radio_Martini.ogg" fadeout 1.5 loop
+    scene bg gym with dissolve
+    show haruka cook neutral with dissolve
+    
+    "Whew. That would have been a whole lot of work if Haruka hadn't come in time."
+    "I took the lid off the crate and set up the burners."
+    ri "It looks like our campus really is starting to look like a festival."
+    
+    show haruka cook handsbehind smile with dissolve
+    
+    ha "Uhn. It won't be long now until the culture festival begins."
+    "By now, most of the stands had already been set up. The morning sun cast long shadows on our school yard and bathed everything in pink."
+    "Since the cooking club had a lot of members, it didn't look like I would have much to do today."
+    "While the others were busy getting the outdoor kitchen set up, I set up the plastic tables in the dining area."
+    "After getting the tables set up, I unfolded the seats and made the napkin and the utensils available."
+    "By the time I finished, the culture festival had already begun."
+    
+    scene bg black with screenwipe
+    scene bg culturefestgym with screenwipe 
+    
+    "The cooking club's food turned out being very popular, and pretty soon a line formed in front of our stand."
+    "By the time lunch was approaching, the dining area was already packed. Maybe we should have set up some more tables..."
+    "I was in front of one of our burners, busily cooking up a pan of yakisoba."
+    "Beside me, Haruka was busy chopping up a head of cabbage."
+    
+    show haruka cook excited surprise with dissolve
+    
+    ha "Huaaahhh! The crowd's so huge!"
+    ri "This weather really is perfect for a culture festival. No wonder so many people came out."
+    "Kohai" "S-sempai! We're out of ice!"
+    
+    show haruka cook happy with dissolve
+    
+    ha "There's some in the white cooler underneath the third table."
+    "The stand was buzzing with activity as the club members tried to meet everyone's orders on time."
+    "Whew! I reached into our storage crate and pulled out a hachimaki."
+    "Sweat was beginning to drip down my forehead. Even though it was a pretty cool autumn day, standing in front of the burner for such a long time was starting to get really hot."
+    "I wrapped the hachimaki around my head and faced the massive crowd that needed to be fed."
+    "All right, let's do this!"
+    
+    scene bg black with screenwipe
+    scene bg culturefestgym with screenwipe
+    
+    "Whew. At last, the lunch rush seemed to be dying down."
+    "By now, our dining area was mostly empty. A bunch of kohai were busy picking trash off of the ground and packing our garbage bags."
+    "All of a sudden, I saw a familiar face come by."
+    
+    show sora uniform armscrossed neutral with dissolve:
+        xanchor 0.5
+        xpos 0.3
+    
+    so "One plate of takoyaki, please."
+    ri "Oh! If it isn't Sora."
+    
+    show haruka cook handfront happy with dissolve:
+        xanchor 0.5
+        xpos 0.7
+    
+    ha "Good afternoon, Sora-chan."
+    "I loaded a set of takoyaki into the grill."
+    ri "So what have you been doing today?"
+    
+    show sora uniform neutral with dissolve:
+        xpos 0.3
+    
+    so "Not much. The \"Going Home After School\" club doesn't have a stand."
+    "I could kind of follow what she meant..."
+    ri "That's right, you don't belong to a club, do you, Sora?"
+    so "Uu-uhn."
+    ri "You should join one next year. You can learn a lot in a club, you know."
+    
+    show haruka cook handsbehind smile with dissolve:
+        xpos 0.7
+    
+    ha "That's right. Riku-kun's gotten a lot better at cooking since he's joined."
+    ri "Yeah. This club is the only reason why we don't eat instant ramen every night, you know."
+    
+    show sora uniform armscrossed distantleft with dissolve:
+        xpos 0.3
+    
+    so "Mm..."
+    
+    show haruka cook handfront smile with dissolve:
+        xpos 0.7
+    
+    ha "Even though I won't be here, I'm sure everyone will be glad to have you on the cooking club, Sora-chan."
+    ri "Yeah. Besides, it's really embarrassing that I need to cook you dinner every night."
+    
+    show sora uniform armscrossed pout with dissolve:
+        xpos 0.3
+    
+    so "Muu..."
+    
+    show sora uniform armscrossed irritated with dissolve:
+        xpos 0.3
+    
+    so "By the way, the takoyaki's starting to smoke."
+    "Oh shoot! Looks like I set the heat too high."
+    "I quickly lowered the temperature and opened the grill."
+    "Whew. It looked like the damage wasn't that bad."
+    
+    show sora uniform armscrossed confident with dissolve:
+        xpos 0.3
+    
+    so "Stupid Riku. You should focus on your job more."
+    ri "H-hey..."
+    
+    show haruka cook onehandraised forcedsmile with dissolve:
+        xpos 0.7
+    
+    ha "Eh-heh... It's not Riku-kun's fault, Sora-chan. To tell the truth, I get distracted and make those kinds of mistakes all the time too."
+    "Somehow, I could imagine Haruka doing something that. Although it really was amazing that even if she does make those kinds of mistakes a lot, her food always comes out tasting amazing."
+    ri "Anyways, aren't you the one who needs to learn to cook the most?"
+    
+    show sora uniform armscrossed pout with dissolve:
+        xpos 0.3
+    
+    so "... ... ..."
+    ri "Haru-chan's food is always amazing, and Nonami can also make some pretty impressive bentos too. It's just you who can't make anything more than a strawberry jam toast."
+    
+    show sora uniform neutral gloom with dissolve:
+        xpos 0.3
+    
+    so "Uuugh..."
+    
+    show haruka cook excited forcedsmile with dissolve:
+        xpos 0.7
+    
+    ha "D-don't worry, Sora-chan! Eh-heh... All you have to do is join the cooking club and we can teach you everything."
+    ri "After all, you do need to join a club, don't you?"
+    
+    show sora uniform armscrossed pout with dissolve:
+        xpos 0.3
+    
+    so "Stupid Riku..."
+    "Just then, Sora's takoyaki finished cooking."
+    "I passed them to her in a small plate."
+    ri "Here you go."
+    
+    show sora uniform armscrossed gloom with dissolve:
+        xpos 0.3
+    
+    so "Mah, I guess I'll think about it."
+    
+    hide sora with dissolve
+    
+    "Sora walked away, with a grumpy look on her face."
+    "Still, I could tell that she was faking it. Maybe she was a little sad today that she didn't belong to a club."
+    "After a couple of more hours at the food stand, our shift ended."
+    "I guess we were both free for the rest of the festival now."
+    "I reminded myself of the dance. I still needed to ask somebody out, didn't I?"
+    "Ugh, even though I wasn't sure I was ready to do something like that, if I didn't ask somebody today, it would be too late."
+    "I wonder what I should do?"
+
+    menu:
+        "Check out the other stands with Haruka.":
+            jump checkstandsharuka
+            
+        "Check what Sora's doing.":
+            jump checksoradoing
+            
+        "Check what Nonami's doing.":
+            jump checknonamidoing
+            
+label checkstandsharuka:
+    "Well, since I was already with Haruka, I might as well spend the afternoon looking around with her."
+    ri "Come on Haru-chan. Let's take a look around."
+    
+    show haruka uniform smile with dissolve:
+        xpos 0.7
+    
+    ha "Uhn. Let's go."
+    jump lookaroundwithharuka
+    
+label checksoradoing:
+    
+    $ renpy.music.stop(fadeout=1.0)    
+    $ nodance = True
+    $ harukadance = False
+    $ nonamidance = False
+
+    "Ah, what the heck. What was I getting worked up about the dance for? It's not like I even had a girlfriend."
+    "I'll just go hang out with Sora instead."
+    "I bet she must be pretty bored, since she didn't belong to a club."
+    
+    scene bg schoolforest with dissolve 
+    
+    "I wandered around campus, looking for her whereabouts."
+    
+    play music "Music/Heaven.ogg" fadeout 1.5 loop
+    show sora uniform neutral sleepy with dissolve
+    
+    "Finally, I spotted her a little distance away, looking bored underneath a tree."
+    
+    ri "Hey Sora."
+    
+    show sora uniform neutral with dissolve
+    
+    so "Riku."
+    ri "Are you taking a break?"
+    so "Uhn."
+    "I took a seat next to her."
+    ri "It must have been a little lonely, not being in a club."
+    so "Uhn..."
+    ri "Next year, why don't you try joining one, Sora?"
+    
+    show sora uniform armscrossed hesitant with dissolve
+    
+    so "Hmm..."
+    
+    show sora uniform armscrossed distantleftopenmouth with dissolve
+    
+    so "Mah, I guess I could try."
+    
+    show sora uniform neutral with dissolve
+    
+    so "Here."
+    "Sora handed me a cup of fried chicken."
+    ri "Thanks."
+    "We looked at the colourfully decorated school ground while I chewed on the fried chicken."
+    
+    show sora uniform armscrossed neutral with dissolve
+    
+    so "Hey, what was it like to live in America?"
+    ri "Hmm... well, I think there are a lot more forward people there."
+    ri "But it was... a little lonely. It's hard fitting in with other people when you're a stranger."
+    ri "Maybe if I had stayed in once place, I might have been able to find some friends, but even in America, I was moving around all the time."
+    ri "How about you, Sora? What was Japan like?"
+    
+    show sora uniform armscrossed distantleft with dissolve
+    
+    so "U-uhn... It was really hard..."
+    so "... ... ..."
+    ri "Sorry, Sora. I didn't mean to..."
+    
+    show sora uniform armscrossed distantrightopenmouth with dissolve
+    
+    so "Uu-uhn. I never did have a good relationship with mother."
+    
+    show sora uniform neutral smile with dissolve
+    
+    so "But it's been better since I started living with you again."
+    ri "Hey Sora, don't you ever wonder what it would have been like if we grew up in the same house?"
+    
+    show sora uniform neutral with dissolve
+    
+    so "Uhn. A lot of things would be completely different if that happened."
+    ri "Still, I think we would have been really happy together."
+    
+    show sora uniform armscrossed hesitant with dissolve
+    
+    so "Mmm..."
+    
+    show sora uniform neutral gloom with dissolve
+    
+    so "Mah, I guess so."
+    ri "Y-you guess so?"
+    
+    show sora uniform armscrossed confident with dissolve
+    
+    so "Hmph. Who knows. Maybe I would have gotten tired of you and would have wanted to run away from home."
+    ri "Hah... are you sure? Maybe you'd be calling me nii-nii right now if we grew up together!"
+    
+    show sora uniform armscrossed irritated with dissolve
+    
+    so "Stupid Riku. As if I'd ever call you something like that."
+    ri "Oh, I don't know... maybe if we took a couple of baths together as a kid... hahahaha."
+    
+    show sora uniform point angryblush with dissolve
+    
+    so "D-don't mention something like that in public, stupid!"
+    ri "Still, I'm pretty happy that I can be with Sora now."
+    ri "I didn't really know what kind of a sister I had before this year, but I'm glad things turned out this way."
+    
+    show sora uniform armscrossed tsundere with dissolve
+    
+    so "Hmph... I guess if Riku puts it that way, I can agree."
+    
+    show sora uniform neutral mock with dissolve
+    
+    so "But still, I'm a little disappointed! I honestly thought that my brother would be more impressive."
+    ri "H-hey... seriously?"
+    
+    show sora uniform armscrossed confidentclosedeyes with dissolve
+    
+    so "Uhn, uhn."
+    ri "Are you sure about that?"
+    
+    show sora uniform point tsundere with dissolve
+    
+    so "Absolutely!"
+    "I gave her an evil smile as I approached her and got ready to stick my hands into her armpits."
+    
+    show sora uniform neutral surprise with dissolve
+    
+    so "H-hey... R-Riku..."
+    ri "Are you reaaallllyyyy sure?"
+    
+    show sora uniform armscrossed smilesweatdrop with dissolve
+    
+    so "M-mah, I guess it could have been much worse..."
+    ri "That's what I thought."
+    "By this time, the last of the fried chicken was finished."
+    "I stood up and turned to Sora."
+    ri "Hey, let's take a look around. Just the two of us."
+    
+    show sora uniform neutral smile with dissolve
+    
+    so "Uhn."
+    "Sora stood up and followed me back to the school yard."
+    
+    play music "Music/Investigations.ogg" fadeout 1.5 loop
+    scene bg culturefestgrounds with dissolve
+    show sora uniform neutral with dissolve
+    "We wandered through the festival grounds, looking at all of the other club's stands."
+    "Sora seemed to be interested in the swim team's stand. They were having one of those games where you had to scoop up a koi with a paper net."
+    "It looked like Sora wanted to play, so I stopped and changed directions to the stand."
+    ri "Let's check that out, Sora."
+    
+    show sora uniform neutral smile with dissolve
+    
+    so "Uhn."
+    "A pair of enormous buckets filled with koi guppies were located at the foot of their stand. I bought two paper nets and handed one to Sora."
+    ri "Eh-heh... I don't think we could raise one even if we somehow managed to catch it..."
+    
+    show sora uniform armscrossed confident with dissolve
+    
+    so "Don't worry, we can always release it into the river."
+    "O-oy, isn't that introducing an invasive species?"
+    "Trying as delicately as possible, I dipped my net into the water and aimed for one of the fish."
+    "However, the tissue thin paper tore the instant it touched the koi."
+    "I should have known this wouldn't be so easy."
+    ri "Ah, this really is impossible..."
+    "I turned my head towards Sora."
+    ri "Come on Sora, let's get go-"
+    "All of a sudden, I saw one of the team members handing Sora a koi in a small plastic bag. Had she managed to catch one so easily!?"
+    "Ugh, so was this actually so easy that even my little sister could do it?"
+    "I hung my head, embarrassed at having been out shown by Sora."
+    
+    scene bg black with screenwipe
+    scene bg culturefestgrounds with screenwipe
+    
+    "Sora stared at her new pet koi as we walked along, in deep thought."
+    
+    show sora uniform armscrossed confidentclosedeyes with dissolve
+    
+    so "Hmmmm..."
+    so "Hmmmmmmm...."
+    ri "What are you thinking of?"
+    so "Hmmmmmmmmmmm......."
+    
+    show sora uniform armscrossed confident with dissolve
+    
+    so "I think I'll name it Riku."
+    ri "Eh!? Why???"
+    
+    show sora uniform neutral eyesclosed with dissolve
+    
+    so "Because it looks a lot like you. See?"
+    "She raised the fish to my face as if to show me. The weird looking thing stared at me blankly, its whiskers floating in the water."
+    ri "It totally does not look like me at all!"
+    
+    show sora uniform armscrossed tsundere with dissolve
+    
+    so "Hmph. I think there's a great resemblance between you two. In fact, it may be your long lost sibling."
+    ri "It's a fish for crying out loud! Besides, if we're talking about long lost siblings, you'd be the better candidate!"
+    ri "In fact, why don't we just name it Sora?"
+    
+    show sora uniform armscrossed confidentclosedeyes with dissolve
+    
+    so "Can't. This fish is a guy."
+    ri "How do you even know?"
+    
+    show sora uniform point angry with dissolve
+    
+    so "Hmph. 'Cause I'm your little sister and I know everything!"
+    "There was no way I could argue with her..."
+    ri "I still think naming the fish after your older brother is just a little..."
+    
+    show sora uniform armscrossed tsundere with dissolve
+    
+    so "Hmph. I put a lot of thought into it, you know."
+    ri "Really?"
+    
+    show sora uniform point angry with dissolve
+    
+    so "Uhn. I even said, \"hmmmmm\" three times!"
+    ri "Hey, that doesn't mean anything!"
+    
+    show sora uniform armscrossed tsundere with dissolve    
+    
+    so "Mah, whatever. I'm gonna name it Riku and that's final."
+    ri "But think of all the confusion that'll cause. We won't be able to know if you're referring to me or Riku the fish."
+    
+    show sora uniform neutral mock with dissolve
+    
+    so "Hmm... W-well..."
+    ri "I got an idea... Why don't you just call me Riku-nii-chan from now on?"
+    
+    show sora uniform point angry with dissolve
+    
+    so "D-don't be silly! Like I would ever call you that!"
+    ri "But you've got to now! You've already said that you're definitely going to name the fish Riku, right?"
+    
+    show sora uniform armscrossed mock with dissolve
+    
+    so "Muuuu..."
+    so "Fine..."
+    
+    show sora uniform armscrossed pout with dissolve
+    
+    so "Riku-nii-chan."
+    ri "... ... ..."
+    so "... ... ..."
+    
+    show sora uniform neutral suspicious with dissolve
+    
+    so "Pff..."
+    
+    show sora uniform neutral laugh with dissolve
+    
+    so "Hah... hah... hahahahahahaha!!!"
+    "Despite her best efforts to stifle her laughter, Sora was in stitches."
+    "Upon hearing her rare laughter, I couldn't help but laugh along with her."
+    
+    show sora uniform neutral laughtalk with dissolve
+    
+    so "Just as expected, Riku-nii-chan's just..."
+    "Upon saying it again, she started laughing even harder."
+    
+    show sora uniform neutral laugh with dissolve
+    
+    so "Pfffff... HAHAHAHAHA!!"
+    "She wiped her eyes with her finger."
+    
+    show sora uniforn armscrossed laughtalk with dissolve
+    
+    so "I sound like some nine-year old!"
+    ri "But I still think Sora's pretty cute when she laughs. You should be like that more often."
+    
+    show sora uniform armscrossed surprise with dissolve
+    
+    so "Uck!"
+    
+    show sora uniform armscrossed poutblush with dissolve
+    
+    so "S-stupid Riku..."
+    "Even if she said that, I saw her face blush."
+    ri "Come on, Sora. Let's check out the rest of the stands."
+    
+    if kendoclub:
+        scene bg black with screenwipe
+        scene bg schoolfieldevening with screenwipe
+        
+    if cookingclub:
+        scene bg black with screenwipe
+        scene bg gymevening with screenwipe
+    
+    "I ended up buying Sora a wad of cotton candy and had fun with her for the rest of the festival."
+    "Before we knew it, the sun was already setting and it time to leave."
+    ri "I guess we should be getting back home now, huh."
+    
+    show sora uniform neutral with dissolve
+    
+    so "Uhn."
+    ri "I had a lot of fun today."
+    
+    show sora uniform neutral smile with dissolve
+    
+    so "Uhn, me too."
+    "After I returned to my club's stand to help clean up, I walked home with Sora."
+    jump festivalsecondday
+    
+label lookaroundwithharuka:
+    
+    scene bg culturefestgrounds with dissolve
+    show haruka uniform neutral with dissolve
+    
+    "We took a stroll around the school grounds, checking out what the other clubs were up to."
+    "I never realized that there were so many clubs at our school until now."
+    "We took a stop by the stand for the girl's swim team and bought a pair of shaved ice cups."
+    "After spending a long day in front of the burner, this was just what I needed."
+    ri "There are so many stands, huh?"
+    
+    show haruka uniform handstogether neutral with dissolve
+    
+    ha "Uhn. This must be Riku-kun's first time at a culture festival here, isn't it?"
+    ri "Yeah."
+    ha "It always gets lively at this time of the year because all the clubs need to do something for the festival."
+    ha "See? Even the inside of the auditorium is packed."
+    ri "I see..."
+    "Haruka was right. There was a long line outside of the auditorium."
+    
+    show haruka uniform handfront happy with dissolve
+    
+    ha "The keion clubs will be performing soon. Should we take a look inside?"
+    ri "Okay, that sounds pretty interesting."
+    "We went to the auditorium and joined the line."
+    "Whew. We might have to wait a while..."
+    "... ... ..."
+    "... ..."
+    "..."
+    
+    scene bg rockconcert with dissolve
+    
+    "Finally, we managed to get seated in the auditorium."
+    
+    show haruka uniform handraised smile with dissolve
+    
+    ha "Ah, looks like we made it just in time."
+    "She was right. The curtain was rising for the first performance."
+    "Hmm... I wonder what this will be like."
+    
+    play music "Music/Lunatic_Mind.ogg" fadeout 1.5 loop
+    
+    "All of a sudden, extremely loud rock music started playing, catching me off guard."
+    "My jaws dropped as a squadron of four guys decked out in bondage gear ran out onto the stage."
+    "Band Member" "I'LL KILL YAAA AALLLLLLLL!!!!!!!!"
+    
+    show haruka uniform excited reallysurprised with dissolve
+    
+    ha "EEEHHHHHHHHHH!?"
+    "A scantily clad guy with loose white flesh riffed on the guitar while flying his greasy long hair back and forth."
+    "The vocalist was wearing some sort of mock African tribal mask and had a bunch of miniature skulls hanging from his neck."
+    "Meanwhile, a really overweight guy was pounding on the drums behind him. I could see his flesh just spilling out from his bondage gear."
+    "Uwah, I needed eye bleach!"
+    "A row of girls with rainbow coloured hair began to scream and jump up and down in front of us."
+    "An assault of white noise hit us from the speakers. It felt as if a sonic boom had just occurred outside of our ears."
+    "Beside me, I could see Haruka plugging her ears with her hands."
+    ri "I think we came to the wrong place!!!!"
+    ha "Ehhh???"
+    ri "I SAID I THINK WE CAME TO THE WRONG PLACE!!!!"
+    
+    show haruka uniform excited shout with dissolve
+    
+    ha "I CAN'T HEAR YOU, RIKU-KUN!!!!"
+    "I gave up and withdrew my electronic kanji dictionary."
+    "Using the keyboard, I wrote down, \"I think we came to the wrong place\" on the display and showed it to her."
+    "Finally understanding, Haruka nodded. We slipped between rows of death metal fanatics and made our getaway."
+    "On my way out, I accidentally stepped on another student's shoes."
+    ri "S-sorry. Pardon me."
+    
+    show haruka uniform excited reallysurprised with dissolve    
+    
+    "Student" "Ehh!? Fuck yaa to heellll man!!!"
+    "Uwah oh..."
+    "Before a brawl broke out, I grabbed Haruka and ran out of the auditorium double time."
+    
+    play music "Music/Radio_Martini.ogg" fadeout 1.5 loop
+    scene bg culturefestgrounds with dissolve
+    show haruka uniform facecover pain with dissolve
+    
+    "It felt as if we had entered another world once we managed to escape."
+    "Wow! It felt so quiet!"
+    "Compared to what we had just endured, the chatter of the festival goers sounded as tranquil as the sound of a mountain stream."
+    "In the distance, I could hear the gentle sound of leaves rustling in the breeze."    
+    ha "Haaa... That was... really... really..."
+    "She was at a loss to describe what exactly we had just witnessed."
+    ri "Really... quite something."
+    "We stared at each other. Then, we couldn't help but burst out laughing."
+    ri "I never knew that our school had a keion club like that."
+    
+    show haruka uniform onehandraised forcedsmile with dissolve
+    
+    ha "Uhn. It was definately a new experience."
+    "We walked away from the auditorium and back into the school yard."
+    
+    show haruka uniform handsbehind smile with dissolve
+    
+    ha "I can't believe we're going to graduate so soon."
+    ri "Uhn. I'm going to miss high school."
+    
+    show haruka uniform handsbehind with dissolve
+    
+    ha "By the way Riku-kun, what do you want to be in the future?"
+    ri "Me?"
+    
+    show haruka uniform handraised smile with dissolve
+    
+    ha "Uhn. I'm kind of curious."
+    ri "Mmmmm..."
+    
+    menu:
+        "Lawyer":
+           jump doctor
+           
+        "Salaryman":
+           jump salaryman
+           
+        "Artist":
+           jump artist
+           
+        "Unemployed person":
+           jump unemployedperson
+           
+label doctor:
+    
+    show haruka uniform excited surprise with dissolve
+    
+    ha "Eh!? That's incredible!"
+    ri "Do you really think so?"
+    
+    show haruka uniform excited happy with dissolve
+    
+    ha "Uhn, uhn! It takes a lot of studying to become a lawyer."
+    jump harukafuture
+
+label salaryman:
+    
+    show haruka uniform handraised forcedsmile with dissolve
+    
+    ha "Eehh... Riku-kun's pretty realistic, isn't he?"
+    ri "Mm. Well, that's what most people in Japan become, isn't it?"
+    
+    show haruka uniform handstogether smile with dissolve
+    
+    ha "I guess you do have a point there."
+    jump harukafuture
+    
+label artist:
+    
+    show haruka uniform excited surprise with dissolve
+    
+    ha "Eehhh, I never knew Riku-kun had a creative side!"
+    ri "G-good point... I don't even know how to draw."
+    
+    show haruka uniform handstogether smile with dissolve
+    
+    ha "It's okay. I'm sure you can learn how if you try."
+    jump harukafuture
+    
+label unemployedperson:
+    
+    show haruka uniform excited surprise with dissolve    
+    
+    ha "Eeehhh!? You can't, Riku-kun!"
+    ri "Ahaha... I was just kidding. Of course I don't want to be unemployed when I grow up."
+    
+    show haruka uniform handfront sad with dissolve
+    
+    ha "Riku-kun's so horrible."
+    ri "Sorry, sorry."
+    jump harukafuture
+
+label harukafuture:
+    ri "What does Haru-chan want to be when she grows up?"
+    
+    show haruka uniform handstogether forcedsmile with dissolve
+    
+    ha "Mmm... it's a little embarrassing."
+    ri "I promise I won't laugh."
+    
+    show haruka uniform handsbehind embarassed with dissolve
+    
+    ha "I guess... Haruka wants be a wife once she grows up."
+    ri "Eeh... I see."
+    
+    show haruka uniform onehandface smileblush with dissolve
+    
+    ha "Don't you think it would be really nice to get married and live together in the same house in the future?"
+    "I could see how Haruka would want something like that."
+    "Although shesh, it almost sounded like some sort of invitation when she said it like that."
+    ri "Mm..."
+    "An awkward silence fell between us."
+    
+    show haruka uniform handsbehind embarassed with dissolve
+    
+    ha "... ... ..."
+    ri "... ... ..."
+    "I could almost see an awkward turtle swimming in circles around Haruka's head."
+    "Trying to break the silence, I pointed Haruka to a stand."
+    ri "Hey look, it's the art club's stand."
+    
+    show haruka uniform handstogether smile with dissolve
+    
+    ha "It looks like they're selling handmade crafts."
+    ri "Should we check it out?"
+    ha "Uhn."
+    "We walked over to the stand and browsed through the gallery."
+    "That's right. I should buy something for Haruka, shouldn't I?"
+    "I looked over the selection. I wonder what I should get her?"
+    
+    menu:
+        "Necklace":
+           jump necklace
+           
+        "Ring":
+           jump ring
+           
+        "Hair ribbon":
+           jump hairribbon
+           
+label necklace:
+    $ harukaring = False
+    $ harukahairribbon = False
+    $ harukanecklace = True
+    "I purchased a necklace from the stand."
+    ri "Here. It isn't much, but it's a present from me."
+    
+    show haruka uniform excited surprise with dissolve
+    
+    ha "Eehh? Really?"
+    ri "Uhn. It's like a souvenir for today."
+    
+    show haruka uniform handfront smileblush with dissolve
+    
+    ha "Really? Thanks Riku-kun."
+    jump afterpresent
+    
+label ring:
+    $ harukahairribbon = False
+    $ harukanecklace = False
+    $ harukaring = True
+    "I purchased a ring from the stand."
+    ri "Here. It isn't much, but it's a present from me."
+    
+    show haruka uniform excited surprise with dissolve
+    
+    ha "Eehh? Really?"
+    ri "Uhn. It's like a souvenir for today."
+    
+    show haruka uniform handfront smileblush with dissolve    
+    
+    ha "Really? Thanks Riku-kun."
+    jump afterpresent
+
+label hairribbon:
+    $ harukanecklace = False
+    $ harukaring = False
+    $ harukahairribbon = True
+    "I purchased a hair ribbon from the stand. It seemed like Haruka always wore these on her head."
+    ri "Here. It isn't much, but it's a present from me."
+    
+    show haruka uniform excited surprise with dissolve
+    
+    ha "Eehh? Really?"
+    ri "Uhn. It's like a souvenir for today."
+    
+    show haruka uniform handfront smileblush with dissolve    
+    
+    ha "Really? Thanks Riku-kun."
+    jump afterpresent
+    
+label afterpresent:
+    ha "Then... I think I should give something to Riku-kun too."
+    ri "Really?"
+    
+    show haruka uniform onehandface smileblush with dissolve
+    
+    ha "Mmmm, let's see..."
+    
+    show haruka uniform neutral happyblush with dissolve
+    
+    ha "Ah. How about this?"
+    "Haruka bought a cell phone strap with a wooden carving on it."
+    
+    show haruka uniform handfront smileblush with dissolve    
+    
+    ha "Here you go, Riku-kun. A memento of today."
+    ri "Thanks."
+    "... ... ..."
+    "After checking out the art club's stand, we wandered around some more."
+    
+    scene bg black with screenwipe
+    scene bg gymevening with screenwipe
+    
+    "I ended up buying Haruka a wad of cotton candy and had fun with her for the rest of the festival."
+    "Before we knew it, the sun was already setting."
+    
+    if cookingclub:
+        "Now that the end of the festival was approaching, we returned to our food stand and helped clean up."
+        
+    if kendoclub:
+        "Now that the end of the festival was approaching, Haruka returned to her food stand and helped clean up."
+        "Since I was already here, I guess I could help them out."
+
+    "We folded up all of our chairs and tables and packed the equipment back into the wooden crate."
+    "After loading the crate onto the trolley, I moved it back into the school."
+    
+    scene bg stars2 with dissolve
+    
+    "Luckily, the inside of the school was filled with other students who were cleaning up, so I managed to enlist the help of two other guys to carry that crate up the stairs."
+    
+    scene bg homeeconroom with dissolve
+    
+    "Whew. I guess today really was coming to an end."
+    "I closed the door to the club room and locked it as I left."
+    
+    $ renpy.music.stop(fadeout=1.0)
+    scene bg gymevening with dissolve
+    show haruka uniform neutral with dissolve
+    
+    "Back in the school yard, I saw Haruka wrapping up with the cleaning."
+    ri "It looks like it's really over now."
+    
+    show haruka uniform handraised smile with dissolve
+    
+    ha "Uu-uhn, we still have a fun day waiting for us tomorrow."
+    "I guess Haruka was right. After all, the glass was still half full."
+    "We finished cleaning up the food stand and packed up to go home."
+    "By now, the sun was already setting."
+    "The landscape was drenched in red as the sun disappeared underneath the mountains."
+    "I guess that meant time was running out..."
+    "The moonlight dance would be tomorrow, so I had to ask right now or else it'd really be too late."
+    
+    menu:
+        "Ask Haruka out to the dance.":
+            jump askharukaout
+        
+        "Don't ask Haruka.":
+            jump dontaskharukaout
+    
+label askharukaout:
+    
+    play music "Music/Lullaby_to_the_World.ogg" fadeout 1.5 loop
+    
+    ri "Hey Haru-chan..."
+    ha "Yes, Riku-kun?"
+    ri "You've heard about the moonlight dance, right?"
+    
+    show haruka uniform neutral with dissolve
+    
+    ha "Uhn, a lot of the girls on the club are excited about it."
+    ri "Does... Haru-chan happen to be going to with anyone?"
+    
+    show haruka uniform handfront embarassed with dissolve
+    
+    ha "Eh-heh..."
+    
+    show haruka uniform handsbehind forcedsmileblush with dissolve
+    
+    ha "Not really..."
+    ri "I see..."
+    
+    show haruka uniform handsbehind reallyembarassed with dissolve
+    
+    ha "... ... ..."
+    ri "... ... ..."
+    "Another awkward silence, huh..."
+    ha "I-is Riku-kun going with anyone?"
+    ri "Not really..."
+    
+    show haruka uniform handsbehind smilereallyblush with dissolve    
+    
+    ha "Eehh... I see."
+    ri "... ... ..."
+    
+    show haruka uniform handfront smilereallyblush with dissolve
+    
+    ha "It'd be nice to go with someone, wouldn't it?"
+    ri "Yeah..."
+    
+    show haruka uniform handstogether smilereallyblush with dissolve
+    
+    ha "Our time in this school is going to come to an end soon... Even though we'll all just be relocating to a university across the street, I think I'll miss being a high schooler."
+    ri "I guess... it hurts to leave things behind."
+    
+    show haruka uniform excited happyreallyblush with dissolve
+    
+    ha "That's why it's important to make a lot of good memories before you leave. Right, Riku-kun?"
+    ri "Uhn."
+    
+    show haruka uniform handfront smilereallyblush with dissolve
+    
+    ha "Eh-hehe..."
+    ri "I'm sorry Haru-chan. I meant to ask you this earlier..."
+    ri "But would you like to go to the moonlight dance with me?"
+    
+    show haruka uniform handstogether happyreallyblush with dissolve
+    
+    ha "Uhn. Let's go, Riku-kun."
+    ri "Thanks..."
+    
+    show haruka uniform handstogether smilereallyblush with dissolve
+    
+    ha "It's no problem."
+    "Haruka smiled and grabbed her school bag."
+    
+    show haruka uniform neutral smilereallyblush with dissolve
+    
+    ha "Should we get going?"
+    ri "Yeah..."
+    "We walked out the gate and waved good bye."
+    
+    show haruka uniform handfront happyreallyblush with dissolve
+    
+    ha "Bye bye, Riku-kun. I'll see you tomorrow."
+    ri "Uhn, I'll see you."
+    $ harukadance = True
+    $ nodance = False
+    $ nonamidance = False
+    
+    jump festivalsecondday
+
+label dontaskharukaout:
+    $ nodance = True
+    $ nonamidance = False
+    $ harukadance = False
+    "Ugh, just as I thought, asking Haruka out for something like that would be just too much."
+    "Besides, even if we were really close friends, it's not like we were really dating or anything..."
+    "I wiped the thought of the moonlight dance from my head. Our days together were fun enough without it."
+    ri "Thanks for walking around with me today."
+    
+    show haruka uniform handstogether smile with dissolve
+    
+    ha "Uhn. It was a lot of fun!"
+    ri "I'll see you tomorrow, Haru-chan."
+    ha "See you, Riku-kun."
+    jump festivalsecondday
+    
+label festivalsecondday:
+    
+    play music "Music/Fragments_of_Stars.ogg" fadeout 1.5 loop
+    scene bg rikuroomnight with dissolve
+    
+    if nonamidance:
+        "As soon as I entered my room, I crashed into my bed, all of my worries vaporized."
+        "Eaaahhh, what a crazy day! I honestly couldn't believe that Nonami was going to be my dance partner for tomorrow."
+        "And from the way she said it, it felt like that she might even have wanted something more than just being a dance partner for a single day."
+        "The thought made me feel as if my head was in the clouds."
+        "Who knows? Maybe soon, Nonami might even be my first girlfriend."
+        "I admit, it really was depressing all these years, watching everyone else get into relationships."
+        "For most of my life, I honestly felt exempt from that. After all, the girls looked totally different from me and I didn't really spend enough time in one place to ever get to know anyone well enough for something like that."
+        "Ever since I left Japan, I've wondered just how nice it would be to have a life long friendship turn to love."
+        "Even though we were forced to spend nearly ten years apart, Nonami was still my very first friend."
+        "I couldn't believe that the kind of luck that actually brought us back together again actually existed. Really, what are the chances of something like this happening?"
+        "I was so wrapped up in my thoughts that I could hardly sleep!"
+
+    if harukadance:        
+        "As soon as I entered my room, I crashed into my bed, all of my worries vaporized."
+        "Eaaahhh, what a crazy day! I honestly couldn't believe that Haruka was going to be my dance partner for tomorrow."
+        "As the iinchou, she couldn't help but stand out as the best girl in our class."
+        "Not only was she really cute looking, but she was really nice too. She must be some kind of a dream girl!"
+        "The thought made me feel as if my head was in the clouds."
+        "Who knows? Maybe soon, Haruka might even be my first girlfriend."
+        "I admit, it really was depressing all these years, watching everyone else get into relationships."
+        "For most of my life, I honestly felt exempt from that. After all, the girls looked totally different from me and I didn't really spend enough time in one place to ever get to know anyone well enough for something like that."
+        "As expected, the girls in the motherland really are so much easier to get to know!"
+        "Woah, woah. Better ease yourself there, Riku-kun."
+        "I was getting ahead of myself here..."
+        "Still, I was so wrapped up in my thoughts that I could hardly sleep!"
+        
+    if nodance:
+        "As soon as I entered my room, I crashed into my bed, all of my worries vaporized."
+        "Ah, what was I doing, thinking about that silly dance?"
+        "My days with Nonami, Haruka, and Sora were happy enough without it."
+        "There was going to be another fun day in store tomorrow."
+        "I could hardly wait for it!"
+
+    
+    scene bg black with dissolvelong
+    scene bg hallway with dissolvelong
+
+    "I got up bright and early the next morning with surprising ease and got to school just as the sun starting rising."
+    
+    if nonamidance:
+        "Today, it would just be the haunted house, and then I was free until the moonlight dance."
+        "I was so eager for the dance that I wanted to skip the haunted house and go straight to the dance, even though we had worked so hard the past couple of days to make it.."
+        "But first things first. I quickly went to the front of the student council room where they were distributing the tickets for the moonlight dance and made sure to get a pair."
+        "Since the dance was available for just seniors, I had to produce my student ID to get the ticket."
+        "I placed it in my pocket for safe keeping and went to our classroom."
+    
+    if harukadance:
+        "Today, it would just be the haunted house, and then I was free until the moonlight dance."
+        "I was so eager for the dance that I wanted to skip the haunted house and go straight to the dance, even though we had worked so hard the past couple of days to make it.."
+        "But first things first. I quickly went to the front of the student council room where they were distributing the tickets for the moonlight dance and made sure to get a pair."
+        "Since the dance was available for just seniors, I had to produce my student ID to get the ticket."
+        "I placed it in my pocket for safe keeping and went to our classroom."
+        
+    if nodance:
+        "Today, it would just be the haunted house, and then I was free for the rest of the day."
+
+    $ renpy.music.stop(fadeout=1.0)
+    scene bg hauntedhouse with dissolve
+
+    "By now, our classroom was completely transformed."
+    "A gnarly plant and a human skeleton model we borrowed from the biology room stood beside our door."
+    "Since I was going to be operating the lights, I had to enter a small control room inside the class."
+    "Just as I was about to do that, I was interrupted by a voice."
+    
+    play music "Music/Right_Behind_You.ogg" noloop
+    scene bg white
+    scene bg hauntedhouse
+    show haruka ghost scary
+    with dissolve
+    ha "Riiiiikkkuuuu-kuuuuuunnnnn..."
+    ri "Uwah!"
+    "I jumped in surprise, only to realize that it was just Haruka in her costume."
+    "Ah, she really got me there..."
+    
+    play music "Music/Lullaby_to_the_World.ogg" fadeout 1.5 loop
+    show haruka ghost smile with dissolve
+    
+    ha "Eheh... I think I was pretty successful that time."
+    ri "You really scared me..."
+    ha "Ehehehehe..."
+    "Her innocent sounding laugh sounded completely out of place coming from that costume..."
+    
+    show haruka ghost neutral with dissolve
+    
+    ha "So, does Riku-kun know how to operate the lights yet?"
+    ri "I was just about to try figuring it out."
+    
+    show haruka ghost happy with dissolve
+    
+    ha "Here, follow me."
+    "Haruka led me to a tiny hidden compartment inside the haunted house."
+    
+    show haruka ghost neutral with dissolve
+    
+    ha "Here, you can control the lights using this panel here."
+    ha "You can take a peek at where people are positioned using this hole."
+    "She pointed to a small peep hole in the wall in front of me."
+    
+    show haruka ghost smile with dissolve
+    
+    ha "Whenever somebody approaches the tomb stones, press this button to create a lightning strike. At that moment, I'll appear and scare everyone."
+    ri "I see... So it's like a special scripted event, huh?"
+    ha "Uhn."
+    ri "Are there any other events like that?"
+    ha "Ehehe... Since our haunted house isn't that big, we only have that one."
+    
+    show haruka ghost neutral with dissolve
+    
+    ha "You can press this button to activate the fans though."
+    "Haruka demonstrated and blew a eerie breeze through the class."
+    ha "You also control the ambient lights using these sliders. Mmm... I don't think we'll need to change those from the initial setting though."
+    ri "Got it."
+    
+    show haruka ghost smile with dissolve
+    
+    ha "I think that's just about everything..."
+    
+    scene bg hallway with dissolve
+    
+    "We could barely fit into that cramped compartment, so we got back out into the hallway as soon as we finished."
+    "Soon, all of our classmates showed up."
+    "We all got into our positions and got ready for the day's events."
+    
+    play music "Music/Investigations.ogg" fadeout 1.5 loop
+    scene bg black with screenwipe
+    scene bg hauntedhouse with screenwipe
+
+    "By now, the second day of the culture festival was already well underway."
+    "Unfortunately, I couldn't see any of the day's activities yet because I was in the lighting compartment by myself."
+    "Whew... It sure was cramped in here."
+    "The air was pretty stifling too..."
+    "Just then, I noticed a young couple approaching the tomb stones through my peep hole."
+    "As instructed by Haruka, I pressed the lightning button and lit our class with a white flash."
+    "Just as the speakers rumbled, Haruka appeared from behind some props."
+    
+    show haruka ghost focused with dissolve
+    
+    ha "Uwwaaaaaaahhhhhhhh~"
+    
+    hide haruka with dissolve
+    
+    "...looking at it for the 14th time today, the entire thing looked kind of silly, but it still worked."
+    "The girl squeezed her boyfriend's arms and screamed. He smiled nervously and patted her on the head."
+    
+    if nonamidance:
+        "Ugh..."
+        "...I felt kind of sick watching the couple..."
+        "I don't think Nonami and I would ever become like that!"
+        "...Woah, woah, wait a minute..."
+        "Slow down there, Rii-kun. You're not even going out with Nonami yet..."
+        "Paahhh... I guess I was getting ahead of myself there."
+        
+    if harukadance:
+        "Uwah, what a lovey-lovey couple."
+        "Meanwhile, I was stuffed in here in this stuffy box by myself. Ahh, some people really did have rosy lives..."
+        
+    if nodance:
+        "Uwah, what a lovey-lovey couple."
+        "Meanwhile, I was stuffed in here in this stuffy box by myself. Ahh, some people really did have rosy lives..."
+
+    "I took off of my outer coat and fanned myself."
+    "Whew... it was getting pretty hot."
+    "... ... ..."
+    "I continued my tasks for a few more hours."
+    "The end of my shift was now approaching. I wonder what I should do after this? I still had an entire afternoon left until the moonlight dance."
+    "Just then, I noticed a lone girl wandering through the haunted house."
+    "Ah, just by herself huh? This should be easy..."
+    "I activated the fans and got ready to push the lightning button."
+    "And... there! She reached the tombstones."
+    "I pressed the button and split the haunted house with a sharp thunderclap."
+    "Just on cue, Haruka appeared with both of her arms reached out like a zombie."
+    
+    show haruka ghost focused with dissolve
+    
+    ha "Uuuuwaaaahhhhhhh~"
+    "... ... ..."
+    "Eh?"
+    "There was absolutely no reaction whatsoever from the girl."
+    "Pah. Were we unsuccessful?"
+    
+    show sora uniform armscrossed suspicious with dissolve:
+        xanchor 0.5
+        xpos 0.8
+    
+    so "Good afternoon, Haruka-sempai."
+    
+    hide sora with dissolve
+    
+    show sora uniform armscrossed suspicious with dissolve:
+        xanchor 0.5
+        xpos 0.7
+    
+    show haruka ghost surprise with dissolve:
+        xanchor 0.5
+        xpos 0.3
+    
+    ha "Eh? S-Sora-chan?"
+    "Wait a minute... That voice..."
+    "I poked my head out from my compartment and could see that the girl was in fact Sora."
+    ri "Eh? Sora, what are you doing here?"
+    
+    if nonamidance:
+        
+        show sora uniform neutral with dissolve:
+            xpos 0.7
+        
+        so "Looking for you. Here."
+        "She handed me a small envelope."
+        ri "Eh? What's this?"
+        so "I dunno. Nonami-sempai asked me to deliver it to you."
+        "For some reason, my heart jumped when I heard Nonami's name."
+        "C-calm down, Riku. It's only an envelope!"
+        "Come to think of it, I hadn't told either Sora or Haruka yet that I had asked Nonami out for the dance."
+        "I wonder what their reactions will be like?"
+        "I figured though that the middle of a haunted house with Haruka in that crazy costume wouldn't be the best place to break the news though, so I decided to hold off on telling them for now."
+        
+    if harukadance:
+        
+        show sora uniform neutral with dissolve:
+            xpos 0.7
+        
+        so "Looking for you. Here."
+        "She handed me a small envelope."
+        ri "Eh? What's this?"
+        so "I dunno. Nonami-sempai asked me to deliver it to you."
+        "Eh? I wonder what Nonami wanted."
+        "I grabbed the letter."
+        ri "Okay, thanks for bringing it here."
+        
+        show sora uniform neutral smile with dissolve:
+            xpos 0.7
+        
+        so "Uhn. No problem."
+        "I turned back to my compartment with the letter. We better not stand out here for too long."
+        "After all, we had a job to do!"
+        
+    if nodance:
+        
+        show sora uniform neutral with dissolve:
+            xpos 0.7
+        
+        so "Mm. My shift hasn't started yet, so I decided to see what Haruka-senpai's class was doing."
+        
+        show haruka ghost forcedsmile with dissolve:
+            xpos 0.3
+        
+        ha "I see. Eh-heh... but it doesn't look like our haunted house really impressed Sora-chan, huh?"
+        "I shook my head. Something like a haunted house couldn't even faze Sora..."
+        "As expected, she was just too cool headed to be scared by ghost-Haruka."
+        ri "You could have at least pretended to be a little bit scared for our sakes, you know..."
+        
+        show sora uniform point tsundere with dissolve:
+            xpos 0.7
+        
+        so "Hmph. It's not my fault your lighting effects are so cheesy."
+        "H-hey!"
+        ri "I worked hard setting everything up, you know!"
+        
+        show sora uniform armscrossed tsundere with dissolve:
+            xpos 0.7
+        
+        so "Mah, whatever. I'll be on my way now..."
+        ri "Sigh... All right, I'll see you later..."        
+        
+    show sora uniform armscrossed neutral with dissolve:
+            xpos 0.7
+        
+    so "Well then, see you."
+    
+    hide sora with dissolve
+    
+    "With that, Sora left."
+    "Seriously... Couldn't she have at least pretended to be a little bit scared?"
+    
+    if harukadance:
+        
+        show haruka ghost smile with dissolve:
+            xpos 0.3
+        
+        ha "Let's return to our positions now, Riku-kun."
+        
+        hide haruka with dissolve
+        
+        "I returned to my compartment and tore the envelope open. A small scrap of paper was inside."
+        no "Meet me at my class after your shift is over!"
+        "Hmm, I wonder what she wanted to talk with me about."
+        "Oh well. I guess I could go see Nonami after this."
+        
+    if nonamidance:
+        
+        show haruka ghost smile with dissolve:
+            xpos 0.3
+        
+        ha "Let's return to our positions now, Riku-kun."
+        
+        hide haruka with dissolve
+        
+        "I returned to my compartment and tore the envelope open. A small scrap of paper was inside."
+        no "I'll be waiting for you at seven at the school entrance! See you there!"
+        "I smiled sheepishly to myself at seeing Nonami's note."
+        "I'll meet you there... For certain!"
+
+    if nodance:
+        
+        show haruka ghost forcedsmile with dissolve:
+            xpos 0.3
+        
+        ha "Eh-heh... Sorry Riku-kun, I should have tried harder to be more scary..."
+        ri "No, it's not your fault, Haru-chan. Sora's always like that."
+        
+        show haruka ghost happy with dissolve:
+            xpos 0.3
+        
+        ha "Still, I am a little jealous. Riku-kun's gotten pretty close to his sister, hasn't he?"
+        ri "Hah, if you say so..."
+        
+        show haruka ghost smile with dissolve:
+            xpos 0.3
+        
+        ha "Uhn. I think Sora-chan's gotten much more honest towards Riku-kun since she arrived."
+        ri "Mmm, I guess you're right. Well, let's get back into our positions."
+        ha "Okay!"
+        
+        hide haruka with dissolve
+            
+    scene bg black with screenwipe
+    scene bg hallway with screenwipe
+    
+    "Soon, our shift at our haunted house was over."
+    "Haruka and I finally got out of the classroom and saw the crowded hallways for the first time."
+    
+    show haruka uniform excited surprise with dissolve
+    
+    ha "Eeehhh... There're so many people now!"
+    ri "It seems totally different from when we got into the haunted house this morning."
+
+    if harukadance:
+        "I'd better go meet Nonami. She was probably waiting for me."
+        ri "I think I have to get going now."
+        
+        show haruka uniform concerned with dissolve
+        
+        ha "Do you have to do something?"
+        ri "Yeah."
+        
+        show haruka uniform handsbehind sad with dissolve
+        
+        ha "Ehh... Okay."
+        "Haruka seemed a little bit disappointed."
+        "To tell the truth, I really wanted to take a look around with Haruka too."
+        ri "Mmm... I think I'll be done soon though."
+        ri "I'll text you once I'm finished and then we can look around the school together."
+        
+        show haruka uniform handraised smile with dissolve
+        
+        ha "Uhn!"
+        ri "I'll see you soon."
+        ha "Bye bye."
+        jump seenonamihauntedhouse
+
+    if nonamidance:
+        
+        hide haruka with dissolve
+        
+        "There was still a lot of time left until the moonlight dance."
+        "Even though I wanted time to flow faster, I suppose that I should make the most of my last high school culture festival."
+        "I wonder what I should do?"
+        $ time = True
+        $ spokewithharuka = False
+        $ didsomethingelse = False
+
+        menu:
+            "Take a look around with Haruka.":
+                jump lookaroundharuka
+            
+            "Check out Sora's classroom.":
+                jump checksoraclass
+            
+            "Check out Nonami's classroom.":
+                jump checknonamiclass
+                
+    if nodance:
+        
+        "Now that my shift was over, it was time to check out the other classes."
+        
+        play music "Music/Radio_Martini.ogg" fadeout 1.5 loop
+        scene bg hallway3 with dissolve
+        
+        "I made my way to Nonami's classroom and saw her standing outside."
+        
+        show nonami uniform greet happy with dissolve
+        
+        no "Ooyyy, Rii-kun!"
+        ri "Hey Nonami. My shift just ended, so I came around to see what you were doing."
+        
+        show nonami uniform excited smile with dissolve
+        
+        no "Oh, lucky! Mine just ended too. Come on, let's take a look around together!"
+        "Before I could say anything, Nonami was already pushing me along."
+        no "It's a festival, Rii-kun! A festival!"
+        ri "Y-yeah, I can kind of see that..."
+        
+        show nonami uniform excited happy with dissolve
+        
+        no "So we've obviously gotta have fun, right?"
+        ri "Uhn, I suppose you're right... Eh-heh..."
+        
+        scene bg black with screenwipe
+        scene bg hallway3 with screenwipe
+        
+        "We took a stroll around the school, checking out what all of the other classes were doing."
+        
+        show nonami uniform happy with dissolve
+        
+        no "Uwaaahhh...!! Look, look Rii-kun, that class has a human UFO game!"
+        "A what???"
+        "I took a look and saw that Nonami was right."
+        "There was a guy tied to a rope on the ceiling and it looked like people could control him using a bunch of pulleys."
+        "A bunch of prizes were scattered around the floor and the goal was to use the guy to grab them across the classroom and into the target area."
+        "That was definitely the craziest idea I've seen today! Although I certainly didn't envy the guy who had to be hanging from the ceiling all day long."
+        
+        show nonami uniform smile2 with dissolve
+        
+        no "Eaaahhh, it looks like a lot of fun to do that!"
+        "O-oy, only you'd think a thankless job like that was fun..."
+        no "Come on, come on, Rii-kun! Let's go check it out!"
+        "Nonami grabbed me and ran towards the class."
+        "Before I knew it, she had already bought a ticket and was trying out the pulleys."
+        
+        show nonami uniform neutral focused with dissolve
+        
+        no "Mmm... I see... This one moves the crane to the right, while this one moves it further back. And you can use this one to lower it."
+        
+        show nonami uniform neutral focustalk with dissolve
+        
+        no "All right! Let's have a go!"
+        "She pulled one of the pulleys and brought the human crane further backwards."
+        
+        show nonami uniform neutral focused with dissolve        
+        
+        no "Ufufufu... That lunch bento is as good as mine..."
+        "So she was aiming for the bento box, huh?"
+        "Once it looked like she had lined up the crane properly, she lowered the catcher, only to realize that she was off target."
+        
+        show nonami uniform surprise with dissolve
+        
+        no "Hey, that's impossible! I was sure this was the spot!"
+        "So that was the trick behind this. It was pretty hard to aim properly that far in the classroom from this angle."
+        "Not only was it a pretty big room, but there was nothing inside to base your perspective on."
+        "Nonami brought back the catcher, now sounding a little disappointed."
+        
+        show nonami uniform neutral cartoontears with dissolve
+        
+        no "Uuu..."
+        ri "I guess it's just as difficult to win as the UFO catchers at the arcade."
+        
+        show nonami uniform armscrossed cartoontears with dissolve
+        
+        no "That's right, huh... One time, I spent like two thousand yen on just one UFO catcher..."
+        no "They make these games just to rob the pockets of gullible people like us, huh Rii-kun?"
+        "Actually, I didn't do anything here, Nonami..."
+        
+        show nonami uniform armscrossed gloom with dissolve
+        
+        no "Oh well. Let's get a move on it."
+        "Ah, leave it to Nonami to begin something suddenly with so much enthusiasm, but then lose interest even more quickly."
+        "Still, I couldn't help but smile at Nonami's silly antics."
+        ri "Hah... All right, let's try something else."
+        "... ... ..."
+        "We wandered through the other classrooms, seeing what everyone else was doing."
+        "Eventually, we passed by one of the posters advertising the moonlight dance."
+        
+        show nonami uniform happy with dissolve
+        
+        no "Oh! Hey, hey, Rii-kun, you know that there's gonna be a dance later today, right?"
+        ri "Yeah, I heard about that."
+        no "So, are ya gonna go?"
+        ri "Mmm... I wonder..."
+        
+        show nonami uniform armsraised smile with dissolve
+        
+        no "I bet it's gonna be pretty fun! There's even gonna be a bonfire in the middle of the school yard."
+        ri "Yeah... but the only people who are going to be there are couples, you know."
+        
+        show nonami uniform neutral comictears with dissolve
+        
+        no "Uuu... you do have a point."
+        
+        show nonami uniform armscrossed irritated with dissolve
+        
+        no "I bet it's gonna be make out central there... Blech."
+        ri "Ahahahaha. You're right. It's really no place for people like us, right?"
+        
+        show nonami uniform armscrossed forcedsmile with dissolve
+        
+        no "Eh-heh... I guess so..."
+        ri "Just as expected, us dancing together's just a bit..."
+        
+        $ renpy.music.stop(fadeout=1.0)
+        show nonami uniform armscrossed focussad with dissolve
+        
+        no "H-hey... are ya calling me a klutz?"
+        ri "Uh... a-actually, what I meant to say was..."
+        
+        show nonami uniform armscrossed madblush with dissolve
+        
+        no "Stupid Rii-kun..."
+        "All of a sudden, Nonami had an angry expression on her face."
+        "Eah, looks like I accidentally made her mad... Not good..."
+        "I tried my best to cool her down."
+        ri "S-sorry, I was just saying that you're my best friend. Probably the first friend I ever had."
+        "Nonami sighed."
+        
+        show nonami uniform armscrossed sigh with dissolve
+        
+        no "Fuaa... You're as clueless as ever, Rii-kun."
+        ri "Huh? What do you mean?"
+        "Nonami bent forward and pouted. I could tell that she was trying to annoy me now though."
+        
+        show nonami uniform armscrossed sarcastic with dissolve
+        
+        no "Absolutely nooothing!"
+        ri "O-oy..."
+        "She was starting to remind me of Sora..."
+        
+        play music "Music/Radio_Martini.ogg" fadeout 1.5 loop
+        show nonami uniform smile with dissolve
+        
+        no "Eh-heh. I think that's enough for today. Thanks for walking around with me, Rii-kun."
+        ri "Uhn... H-hey, about what you said..."
+        no "Uu-uhn, don't worry about it. It really is nothing!"
+        ri "Are you sure...?"
+        
+        show nonami uniform greet smile with dissolve
+        
+        no "Uhn! See ya, Rii-kun!"
+        ri "A-alright, see you."
+        
+        hide nonami with dissolve
+        
+        "And with that, Nonami was gone."
+        "Shesh, I could never quite keep up with how quickly her emotions changed."
+        "Still, what did she mean about me being clueless?"
+        "Maybe she wanted to go to the dance with me and was annoyed that I accidentally shut her down so easily..."
+        "Did I just lose a great opportunity to get closer with Nonami right now?"
+        "I thought about it for a moment. Nonami and I... a couple?"
+        "... ... ..."
+        "Nah... As if something like that would ever happen!"
+        "It was probably just wishful thinking on my part. She probably meant something else totally different."
+        
+        scene bg hallway with screenwipe
+        show haruka uniform neutral with dissolve
+        
+        "Clearing the thought from my head, I wandered back to our classroom and saw Haruka standing outside."        
+        ha "Ah, Riku-kun. Were you looking around?"
+        ri "Uhn. I was checking out the other classes with Nonami."
+        
+        show haruka uniform handstogether smile with dissolve
+        
+        ha "Ah, I see."
+        "Come to think of it, maybe I should ask for Haruka's opinion on what just happened with Nonami."
+        "A girl's opinion could be helpful, after all. Besides, Haruka's been friends with Nonami ever since elementary school, so she probably knew her really well."
+        ri "Haru-chan, I have a question. It's kind of weird, so can you bear with me a little?"
+        
+        show haruka uniform handstogether neutral with dissolve
+        
+        ha "Sure thing. What is it?"
+        ri "What do you think Nonami thinks of me?"
+        
+        show haruka uniform handstogether smile with dissolve
+        
+        ha "Mmm... Nona-chan, huh? I think she must care for Riku-kun a lot."
+        ha "She always looks so happy whenever she's talking about you. Riku-kun must be someone who's pretty special to her."
+        ri "But doesn't she usually look happy whenever she's talking about anything?"
+        ha "Ehehe... But you know, back when we first met in elementary school, Nona-chan would talk about Riku-kun a lot."
+        ri "R-really?"
+        ha "Uhn. Back then, we would go through Nona-chan's old photo albums and she would tell me all about you."
+        ha "I could tell that you had a special place in Nona-chan's heart."
+        
+        show haruka uniform handraised with dissolve
+        
+        ha "To tell the truth, maybe I was a little bit envious that my friend had somebody like that back then..."
+        ri "I see..."
+        
+        show haruka uniform handstogether forcedsmile with dissolve
+        
+        ha "Umm... did something happen between you two?"
+        ri "Kind of... We were talking about the dance just now, and it seemed like she got mad at me when I said that us dancing together was a little..."
+        
+        show haruka uniform handraised forcedsmile with dissolve
+        
+        ha "Eehhh... I see..."
+        ri "I didn't really mean anything by it... Nonami's always been my best friend, but it's still obvious we're not really a couple or anything like that..."
+        
+        show haruka uniform handfront happy with dissolve
+        
+        ha "Eh-heh. Okay, I'll try to talk to Nona-chan about it and see what I can fix about it."
+        ri "You will?"
+        
+        show haruka uniform excited happy with dissolve
+        
+        ha "Uhn, of course!"
+        ri "Thanks, Haru-chan."
+        
+        show haruka uniform handstogether happy with dissolve
+        
+        ha "Don't worry about it. Nona-chan's not the kind of person to stay angry about things like that for a long time. In fact, she might have already forgotten about it. Eh-heh..."
+        ri "Hahaha... you're right. I'm probably worried for no reason."
+        
+        show haruka uniform handstogether smile with dissolve
+        
+        ha "Uhn."
+        ha "Umm... is that all Riku-kun had to talk about?"
+        ri "Yeah, that's all. Thanks, Haru-chan. That helped a lot."
+        
+        show haruka uniform handraised smile with dissolve
+        
+        ha "Eh-heh... well then, should we take a look around together?"
+        ri "Sure, let's do that."
+        "We walked away from our classroom."
+        ri "By the way, class 3-4 has this crazy human UFO game... You should totally check that out."
+        
+        show haruka uniform excited surprise with dissolve
+        
+        ha "Eeeehhhh??? That sounds pretty interesting!"
+        
+        $ renpy.music.stop(fadeout=1.0)
+        scene bg black with screenwipe
+        scene bg hallway with screenwipe
+        
+        "By the time the sun was setting, the packed hallways were beginning to thin out. I guess people were heading out to the school yard for the dance."
+        "Oh well. It wasn't as if that had anything to do with me."
+        "Just as I was about to return to the classroom to help Haruka clean up, someone caught my attention from the corner of my eyes."
+        
+        show sora uniform neutral distantright with dissolve:
+            xanchor 0.5
+            xpos 0.8
+        
+        so "... ... ..."
+        
+        hide sora with dissolve
+        
+        "Huh? I wonder what Sora was doing."
+        "It didn't look like she was in a good mood..."
+        "I felt a little bad leaving Haruka to clean up by herself, but decided to chase after Sora. Maybe something bad had happened to her and she needed help."
+        "I turned around and tried my best to retrace her steps."
+        
+        scene bg stars2 with dissolve
+        
+        "That was strange. Sora's general direction led me to the stairway to the roof."
+        "I wonder what she was doing there?"
+        "Curiously, I walked up the stairs and opened the door."
+        
+        scene bg roof with dissolve
+        show sora uniform neutral distantright with dissolve:
+        
+        "Sure enough, I saw Sora leaning against the safety railing, looking at the distant evening horizon."
+        ri "Hey."
+        "Upon hearing my voice, she turned around."
+        
+        show sora uniform neutral distantleftopenmouth with dissolve
+        
+        so "Riku."
+        ri "What are you doing here, Sora?"
+        
+        show sora uniform armscrossed distantright with dissolve
+        
+        so "Hmm... just watching the sky."
+        ri "Eeh... I see."
+        "I walked up to her and stood beside her, gazing out into the distance with her."
+        ri "I didn't get to see you much today. Did you have a lot of fun?"
+        so "Fun... huh..."
+        ri "Uhn... I spent most of the day walking around with Haru-chan. You should have been there with us."
+        
+        play music "Music/Only_You.ogg" fadeout 1.5 loop
+        show sora uniform neutral tears with dissolve
+        
+        so "... ... ..."
+        "All of a sudden, I saw a tear run down Sora's eyes."
+        ri "What's the matter, Sora? Did something happen?"
+        so "...nothing..."
+        ri "Then why are you..."
+        
+        show sora uniform armscrossed tears2 with dissolve
+        
+        so "Tsch..."
+        "Sora wiped away her tears with her sleeves."
+        
+        show sora uniform neutral tears with dissolve
+        
+        so "Hey, do you want to hear a funny story?"
+        ri "A-alright..."
+        
+        show sora uniform armscrossed tears2 with dissolve
+        
+        so "I got rejected today even before I could confess."
+        ri "H-huh?"
+        so "Uhn."
+        ri "B-by who???"
+        
+        show sora uniform armscrossed tears with dissolve
+        
+        so "There was a senpai who I admired..."
+        "All of a sudden, I felt really enraged, as if I had just found out that some sleazy guy was making a move on my girlfriend or something..."
+        "I chased the thought from my head. Sora was my sister, for crying out loud..."
+        "A-anyways, I had to make sure to get to the bottom of this!"
+        ri "W-what happened?"
+        
+        show sora uniform armscrossed tears2 with dissolve
+        
+        so "I... I was really hoping that he'd ask me out to the dance... since only third years can buy tickets, I couldn't ask him out..."
+        so "But h-he..."
+        ri "W-what!? Where is he right now!?"
+        "Sora pointed down to the school yard, to where a guy was now dancing with a girl."
+        "So that must have meant that he had asked somebody else out instead."
+        ri "T-that scum! So he went out with another girl!?"
+        so "U-uhn..."
+        "As enraged as I was at that guy, I felt kind of relieved that Sora wasn't going out with him."
+        "A-as if I would let anyone touch my precious little sister!"
+        "As Sora's brother, it was my responsibility to take care of her, and I wasn't about to let anyone else take that away from me!"
+        ri "I'm really glad that you're okay... and not with a scumbag like him."
+        
+        show sora uniform neutral tears2 with dissolve
+        
+        so "Uhn..."
+        "I smiled and patted her on her head."
+        ri "Don't be sad. He probably wasn't worth your time anyways."
+        
+        show sora uniform neutral tears with dissolve
+        
+        so "I.. guess so..."
+        so "Sorry Riku. Something like this..."
+        
+        show sora uniform armscrossed tears with dissolve
+        
+        ri "Uu-uhn. Don't worry about it at all."
+        ri "I'm still here with you, right?"
+        
+        show sora uniform neutral tearssmile with dissolve
+        
+        so "Uhn."
+        ri "Never forget! No matter what happens, your onii-chan will always be there for you!"
+        "Sora couldn't help but smile at that, even if her cheeks were still wet with tears."
+        "Glad to see her smile, I kept up my bravado."
+        ri "Even if the sky may fall or the seas rise and drown us all, I'll always be here to save you, Sooorrraaa!!"
+        ri "No matter how dark the night or dastardly the villain, never forget that I'm always by your side!"
+        ri "Because I am the invincible older brother!!! Saving the world, one little sister at a time!"
+        
+        show sora uniform neutral tearslaugh with dissolve
+        
+        so "Pfft.... hahaha..."
+        ri "Hahahahaha..."
+        "Sora laughed along with me, forgetting her troubles."
+        
+        show sora uniform neutral pout with dissolve
+        
+        so "Stupid Riku."
+        
+        show sora uniform point tsundere with dissolve
+        
+        so "I'll probably be the one to save you most of the time."
+        ri "Really?"
+        
+        show sora uniform armscrossed tsundere with dissolve
+        
+        so "Uhn. Because I'm the smarter, prettier, and cuter younger sister!"
+        ri "Eeehhhh... you think so, huh?"
+        
+        show sora uniform armscrossed boast with dissolve
+        
+        so "Hmph! Of course I do."
+        
+        show sora uniform neutral happy with dissolve
+        
+        so "Ehehehehe..."
+        "Just then, we heard something pop over us."
+        
+        scene cg sorafireworks with dissolve
+        
+        "An enormous flower of light bloomed over the school, basking us in colour."
+        ri "Look, Sora."
+        so "Uhn."
+        ri "It's pretty, huh?"
+        so "Yeah..."
+        "We stood together, watching the fireworks display against the clear evening sky."
+        ri "... ... ..."
+        so "... ... ..."
+        so "Riku?"
+        ri "Yeah?"
+        so "Thanks."
+        ri "Uhn."
+        so "If it hadn't been for you, this would have been a lousy way to end a culture festival."
+        so "But... eh-heh... I think I'm somewhat happy now."
+        ri "I'm glad."
+        
+        scene bg roof with dissolve
+        show sora uniform neutral happy with dissolve
+        
+        "All of a sudden, I heard the door open behind us."
+        
+        show nonami uniform happy with dissolve:
+            xanchor 0.5
+            xpos 0.8
+        
+        no "Oh! I found them, Haru-chan!"
+        
+        show haruka uniform handstogether neutral with dissolve:
+            xanchor 0.5
+            xpos 0.2
+        
+        ha "Ah, there you were, Riku-kun."
+        ri "Everyone..."
+        
+        show haruka uniform handraised smile with dissolve
+        
+        ha "Eh-heh... we were wondering where you two went."
+        "Nonami and Haruka joined us and the four of us watched the fireworks together."
+        
+        show nonami uniform armscrossed smile with dissolve
+        
+        no "Eh-heh. Good thing we didn't go to the dance, since the view's a lot better from here, huh?"
+        
+        show haruka uniform handfront happy with dissolve
+        
+        ha "Uhn. It's so pretty."
+        "I looked at everyone. They were the three most important people in my life."
+        "Even though the culture festival was almost over, our days together weren't."
+        "I was sure that we'd all be friends no matter what."
+        "I wished there was some way to capture the emotions I felt now."
+        "No matter what happened, tonight, when the four of us watched the fireworks together on the final day of the culture festival, was going to be the most precious memory that I would guard in my heart."
+        "I held Sora's hands."
+        ri "Hey, smile a little bit more."
+        ri "That way, I won't have to tickle you so much to hear you laugh."
+        so "Uhn."
+        "Soon the show was over and it really was time to go home."
+        
+        show nonami uniform excited with dissolve
+        
+        no "Eah, that sure was fun!"
+        
+        show haruka uniform handraised smile with dissolve
+        
+        ha "Uhn. I'm glad that we managed to come out here in time."
+        so "Let's get going, Riku."
+        ri "Uhn. Everyone..."
+        ri "Let's go home."
+        jump afterschoolfestival
+
+label seenonamihauntedhouse:
+    
+    scene bg black with screenwipe
+    scene bg hallway with screenwipe
+    
+    "I made my way to Nonami's classroom and saw her standing outside."
+    
+    show nonami uniform greet happy with dissolve
+    
+    no "Ooyyy, Rii-kun!"
+    ri "Hey Nonami. I got your letter. Is there something wrong?"
+    
+    show nonami uniform armscrossed smile with dissolve
+    
+    no "Uu-uhn, nothing's wrong. Hey, my shift just ended. Come on, let's take a look around!"
+    ri "E-eh?"
+    
+    show nonami uniform excited focustalk with dissolve
+    
+    no "It's a festival, Rii-kun! A festival!"
+    ri "Y-yeah, I can kind of see that..."
+    
+    show nonami uniform smile2 with dissolve
+    
+    no "So we've obviously gotta have fun, right?"
+    "Before I could say anything, Nonami was already pushing me along."
+    ri "H-hey wait just a moment..."
+    
+    show nonami uniform excited focustalk with dissolve
+    
+    no "Uwahahaha! Fun times are awaiting us, Rii-kun! You wouldn't wanna miss out on your last school festival, wouldcha?"
+    "Aw no, was this another one of her random antics?"
+    "Usually, I wouldn't have minded fooling around with Nonami a bit, but really, I needed to be with Haruka right now..."
+    "I tried to protest, but it was obvious that Nonami wasn't listening to me anymore at this point."
+    "Sigh... I guess I had no choice but to just go with the flow for now..."
+    
+    scene bg hallway3 with screenwipe
+
+    "We took a stroll around the school, checking out what all of the other classes were doing."
+    
+    show nonami uniform happy with dissolve
+    
+    no "Uwaaahhh...!! Look, look Rii-kun, that class has a human UFO game!"
+    "A what???"
+    "I took a look and saw that Nonami was right."
+    "There was a guy tied to a rope on the ceiling and it looked like people could control him using a bunch of pulleys."
+    "A bunch of prizes were scattered around the floor and the goal was to use the guy to grab them across the classroom and into the target area."
+    "Definitely the craziest idea I've seen! Although I certainly didn't envy the guy who had to be hanging from the ceiling all day long."
+    
+    show nonami uniform smile2 with dissolve
+    
+    no "Eaaahhh, it looks like a lot of fun to do that!"
+    "O-oy, only you'd think a thankless job like that was fun..."
+    no "Come on, come on, Rii-kun! Let's go check it out!"
+    "Nonami grabbed me and ran towards the class."
+    "Before I knew it, she had already bought a ticket and was trying out the pulleys."
+    
+    show nonami uniform neutral focused with dissolve
+    
+    no "Mmm... I see... This one moves the crane to the right, while this one moves it further back. And you can use this one to lower it."
+    
+    show nonami uniform neutral focustalk with dissolve
+    
+    no "All right! Let's have a go!"
+    "She pulled one of the pulleys and brought the human crane further backwards."
+    
+    show nonami uniform neutral focused with dissolve        
+    
+    no "Ufufufu... That lunch bento is as good as mine..."
+    "So she was aiming for the bento box, huh?"
+    "Once it looked like she had lined up the crane properly, she lowered the catcher, only to realize that she was off target."
+    
+    show nonami uniform surprise with dissolve
+    
+    no "Hey, that's impossible! I was sure this was the spot!"
+    "So that was the trick behind this. It was pretty hard to aim properly that far in the classroom from this angle."
+    "Not only was it a pretty big room, but there was nothing inside to base your perspective on."
+    "Nonami brought back the catcher, now sounding a little disappointed."
+    
+    show nonami uniform neutral cartoontears with dissolve
+    
+    no "Uuu..."
+    ri "I guess it's just as difficult to win as the UFO catchers at the arcade."
+    
+    show nonami uniform armscrossed cartoontears with dissolve    
+    
+    no "That's right, huh... One time, I spent like two thousand yen on just one UFO catcher..."
+    no "They make these games just to rob the pockets of gullible people like us, Rii-kun..."
+    "Actually, I didn't do anything here, Nonami..."
+    
+    show nonami uniform armscrossed gloom with dissolve
+    
+    no "Oh well. Let's get a move on it, Rii-kun."
+    ri "Yeah."
+    "... ... ..."
+    "We wandered through the other classrooms, seeing what everyone else was doing."
+    "All of a sudden, Nonami brought it up."
+    
+    $ renpy.music.stop(fadeout=1.0)
+    show nonami uniform armscrossed smile with dissolve
+    
+    no "Hey Rii-kun, you know about the dance tonight?"
+    ri "Yeah. There are posters everywhere for it, really."
+    
+    show nonami uniform armsraised smile with dissolve
+    
+    no "Eaahh... I bet it's gonna be couple central, huh?"
+    ri "Yeah..."
+    
+    play music "Music/Be_With_You.ogg" fadeout 1.5 loop
+    show nonami uniform smile with dissolve
+    
+    no "But you know, it'd still be nice to go... There's only a few more months left of school. After this point, I guess there'll just be exams and then it'll all be over."
+    "Haven't I had a conversation like this before?"
+    ri "Nonami?"
+    "Suddenly, I got worried at where this conversation was going."
+    
+    show nonami uniform armscrossed smileblush with dissolve
+    
+    no "Eh-heh. It's a little embarrassing to say, but you were my first friend, you know."
+    ri "Y-yeah..."
+    
+    show nonami uniform armscrossed embarassed with dissolve
+    
+    no "Somehow... I'm really glad you came back."
+    ri "Me too..."
+    "Nonami reached into her bag to get something out."
+    "Oh oh, what should I do?"
+    
+    menu:
+        "Stop her":
+            jump stopher
+            
+        "Wait and see":
+            jump waitandsee
+            
+label stopher:
+    
+    $ renpy.music.stop (fadeout=1.5)
+    "I knew precisely where this was going."
+    "Before things got any worse than where it already was, I grabbed Nonami's hand and stopped her."
+    
+    play music "Music/Disabled_Emotions_Part5.ogg" fadeout 1.5 loop
+    
+    ri "A-actually Nonami..."
+    
+    show nonami uniform surprise with dissolve
+    
+    no "Hm? What's wrong?"
+    ri "You see... I'm already going to the dance."
+    jump nonamiout
+    
+label waitandsee:
+    "I was kind of at a loss and couldn't really react."
+    "Nonami pulled out a small bag of homemade cookies."
+    
+    $ renpy.music.stop (fadeout=1.5)
+    show nonami uniform neutral smileblush with dissolve
+    
+    no "Hey Rii-kun, do you wanna go to the dance together?"
+    "So this was exactly what I thought it was going to be..."
+    "I wasn't really sure how I could respond to her..."
+        
+    play music "Music/Disabled_Emotions_Part5.ogg" fadeout 1.5 loop
+    
+    ri "I'm sorry..."
+    ri "... ... ..."
+    ri "You see... I'm already going to the dance..."
+    jump nonamiout
+    
+label nonamiout:
+    
+    show nonami uniform armscrossed sad with dissolve
+    
+    no "... ... ..."
+    no "I see..."
+    "All of a sudden, Nonami went silent."
+    "... ... ..."
+    "Ugh... I wanted her to start talking cheerfully again, like she always did."
+    ri "I'm sorry, Nonami. I should have told you earlier."
+    
+    show nonami uniform armscrossed sadsmile with dissolve
+    
+    no "Uu-uhn. It's okay."
+    no "Who are you going with?"
+    ri "Haru-chan..."
+    no "I see..."
+    ri "... ... ..."
+    "We stood in the colourfully decorated corridor, suddenly a sombre cloud hanging over us."
+    "What should I say to her? I hadn't actually expected that Nonami would ask me out too..."
+    
+    show nonami uniform armscrossed sadlookleft with dissolve
+    
+    no "... ... ..."
+    ri "... ... ..."
+    "All of a sudden, Nonami faced me with a grin."
+    
+    show nonami uniform armscrossed smile with dissolve
+    
+    no "Mah, then congratulations Rii-kun."
+    
+    show nonami uniform happy with dissolve
+    
+    no "Haru-chan's a really good girl, you know. Mmm... If I were to be perfectly honest, maybe a little too good for you! Ehehe..."
+    
+    show nonami uniform armscrossed focustalk with dissolve
+    
+    no "You'd better take goooood care of her! Or else you'll have to answer to me!"
+    ri "Yeah..."
+    
+    show nonami uniform armscrossed neutral with dissolve
+    
+    no "She's been my best friend for a really long time you know. Even though she seems out of it, she's actually a really reliable person."
+    ri "I know..."
+    
+    show nonami uniform armscrossed smile with dissolve
+    
+    no "Eh-heh... I guess I've wasted a lot of your time today, huh Rii-kun? Sorry, sorry."
+    no "You can go have fun with Haru-chan now."
+    ri "Are you sure you'll be okay?"
+    no "Uhn. It's okay."
+    ri "Thanks Nonami..."
+    "I felt bad about Nonami, but it really couldn't have been helped that I asked Haruka out first..."
+    "Just as I was about to leave, she spoke again."
+    
+    show nonami uniform neutral sadtear with dissolve
+    
+    no "You know... I'm a little jealous though..."
+    ri "... ... ..."
+    
+    show nonami uniform neutral sadsmileclosedeyes with dissolve
+    
+    no "But... I guess I'll be okay."
+    
+    show nonami uniform greet neutral with dissolve
+    
+    no "I'll see you later, Rii-kun."
+    ri "Uhn. I'll see you later, Nonami."
+    
+    scene bg black with screenwipe
+    scene bg hallway with screenwipe
+    show haruka uniform neutral with dissolve
+    
+    "I returned to my classroom and saw Haruka nearby."
+    
+    show haruka uniform concerned with dissolve
+    
+    ha "Eh? Are you feeling okay, Riku-kun? What's the matter?"
+    ri "Well..."
+    
+    scene bg stars2 with dissolve
+    show haruka uniform neutral with dissolve
+    
+    "I took Haruka away to some place quiet and explained to her what had occurred."
+    "... ... ..."
+    
+    show haruka uniform handstogether sad with dissolve
+    
+    ha "Eeehhh... So that's what happened."
+    ri "I didn't think that something like this would happen..."
+    ha "I'm sorry, Riku-kun. I should have told Nona-chan about this sooner."
+    ri "No, I think I'm at least partially responsible for this too..."
+    
+    show haruka uniform handstogether sad2 with dissolve
+    
+    ha "To tell the truth..."
+    ha "Nona-chan was actually the person who first introduced Riku-kun to me."
+    ri "You mean at the beginning of the year?"
+    ha "Uu-uhn. Much before that."
+    ha "Back when we were in elementary school, Nona-chan would talk all the time about Riku-kun."
+    ha "I remember... back then, we would go through Nona-chan's old photo albums and she would tell me all about you."
+    
+    show haruka uniform handstogether smile with dissolve
+    
+    ha "I could tell that you had a special place in Nona-chan's heart."
+    
+    show haruka uniform handfront smileblush with dissolve
+    
+    ha "To tell the truth, maybe I was a little bit envious that my friend had somebody like that back then..."
+    ri "I see..."
+    
+    show haruka uniform handsbehind neutralblush with dissolve
+    
+    ha "But, I really wanted to meet Riku-kun for myself - to finally see the person who my best friend spoke so admiringly of."
+    
+    show haruka uniform handsbehind forcedsmileblush with dissolve
+    
+    ha "But you know, I never expected things would turn out this way. Now that we've met, it looks like we've....."
+    
+    show haruka uniform handstogether distantblush with dissolve
+    
+    ha "... ... ..."
+    "Once again, an awkward silence came between us."
+    ri "... ... ..."
+    ha "... ... ..."
+    ri "Still... I hope Nonami will be okay."
+    
+    show haruka uniform handstogether distantsmileblush with dissolve
+    
+    ha "Uhn... I'll try talking to her later..."
+    ri "Thanks..."
+    "I guess... we weren't really in the mood for playing around the school anymore."
+    "We took a seat on the stairs leading to the roof. From here, the festival seemed so far away."
+    "The two of us just sat there for awhile. We weren't really the of best talkers, the two of us."
+    "Still, the silence felt somewhat relaxing. Maybe I was getting tired of the rowdy carnival atmosphere."
+    "I couldn't help but notice that Haruka's hands were right beside mine."
+    "Were we supposed to be holding hands at a time like this?"
+    "Wasn't that something that lovers were supposed to do? It's not like Haruka and I were really going out... I just asked her out for a dance."
+    "Nah... I guess holding hands now wouldn't be a good idea."
+    "More importantly, I needed to think of some way to make things up with Nonami..."
+    "Maybe after the dance was over, we could just go back to how everything was before."
+    "After all, the dance was only just some school tradition."
+    "And it wasn't as if we had never gotten over situations like this in the past. Whenever anyone mentioned the sports festival, Nonami always bursts out laughing."
+    "But it wasn't like I didn't like Haruka either..."
+    "She was always really kind to me and not only that, looked really cute."
+    "If we could actually go out together, I'd have to count myself really lucky."
+    "... ... ..."
+    "We must have sat on those stairs for a really long time."
+    "By now, the time of the dance was approaching."
+    "I looked at my watch. I guess it wouldn't be long now."
+    ri "It's almost time. Should we get going?"
+    ha "... ... ..."
+    ha "Uu-uhn. I want to be with just Riku-kun for a bit longer."
+    ri "... ... ..."
+    
+    show haruka uniform handstogether sad2blush with dissolve
+    
+    ha "Say... Riku-kun, can we go upstairs?"
+    ri "To the roof?"
+    ha "Uhn. There's something I want to tell you."
+    ri "Okay..."
+    
+    $ renpy.music.stop (fadeout=1.5)
+    scene bg roof with dissolve
+    show haruka uniform handstogether distantsmileblush with dissolve
+    
+    "We stepped onto the roof. The sun was now setting and the clear navy blue sky was dotted with evening stars."
+    
+    play music "Music/Lullaby_to_the_World.ogg" fadeout 1.5 loop
+    
+    ha "Actually... W-what I have to say is..."
+    "My heart was beginning to beat quicker. Could this be a..."
+    "Still, it could be something else entirely, so I was trying my best not to build up any anticipation. If I was wrong, then I wouldn't know how I would deal with the disappointment."
+    
+    show haruka uniform handstogether distantsmileclosedeyesblush with dissolve
+    
+    ha "Y-yesterday, after Riku-kun asked me out... I decided that I should be more honest with myself."
+    ha "To tell the truth... M-maybe I was too scared to say this earlier."
+    
+    show haruka uniform handsbehind distantsmile with dissolve
+    
+    ha "But... I like Riku-kun."
+    ha "E-even if a lot of things might change because of this... I still want to be with Riku-kun more."
+    
+    show haruka uniform handsbehind distantsmiletear with dissolve
+    
+    ha "... ... ..."
+    ha "It's weird."
+    ha "Even though there was so much I wanted to say when I was alone, now that I'm with Riku-kun..."
+    ha "I'm sorry."
+    ha "... ... ..."
+    "I felt my chest squeeze at Haruka's words."
+    "Haruka was a really nice girl..."
+    
+    if dontgiveletter:
+        "Besides, I couldn't really forget what happened at the sports festival either..."
+        
+    "And the truth was... there were a lot of times when I imagined how nice it would be to go out with her."
+    "But actually standing here, hearing Haruka's confession... It was just a little bit overwhelming."
+    "I guess I didn't really know how to handle something like this."
+    ri "... ... ..."
+    "The two of us just stood there, Haruka nervously looking at her shoes, while I tried to search for the right words with which to answer her."
+    "All of a sudden, I heard a fizzle and a pop over me."
+    
+    play music "Music/Last_Summer.ogg" fadeout 1.5 loop
+    scene cg harukafireworks with dissolve
+    
+    "Surprised, the both of us looked up and saw an enormous flower of light blossom against the evening sky."
+    "More fireworks erupted over us, lighting the sky with radiant colours."
+    "Haruka walked over beside me and we both looked to the sky, admiring the fireworks."
+    "This must be to celebrate the successful conclusion of the culture festival."
+    ri "It's really pretty."
+    ha "Uhn. You're right. It is pretty."
+    "From the roof, the two of us probably had the best view of the fireworks in the school."
+    "I placed my hand on Haruka's shoulder."
+    "All of a sudden, I didn't feel so nervous any more."
+    "Somehow, sharing this beautiful scenery with Haruka made me feel relaxed."
+    "As we watched the fireworks together, I smiled."
+    "I was glad."
+    "I hadn't had many people I could call friends before in my life, much less any girlfriends."
+    "And yet, finally, I had someone special to me... Someone who I could trust, someone who I could always laugh with, who I could share happy memories with..."
+    "From now on, our days together would continue, on and on."
+    "In the end, I didn't even need to answer Haruka, did I?"
+    "I just held her as the fireworks coloured the sky..."
+    ri "Haruka..."
+    ri "Thank-you."
+    
+    scene bg white with dissolvelong
+    
+    "We went back downstairs and danced together for the first time as boyfriend and girlfriend."
+    "Before I knew it, the night ended and it was time to go back home."
+    "I must be dreaming..."
+    "I was terrified that I might wake up any moment now and realize everything that had happened today was just a fantasy."
+    "I would have been absolutely crushed if something like that happened."
+    
+    show haruka uniform handraised smile with dissolvelong
+    
+    "However, the sight of Haruka smiling as she waved good bye at me seemed all too vivid to be a dream."
+    "I waved back at her."
+    ri "I'll see you tomorrow, Haruka."
+    ha "Uhn. I'll see you later."
+    
+    scene bg black with dissolvelong
+    
+    jump afterschoolfestival
+    
+label lookaroundharuka:
+    
+    if time:
+        $ time = False
+        "Well, since Haruka was standing right next to me, I might as well take a look around with her."
+        "...and I had to tell her that I had asked Nonami out to the dance."
+        "I waited until Haruka had changed out of her costume and returned to her normal self."
+        
+        show haruka uniform handstogether neutral with dissolve
+        
+        ha "Eheh... Thanks for waiting, Riku-kun."
+        
+        ha "Well then, should we get going?"
+    else:
+        
+        scene bg hallway with dissolve
+        show haruka uniform neutral with dissolve
+        
+        "I returned to our classroom and saw Haruka nearby, now out of her costume."
+        "Since I had time to kill before the dance, I might as well take a look around with her."
+        "...and I had to tell her that I had asked Nonami out to the dance."
+        ri "Haru-chan."
+        
+        show haruka uniform handstogether neutral with dissolve
+        
+        ha "Ah, Riku-kun."
+        ri "Are you busy right now?"
+        
+        show haruka uniform handfront happy with dissolve
+        
+        ha "Nope. To tell the truth, I was wondering what I should do now that my shift was over..."
+        ri "Well then, let's take a look around."
+    
+    $ spokewithharuka = True
+    
+    scene bg hallway3 with screenwipe
+    
+    "We took a stroll around the school, checking out what all of the other classes were doing."
+    
+    show haruka uniform handraised surprise with dissolve
+    
+    ha "Eeehhh... Look, look, Riku-kun. That class has a human UFO game!"
+    "A what???"
+    "I took a look and saw that Haruka was right."
+    "There was a guy tied to a rope on the ceiling and it looked like people could control him using a bunch of pulleys."
+    "A bunch of prizes were scattered around the floor and the goal was to use the guy to grab them across the classroom and into the target area."
+    "Definitely the craziest idea I've seen! Although I certainly didn't envy the guy who had to be hanging from the ceiling all day long."
+    
+    show haruka uniform handraised smile with dissolve
+    
+    ha "Ehehehehe... Somehow, it looks really interesting!"
+    ri "Yeah..."
+    
+    play music "Music/Be_With_You.ogg" fadeout 1.5 loop
+    
+    "I couldn't afford to get distracted too much though. The entire purpose of walking around with Haruka was so that I could tell her about Nonami."
+    "For some reason though, it was really hard to bring up the subject all of a sudden."
+    "What was wrong with me? I had summoned up the courage to ask Nonami out, but now I was too scared to tell Haruka about it?"
+    "It really did make no sense."
+    "My palms were getting sweaty, and my heart was throbbing."
+    "Maybe I was just afraid of the way Haruka would react."
+    "I was scared that this meant that something between us would have to change."
+    "W-well, to be honest though, wouldn't a lot of things have to change if I were to start going out with Nonami?"
+    "I wonder if I'll still be able to be so friendly with Haruka..."
+    "Of course, Nonami and Haruka were best friends too, so I'm sure there would be no problems at all."
+    "My fears were probably completely unfounded."
+    "Besides, it's not like I was really going out with Nonami. I only asked her out to the dance, that's all..."
+    "Okay... I'd better tell Haruka now, before I really lose my chance."
+    
+    show haruka uniform concerned with dissolve
+    
+    "Riku and Haruka" "A-actually, I had something-."
+    ri "Eh?"
+    ha "Ha?"
+    ri "Eheh... Y-you first."
+    
+    show haruka uniform handraised forcedsmileblush with dissolve
+    
+    ha "R-really?"
+    ri "Yeah..."
+    "Haruka took a deep breath, as if she was about to say something really important."
+    
+    show haruka uniform handstogether distantblush with dissolve
+    
+    ha "Riku-kun's... already got a partner for the moonlight dance, hasn't he?"
+    "So she already knew?"
+    ri "Yeah..."
+    
+    show haruka uniform handstogether distantsmileclosedeyes with dissolve
+    
+    ha "I knew it..."
+    ri "I asked Nonami out just yesterday."
+    
+    show haruka uniform handstogether distantblush with dissolve
+    
+    ha "I see..."
+    ri "How did you know?"
+    ha "I just felt."
+    "A silence fell between us two."
+    "I looked down, afraid to look at Haruka's face. I wasn't sure how she was going to react to this."
+    "All of a sudden, I heard a cheerful voice beside me."
+    
+    show haruka uniform handstogether distantsmileclosedeyes with dissolve
+    
+    ha "Congratulations, Riku-kun."
+    
+    show haruka uniform handstogether distantsmile with dissolve
+    
+    ha "Nona-chan's a really good girl. You have to be sure that you're really nice to her, or else I'll get really mad."
+    ri "Thanks... You have my word."
+    ha "Nona-chan's been my friend for a really long time... Somehow, I'm glad that it turned out like this."
+    ha "She used to talk about you a lot when we were younger, you know."
+    ri "Really?"
+    
+    show haruka uniform handraised smile with dissolve
+    
+    ha "Uhn. I think you were really close to her heart."
+    
+    show haruka uniform handstogether distantsmile with dissolve
+    
+    ha "It was only around the time we entered middle school that she stopped talking."
+    ha "I'm sure that she's relieved you've come back. She really was afraid of having lost you for good back then."
+    ri "I see..."
+    "I never knew that Nonami had talked about me for such a long time."
+    "Even though she was so young, she still remembered me."
+    
+    show haruka uniform handstogether smile with dissolve
+    
+    ha "So, good luck, Riku-kun. I'll always be supporting you."
+    "I felt a little bit relieved now."
+    ri "Yeah. Thanks, Haru-chan. Thanks a lot."
+    ha "Uu-uhn, it's really nothing."
+    "That was surprisingly easy."
+    
+    play music "Music/Radio_Martini.ogg" fadeout 1.5 loop
+    
+    "Maybe I was just worried for no reason."
+    "We continued to stroll through the hallways, seeing all of the other classrooms."
+    
+    scene bg black with screenwipe
+    scene bg hallway with screenwipe
+    show haruka uniform handraised smile with dissolve
+    
+    ha "Thanks for walking around with me, Riku-kun."
+    ri "No, the pleasure was mine."
+    
+    show haruka uniform handstogether neutral with dissolve
+    
+    ha "Well then, I think I'll be heading back to see how our haunted house is going."
+    "Haruka waved and made her way back to our class."
+    
+    show haruka uniform handraised smile with dissolve
+    
+    ha "Bye bye."
+    ri "See you."
+    
+    hide haruka with dissolve
+    
+    if didsomethingelse:
+        jump moonlightdance
+
+    else:
+        "Now then, what should I do?"
+        
+        menu:
+            "Check out Sora's class.":
+                jump checksoraclass
+                
+            "Check out Nonami's class.":
+                jump checknonamiclass
+            
+label checksoraclass:
+    $ time = False
+    $ didsomethingelse = True
+    
+    scene bg hallway3 with dissolve
+    
+    "I made my way to Sora's class. She said that they were going to have that maze, didn't she?"
+    
+    show sora uniform neutral with dissolve
+    
+    so "Oh. Riku."
+    ri "Hey Sora."
+    "Sora's class was themed like an Egyptian tomb. They really went all out on their maze, didn't they?"
+    so "Mm. One ticket is 300 yen."
+    ri "Ehh? Even for your older brother?"
+    
+    show sora uniform armscrossed confident with dissolve
+    
+    so "Uhn. No exceptions."
+    ri "Aw..."
+    
+    hide sora with dissolve
+    
+    "I handed Sora some coins and gave the maze a try."
+    
+    scene bg black with dissolve
+    
+    "Hmm... considering that it was contained entirely in Sora's classroom, it was still surprisingly difficult!"
+    "I barely managed to find my way back out."
+    
+    scene bg hallway3 with dissolve
+    
+    "When I returned, Sora wasn't anywhere in sight."
+    "That's too bad. I wanted to break the news about Nonami to her."
+    "Oh well. I can just tell her about it later."
+        
+    if spokewithharuka:
+        jump moonlightdance
+
+    "Now, I wonder what I should do?"
+    
+    menu:
+        "See what Haruka's doing.":
+            jump lookaroundharuka
+            
+        "Check out Nonami's classroom.":
+            jump checknonamiclass
+            
+label checknonamiclass:
+    $ time = False
+    $ didsomethingelse = True
+    
+    scene bg hallway3 with dissolve
+    
+    "Even though we were going to meet for the moonlight dance, I was still really eager to see Nonami again."
+    "I made my way to her classroom, but was disappointed to see that Nonami was nowhere in sight."
+    "It turned out that her shift was already over and that she had left a while ago."
+    "That was too bad."
+    
+    if spokewithharuka:
+        jump moonlightdance
+    
+    "Now, I wonder what I should do?"
+    
+    menu:
+        "See what Haruka's doing.":
+            jump lookaroundharuka
+            
+        "Check out Sora's classroom.":
+            jump checksoraclass
+            
+label moonlightdance:
+    
+    $ renpy.music.stop(fadeout=1.0)
+    scene bg black with screenwipe
+    scene bg hallway2 with screenwipe
+    
+    "The time for the moonlight dance finally arrived."
+    "There was now only 30 minutes remaining until I would have to meet Nonami."
+    "I might as well go to the school entrance early. I didn't want to make her wait, after all."
+    
+    play music "Music/Against_the_Storm.ogg" fadeout 1.5 loop
+    
+    "I was on my way when I reached into my pocket and suddenly realized that I was missing one of my tickets."
+    "W-wha-!?"
+    "In a panic, I dug my hands into my other pockets. Maybe I had just relocated it..."
+    "To my horror, the ticket was nowhere to be found."
+    "D-don't worry... Maybe I could just get another one..."
+    "... ... ..."
+    "The situation took a turn for the worse when I discovered that the student council room was now empty."
+    "Looks like everyone was busy preparing for the dance..."
+    "My heart began to pound. What had I done!?"
+    "I looked at my watch. There were just 25 minutes left now until I had to meet Nonami..."
+    "All of a sudden, I remembered taking my coat off while I was operating the lights in the haunted house."
+    "Maybe... just maybe... I had dropped it while doing that?"
+    "I made my way to my classroom, clinging onto the one hope that I would find it there."
+    
+    scene bg hallway with dissolve
+    
+    "When I returned, I saw Haruka and a few other students wrapping things up at our classroom."
+    
+    show haruka uniform handraised surprise with dissolve
+    
+    ha "Eh? Riku-kun? What's wrong?"
+    ri "B-big problem! I think I lost my ticket for the moonlight dance."
+    
+    show haruka uniform excited surprise with dissolve
+    
+    ha "Eeeeehhhh!?"
+    ri "I was just thinking... that maybe I dropped it while I was inside the haunted house..."
+    
+    show haruka uniform excited focused with dissolve
+    
+    ha "O-okay! Haru-chan will help you look too!"
+    
+    scene bg hauntedhouse with dissolve
+    
+    "We ran into the haunted house and combed the floor for any signs of the ticket."
+    "However, we found no such luck."
+    "I looked at my watch."
+    "Oh no... There were only just eight minutes left now!"
+    "What was I going to do..."
+    "I could see that Haruka also had a look of desperation on her face."
+    
+    show haruka uniform concerned with dissolve
+    
+    ha "Ummm..."
+    "How could I have been so stupid as to actually lose the ticket!?"
+    "I really wanted to give myself a good kick to the head."
+    ri "I'm sorry, Haru-chan... and right after I promised that I'll take good care of Nonami too..."
+    
+    show haruka uniform forcedsmile with dissolve
+    
+    ha "Uu-uhn. A-all we have to do is find it... And then everything will be alright."
+    "The situation was beginning to look more and more hopeless. Even after looking at every possible place the ticket could have fallen, we still came up empty handed."
+    "All of a sudden, Haruka spoke."
+    
+    show haruka uniform handraised surprise with dissolve
+    
+    ha "W-wait a minute! Didn't Sora-chan visit us in the haunted house? M-maybe she knows where the ticket went!"
+    "Haruka was really putting in a lot of effort to help me... But I could tell that she was really just grasping on the edges now..."
+    "But... I guess there was no harm in making sure."
+    
+    scene bg hallway2 with dissolve
+    show haruka uniform neutral focused with dissolve:
+        xanchor 0.5
+        xpos 0.7
+    
+    "We left the haunted house and tracked down Sora."
+    "Luckily, we found her not far from her classroom."
+    
+    show sora uniform neutral surpriseopenmouth with dissolve:
+        xanchor 0.5
+        xpos 0.3
+    
+    so "Eh? Riku's dance ticket?"
+    
+    show haruka uniform excited focused with dissolve:
+        xpos 0.7
+    
+    ha "It's really important that we find it. Do you know where it is?"
+    
+    show sora uniform armscrossed hesitant with dissolve:
+        xpos 0.3
+    
+    so "W-why? It's not like he has a dance partner or anything..."
+    
+    show haruka uniform neutral focused with dissolve:
+        xpos 0.7
+    
+    ha "Uu-uhn. Riku's asked Nonami out."
+    
+    show sora uniform neutral surprise with dissolve:
+        xpos 0.3
+    
+    so "N-Nonami-sempai? But..."
+    "Ugh, I had meant to tell her this earlier."
+    "This definitely had to be the worst possible way to break the news to Sora."
+    
+    show sora uniform armscrossed hesitant with dissolve:
+        xpos 0.3
+    
+    so "... ... ..."
+    so "I see..."
+    ri "I'm sorry... I wanted to tell you earlier, but there were a lot of things going on today..."
+    
+    show sora uniform neutral eyesclosed with dissolve:
+        xpos 0.3
+    
+    so "Uu-uhn. It's okay."
+    
+    $ renpy.music.set_volume(0.1, 1, channel="music")    
+    
+    "Sora reached into her pocket."
+    "W-what...?"
+    so "Here. You'll need this.."
+    "How did she...?"    
+    "I grabbed the ticket from Sora's hands. There was no doubt about it. This had to have been mine."
+    "I felt so relieved that I felt my knees go weak."
+    ri "T-thanks Sora... You really saved me..."
+    "I looked at my watch. Oh shoot! I was already ten minutes late!"
+    ri "Now, I've really got to get going!"
+    "There wasn't a moment to waste. I waved Sora and Haruka good bye and ran towards the school entrance."
+    ri "Thanks, the both of you! You guys really saved me!"
+    "... ... ..."
+    "... ..."
+    "..."
+    
+    show sora uniform neutral distantright with dissolve:
+        xpos 0.3
+    
+    so "Haruka-sempai. I'm... a pretty horrible sister, aren't I?"
+    
+    show haruka uniform handstogether distant with dissolve:
+        xpos 0.7
+    
+    ha "Uu-uhn. You did well, Sora-chan."
+    
+    $ renpy.music.set_volume(1.0, 1, channel="music")
+    scene bg stars2 with dissolve
+    
+    "I ran down the stairs and through the hallway."
+    
+    scene bg hallway with dissolve
+    
+    "There really wasn't much time left!"
+    "The front door was now in sight. Full speed ahead!!"
+    "I crashed through the gate and burst into the school yard."
+    
+    scene bg schoolfieldevening with dissolve
+    
+    ri "Nonami!!!"
+    
+    "Nonami stood from where she was sitting."
+    
+    $ renpy.music.stop (fadeout=1.5)
+    show nonami uniform greet happy with dissolve
+    
+    no "Rii-kun!" 
+    
+    show nonami uniform armscrossed smile with dissolve
+    
+    no "I was wondering if you got my note..."
+    "I was doubled over by now, panting for air. That definitely was the most panic inducing moment of my life."
+    ri "Sorry..."
+    no "Uu-uhn. It's okay. I only just got here myself, actually."
+    no "Should we get going now?"
+    ri "Yeah..."
+    
+    play music "Music/My_Love.ogg" fadeout 1.5 loop
+    
+    scene cg nonamidance with dissolve
+    "We arrived at the bonfire just in time for the beginning of the dance."
+    "It was already lit on fire and was glowing brilliantly against the black autumn night."
+    no "Eaaahh! It looks so amazing!"
+    "An unbelievable sight laid before me."
+    "A spiral of couples stood around the bonfire, like a galaxy of tiny planets spinning around the bright center of our cosmos."
+    "In the darkness of the autumn evening, Nonami's face was illuminated with the warm light of the fire."
+    "A new sensation gripped the inside of my upper throat, where my neck connected with the bottom of the chin."
+    "I felt my eyes tingle, as if I were about to cry, but felt my head flooding with euphoria."
+    "Was this really the feeling of first love?"
+    "Even if I wasn't exactly sure, all I knew was that I was happy."
+    no "Come on, come on, this way!"
+    "Nonami grabbed me by the hand and led us closer to the bonfire."
+    no "Eheh. Rii-kun's looking pretty dazed, huh?"
+    ri "Yeah..."
+    no "Hold me here."
+    "Nonami wrapped my arm around her waist. Now that I thought about it, I didn't even know how to dance."
+    "She held onto my neck and we spun slowly around in a circle, around and around."
+    "We were a little awkward, just holding onto each other and spinning around like that, but it didn't matter for me."
+    "For some inexplicable reason, I felt my face getting really weak and my eyes watering."
+    "My insides felt warm, as if my entire self was being gently massaged by a sponge."
+    "I wanted to call Nonami's name, softly, again and again, but held myself back."
+    "Wouldn't I be too forward if I did that? I didn't want to ruin this moment by becoming an emotional wreck."
+    "Just then, Nonami leaned into my chest and embraced me tightly."
+    "The soft scent of shampoo filled me as Nonami's hair rubbed against my cheek."
+    "I could feel her body warmth flow into my self. As expected, Nonami felt as warm as the fire inside of her heart."
+    
+    scene cg nonamidance2 with dissolve
+    
+    no "It's such a good thing that you came back..."
+    ri "Yeah..."
+    no "Rii-kun, promise me that you'll never leave again?"
+    ri "I promise..."
+    
+    scene cg nonamidance3 with dissolve
+    
+    no "Thanks..."
+    "So even someone like Nonami was slowing down for a moment like this."
+    "We released each other and looked into our faces."
+    ri "I was an idiot to have left you in the first place."
+    
+    scene cg nonamidance2 with dissolve
+    
+    no "Uu-uhn. You were just six years old. And... thanks for remembering me."
+    ri "The same to you..."
+    no "Hey Rii-kun... would you mind if I called you my boyfriend the next time we meet? "
+    ri "Not at all..."
+    no "... ... ..."
+    "Say... isn't this about the moment that we kiss?"
+    "Suddenly, my heart began to beat like crazy."
+    "Uhhh... what do I do???"
+    "All of a sudden, I heard a whiz and an explosion behind us."
+    "We turned to face the source of the noise."
+    
+    play music "Music/Last_Summer.ogg" fadeout 1.5 loop
+    scene cg holdhands with dissolve
+    
+    no "Eaaaahhh! It's so pretty!"
+    "A landscape of fireworks bloomed over our school, filling the starry sky with colour."
+    "It felt as if heaven itself was celebrating this moment."
+    "This was truly the most amazing day of my life."
+    ri "Nonami..."
+    ri "This is... so special."
+    no "Uhn..."
+    ri "From today on, we'll always walk to school together... always study together... do everything together..."
+    no "Uhn..."
+    "I wanted nothing more than for our happy days to continue, as they always have."
+    "From now... I was sure that I would always be with Nonami."
+    "Because..."
+    
+    "This place was now my home."
+    
+    "Eventually, the fireworks ended and the bonfire was extinguished."
+    "I suppose it was over now..."
+    ri "Nonami... let's go..."
+    ri "Homeward."
+
+label afterschoolfestival:
+    
+    $ renpy.music.stop (fadeout=3.0)
+    scene bg black with dissolvelong
+    
+    if nodance:
+        "By the time Sora and I returned home, the sun had already long set and night had come."
+    else:
+        "I returned to my house, in a daze over the events of tonight."
+        
+    play music "Music/The_House_of_Leaves.ogg" fadeout 1.5 loop
+    "Suddenly, I realized that my father's car was in the driveway, along with another person's."    
+    "That was strange... He usually didn't come back until later in the night."
+    "I entered the doorway."
+    ri "I'm back."
+    
+    scene bg livingroom with dissolve
+    
+    "There was light coming from the living room. I wandered in, curious at what was going on..."
+    "A shocking sight awaited me inside."
+    
+    if nonamidance:
+        "Sora sat at the table, her face as white as stone."
+        
+    if harukadance:
+        "Sora sat at the table, her face as white as stone."
+        
+    "My father was sitting at the table, facing a woman..."
+    "As soon as she saw me enter, she stood and approached me."
+    "I recognized her face - it was one that I had not seen in many years. A chill of horror went down my spine."
+    "Oh no................."
+    
+    stop music fadeout 4.0
+    scene bg black
+    window hide
+    subtitle "Mother!"
+    
+    if nonamidance:
+        scene cg childhoodfriend with dissolvelong
+        $ renpy.pause (4.0)
+        window show dissolve
+    
+    if harukadance:
+        scene cg classmate with dissolvelong
+        $ renpy.pause (4.0)
+        window show dissolve
+        
+    if nodance:
+        scene cg littlesister with dissolvelong
+        $ renpy.pause (4.0)
+        window show dissolve
+
+    play music "Music/Commemoration.ogg" fadeout 1.5 loop
+    scene bg rikuroomceiling with dissolve
+	
+</pre>

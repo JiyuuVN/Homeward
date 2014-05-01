@@ -1,0 +1,3965 @@
+<pre>
+     
+    stop music fadeout 2.0
+    scene bg black with dissolvelong
+    scene bg park with dissolvelong
+    play music "Music/My_Love.ogg" fadeout 1.5 loop
+    show nonami uniform neutral with dissolve
+    
+    "I finished digging up a small hole in the dirt."
+    ri "There. Do you have the jar, Nonami?"
+    no "Uhn. It's right here."
+    "Nonami pulled out a medium sized glass jar from her bag."
+    
+    show nonami uniform armscrossed smile with dissolve
+    
+    no "Mmm... So, what are you gonna put in it?"
+    ri "Here."
+    "I showed her a bunch of photographs."
+    
+    show nonami uniform happy with dissolve
+    
+    no "Oh! I remember that!"
+    no "Eh-heh... That's from when we went to Seattle during Golden Week, huh?"
+    ri "Uhn."
+    no "And this was from when we had our sports festival!"
+    
+    if savecastle:
+        ri "I even have this one."
+        "I showed Nonami the one photograph where I was standing in front of the sandcastle butt naked,"
+        no "Uwaahh!!! I can't believe you didn't actually burn this!"
+        ri "H-hey, it's still so blurry that you can hardly even see anything..."
+    
+    ri "What are you going to put in it?"
+    
+    show nonami uniform smile with dissolve
+    
+    no "This."
+    "Nonami pulled a small key chain out of her pocket."
+    ri "That's what we won during the culture festival, right?"
+    no "Uhn!"
+    
+    show nonami uniform neutral with dissolve
+    
+    no "And this too."
+    "Nonami pulled out a photograph of the four us on the night of the culture festival."
+    "Me, Nonami, Haruka, and Sora."
+    "We placed everything in the jar and placed it in the hole."
+    ri "I guess that's everything, huh..."
+    no "Yeah..."
+    "I grabbed the shovel and buried the jar underneath the dirt."
+    "This was going to be our time capsule."
+    ri "So, when are you going to dig it back up?"
+    
+    show nonami uniform armscrossed sadsmile with dissolve
+    
+    no "When Rii-kun returns to Japan."
+    no "We'll dig it back up together... and we'll see how much things have changed."
+    ri "Uu-uhn."
+    ri "Somethings will change."
+    ri "The big grass field where we used to play may not be here any more."
+    ri "There'll be a lot more farewells... and even more greetings."
+    ri "Years might pass and our feelings for each other might even fade away."
+    ri "But our memories together will always stay the same."
+    no "Rii-kun?"
+    ri "Mm?"
+    no "I love you."
+    ri "I love you too, Nonami."
+    "My face felt tight as I smiled at Nonami. I could feel my eyes watering."
+    "I gently raised her hand to my face and kissed it."
+    no "I'll keep waiting here... no matter how long it takes. It's a promise."
+    ri "Uhn... And I promise to come back as soon as I can..."
+    
+    scene bg park2 
+    show nonami uniform armscrossed sadsmile
+    show rain1s
+    show rain2s
+    show rain3s
+    with dissolve
+    $ renpy.sound.play("Sound/rain.ogg", loop=True,fadein=3.0)
+    
+    "The clouds above us thickened and rain began to drip down upon us."
+    no "Rain..."
+    ri "... ... ..."
+    "Wasn't it like this the last time we were here?"
+    
+    hide rain1s with dissolve
+    
+    "I took out Sora's umbrella from my school bag and unfolded it."
+    ri "Here..."
+    "I brought Nonami under the cover of the umbrella and crossed arms with her."
+    no "Eh-heh..."
+    
+    show nonami uniform armscrossed sadsmileclosedeyes with dissolve
+    
+    no "Like lovers."
+    ri "Uhn..."
+    ri "We are lovers."
+    
+    scene bg street3
+    show rain2
+    show rain3
+    with dissolve
+    
+    play music "Music/One_Summer_Night.ogg" fadeout 1.5 loop
+    
+    show nonami uniform armscrossed sadsmile with dissolve
+    
+    "We walked out of the park together, together under the umbrella."
+    "Nonami rested her head on my shoulder as we walked."
+    no "Hey Rii-kun?"
+    ri "Mm?"
+    no "It's cold..."
+    ri "Mm..."
+    no "Take me somewhere warm, alright?"
+    ri "Mm..."
+    
+    stop sound fadeout 1.5
+    scene bg rikuroomnight with dissolve
+    show nonami uniform neutral with dissolve
+    
+    
+    "I led Nonami into my room."
+    ri "Shh... Sora's just in the other room, okay?"
+    "Nonami nodded her head, \"yes.\""
+    
+    show nonami uniform armscrossed smile with dissolve
+    
+    no "But ya know Rii-kun, you sure are bold, bringing me here with your sister right next door and all..."
+    "Well, so much for keeping quiet..."
+    ri "She usually wears her headphones, so it should be alright..."
+    
+    scene cg nonamih1 with dissolve
+    
+    "With a nervous giggle, Nonami pushed me up against my door and locked our mouths together."
+    no "Rii-kun..."
+    "I wrapped my arms around her back. My heart began to pound as Nonami pressed her tongue deeper and deeper into me."
+    "Even though they met clumsily at first, Nonami's taste began to fill me, until it became one with mine and all I could feel was the soft sensation of her tongue."
+    "I closed my eyes, losing myself in that sensation. My hands dropped to Nonami's rear and gripped onto her soft buttocks, trying to press our hips together."
+    "My heart was beginning to skip beats from the nervousness, but my longing to get closer to her overwhelmed me, and I slipped my hand into Nonami's skirt."
+    "Blindly, I felt out the soft outline of Nonami's body. Nonami gasped and gripped onto my head as I stroked her buttocks through her soft cotton underwear and slid down to her thighs."
+    "I wanted to know what a girl's body felt like... How her skin wasn't as hard and coarse as mine..."
+    "I felt my heart race when Nonami reached down and began to rub her palm against my crotch."
+    "My fingers were almost trembling as I rolled up Nonami's sweater and began to unbutton her shirt."
+    "Finally, the last button was undone, revealing Nonami's bra."
+    no "Here..."
+    "Nonami raised her arms and let me pull her sweater off."
+    "She giggled bashfully and blocked her breasts with her hand as I reached behind her and unclipped her bra."
+    no "Eaahh... how embarrassing..."
+    
+    scene cg nonamih2 with dissolve
+    
+    "I gently removed her bra, exposing Nonami's breasts."
+    "The sight of Nonami's cute naked chest almost drove me to madness. I ran my hands against her breasts, overwhelmed with the desire to join with her."
+    "My fingers arrived at the peak of her breasts and circled around her nipples. Nonami raised her hand and tugged on the sleeve of my shirt."
+    no "Rii-kun... you too..."
+    
+    scene cg nonamih3 with dissolve
+    
+    "I pulled my sweater off and let her unbutton my shirt."
+    "Nonami ran her hands up my arms and gripped onto my shoulder blades."
+    "As we caressed our bodies, I kissed Nonami again."
+    "Overwhelmed with the desire of becoming one, we went as deeply as our tongues would allow, pressing our noses together and winding our arms and legs around each other."
+    no "Mm...! Mm...! Rii-kun!"
+    "Finally, our lungs ran out of air and we pulled apart with an enormous breath of air, as if we had just surfaced after being underwater."
+    "We looked at each other's faces and couldn't help but laugh in mutual embarrassment."
+    no "Hey Rii-kun..."
+    ri "Mmm?"
+    no "Do you wanna do it?"
+    ri "Uhn..."
+    no "After all..."
+    no "Tonight's... the last night we'll be together, isn't it?"
+    "Nonami embraced me and stroked the back of my neck."
+    no "I don't want the dawn to arrive."
+    ri "Don't worry... we still have a lot of time until the sun rises..."
+    
+    scene cg nonamih4 with dissolve
+    
+    "My chest racing in anticipation, I laid Nonami down on my bed."
+    "I bent down and kissed Nonami's lips, then moved to her chin, down her neck, and finally arrived at her breasts."
+    "Nonami gasped and tightened her arms around me as I took her nipple in between my lips and suckled on it."
+    "Before I knew it, my hand had already slid up her skirt and into her underwear."
+    "I slid my fingers against her skin, blindly searching for her entrance."
+    "Finally, my fingers slid past a tiny moist crevasse. Was this it?"
+    "Surprised by how small and delicate it felt, I slowly tried to slide my finger in."
+    "Nonami squeezed her eyes shut and gripped my wrist, panting in apprehension."
+    
+    scene cg nonamih5 with dissolve
+    
+    no "A-ah... R-Rii-kun..."
+    ri "Sorry. Does it hurt?"
+    no "Uu-uhn... I'm fine..."
+    "I tried to gently insert my longest finger into Nonami, but found surprising resistance. I could barely put in a fourth of my finger until it felt as if I had reached a wall."
+    ri "Is it okay?"
+    no "Uhn..."
+    "Nonami's interior felt nothing like what I expected."
+    "As I curled my finger and squeezed in further, it felt as if I was digging my finger into a warm orange."
+    no "Ah... mm..."
+    "Nonami gasped as I rubbed my finger against her interior. She slid her hand down my belly and into my jeans."
+    "My heart fluttered when her fingers wrapped around me and slowly began to tug on it."
+    "Her grip was too anxious and tight for it to feel good, but I still gasped upon the realization that it was Nonami holding it for the first time in my life."
+    
+    scene cg nonamih6 with dissolve
+    
+    "Afraid of soiling her underwear, I reached down and unclipped her skirt. As I took hold of her underwear strap, Nonami instinctively squeezed her legs together."
+    ri "Here, let me take it off for you..."
+    no "Uhn..."
+    
+    scene cg nonamih7 with dissolve
+    
+    "Her thighs untensed, letting me pull down her underwear and put it aside."
+    no "Eh-heh..."
+    no "I'm happy, Rii-kun..."
+    "Overwhelmed with the desire for her taste, I reached down and locked lips with her."
+    "My hands madly ran down her naked body, arriving at her buttocks."
+    "As I caressed her, Nonami unzipped my jeans and pulled them down."
+    "My heart began to pound when I felt her fingers wrap around my underwear and slide it off."
+    "I separated our mouths and looked at her, the both of us now completely naked."
+    ri "Nonami..."
+    no "Eh-heh... Rii-kun..."
+    no "C'mon... I wanna do it..."
+    "My pulse thumping through my body, I raised myself up with my arms and tried to reposition myself. I was in disbelief at what I was about to do."
+    "But I loved Nonami... There was no way that I could stop now."
+    "I could hardly even see anything in the darkness as I ran my finger in the area between Nonami's thighs, trying to find her entrance."
+    "Overcome by excitement, I finally gave up and just tried to align myself over the general area where I recalled it being and pushed down, only to have it slide off of her stomach."
+    "From my position on top of Nonami, I couldn't even see where I was aiming."
+    "I felt my face turning hot in embarrassment as I awkwardly tried to rearrange myself again."
+    ri "Ah... s-sorry... I can't actually see a..."
+    no "Here, lemme..."
+    "Nonami shifted her position underneath me and spread out her legs further."
+    no "Uhn... now try..."
+    "I pushed myself in. My heart squeezed as I was slowly enveloped in Nonami's warmth."
+    
+    scene cg nonamih8 with dissolve
+    
+    no "Ah... Rii-kun's..."
+    "Nonami squeezed her eyes and wrapped her arms around my back."
+    no "It's... it's going inside..."
+    no "No way..."
+    "There was enormous resistance. Was it supposed to be like this? I thought that it would go in much more smoothly..."
+    "Too afraid to using too much force and accidentally hurting Nonami, I pushed myself in as far as I could manage."
+    "I tried to rub myself against her interior, but ended up pulling out too far and falling back out."
+    "What? Did I not go in far enough?"
+    "I sighed in exasperation and tried to put it back in."
+    "Finally, after a moment of clumsily trying to align myself again, I pushed myself into Nonami."
+    "I wrapped my arms around Nonami's back and pushed myself in with all of my strength."
+    no "Uuggmmm... Rii-kun..."
+    "Nonami gripped my shoulders with her fingers and squeezed her eyes shut as I pushed in deeper. I felt Nonami's warmth soak me as we became one."
+    "My heart racing, I pounded myself against Nonami, my hands clasped against her breasts."
+    
+    scene cg nonamih9 with dissolve
+    
+    no "Ah... ah..."
+    "I bent down and pressed our lips together, still pushing myself against her hips."
+    "Nonami pressed her tongue against every part of my mouth, even running them against my teeth."
+    "Finally, after having felt every area of my mouth, she pinched my lower lip with her mouth and began to lick it."
+    "She moved down to my neck, kissing and licking her way down my throat."
+    "I was already beginning to run out of breath. My thighs were burning with each thrust, my heart was already pounding from the excitement, and I could feel sweat beginning to form on my back."
+    "Finally, in my passion I accidentally pulled myself out too far and fell back out."
+    "The pleasure coming from my pelvis immediately ceased and was replaced with exhaustion. My knees gave out and I collapsed on top of Nonami, breathing heavily."
+    
+    scene cg nonamih10 with dissolve
+    
+    ri "Sorrry..."
+    "No wanting to lose any momentum, I picked myself back up and aligned myself."
+    
+    scene cg nonamih8 with dissolve
+    
+    "I put myself back in and resumed thrusting myself against Nonami."
+    no "Ah..."
+    "However, the pressure once again overwhelmed me and I fell back out again in less than ten seconds."
+    
+    scene cg nonamih11 with dissolve
+    
+    no "Uu..."
+    ri "S-sorry... This... really is a lot harder than what I expected..."
+    no "Uuu... and the adult DVDs made it look so easy!"
+    
+    scene cg nonamih12 with dissolve
+    
+    "All of a sudden, Nonami grabbed onto me and pushed me underneath her."
+    "She crawled on top of me, panting heavily, her hair now undone in a crazy mess."
+    no "C'mon... we don't have much time left..."
+    "Nonami straddled her legs in between me and tried to push herself in while sitting upright, but after a moment of fumbling around trying to align herself, she realized that she had no idea what she was doing either."
+    no "Ha... ha..."
+    "She grabbed onto me and slowly slided herself in, her face straining in concentration."
+    "I held onto her hands as she thrusted herself above me."
+    
+    scene cg nonamih13 with dissolve
+    
+    no "Ah... ah...! Rii-kun!"
+    no "Mm! S-so deep... ah..."
+    "I felt pleasure begin to mount in my pelvis as I slid against Nonami's slippery interior."
+    "A trickle of warm fluid dripped down my crotch, causing my muscles to twitch."
+    ri "Ah... Nonami..."
+    no "Ha... ha...! Rii-kun, hold me...!"
+    "Nonami bent down and kissed me. I was enveloped in her scent as her loose hair covered my face."
+    "A steady stream of pleasure was beginning to flow from my hips... I wanted more of it..."
+    "Nonami pulled herself out too far in excitement and fell out. She collapsed on top of me in defeat, panting in exhaustion."
+    no "Ha... haa.... haaa...."
+    no "Uuu... I can't do this either..."
+    no "I never thought it would be this hard..."
+    ri "Uhn..."
+    no "Ah damn... If only Rii-kun could stay... then we could practice every night...!"
+    "Nonami's face tightened and she pounded my bed with her fists in frustration."
+    ri "... ... ..."
+    no "Ah, as if I'll be defeated that easily!"
+    
+    scene cg nonamih14 with dissolve
+    
+    "All of a sudden, Nonami rolled off of me and sank my member into her mouth."
+    "Pleasure and shock suddenly shot through me as I felt Nonami's slippery tongue run against me."
+    "I gripped my bed cover with both of my hands in shock at her sudden move."
+    no "Mm... mm... mm..."
+    "Unspeakably loud noises came from her mouth as she suckled on me. I reached up and stroked her on the hair as she moved her head back and forth."
+    ri "Ah... Nonami..."
+    "The sensation of her tongue running against the underside of my shaft filled me with ecstasy. My breathing accelerated as the pleasure began to build up. Ah..."
+    "At this rate, I was going to..."
+    "I saw my belly heaving in and out as joy rippled through my body. If I could, I wanted to reach up and kiss every part of her body."
+    "I gripped onto her shoulders and squeezed my eyes shut."
+    "Just when the pleasure was about to peak, Nonami pulled herself out and laid down on top of me."
+    no "Rii-kun... now make me happy..."
+    
+    scene cg nonamih13 with dissolve
+    
+    "By luck or crazed determination, Nonami managed to push me into her."
+    "She laughed in disbelief at having succeeded and pounded herself into me."
+    "I gripped onto her hands as the pleasure inside of me mounted."
+    no "Ah...! ah...! ah...!"
+    no "Rii-kun...! S-sit up... and kiss me!"
+    
+    scene cg nonamih15 with dissolve
+    
+    "I pushed myself up with my arms and sat face to face with Nonami in my lap."
+    "She softened her movements as our mouths interconnected."
+    
+    scene cg nonamih13 with dissolve
+    
+    "I wrapped my hands around Nonami's buttocks and pressed her further towards me as we kissed more."
+    "After what seemed like forever, we separated our mouths and gasped for air."
+    no "Ah...! Ah...! Ah...! Rii-kun...!"
+    no "I love...! Ah...! Rii-kun, I really love...!"
+    "I could feel the soft sensation of Nonami's breasts rubbing against my chest as she pushed herself inside of me. The pleasure was now becoming unbearable!"
+    "I dug my fingers into her buttocks and pressed our mouths together. Nonami gripped my back and whimpered weakly into my mouth."
+    no "Mmm... ummm... R-R-Rii-kun... aaahhh... aaahhh..."    
+    "I removed my mouth from her and intertwined our hands."
+    ri "Nonami... Nonami... Nonami!!"
+    ri "I'm... so glad it was... you...!"
+    no "Uhn... uhn... me too...!"
+    ri "A-ah!"
+    no "Ahh...! Ahh...! Rii-kun! Rii-kun!"
+    no "M-make time turn back...!"
+    no "I want... to return... to when... we could still be together...!!"
+    ri "Ah... ah... sorry..."
+    no "Ah...! Y-you're right... huh......."
+    no "Even with our regrets..."
+    no "Hah... even with our fears...."
+    no "We... still... head towards... the future..."
+    ri "Uhn... uhn..."
+    ri "Because... if we had nothing precious to lose..."
+    ri "Then... we wouldn't know... what was the most... precious to our hearts..."
+    
+    scene cg nonamih16 with dissolve
+    
+    no "Ah...! ah...! Rii-kunn!!!!"
+    no "I think... I'm... I'm..."
+    ri "Uhn... me too...!"
+    "I embraced Nonami as tightly as I could as the pleasure within me peaked."
+    
+    scene bg white with dissolve
+    
+    ri "Nonami!!!"
+    
+    scene cg nonamih16 with dissolve
+    
+    "A new warm, slippery sensation filled me as I came inside of her."
+    "Pure joy filled every part of my body and it felt as if my brain was about to white out with pleasure."
+    "I grasped onto Nonami's shoulders and held onto her so hard that our bodies might meld together."
+    "Wave after wave of euphoria traveled through my body before I finally finished coming inside of her."
+    "All of a sudden, we realized that we were both exhausted and drenched with sweat."
+    "We collapsed back onto the bed and looked at each other, panting."
+    
+    scene bg white with dissolvelong
+    
+    no "ha... ha... ha... ha..."
+    no "Rii-kun..."
+    "We grasped our hands together and looked at each other in disbelief..."
+    ri "We did it..."
+    no "Uhn..."
+    ri "Now, we're complete..."
+    "Nonami crawled into my arms."
+    no "I'll... miss Rii-kun..."
+    ri "Uhn... and I'll miss you..."
+    "Nonami's voice got weaker."
+    no "Hey Rii-kun..... I'm suddenly really tired...."
+    no "Can I sleep here with you like this tonight...?"
+    ri "Uhn..."
+    no "Thanks..."
+    
+    scene bg black with dissolvelong
+    scene bg outsidehomealt with dissolvelong
+    play music "Music/My_Love_Finale.ogg" fadeout 1.5 loop
+    
+    show nonami uniform armscrossed sadsmile with dissolve
+    
+    "I stood outside of my house with Nonami. All of my things had already been shipped. It wouldn't be long now until I had to leave as well."
+    "Just then, I saw Haruka hiding behind a telephone pole."
+    "As soon as she noticed that I was with Nonami, she turned the other direction and fled."
+    ri "H-Haru-chan, wait!"
+    
+    show haruka uniform handfront sad2 with dissolve:
+        xcenter 0.9
+    
+    ha "... ... ..."
+    
+    show nonami uniform greet smile with dissolve
+    
+    no "Oh! Haru-chan!"
+    
+    show haruka uniform handraised forcedsmile with dissolve:
+        xcenter 0.2
+        
+    show nonami uniform neutral with dissolve
+    
+    ha "Ah... Nona-chan..."
+    ha "Good morning... I came to see Riku-kun off. And..."
+    
+    show haruka uniform handfront cry with dissolve:
+        xcenter 0.2
+    
+    ha "I'm... really sorry, Nona-chan!"
+    ha "After all, everything you said about me was right..."
+    
+    show nonami uniform armscrossed sadsmile with dissolve
+    
+    no "Uu-uhn. It was me who said too much."
+    
+    show nonami uniform armscrossed sadsmileclosedeyes with dissolve
+    
+    no "Eh-heh... I'm sorry, Haru-chan. About everything."
+    ha "Uu-uhn... I'm sorry more."
+    
+    show haruka uniform handstogether distantsmiletear with dissolve:
+        xcenter 0.2
+    
+    ha "After all, we're friends and all..."
+    no "Eh-heh..."
+    
+    show sora casual tanuki pout with dissolve:
+        xcenter 0.8
+    
+    so "Hmph. Mushy."
+    
+    show haruka uniform handstogether smile with dissolve:
+        xcenter 0.2
+    
+    ha "Ah, Sora-chan's still here?"
+    
+    show sora casual tanuki neutral with dissolve:
+        xcenter 0.8
+    
+    so "Uhn. My cab hasn't arrived yet."
+    ha "Ah... Here Riku-kun, this is for you."
+    "Haruka handed me a colourful folder made out of construction paper."
+    "Inside, I found an collage of all the various photographs that we had taken during our time together, along with the words \"Congratulations on Graduating!\""
+    
+    show haruka uniform handfront distant with dissolve:
+        xcenter 0.2
+    
+    ha "A-ahem..."
+    ha "A-as iinchou of classroom 3-2, it's my honor to present Saionji Riku with his certificate of graduation."
+    ha "Always remember... You went to our school together with all of us."
+    
+    show haruka uniform handfront distantsmilecryblush with dissolve:
+        xcenter 0.2
+    
+    ha "We had happy times... and sad times... but... Riku-kun will always be a part of our school day memories."
+    ha "I... I'll really miss Riku-kun a lot..."
+    "Haruka sniffed and wiped her eyes with her sleeve."
+    
+    show haruka uniform handstogether cryeyes with dissolve:
+        xcenter 0.2
+    
+    ha "Let's... let's go to Seattle again... and have a sports festival... and go to the beach with everyone... when you come back, okay?"
+    ri "Of course, Haru-chan..."
+    
+    show haruka uniform facecover cryeyes with dissolve:
+        xcenter 0.2
+    
+    ha "Uhn... thanks..."
+    "Haruka covered her face with a sheet of tissue paper and stood next to Nonami."
+    "Just then, the cab for Sora arrived. She picked up Mr. Tanuki from the ground and carried her things to the driveway."
+    "I helped her stash her luggage bag in the trunk of the cab and faced her."
+    ri "Sora..."
+    
+    show sora casual tanuki pout with dissolve:
+        xcenter 0.8
+    
+    so "... ... ..."
+    so "Hmph... I hope you're not expecting me to cry too."
+    ri "I'm sorry it had to turn out like this."
+    
+    show sora casual tanuki tsundere with dissolve:
+        xcenter 0.8
+    
+    so "Ah, whatever. I'm sure we'll see each other again. S-see ya!"
+    
+    show sora casual tanuki hesitant with dissolve:
+        xcenter 0.8
+    
+    so "... ... ..."
+    "All of a sudden, Sora stopped dead in her tracks, as if she couldn't leave without saying something."
+    
+    show sora casual tanuki onearmdown distantleft with dissolve:
+        xcenter 0.8
+    
+    so "Sorry, Riku. Maybe if I had helped you back then, none of this would have happened."
+    so "... ... ..."
+    so "I'm sorry I couldn't have been a better sister to you."
+    so "The truth is... there were a lot of times when I wanted to laugh with you... or do things for you..."
+    so "But... every single time... I was just too embarrassed and let the chance go by..."
+    
+    show sora casual tanuki tears with dissolve:
+        xcenter 0.8
+    
+    so "And instead... all I ever did was cause you so much trouble..."
+    
+    show sora casual tanuki tears2 with dissolve:
+        xcenter 0.8
+    
+    so "Sorry, onii-chan... I'm sorry..."
+    "I knelt down and embraced Sora."
+    ri "Shh..."
+    ri "You don't need to think that, Sora..."
+    ri "Because you're already the best sister that I could ever ask for..."
+    "Sora tightened her arms around me and sniffed into my shoulder."
+    
+    show sora casual tanuki tearssmile with dissolve:
+        xcenter 0.8
+    
+    so "Thank-you, onii-chan... for accepting someone like me......"
+    
+    hide sora with dissolvelong
+    hide haruka with dissolvelong
+    show nonami uniform armscrossed sadsmile with dissolve
+    
+    no "Rii-kun..."
+    no "It's been so many years since we first met..."
+    no "I'm... really gifted to have met you again, after all these years."
+    no "No matter what happens... on happy days or lonely days... no matter how many years pass...."
+    no "....always remember... we'll all be waiting for you here."
+    ri "Uhn..."
+    
+    show nonami uniform neutral sadcry with dissolve
+    
+    no "Because... this place... this place where we spent the happiest times of our lives..."
+    no "This place......"
+    no "....Will always be your home, Rii-kun...."
+    
+    show nonami uniform neutral sadcryclosedeyes with dissolve
+    
+    no "Thank-you.... for everything you've done for us."
+    ri "I know...!"    
+    "I ran up to Nonami and embraced everyone."
+    
+    hide nonami with dissolvelong    
+    
+    "As we all cried together on that cold autumn morning, the skies opened up and revealed to us the first snow flakes of the approaching winter."
+    
+    show snow1
+    show snow2
+    show snow3
+    show snow4
+    
+    "Soon, snow began to pour down from the heavens, enveloping us in a mystical net of white powder."
+    "I looked around, surrounded by the pure white snow, and reflected on the times we had spent together."
+    "When I first arrived... and I saw Nonami for the first time..."
+    "I had been so happy to have met her again after so long..."
+    "And when Sora arrived... we went to Kyoto to get her to go to school..."
+    "And then... we went to Seattle together... and Nonami and I made a fool out of ourselves at the sports festival... and then we went to the beach that summer day..."
+    "And finally... we had the culture festival... where Nonami and I finally realized we were in love."
+    "Good-bye everyone..."
+    "No matter what happened, I was certain that I would always remember what had happened here."
+    "All our happy days when we laughed together..."
+    "Our darkest moments when it seemed like all was lost..."
+    "And our finest hour when we still persevered and made it to the very end."
+    "This wasn't going to be our final farewell."
+    "One day... no matter how many years it took... I was going to meet Nonami again on that hill of our childhoods."
+    "I was certain of it."
+    
+    play music "Music/Take_My_Heart.ogg" fadeout 1.5 loop
+    scene bg black with dissolvelong
+    
+    window hide dissolve
+    
+    scene bg classroom with dissolvelong
+    subtitle2 "Written by Samu-kun"
+    $ renpy.pause (6.0)
+    scene bg park with dissolvelong
+    subtitle2 "Art by Samu-kun"
+    $ renpy.pause (6.0)
+    scene bg dojo with dissolvelong
+    subtitle2 "Additional art by Fawn, Lvuer, Deji, and Sixten"
+    $ renpy.pause (6.0)
+    scene bg surprisedonkey with dissolvelong
+    subtitle2 "Music by Feather Drug, Zero-Project, Walter Mazzaccaro, Yunus, Frozen Silence, Ivan Tiukov,
+    Kevin MacLeod, SAM Free Music, Christoph Pronegg"
+    $ renpy.pause (10.0)
+    scene bg beach1 with dissolvelong
+    subtitle2 "Ending Song |Take My Heart| by Fatblueman"
+    $ renpy.pause (6.0)
+    scene bg street1 with dissolvelong
+    subtitle2 "Opening Song |First Love| by MenT@i"
+    $ renpy.pause (6.0)
+    scene bg trackfield with dissolvelong
+    subtitle2 "Additional music by Yummy"
+    $ renpy.pause (6.0)
+    scene bg mall with dissolvelong
+    subtitle2 "Programming by Samu-kun"
+    $ renpy.pause (6.0)
+    scene bg outsideschool with dissolvelong
+    subtitle2 "Additional programming by Pytom"
+    $ renpy.pause (6.0)
+    scene bg gym with dissolvelong
+    subtitle2 "Ren'py Engine by Pytom"
+    $ renpy.pause (6.0)
+    scene bg hallway with dissolvelong
+    subtitle2 "Background photographs taken by Samu-kun"
+    $ renpy.pause (6.0)
+    scene bg schoolback with dissolvelong
+    subtitle2 "Additional backgrounds provided by Viton, zeraien, Colin_Eric, scottfidd, jasra, cfarivar,/n 
+    Grant Mitchell, alexabboud, Old Shoe Woman, djwudi, captaincinema, zpeckler, Gamethyme,/n
+    Buckeye Beth, timomcd, Ryo, JoeGray, JapanDave, randomwire, netjackal, framboise,/n
+    orangejack, airthru.takashi, Novelers' Material, Rick Scully, stintje, willraleigh, cseeman,/n
+    wayneandwax, and anyone else I forgot"
+    $ renpy.pause (12.0)
+    scene cg nonamikendorun with dissolvelong
+    subtitle2 "Background filtering by Samu-kun"
+    $ renpy.pause (6.0)
+    scene cg nonamidance with dissolvelong
+    subtitle2 "Sound effects by crk365, Gniffelbaf, 7by7, OSA"
+    $ renpy.pause (6.0)
+    scene cg nonamibench with dissolvelong
+    subtitle2 "Special Thanks to..."
+    $ renpy.pause (6.0)
+    scene cg nonamirikukissdream with dissolvelong
+    subtitle2 "Taleweaver, Yummy, DaFool, Einherjar, Zerix, and all other beta testers"
+    $ renpy.pause (6.0)
+    scene cg nonamih4 with dissolvelong
+    subtitle2 "Licensed under CC License - Attribution, Noncommercial, Share-alike"
+    $ renpy.pause (6.0)
+    scene cg nonamih15 with dissolvelong
+    subtitle2 "Love in Space, 2011-2012"
+    $ renpy.pause (6.0)
+    subtitle2 " "
+    scene bg black with dissolvelong
+
+    window show dissolve
+    
+    play music "Music/Heaven.ogg"
+    scene bg nonamihouseday with dissolvelong
+    
+    no "Eaaahhh, what a crazy hot day!"
+    "I stretched on my house's patio, popsicle in hand, wondering how to spend the summer day."
+    "Mmm... Maybe I should try giving Haru-chan a call."
+    
+    play sound "Sound/Dial.wav"
+    
+    "... ... ..."
+    no "Heya Haru-chan! Wanna do something?"
+    ha "Ah, Nona-chan. Uu-uhn, I'm in a little bit of a bind here."
+    no "Eh? What's the matter?"
+    ha "Eh-heh... I think the air conditioner in my house overloaded and a bunch of repairmen are here trying to get it back operational again."
+    no "Eeehhh... I see..."
+    "So that explains the sound of construction equipment in the background..."
+    ha "A-ah, t-the master bedroom? I-I'll take you there right away!"
+    ha "S-sorry Nona-chan, I've gotta go!"
+    no "Alright, I'll talk to ya later!"
+    ha "Uhn, bye!"
+    "I hung up and fell back on the patio with a yawn."
+    "... ... ..."
+    "How boring..."
+    "If only..."
+    "Rii-kun was here..."
+    
+    scene bg street2 with dissolve
+    
+    "I took a stroll around the neighborhood, trying to get my mind off of things."
+    "Man, it's been nearly three years now."
+    "Seriously, where was that guy..."
+    
+    scene bg park with dissolve
+    
+    "Before I knew it, I arrived at the park where we had buried our time capsule."
+    "Ehh... I wonder if it was still alright down there."
+    "Even I felt tempted a bunch of times to dig it back up just to see if it was still okay, I talked myself out of doing it every time."
+    "After all, I promised Rii-kun that we'd dig it back up together."
+    "Ah well. Might as practice a bit."
+    "I took my bokken out of my bag and swung it around a couple of times."
+    
+    "Fuuu... it sure was hot today."
+    "Eah, that was probably enough for today. I think I'll just go to the pool to cool off now."
+    "Just as I was about to leave, a blue butterfly flew past my head."
+    "Eh, how unusual. You never see 'em that colour..."
+    "The weird thing circled around my head a couple times before being carried away by the wind."
+    "I watched as it floated further and further away into the blue summer sky and eventually disappear into the distance."
+    "Ah, that was strange. I turned around to leave, only suddenly to come face to face with a familiar person."
+    
+    stop music fadeout 1.5
+    scene bg white with dissolve
+    
+    ri "Nonami..."
+    "I dropped my bokken in shock."
+    no "Rii...kun...?"
+    "Before I could respond, I felt his arms around me."
+    ri "I'm back home..."
+    
+    $ persistent.ending_2 = True
+    
+    window hide dissolve
+    scene bg black with dissolvelong
+    show fin with dissolve
+    $ renpy.pause (4.0)
+    hide fin with dissolve
+    return
+    
+###############################################################################################
+###############################################################################################
+    
+label soraroutestart:
+    
+    scene bg black with screenwipe
+    scene bg rikuroomceiling with screenwipe
+    
+    "I must have passed the entire weekend in a daze on top of my bed."
+    "I stared up at the ceiling of my room."
+    "It felt as if my insides were burning."
+    "A part of me was ashamed of myself."
+    "How long had I locked myself inside of this room?"
+    "In some distant corner of my brain, I was begging myself to get up and meet my friends..."
+    "My days with everyone were running out with each passing second."
+    "I couldn't... waste them all, lying on top of my bed, staring at the ceiling..."
+    "My mind was sobbing. It was screaming. It wanted to strangulate me dead for being like this."
+    "Every second that I wasted... who knew what I could have been doing with everyone in that time?"
+    "But... I was immobilized."
+    "How could I ever tell them about this..."
+    "Imagine how shocked and sad Haruka would be if I told her that I was going to leave in just two weeks now."
+    "And... I couldn't even bear to think of how upset Nonami was going to be when I told her that I was going to leave her for the second time."
+
+    play sound "Sound/cellphone.ogg"
+
+    "All of a sudden, I heard my cell phone ring. I looked at the caller id. It was Nonami."    
+    
+    stop sound
+    
+    ri "...hello...?"
+    no "Hey, hey Rii-kun! Let's do something fun!"
+    ri "Sorry, Nonami... I don't think..."
+    no "Eh? Did you catch a cold, Rii-kun? Your voice doesn't sound that good..."
+    ri "Y-yeah... I did... Sorry."
+    no "I see..."
+    no "Well, cheer up! I'll take care of ya if it gets any worse!"
+    ri "Uhn, thanks."
+    no "No problem, no problem! See ya later, Rii-kun. Get better soon!"
+    ri "I'll see you, Nonami..."
+    "I hung up."
+    "Ugh, what a coward I was... I couldn't tell her."
+    "There was no way I could just break something like this to her so simply."
+    "What was I going to do?"
+    "Gripped by frustration, I pulled the pillow over on my head and squeezed my eyes shut."
+
+    scene bg black with screenwipe
+    scene bg rikuroomnight2 with screenwipe
+
+    "I heard a knock on my door."
+    ri "Sora, is that you?"
+    so "... ... ..."
+    so "Uhn..."
+    ri "You can come in, Sora."
+    
+    show sora casual tanuki distantleft with dissolve
+    
+    "I heard my door creak open as Sora stepped into my room."
+    "She had an expression of devastation on her face."
+    "I guess... it was the same look I had."
+    "Look at us two..."
+    "We matched."
+    "She stumbled to my bed, like she was still in shock, and collapsed onto my side."
+    "I placed my hand on her head and gently stroked her hair."
+    ri "Sorry Sora. I'm... really lost right now."
+    
+    show sora casual tanuki distantright with dissolve
+    
+    so "Uhn..."
+    ri "I really thought we'd be able to spend the rest of high school together..."
+    ri "Uu-uhn... Not only that, but I thought we'd even be able to go to university together. I couldn't even imagine us ever being..."
+    so "... ... ..."
+    ri "If there was anything I could do to let us stay together... I would..."
+    ri "B-but there's just nothing..."
+    
+    show sora casual tanuki pout with dissolve
+    
+    so "Tsch... it's all our parents' fault..."
+    so "They never cared for us... but still... they think they can make all of our decisions for us...!"
+    ri "... ... ..."
+    "I knew Sora was right."
+    "I had begged my father so many times since Friday to let me stay with Sora... but he wouldn't have any of it."
+    "Not only that, but I knew that the situation was pretty much the same on Sora's side with mother..."
+    "If only there was something that I could do!"
+    "Why did they always have to be so selfish!? We had absolutely nothing to do with their feud!"
+    "Pah..."
+    "I hung my head in frustration."
+    "And to think that I had just promised Sora I would always protect her..."
+    "But a promise like that was just too far beyond my ability to keep... It was completely outside of my control!"
+    ri "Hey Sora... let's skip school tomorrow."
+    
+    show sora casual tanuki distantleft with dissolve
+    
+    so "Uhn..."
+    "It's not like there was any point in going to class any more anyways."
+    ri "Do you want to go anywhere?"
+    so "Uu-uhn."
+    ri "Me neither..."
+    so "Let's just stay in this room."
+    ri "Yeah, let's do that..."
+    "All of a sudden, it felt as if I was carrying the weight of the world on my shoulders."
+    "I couldn't bear to see Nonami and Haruka again..."
+    "I couldn't tell my best friends that I was going to leave... because I couldn't admit it myself."
+    "I wanted our days together to continue. Somehow, if I told them that I was leaving, it would only make the departure more absolute."
+        
+    scene bg black with dissolve
+    scene bg rikuroomnight2 with dissolve
+    show sora casual tanuki distantleft with dissolve
+    
+    "Sora and I ended up spending all of Monday locked in my room."
+    "Even though we were cutting school, it was impossible for us to do anything fun."
+    "In the end, we both just laid about doing nothing, too depressed to even talk."
+    play sound "Sound/Doorbell.wav"
+    "Sometime in the evening, the doorbell suddenly went off."    
+    so "... ... ..."
+    "It didn't look like Sora was going to get it... I wonder if I should..."
+    "I contemplated ignoring it, but in the end, deciding to check who it was."
+    "I went downstairs and opened the door."
+    
+    play music "Music/Disabled_Emotions_Part5.ogg" fadeout 1.5 loop
+    scene bg outsidehome with dissolve
+    show haruka uniform concerned with dissolve
+    
+    ha "Riku-kun?"
+    "Surprised to see Haruka, I stepped out into the porch."
+    ri "Haru-chan..."
+    
+    show haruka uniform handstogether sad2 with dissolve
+    
+    ha "What's the matter? You didn't come to school today..."
+    ri "Yeah... I'm sorry."
+    
+    show haruka uniform handfront sad2 with dissolve
+    
+    ha "Are you feeling okay? Nona-chan told me that you caught a cold."
+    ri "... ... ..."
+    ri "A-actually, about that..."
+    ri "I'm sorry, but I'm actually not sick..."
+    
+    show haruka uniform handfront sad with dissolve
+    
+    ha "Then what's the matter?"
+    "A heavy feeling came within me. I took a seat on the steps leading down to the yard."
+    "Haruka sat down beside me with a concerned look on her face."
+    "At this rate, I guess I couldn't hide it from Haruka any longer..."
+    "I sighed and wiped my face with my hands."
+    ri "The truth is..."
+    ri "I'm going to have to return to America again in just two weeks. I only found out on Friday night, after the dance..."
+    
+    show haruka uniform handraised surprise with dissolve
+    
+    ha "R-Riku-kun is!?"
+    ha "What happened? I thought Riku-kun was going to stay here..."
+    "Even if I wanted to tell Haruka everything... just where did I even start?"
+    "I needed to tell her everything about my mother... and Sora... and who knew what else."
+    ri "It's pretty complicated..."
+    ri "The truth is..."
+    "... ... ..."
+    "... ..."
+    "..."
+    "In the end, I told Haruka everything about it."
+    "About my mother. About Sora. About everything."
+    ri "My parents divorced right after Sora was born. I don't have any childhood memories of my mother, or of my sister."
+    ri "I would never even have gotten the chance to live with Sora again had my mother not gotten ill."
+    
+    show haruka uniform handfront sad with dissolve
+    
+    ha "I see..."
+    ri "But now that she's out of the hospital, that's all over now. She's going to take Sora away in just a few days."
+    ri "Now that we don't have to watch over Sora any more, we're going to return to America. I don't think I'll ever be able to come back here again."
+    ri "I didn't mean to make you worry by staying silent..."
+    ri "It's just that... something like this..."
+    
+    show haruka uniform armsbehind distanttear with dissolve
+    
+    ha "Uu-uhn. I understand."
+    ri "My father won't listen to me no matter how much I tell him I don't want to move..."
+    ri "It's really hopeless..."
+    ha "I... I'm really sorry, Riku-kun..."
+    ri "And... right when Sora began opening up..."
+    ri "I really thought things would go all right with her... but something like this had to happen!"
+    
+    show haruka uniform concerned with dissolve
+    
+    ha "How's she doing?"
+    ri "N-not good..."
+    ri "I'm really pathetic... I promised her that I would protect her... but in the end, I can't do anything."
+    ha "R-Riku-kun..."
+    ri "Sorry, Haru-chan... I really wanted... to graduate high school with you..."
+    
+    show haruka uniform handfront sad with dissolve
+    
+    ha "Uhn... me too, Riku-kun."
+    ri "But now..."
+    "I stood back up and started back towards the house."
+    ri "Hey... could you keep this a secret from Nonami?"
+    ha "Uhn..."
+    ri "I... I don't know what to tell her right now..."
+    ri "Sorry, Haru-chan... I'm really tired."
+    
+    show haruka uniform armsbehind distanttear with dissolve
+    
+    ha "O-okay... Take good care of yourself, Riku-kun..."
+    ri "I'll try... Thanks."
+    ha "Good night..."
+    ri "Good night..."
+    "I closed the door and stumbled back upstairs in a daze."
+    
+    scene bg rikuroomnight2 with dissolve
+    show sora casual tanuki distantright with dissolve
+    
+    "I slumped down onto my bed and stared at my feet."
+    ri "Haru-chan came by."
+    so "Uhn."
+    ri "... ... ..."
+    so "Sorry, Riku. Making you get the door..."
+    
+    hide sora with dissolve
+    
+    "I felt exhausted all of a sudden. I fell down on my bed and closed my eyes."
+    ri "She looked... really sad..."
+    
+    scene cg sorabed with dissolve
+    
+    "I felt Sora lie down beside me."
+    so "... ... ..."
+    so "I hate this..."
+    so "B-being stuck with that woman for my entire life... I..."
+    so "I was so sad... but there was no one to talk to..."
+    so "And I thought it was finally going to change..."
+    so "Tsch... it's not fair, Riku..."
+    "I placed my hand on Sora's cheek."
+    ri "Shhh... don't say that..."
+    ri "I've never belonged anywhere. I completely forgot what it was like to have a home or a family... until I met you."
+    ri "It felt like whenever I finally got used to some place, I would just have to move again..."
+    ri "I was... lonely."
+    ri "But you know?"
+    ri "You can't be alone... because no matter where you are, I'll always be alone with you."
+    "I wrapped my arms around Sora and held her close."
+    so "Riku..."
+    "We were the only two people on Earth who could understand each other."
+    "In many ways... even if we were raised apart, we were alike."
+    "We both hid our real emotions deep underneath ourselves."
+    "Neither of us spoke much..."
+    "Unable to hold much of a conversation... always holding our thoughts to ourselves... speaking only in short comments when somebody else spoke to us..."
+    "Only to one day have our barriers shatter and have everything to come flooding out, uncontrollably, no matter how desperately we tried to swallow it back up."
+    
+    scene cg sorabed2 with dissolve
+    
+    so "I... can't go on. It's too unfair, Riku! It's just... too unfair!"
+    ri "... ... ..."
+    ri "Shhh... You don't need to cry, Sora."
+    ri "I'm right here with you."
+    so "... ... ..."
+    so "I don't want to be alone again..."
+    "My heart squeezed. I wanted to say something to tell Sora to make her better."
+    "Yet, I was at a loss for words. I knew nothing I could do would make her feel better."
+    "The sight of her tears made my eyes tingle, as if I would start crying too."
+    so "Riku..."
+    so "You're... warm."
+    ri "Mm?"
+    so "Just... hold me like this."
+    ri "Okay..."
+    "I held Sora close to me and shut my eyes."
+    ri "Sora..."
+    ri "There's no need to worry..."
+    ri "Because... I'm right here with you, feeling the same thing."
+    ri "I'll... take care of you, okay? You can... count on me."
+    so "Mm..."
+    ri "So... I don't want to see you cry."
+    "The sweet scent of Sora's hair filled me as I held her warm body in my arms. Somehow, being so close to her gave me a glimmer of relief."
+    "I wanted to believe that if she was by my side, then I would somehow be saved."
+    "That if she were to hold me at that pivotal second, then everything would somehow be okay..."
+    "But it was all futile."
+    "Sora raised her hands and held my face. My heart fluttered at her touch."
+    "She stared into my face, her eyes pleading me to save her from the pain that was tearing her apart."
+    "Somehow... as I looked into her eyes, I saw my own face mirrored in hers."
+    "Surrounded by the world that was about to consume us... this face... this feminine face that somehow looked like mine... provided me with a strange source of warmth."
+    ri "Sora..."
+    "Sora ran her hand down my face."
+    so "Riku... You'll be with me forever, right? I won't ever have to be alone again?"
+    ri "... ... ..."
+    so "Be with me, Riku... I... don't want to be alone any more."
+    ri "... ... ..."
+    ri "I promise you, Sora... no matter what, I... I'll always be with you... J-just like I promised you that time we watched the fireworks together..."
+    so "Thanks..."
+    "Sora raised herself so that she could look at me eye to eye. Her face was so close to mine that I could feel her gently breathing."
+    so "Thanks for lying for my sake..."
+    "Sora's fingers danced slowly around my collar bone. Her glistening eyes looked at my body wistfully."
+    "My heart fluttered as Sora's finger softly circled my Adam's apple."
+    so "Riku..."
+    "Her face approached mine, her eyes glazed, her lips slightly parted."
+    "My heart pounded inside of me, so hard that I felt as if I would faint. My head spun, captivated by Sora's beautiful white skin, and yet horrified it was the same skin as mine."
+    "I wanted... I wanted to find out what her tiny pink lips tasted like. And that thought itself drove me to contemplate throwing myself off a cliff."
+    "... ... ..."
+    ri "... ... ..."
+    ri "Sora... stop it..."
+    "I put my hand on top her head and gave it a pat."
+    ri "...You're embarrassing me."
+    "Sora put her head down, looking disappointed."
+    "The look of rejection on her face made me want to grab her shoulders and drink out her sorrows from her lips right there."
+    ri "Sorry."
+    "Sora smiled weakly."
+    so "Uu-uhn."
+    so "Riku's still the only person I can count on."
+    "Hearing those words made me feel as if I was carrying the weight of the world on my back, but I still smiled anyways for Sora."
+    ri "Uhn. Don't worry... Onii-chan will take care of you."
+    "Sora pressed her face into my chest and wrapped her arms around me."
+    so "Uhn.... I'll be counting on you."
+        
+    stop music fadeout 2.0
+    scene bg black with dissolvelong
+    scene bg rikuroomday2 with dissolvelong
+    
+    "Tuesday came."
+    "I guess there were just ten days left now until everything ended."
+    "I stared up at my ceiling as usual."
+    "I wonder... what everyone else was doing right now?"
+    "All of a sudden, my door burst open."
+    "What the-"
+    
+    play music "Music/Dream_of_a_Butterfly.ogg" fadeout 1.5 loop
+    show nonami casual excited happy with dissolve
+    
+    no "Yahoo!"
+    "I stood up from my bed, in a shock at Nonami's appearance."
+    
+    show nonami casual armsraised smile2 with dissolve
+    
+    no "Wake up, ya sleepyhead!"
+    "She ran over and shook me from my slumber."
+    "Was this... a dream?"
+    "I blinked in a daze, still not entirely believing what was going on."
+    "Yeah... this must just be a nice dream that I was having..."
+    "All of a sudden, Nonami grabbed my mattress and lifted it up, rolling me off my bed."
+    
+    show nonami casual excited smile with dissolve
+    
+    no "C'mon, up and at 'em!"
+    "I hit the ground with a painful thump."
+    "Ouch. So it wasn't a dream, after all."
+    "I rubbed my eyes."
+    ri "Nonami...? What are you doing here...?"
+    
+    show nonami casual neutral happy with dissolve
+    
+    no "Since I haven't seen ya in a while, I decided to make a house visit!"
+    no "Come on, come on, get up Rii-kun! We're going on a date today!"
+    ri "What...? But what about school?"
+    
+    show nonami casual neutral smile2 with dissolve
+    
+    no "It's a holiday!"
+    "Yeah right. Even I knew that today was no holiday."
+    "So Nonami was skipping school too?"
+    "She grabbed me up and put me on my feet."
+    
+    show nonami casual excited happy with dissolve
+    
+    no "A date, Rii-kun! A D-A-T-E!"
+    "Before I knew it, I was being pushed out of my room."
+    "Wait... what exactly was going on?"
+    
+    scene bg black with screenwipe
+    scene bg train with screenwipe
+    show nonami casual neutral with dissolve
+    
+    "The next thing I knew, I was on a train with Nonami, headed to the amusement park."
+    "Nonami squeezed me by the arms and smiled gleefully."
+    
+    show nonami casual armscrossed smile2 with dissolve
+    
+    no "Eaaahh, isn't this just a maiden's dream come true? Going on a date to the amusement park on such a sunny day!"
+    "I looked out the window."
+    "It really was a nice day..."
+    "I wanted to smile... but I knew that it was impossible."
+    
+    show nonami casual excited happy with dissolve
+    
+    no "You won't believe it, Rii-kun! A bunch of coupons for the amusement park came in the mail yesterday. Ehehe, lucky!"
+    ri "Uhn... I guess so..."
+    
+    show nonami casual armscrossed smile with dissolve
+    
+    no "Let's have a fun day together, okay?"
+    ri "S-sure..."
+    "As soon as we arrived at our destination, Nonami pulled me out."
+    
+    show nonami casual neutral happy with dissolve
+    
+    no "Come on, come on, Rii-kun! This way, this way!"
+
+    play music "Music/Longing.ogg" fadeout 1.5 loop    
+    scene bg amusementpark with dissolve
+    show nonami casual neutral happy with dissolve
+    
+    "We practically had the amusement park to ourselves."
+    "Of course, that seemed kind of a given. Just who would come here at 12 PM on a school day?"
+    "Nonami grabbed my arms and pulled me along the park."
+    "I remember... in the past, I would be too embarrassed to go to the amusement park by myself, since everyone else came here on dates."
+    "But now that I was finally here with Nonami, why couldn't I smile? Why couldn't I hold onto her like I really meant it?"
+    "Didn't I always want to come here with a pretty girl like Nonami at my side? What was... so wrong with me?"
+    no "Eaaah... I wonder what we should do? Ah, I know! Let's try the haunted house!"
+    "The haunted house, huh..."
+    "It seemed so long ago when we did that for the culture festival, even though in reality, it was just four days ago."
+    "Those happy days seemed so far away now, as if they belonged to another life."
+    "A life that was now over."
+    
+    scene bg black with screenwipe
+    scene bg amusementpark2 with screenwipe
+    show nonami casual neutral happy with dissolve
+    
+    "After the haunted house, Nonami led me to a bunch of other rides, but I couldn't really get into any of them."
+    "Still, Nonami didn't seem to notice at all. She kept smiling and happily led me to the next destination, her cheerful self never lost."
+    
+    show nonami casual neutral smile with dissolve
+    
+    no "I'm getting kinda hungry. Hey Rii-kun, let's buy a soft cream."
+    "She led me to a food stand and ordered a large cone of soft cream."
+    
+    show nonami casual neutral happy with dissolve
+    
+    no "Uwaahhh, it's so huge, Rii-kun!"
+    "She took a chomp out of it and happily passed the cone onto me, her lips smeared with ice cream."
+    
+    show nonami casual neutral smile with dissolve
+    
+    no "Here, here, dig in, Rii-kun."
+    "An indirect kiss, huh? I would have been dying of nervousness about now."
+    "But today, my heart didn't even as much as flutter."
+    "I took a half hearted lick and passed the cone back."
+    "Nonami squealed and squeezed my arms."
+    
+    show nonami casual excited smile with dissolve
+    
+    no "Eaaaahhhh! An indirect kiss with Rii-kun!"
+    "She... really was trying hard today."
+    "I wanted to laugh nervously about now... I wanted to blush and smile sheepishly... I wanted to shyly avoid Nonami's eyes, but to sneak a glance at the wrong time and accidentally have our eyes meet."
+    "I wanted to ride everything with Nonami. I wanted to hold her when she pretended to be scared in the haunted house."
+    "I wanted... but... I knew it was impossible."
+    
+    show nonami casual armscrossed smile with dissolve
+    
+    no "Hey, hey, let's ride that next, Rii-kun."
+    
+    scene bg ferriswheel with dissolve
+    
+    "Nonami pointed to the ferris wheel."
+    "Before I knew it, I was being pushed along towards the ride station."
+    
+    stop music fadeout 1.5
+    scene cg nonamiferriswheel5 with dissolve
+    
+    "I gazed distantly out the window as our car slowly rose to the sky."
+    "Some clouds were gathering now... I suppose the good weather couldn't last."
+    no "Hey Rii-kun..."
+    ri "Mm?"
+    no "Cheer up."
+    no "We were all worried when you didn't come to school yesterday, and Haru-chan's not been tellin' me much."
+    no "I don't know what exactly happened, but you don't need to worry about a thing."
+    no "If anything's wrong, you'll always have me to back ya up!"
+    ri "Uhn..."
+    no "So just tell your ol' pal Nonami everything! I'm all ears, Rii-kun! All your problems are mine!"
+    ri "... ... ..."
+    ri "Sorry, Nonami. I don't think you'll be able to help with this one."
+    no "Eeeehhh!? Really?"
+    ri "Yeah..."
+    no "Aww... Ah well."
+    "An awkward silence fell in the carriage, until Nonami put her hand on top of mine."
+    no "Eh-heh... Hey Rii-kun... Did you know?"
+    "Nonami leaned against me and grabbed my hand."
+    no "I've always dreamed of doing this with someone important to me..."
+    "Somewhere along the lines, I was sure that I've dreamed of going up on the ferris wheel with someone special to me too."
+    "Today... must have been nothing but a dream for the lucky guy who went out with Nonami."
+    "But... why was that guy me?"
+    
+    play music "Music/The_House_of_Leaves.ogg" fadein 4.0 fadeout 1.5 loop    
+    
+    no "T-the truth is... I..."
+    no "I've really liked Rii-kun for a long time... Ever since we met so many years ago, I think. Eh-heh..."
+    no "I've made my decision after the culture festival. I really want to spend the rest of my days with Rii-kun!"
+    no "No matter what happens, you can't get down with yourself. Because you'll always have me at your side."
+    no "There's no problem we can't overcome together. Because..."
+    no "I love Rii-kun. I... always have. And I always will."
+    no "What I always really wanted was a kiss. A kiss in the ferris wheel."
+    no "Hey Rii-kun..."
+    no "Do you want it?"
+    no "My first kiss...?"
+    
+    scene cg nonamiferriswheel4 with dissolve
+    
+    "I looked at her."
+    "What... could I possibly do?"
+    "Nonami slowly reached forward for my lips."
+    "I... didn't know what to do!"
+    "O-of course I cared for Nonami with all of my heart! In any other circumstance, I would probably be overjoyed right now... B-but what difference did my feelings make!?"
+    "It's not like anything would come out of kissing Nonami right now!"
+    "Because... because I was going to leave her anyways..."
+    "And not only that, but Sora..."
+    "Sora...!? Why was I even thinking about her...?"
+    "Would I be cheating on her feelings if I kissed Nonami? B-but that didn't make any sense, because..."
+    "Sora... She needed me..."
+    "I couldn't kiss Nonami... Not while Sora put her feelings on me... Not while she was counting on me..."
+    "I couldn't let her down..."
+    "I stared at Nonami's face as she approached me."
+    "W-why did she have to be so beautiful!?"
+    
+    play music "Music/A_Winter_Memory.ogg"
+    
+    ri "G-get..."
+    ri "GET AWAY FROM ME!!!!"
+    
+    scene cg nonamiferriswheel6 with dissolve
+    
+    "I lost control of my emotions and violently shoved Nonami away. She fell to the ground, an expression of absolute shock on her face."
+    "I looked with horror at what I had done." 
+    "No... I hadn't meant that to happen... T-this wasn't..."
+    "I needed to control myself...! But everything was spewing out by itself."
+    "I begged myself to remain my usual self, but it was already too late."
+    "Everything that I had held onto up to now was spilling forth."
+    ri "D-don't you know.........?"
+    ri "I....... I'm going to have to move again...!"
+    ri "In just ten days now....... I'll be returning to America! I... I'll.......I'll probably never see you again........."
+    no "...what...?"
+    ri "I... I don't care about you any more!"
+    "B-because I can't... I couldn't possibly bear to love you any more! The closer we got...... the more painful it was to leave......"
+    ri "W-why did you have to drag me around all day!? Y-you should have just left me to rot in my room!!"
+    "Because I... I had the best day of my life today... I wanted... I wanted to laugh with you... You were truly the one I wanted..."
+    ri "Just quit it with your act already! I know you were pretending to be happy all day just so you could... you could..."
+    "I wanted to be happy with you... it was too wonderful, walking around with a girl like you..."
+    "I wanted... for this to last forever... To have you to hold in my arms every day... To come to the amusement park on dates... To..."
+    "To... have my first kiss on top of the ferris wheel with the one I loved."
+    "But... none of that was going to happen now! Because..."
+    "I lost my breath and couldn't continue any longer."
+    "Nonami stared at me from the ground, her eyes now as lifeless as a corpse, too shocked to even cry."
+    no "No... tell me... those are all lies..."
+    no "I... want you to... lie to me, Rii-kun. Okay?"
+    "I buried my face in my hands."
+    "Now... I knew for certain that I was branded to be cast into hell for all of eternity once I died."
+    ri "Someone like me... doesn't..."
+    no "N-no...."
+    "The ride ended. I stumbled outside."
+    ri "I'm sorry Nonami. But this is the end."
+    ri "Good bye."
+    
+    $ renpy.music.play("Sound/rain.ogg", channel="sound",loop=True)
+    scene bg streetnight with dissolve
+    show rain1s
+    show rain2s
+    show rain3s
+    
+    "I ran."
+    "I ran out the amusement park and into the streets."
+    "My face was covered with my tears. My entire mind was in disbelief at what I had just done."
+    "The sky overhead was now black with heavy clouds. Rain began to pour down upon me."    
+    "But I still ran as far as my legs would take me."
+    "Finally, after what seemed like hours, my legs gave out and I fell to the muddy streets below."
+    "By now, I was drenched with rain."
+    "I sobbed into the wet pavement, my shoulders heaving."
+    "All of a sudden, I was overwhelmed with a sudden urge to vomit."
+    "I coughed and gagged, barely managing to keep it inside."
+    "I collapsed, the rain pouring down upon me without mercy."
+    "I wanted to scream into the ebony sky."
+    "Just what was your damned problem!?"
+    "Why was I damned to this life? Why couldn't I just be... normal like everyone else!?"
+    "Why couldn't I be loved? Why... why was I always the only one?"
+    "A black realization was born inside the innermost core of my gut. It spread, like a glob of black sludge, throughout my body."
+    "I was going to be alone for the rest of my life."
+    "There would be no one to take care of me."
+    "There would be no one to tell me that I was loved."
+    "I was going to be alone until the day I died, and there wasn't anything I could do about it."
+    "I longed for the warmth of another... All I wanted was... just for someone to hold me and tell me everything will be alright."
+    "Above all, I hated myself. I hated this life. For the first time in my life, I truly longed to cease to exist."
+    "I saw my own distorted reflection against the puddle on the ground. Enraged with myself, I smashed it to pieces."
+    "You.... you're a monster....!"
+    "Someone like you..... didn't deserve to live...."
+    
+    $ renpy.music.stop(channel="sound")
+    stop music fadeout 1.5
+    scene bg black with dissolvelong
+    scene bg livingroomfade with dissolvelong
+    
+    play music "Music/The_Storm.ogg" loop
+
+    "I stumbled back home in a daze."
+    "The rain had still not let up. I was dripping with water and my shoes felt like two miniature swimming pools."
+    
+    show sora casual tanuki neutral with dissolve
+    
+    so "Riku...?"
+    "I stumbled out of my shoes and fell into Sora's arms."
+    ri "... ... ..."
+    ri "Sora... I missed you."
+    
+    show sora casual tanuki tearssmile with dissolve
+    
+    so "Riku..."
+    so "Where were you...?"
+    ri "... ... ..."
+    ri "Sorry. I had to go out for awhile... But I'm back now."
+    ri "I'm... so uncool, aren't I?"
+    so "Uu-uhn..."
+    ri "Sorry for leaving you. After all... my Sora's the only one I care about. The only one..."
+    so "Uhn... The only one..."
+    so "We'll... always be together, Riku... as one..."
+    ri "Sora..."
+    "I bent into her ears and whispered to her our darkest secret. And yet, it was also the only spot of warmth I had left."
+    ri "I love you. I need you..."
+    ri "You're... the only person who understands..."
+    ri "You're the only person who can make me feel whole... The only person who makes me feel... needed."
+    ri "In the end... I'll just be thrown away. Forgotten. By everyone, except you... You need me... You won't leave me like the others..."
+    ri "Sora..."
+    ri "I love you..."
+    ri "I love you so much..."
+    so "Uhn..."
+    so "I love Riku too..."
+    "I laughed hollowly in between my tears."
+    ri "That's... the only thing I wanted to hear..."
+    
+    scene bg soraroom2 with dissolve
+    show sora casual armscrossed tearssmile with dissolve
+    
+    "Sora led me into her room. Outside, the windows clattered with rain drops. The occasional splash of lightning lit the room, castling long shadows across the floor."
+    "Sora unbuttoned my coat and let it drop to the floor. She rested her head against my chest as she undid my shirt."
+    so "Let me warm you up..."
+    "She let the shirt drop and wrapped her arms around me."
+    so "Riku..."
+    so "I can hear your heart beating..."
+    ri "Yeah..."
+    "Sora stroked my naked chest with her pretty fingers."
+    so "Are you nervous? Scared your sister is doing this?"
+    so "... ... ..."
+    so "Hey Riku... Feel my heart..."
+    "She grabbed onto my hand and placed it in between her breasts."
+    "I could feel her pulsating heart on the palm of my hands."
+    ri "Are you nervous?"
+    
+    show sora casual armscrossed poutblush with dissolve
+    
+    so "S-silly... Me, nervous...? Why would I ever be nervous..."
+    "I inched my hand closer to Sora's breast and gave it a small squeeze."
+    "Sora gave a small gasp and tightened her grip on me."
+    so "N-not so fast, silly... I still.. need to take your pants off."
+    ri "... ... ..."
+    so "W-what? Don't look at me like that! It's just... really wet."
+    "Sora unbuckled my belt and pulled my trousers down."
+    "She led me onto her bed and laid down beside me."
+    
+    scene cg sorarikubed with dissolve
+    
+    "I lost myself in Sora's warmth as she held me close."
+    "I bent over and kissed Sora on the cheeks. Finding courage after feeling the soft sensation of her face, I kissed her again, and again, moving closer to her lips..."
+    so "Ah... Riku..."
+    
+    scene cg sorarikubed2 with dissolve
+    
+    "Finally, our lips met."
+    so "M-mm..."
+    "As our lips tenderly embraced, Sora slowly opened her mouth. Our tongues softly lapped against each other, like two puppies greeting each other."
+
+    scene cg sorarikubed with dissolve
+    
+    "My hands unbuttoned Sora's shirt and wandered downwards, towards her marshmallow soft breasts."
+    so "A-ah..."
+    "Sora ran her hand through my hair as our tongues caressed each other."
+    "My hands ventured as far down as I dared, my heart beating more wildly with each inch of Sora's skin I touched."
+    "I was terrified, but I wanted to go deeper and deeper down Sora's body..."
+    "Sora moaned softly. Even as we were defiling nature's most sacred law, I couldn't bear the thought of hurting Sora and felt reassured that she seemed to be enjoying it."
+    "I felt Sora's petite hands reach hesitantly up my shoulder blades."
+    "Encouraged by her move, I finished unbuttoning her shirt and came upon her bra."
+    
+    scene cg sorarikubed3 with dissolve
+    
+    "Sora gasped and withdrew her hands from my clothing as I slipped her bra off."
+    so "Ah... R-Riku..."
+    "Sora blushed and covered her breasts with her hands."
+    ri "You're so pretty, Sora..."
+    so "Dummy... Looking at my boobs like that..."
+    ri "No? You don't like it, Sora?"
+    so "I didn't say that!"
+    "I let Sora kiss my lips."
+    "I ran my hands against Sora's bare breasts as our lips connected. They were softer than anything that I had touched before in my life."
+    "Sora released my mouth and gasped for air. I circled my finger around her nipple and gave it a pinch. Her shoulders heaved in and out as she softly moaned."
+    "She wrapped her arms around my neck and kissed me again. Our lips met again, even harder than before."
+    "The feeling was now almost unbearable."
+    "I reached up Sora's skirt and stroked her underwear."
+    "Should I take them off before I soiled them? Or would that be too much? I wasn't sure which way Sora wanted."
+    "In the end, I couldn't summon the will to remove them, so I rubbed my fingers against the soft cotton."
+    "I didn't want to take my lips off of Sora. We were beginning to get used to our tongues now and could reach deeper than before."
+    "Sora trembled as my hands ran between her thighs."
+    "Could she feel anything? I wasn't sure whether I was being hard enough."
+    "But... I still wanted more. I used my other hand to press her head towards mine and kissed her harder, our noses pressed against our faces."
+    "I lost myself in Sora's taste and reached inside of Sora's underwear."
+    "My hand wandered downwards, looking for Sora's opening. Finally, it found it."
+    "I slid one of my finger into the moist entrance, only to have it slip immediately out the side."    
+    so "A-ah...! R-Riku..."
+    ri "S-sorry... I don't know..."
+    "I tried again, this time trying to aim closer down the center."
+    "It was surprisingly difficult to slide my finger in. In the end, I could only get a quarter of my finger into Sora, afraid that I would hurt her if I pushed any further."
+    "Any attempt at movement caused the finger slide back out. It was difficult trying to do this without seeing anything."
+    "I tried my best to run my finger in and out as we kissed. Even though it slid out so easily, I was relieved that her inside was so moist."
+    "So Sora was enjoying it too... I would have been devastated if I had failed to make her feel any better..."
+    "I leaned into her ears and whispered to her."
+    ri "H-hey Sora... do you want to do it...?"
+    so "Ha... ha..."
+    "She was breathing in and out..."
+    "My head was swimming in hormones now. Whatever remained of my usual self was long gone."
+    "Sora grabbed onto my underwear and pulled it off. Taking her answer, I pulled off the rest of Sora's clothes."
+    
+    scene cg sorarikubed4 with dissolve
+    
+    "We looked at each other, stark naked. My heart fluttered at the realization I had never been naked with another girl before in my life."
+    ri "Sora... I'm..."
+    "I kneeled down and positioned myself over Sora's entrance. My heart was pounding so hard I felt as if I could fall over."
+    "In my panic and the darkness, I lost track of where her entryway was and fumbled around her crotch with my hands to find it again."
+    "Finally, I found a slippery crevice in between her legs. I put myself on top of her slowly, afraid of crushing her petite body."
+    ri "I'm going to push it in now, okay?"
+    so "Uhn..."
+    "I tried to push myself in, but I slipped back out. With trembling hands, I reached to find her entrance again."
+    "Sora finally positioned me above her correctly."
+    so "Here... It's here..."
+    ri "Alright..."
+    
+    stop music fadeout 3.0
+    play sound "Sound/thunder.ogg"
+    scene cg sorarikubed5 with dissolve
+    scene cg sorarikubed4 with dissolve
+    
+    "A sharp bolt of lightning struck, illuminating the room with sharp shadows and rattling the window."
+    "I saw Sora's frightened face, lit deathly white under the lightning."
+    "I felt lightheaded, merely thinking about what I was about to do."
+    "Somewhere at the back of my head, I knew this was the last chance to turn back. After this... there would be no escape."
+    "But... the place I would return to if I turned back..."
+    "I didn't want to return there."
+    "I pushed myself in, impaling Sora's virgin white flesh with my own."
+    
+    scene cg sorarikubed6 with dissolve
+    
+    "Sora gasped and squeezed her eyes, gripping onto my shoulders."    
+    so "Uuegghh..."
+    "Tears formed on her eyes."
+    so "I-it hurts..."
+    "I pulled myself back out, frightened by her tears."
+    ri "Sorry... Did I do something wrong? Are you hurt somewhere?"
+    so "Uu-uhn... It's just..."
+    ri "Sorry, Sora... I didn't mean to-"
+    "I reached down to Sora's crotch to try to find her entrance again."
+    
+    play sound "Sound/thunder.ogg"
+    scene bg white with dissolve
+    scene bg black with dissolve
+    play music "Music/The_House_of_Leaves.ogg" loop
+    
+    "Another explosive bolt of lightning struck. I nearly yelped when the lightning illuminated my hand, covered in blood."
+    "My head was spinning. Was there supposed to be this much blood? Had something gone wrong?"
+    "Did we have to go to the hospital together? How would I explain myself?"
+    ri "S-Sora... you're bleeding...!"
+    "I hadn't meant to do that! I just wanted..."
+    "It wasn't..."
+    "I had to stop the bleeding somehow... I didn't want Sora to bleed..."
+    
+    play sound "Sound/thunder.ogg"
+    scene bg white with dissolve
+    scene bg sorabed3 with dissolve
+    
+    "Suddenly, another bolt of lightning struck. In terror, I leapt off of Sora's bed."
+    ri "No... I didn't mean to..."
+    
+    show haruka uniform neutral yandere with dissolvelong
+    
+    ha "Just as I expected... there's no hope for Riku-kun now, is there?"
+    ri "H-Haru-chan... No... You've got to let me..."
+    ha "Sleeping with his own sister..."
+    ha "I never knew he'd stoop so low..."
+    ri "No! S-Sora... she needed me... She was..."
+    ha "No."
+    ha "You're the one who needed her."
+    ha "You're the one who dragged her into your mess."
+    ha "And now you're the one who ruined her life."
+    ri "NOO!!!"
+    
+    hide haruka with dissolve
+    show nonami uniform armscrossed saddead with dissolve
+    
+    no "Rii-kun..."
+    ri "N-Nonami...?"
+    no "I loved you all this time..."
+    no "And you do this to me?"
+    ri "I..."
+    no "You had me by your side, all this time... Always waiting... Always trying to get closer to you..."
+    no "And you choose your own sister over me?"
+    ri "It's.... not.... like... that...!"
+    ri "Sora loves me... Without me, she couldn't..."
+    
+    show nonami uniform armscrossed madtears with dissolve
+    
+    no "WRONG!"
+    no "It's not your place."
+    
+    hide nonami with dissolve
+    show haruka uniform neutral yandere with dissolve
+    
+    ha "It's not your role."
+    
+    hide haruka with dissolve
+    show nonami uniform armscrossed madtears with dissolve
+    
+    no "You're... not even human anymore..."
+    
+    hide nonami with dissolve
+    show haruka uniform neutral yandere with dissolve
+    
+    ha "You wore the stain of your sister's virgin blood..."
+    
+    hide haruka with dissolve
+    show nonami uniform armscrossed madtears with dissolve
+    
+    no "We could have been happy together."
+    no "Now... it's too late."
+    no "Good bye, Rii-kun."
+    
+    hide nonami with dissolve
+    show haruka uniform neutral yandere with dissolve
+    
+    ha "Good bye..."
+    ri "NO! Wait...! I don't...."
+    
+    scene bg white with dissolve
+    
+    so "Riku...? Riku!!!!"
+    
+    stop music fadeout 1.5
+    scene cg sorarikubed4 with dissolve
+    
+    "I sat on Sora's bed, covered in cold sweat."
+    so "Are you okay?"
+    ri "Yeah... Just... panicked for a moment."
+    
+    play music "Music/A_Winter_Memory.ogg" loop
+    
+    "I lifted up the blanket and scanned the bed lining. Finally, I found a spot of Sora's blood on the fabric."
+    "I clenched my fist. Suddenly, I was consumed with regret. Why had I done that?"
+    "No... I didn't want to be condemned... I didn't want to be shunned by all of society..."
+    so "Riku...?"
+    ri "Sora... No..."
+    ri "We shouldn't have... it was... all... a mistake...."
+    so "A... mistake....?"
+    ri "... ... ..."
+    ri "Sorry."
+    ri "I'm... done for the night."
+    
+    scene cg sorarikubed7 with dissolve
+    
+    so "But... Riku...!!!"
+    ri "No more. I can't. We can't!"
+    so "Aren't you going to make it all better!?"
+    ri "I said no more!!"
+    
+    scene cg sorarikubed8 with dissolve
+    
+    so "NO!"
+    ri "STOP IT!"
+    ri "... ... ..."
+    ri "We're... siblings! We can't... do this!!!"
+    ri "NO!!!"
+    "In a moment of insanity, I grabbed onto Sora's pillow and flung it across the room."
+    ri "This kind of love... doesn't exist! We're just... running away!"
+    so "Tsch..."
+    so "Riku... You jerk!!!!"
+    so "Get out! Get out of my room! I never want to see you again!!!"
+    
+    play music "Music/Forgotten.ogg" fadeout 1.5 loop
+    scene bg black with dissolvelong
+    $ renpy.pause (1.0)
+    scene bg rikuroomday3 with dissolvelong
+    
+    "The next day arrived."
+    "There were just nine days left now."
+    "My life... really was spiraling out of control."
+    "How could I... possibly make things right again?"
+    "All of the evidence pointed to a single conclusion - that it was impossible."
+    "Nonami must be beyond hating me. And Sora... I was too ashamed to even knock on her door."
+    "But... somehow, I had to at least try to talk to her..."
+    
+    scene bg closeddoor2 with dissolve
+    
+    "I stumbled out of my bed and walked to Sora's door."
+    "For what seemed like forever, I just stood there, debating with whether or not I should try to talk with her."
+    "All of a sudden, I heard a soft voice from inside."
+    so "Riku... you can come in."
+    "How did she know that I was standing outside?"
+    "I gently opened the door and walked in."
+    
+    scene bg soraroom2 with dissolve
+    show sora casual armscrossed distantleftyandere with dissolve
+    
+    "I took a seat beside her on the bed."
+    ri "... ... ..."
+    "Now that I was actually inside, I lost all of the words that I had wanted to say."
+    "Sora was much the same, so we just sat there, unable to look into each other's faces."
+    "An hour must have passed, with the both of us just there... doing nothing..."
+    "Finally, I managed to speak."
+    ri "Sora..... this really can't go on."
+    ri "At this rate... both of our lives are going to be ruined..."
+    "I felt my eyes hurt all of a sudden. I reached up to my face and realized that tears were rolling down my cheeks."
+    ri "Let's not see each other any more from now on. There are only nine more days left now anyways..."
+    ri "We're... just going to end up hurting each other..."
+    "I sniffled like some tiny little girl, while Sora sat beside me, as lifeless as a porcelain doll."
+    ri "Hey... answer me...!"
+    "Not the slightest response from Sora. Was she even listening to what I said?"
+    "Ugh, I couldn't bare this any longer."
+    
+    scene bg rikuroomday3 with dissolve
+    
+    "I stood up and dragged myself back into my room."
+    "I knew that this was all hopeless from the beginning."
+    "I collapsed into my bed and sobbed into my pillow."
+    
+    stop music fadeout 1.5
+    scene bg black with dissolvelong
+    scene bg kitchen with dissolvelong
+    
+    "It wasn't until late evening when I finally left my room again."
+    "I went downstairs and looked for something to eat... when I suddenly found a note on the table."
+    "I reached for it and read it."
+    
+    play music "Music/Against_the_Storm.ogg" fadeout 1.5 loop
+    
+    so "I'm going to leave you forever now. If you care about me at all, meet me at the riverbank."
+    "Oh no..."
+    "There was absolutely no doubt about it..."
+    "This was definitely a suicide note!"
+    "Sora...! You wouldn't...!"
+    "In a panic, I dropped the note to the ground, grabbed my coat, and ran outside."
+    
+    scene bg streetevening with dissolve
+    
+    "I ran as fast I could to the riverbank."
+    "By the time I arrived, I was doubled over with exhaustion. Was I too late...? I couldn't bear to even imagine the thought of Sora having..."
+    "I fought past my pain and ran to the shore, screaming Sora's name."
+    
+    scene cg sorariver with dissolve
+    
+    "Relief overwhelmed me when I saw her standing in the shallow waters, hauntingly illuminated by the moonlight."
+    ri "Sora!!!!"
+    "She turned to face me."
+    so "Riku."
+    ri "Please come back here, Sora..."
+    "Instead, Sora took a step backwards, further into the river. The water was almost up to her chest now."
+    so "I'm... really going to kill myself now!"
+    ri "S-Sora! D-don't do it!"
+    
+    scene cg sorariver2 with dissolve
+    
+    so "You don't... you don't even... care about me!!!"
+    ri "N-no... it's not true... I really do... I do..."
+    so "You promised, didn't you!? You promised you'd always be with me!"
+    so "Y-you're just like... everyone else.... who's lied to me!"
+    so "You've never cared about me! You're just going to throw me away!!! A-a-a-after what we did....."
+    "My heart was being torn from every direction."
+    ri "I-I'm sorry... I......."
+    so "You're just like that guy!!!! P-pretending to like....... And then...... and then... running away................"
+    so "W-w-with some other... girl.........."
+    so "I hate you!!!!!!!"
+    ri "N-no... t-that wasn't....."
+    "Sora took another step deeper into the river."
+    so "I-I'd rather die...... than live with that hag for the rest of my life......"
+    so "She's never cared for me............ She should have just died in that hospital!!!"
+    so "Why'd she have to come back and ruin everything!! WHY!?!?"
+    "She took another step back. By now, the water was all the way up to her neck and I could tell that she was standing on her tiptoes."
+    ri "N-no... Sora...!"
+    "I rushed into the river."
+    so "D-don't come any closer! Or else I'll really do it!!"
+    ri "S-Sora..."
+    so "I'm really going to kill myself! I'm going to do it!!!"
+    "...I couldn't take this any longer..."
+    ri "... ... ..."
+    ri "D-don't fool around with me, Sora!"
+    
+    scene cg sorariver with dissolve
+    
+    so "W-what...?"
+    ri "If you were really going to kill yourself... then why'd you call me out here in the first place!?"
+    so "Y-you.....!!"
+    ri "So quit it and come back here! You're making... me worry...!"
+    so "Liar!!!"
+    so "I... I'm really going to do it! And then you'll regret it!!!"
+    ri "No... because... because you're the one who's lying..."
+    ri "Let's go home, Sora..."
+    ri "I don't... want to do this any more..."
+    so "...t-t-t-tsch..."
+    so "Riku's an idiot!!! Stupid-stupid-stupid-stupid!!!!!"
+    so "I HATE YOU!!!!"
+    "Sora took a small step backwards, but now I could see that her face was lined with fear."
+    so "I'm... not lying!!! I'm really going to kill myself!!!!"
+    "By now though, it was obvious she really wasn't intending to actually do it..."
+    ri "Sora..."
+    "I started to walk away from the river, back to shore."
+    so "R-Riku... where are you going!?"
+    so "H-hey!!!"
+    ri "I'm going home."
+    so "Stupid Riku!!! Why are you leaving me!?"
+    so "Y-you can't!! B-because... b-because... I'm going to..."
+    "All of a sudden, I heard the splashing of water as Sora ran after me, her face lined with tears."
+    so "Stupid Riku!!! A-abandoning your little sister like this...!"
+    so "Doesn't he... doesn't he care that she's about to kill herself!?"
+    "I stayed silent."
+    so "HEEEYYYY!!!!!!"
+    
+    scene cg sorariver3 with dissolve
+    
+    "All of a sudden, Sora's shout was abruptly cut off and I heard an enormous splash behind me."
+    "I turned around and saw that she had disappeared underneath the water."
+    ri "Sora...?"
+    "Was she trying to trick me by diving underneath the water?"
+    ri "You're not going to fool me, you know. You can come back out now."
+    "Nothing but the empty silence of the night responded to my call."
+    so "Hey, Sora?"
+    "Suddenly, an ominous chill went down my spine."
+    "Oh no..." 
+    "She must have slipped on the rocks as she was running out and accidentally fallen into the water!"
+    ri "SORA!!!!"
+    
+    scene cg sorariver4 with dissolve
+    
+    "I ran back into the river in a panic."
+    "No! No! S-she had to be here..."
+    "But it was impossible to see anything in the pitch black water."
+    ri "SOOORRAAAAA!!!!!!!"
+    "I dived my face into the water and wildly scanned the river bottom with my hands, but found nothing."
+    "In my panic, I breathed in a mouthful of water. I resurfaced and gagged, my lungs lit on fire."
+    "No... I had to keep looking for her!"
+    "Fighting past the pain, I dived in again and wildly flailed my arms around the water."
+    "She had to be here! She... had to be!"
+    "What had I done!? What had I done!? Had I... really killed my own sister!?"
+    "I once again resurfaced."
+    ri "SSOORRAAAAA!!!"
+    "The river was deathly still. I breathed in disbelief at what was happening and dived my head underneath the river again."
+    "No...! No...! S-Sora couldn't possibly die... not like this!"
+    "I'd never be able to forgive myself if I let her die!"
+    "All of a sudden, I felt something hard hit my arms."
+    "By a miracle, it was Sora."
+    "I wrapped my arms around her and resurfaced."
+    ri "Sora!!! Are you okay!?"
+    "She coughed up what seemed to be a bucketful of water."
+    so "Kack... kack... hack..."
+    so "Riku's... such... a dummy..."
+    
+    stop music fadeout 3.0
+    
+    "I laughed in relief while tears streamed from my eyes. I embraced Sora with all of my heart."
+    ri "I'm sorry... I'm sorry..."
+    
+    play music "Music/Disabled_Emotions_Part5.ogg" fadeout 1.5 loop
+    scene cg sorarikuhug with dissolve
+    
+    "I carried Sora to shore and collapsed together on the muddy riverbank."
+    "I sobbed into her chest and held her as tightly as I possibly could."
+    ri "I'm... so sorry..."
+    ri "You're right... You're... totally right... I really wouldn't be able to go on without you..."
+    ri "But... I just didn't realize it..."
+    ri "I was just afraid..."
+    ri "I'm sorry... I'm... so sorry!"
+    "My shoulders heaved as I sobbed. Sora, for the first time in such a long time, smiled weakly at me, tears running down her eyes."
+    "I felt her softly patting me on the head."
+    so "It's okay... I... forgive you..."
+    so "I'm... sorry too..."
+    so "I'm... really sorry..."
+    "We cried together, our sobs echoing through the black night..."
+    "Who knew how long we stayed there together, on that river bank."
+    "All I knew was that I could never leave Sora again after this..."
+    
+    scene bg black with dissolvelong
+    
+    "I carried Sora back home, the both of us soaked to the bone and matted in mud."
+    "We needed to get cleaned up."
+    "Cradling her in my arms, I went upstairs and entered the washroom."
+    
+    play music "Music/Disabled_Emotions_Part1.ogg" fadeout 1.5 loop
+    scene cg sorashower with dissolvelong
+    
+    "I gently sat Sora down on the shower stool. After unbuttoning her coat, I threw it into the laundry basket."
+    ri "Raise your arms for me, Sora..."
+    "She obeyed and I gently lifted up her shirt over her head and threw it into the basket." 
+    "I unclipped her bra, revealing her soft breasts underneath."
+    "I could feel Sora trembling as her bare flesh was exposed to me."
+    ri "Shh... it's okay..."
+    so "It's not that... I'm just cold."
+    "I unzipped her skirt, taking care not to damage anything."
+    ri "Here...  lift yourself up for a moment..."
+    "She did that, momentarily taking her bottom off the stool. I gently grabbed onto her underwear and slipped it off."
+    "Now that I had undressed her, I turned on the water and adjusted the temperature."
+    ri "How is it...? Is it too hot?"
+    so "Uu-uhn. It's good."
+    ri "Make sure you tell me if anything's not alright, okay?"
+    so "Uhn."
+    "I rinsed Sora's hair with warm water."
+    "After warming her up with the water, I grabbed the shampoo bottle and poured a little bit of the solution onto my hand."
+    "I gently stroked it onto Sora's hair, making sure none of it dripped onto her face."
+    ri "Tell me right away if any gets into your eyes."
+    so "Uhn."
+    "After the shampoo had foamed sufficiently, I turned the water back on and rinsed the shampoo back out."
+    "I repeated the same process with the conditioner and then grabbed the soap, rubbing it into my hands."
+    ri "Can you close your eyes for me for a bit?"
+    so "Uhn."
+    "She closed her eyes, letting me apply the soap on her face. I rubbed it on as softly as I could manage, afraid that I would damage her delicate features with my touch."
+    "After making sure not to miss her nose, the back of her ears, and underneath her chin, I rinsed the soap off of my hands and gathered a small bucket of water."
+    "I raised the bucket up to underneath Sora's chin with one hand and rinsed the soap off of her face with the under."
+    ri "Okay, you can open your eyes again."
+    "I dumped the water out from the bucket, then grabbed the shower sponge and rubbed it with soap until it was covered with foam."
+    "Starting with her neck, I began to lather the soap onto Sora's body."
+    "I raised Sora's arms and made sure to clean underneath her shoulders."
+    "After getting her back and her front, I asked Sora to lift herself up a little bit and made sure to scrub in between her legs and her bottom."
+    "Sora stroked my hair as I moved on to her thighs and worked my way to her feet, making sure to get everything out in between her toes."
+    "After covering her entire body with foam, I turned the water on again and rinsed it all off."
+    ri "Are you okay? Did I miss a spot?"
+    so "Uu-uhn. I'm fine."
+    "I grabbed the towel and dried out Sora's hair. It was tough because I had never dealt with hair so long, so it took a little longer than what I expected"
+    "After finishing that, I dried the rest of Sora's body."
+    ri "Can you wait a little while I wash up too?"
+    so "Uhn. I'll be right outside."
+    "And with that, Sora left the washroom."
+    
+    scene bg rikuroomceiling with dissolve
+    
+    "After I finished, I once again lifted Sora up and cradled her in my arms."
+    "I took her to inside my room and tucked her into my bed."
+    "I laid down behind her, gently stroking her hair as we slowly drifted to sleep on top of the same pillow."
+    ri "Hey Sora..."
+    so "Mmm...?"
+    ri "I'm really sorry..."
+    so "Mm."
+    ri "For a moment... I forgot how much I loved you."
+    ri "I should have known... I really would be nothing without my Sora."
+    so "Uhn."
+    ri "Hey... do you want to go somewhere together? Somewhere really far away?"
+    so "Uhn..."
+    ri "Okay... let's leave tomorrow..."
+    "Slowly, I too began to drift to sleep, the events of the past couple of days weighing down on me."
+    "I fell to the warm allure of Sora's body and lost consciousness..."
+    
+    stop music fadeout 1.5
+    window hide dissolve
+    scene bg black with dissolvelong
+    show eyecatchlogo with dissolve
+    $ renpy.pause (4.0)
+    hide eyecatchlogo with dissolve
+    window show dissolve
+    
+    play music "Music/Leave_Here.ogg" fadeout 1.5 loop
+    scene bg train with dissolve
+    
+    "The next day, the both of us boarded a train bound for the countryside."
+    "I had a pair of sleeping bags and a couple of days of food inside my wheeled luggage bag."
+    "We watched the passing landscape for hours..."
+    "Eventually, Sora fell asleep against my shoulders. She must still be tired from everything that happened."
+    "I thought to myself as the train took us further and further from our home."
+    "Were we... running away together?"
+    "The very thought was impossible to fathom."
+    "Where would be stay though? What would we eat?"
+    "Even if we could somehow hide somewhere for two or three days... Anything longer than that was really impossible."
+    "Really... what was I even doing, taking Sora along like this..."
+    
+    scene bg farm with dissolve
+    show sora casual tanuki neutral with dissolve
+    
+    "Finally we arrived at our destination."
+    "Nothing but a minimal wooden train station awaited us when we got off."
+    "The radiant sun glared against our eyes. The air was a lot fresher here than in the city."
+    "We really were in the boondocks now, weren't we?"
+    "I grabbed Sora's hands and followed the dirt road leading further into the wilderness."
+    ri "Come on, let's get going."
+    
+    scene bg farm2 with dissolve
+    show sora casual tanuki neutral with dissolve
+    
+    "I wasn't quite sure I remembered this place any more."
+    "Before I moved abroad, my grandparents used to live here."
+    "I remember, when my father had to go on business trips when I was little, he would always leave me with them."
+    "I really didn't like it at all and would always cry and throw temper tantrums whenever that happened. Now that I looked back in retrospect, I felt sorry for the trouble I caused my grandparents."
+    "Sora and I followed the old path, until we came upon an abandoned, boarded up building."
+    "This place sure changed since I left."
+    so "What is this place?"
+    ri "It's where your grandparents used to live, Sora."
+    "So I guess that meant that Sora had never come here."
+    "It made sense, I suppose. They were my father's parents and probably didn't have much to do with my mother."
+    "The entire house was now overgrown with weeds and was probably home to nothing but spiders and wild animals."
+    "It wasn't anywhere we'd be able to live in, in any case."
+    "We continued down the path, our luggage bags trailing behind us."
+    ri "Are you tired Sora?"
+    so "Uu-uhn. I'm fine."
+    "Luckily, it wasn't as blazing hot as it would have been had we come during the summer time, so the walk was pretty bearable."
+    "Now if I recalled correctly, there was a mountain stream with a small cave further down the path."
+    "We'd be able to spend the night there. I guess this was kind of like a camping trip now"
+    
+    play music "Music/Only_You.ogg" fadeout 1.5 loop
+    scene cg mountainstream with dissolve:
+        yalign 0.0
+        linear 30.0 yalign 1.0
+    
+    "After walking for about an hour, we arrived at our destination."
+    "Now that I was old enough to appreciate the beauty of nature, I was momentarily taken away by the scenic beauty of the mountain stream."
+    "It was amazing how many times I had come here during my childhood and failed to notice it."
+    ri "We're here, Sora."
+    "Sora took off her shoes and soaked her feet into the water."
+    so "Mmm..."
+    "I knelt down and washed my face with a handful of water. As expected, it was freezing cold, but it was just what I needed after that long walk."
+    "I grabbed our luggage bags and walked over to the cave."
+    "It was a lot smaller than what I remembered and resembled more of a small pit on the side of the rocky cliff face, but was still large enough to accommodate the two of us."
+    "For now, I thew our luggage bags in there and took a seat facing the stream."
+    
+    "Sora wandered around the crystal clear water in her bare feet."
+    "Against the backdrop of the sylvan mountain, she looked truly stunning."
+    "For a while, I just sat there, watching her."
+    "We were probably the only humans anywhere near here. I wonder... did Adam feel this way when he gazed upon Eve in the Garden of Eden?"
+    "A new sensation overtook me. All of a sudden, I felt the urge to gently smile. Somewhere inside of me, in the area right underneath my heart, I felt a sensation of complete relaxation and warmth."
+    "I never wanted this feeling to stop..."
+    "For just a second, I managed to deceive myself and believe that everything was going to be okay."
+    "That Sora and I would spend the rest of our lives together..."
+    "That our feelings for each other will never change."
+    "That every morning, I would wake up and fight over who got to use the washroom first with her. That every evening, she would wander into my room to talk about the day's events with me."
+    "But then reality soon struck me."
+    "There was no way anyone would accept us being together."
+    "And it honestly didn't matter anyways, because in just a few days now, I'll be hundreds of thousands of kilometers away from her."
+    "At those thoughts, I felt myself short of breath and my eyes dry."
+    "I saw Sora bend down and stare intently at a frog that was sitting as still as a statue on a river rock."
+    "Suddenly, it hopped in her direction, causing Sora to yelp and nearly fall down on her butt in surprise."
+    "At that, I forgot about my troubles and couldn't help but start to laugh."
+    so "Muuu..."
+    ri "Sorry, sorry."
+    "I got off of my seat, took my shoes off, and joined Sora in the river."
+    "I playfully splashed her with a handful of water."
+    
+    scene cg mountainstream2 with dissolve:
+        yalign 1.0
+    
+    so "H-hey!"
+    "She now had a mischievous look on her face."
+    "Dipping both of her hands into the water, she laughed as she splashed back."
+    ri "Hey, two hands is u-unfair!"
+    "She obviously wasn't listening."
+    "Ah the heck with it."
+    "Before I knew it, I was throwing columns of water at Sora with wild abandon."
+    "All of a sudden, Sora bent down in pain, her arms wrapped around her belly."
+    so "U-uck...! R-Riku..."
+    "I ran over to her in concern."
+    ri "W-what's wrong Sora?"
+    "All of a sudden, a wicked smile came on her face and she kicked a massive splash of water into my face."
+    "I stood in shock as the water streamed down my face and dripped down my chin."
+    ri "That's it. No more Mr. Nice Guy."
+    "I let out a battle shout and lunged for Sora."
+    "Giggling, she leapt out of the way and ran back for dry ground."
+    "I gave chase, the both of us splashing up water as we ran along the mountain stream."    
+    "Finally, I grabbed onto Sora just as we cleared the river and rolled down onto the grassy dirt with her."
+    "I pinned her down and poked her in between her rib cage and her hips, sending her into a ticklish fit."
+    so "N-no! T-that's not fair! Iyyyaaaa!!"
+    "I wasn't going to have any of that today."
+    ri "Say that you're sorry!"
+    "Sora was kicking her legs and laughing hysterically as I reached for her armpit."
+    so "Iyaaahahaha!!"
+    so "O-okay, okay! I'm sorryyy!!!"
+    ri "What's that? I think I'll have to hear it one more time!"
+    "I gave her another poke just to make sure."
+    so "Eeehaha!! I'm sorry, I'm sorry!!!"
+    "Satisfied, I got off of her and laid down down beside her."
+    
+    scene bg autumnsky with dissolve
+    
+    "We sat there, the two of us, catching our breaths."
+    "Then I slowly lifted myself up and laid down on top of Sora, supporting my weight on my knees and being careful not to crush her."
+    ri "Hey Sora..."
+    so "Uhn."
+    ri "I really love you."
+    so "Uhn..."
+    "I raised her head with my hand and bent down. Our lips met and caressed each other."
+    "Above us, a chorus of wild birds sang the bittersweet melody of autumn."
+    "The sun penetrated the thick growth of red leaves overhead, illuminating our warm embrace and casting snow flake shaped shadows on the ground."
+    "The clear mountain water gently lulled downstream, the sound of the water running past the river rocks resembling the sound a puppy makes when lapping up a bowl of water."
+    "Every so often, the splash of a frog jumping into the stream added an unexpected note into the continuous hymn of nature that surrounded us."
+    "Our lips parted and I gently lowered her head back down onto the grass. My face was in a state of blissful tranquility."
+    "I gently patted Sora on the head and stroked her hair."
+    so "Me too. I really love Riku too."
+    ri "Uhn... I know..."
+    "I laid down and held Sora in my arms, gazing up into the blue autumn sky and allowing myself to be filled with the serenity of nature's song."
+    ri "Hey Sora... Let's just stay like this for a while."
+    so "Uhn..."
+    
+    play music "Music/Nightfall.ogg" fadeout 1.5 loop
+    scene bg black with dissolvelong
+    scene bg mountainnight with dissolvelong
+    show sora casual tanuki neutral with dissolve
+    
+    "By evening time, we opened up our luggage bags and got ready to eat dinner."
+    "I got a small propane burner from my bag and boiled a potful of stream water for the instant udon."
+    "Once it was ready, we snapped apart our chopsticks and dug in."
+    
+    show sora casual tanuki confident with dissolve
+    
+    so "Mm. As expected, instant udon really does taste a lot better out here."
+    ri "Yeah, if we were back home, this would be a pretty sad dinner."
+    "We slurped up our udon noodles in an instant and drank the soup from our Styrofoam bowls."
+    "Whew. I never knew how starved I was until I started eating that."
+    
+    hide sora with dissolve
+    
+    "After finishing, I grabbed a small package of tissue paper from my pocket and wiped Sora's mouth with it."
+    "I dumped out the remainder of the soup into the woods and threw all of the garbage into a grocery bag inside my luggage bag."
+    "I guess I should be setting out our bed rolls now. It was already getting really dark out. The days of the sun being out until nearly nine o'clock were now long over.."
+    "I reached inside of my luggage bag and withdrew our sleeping bags. After unrolling them inside the cave, I placed a flashlight beside mine."
+    "That should do it."
+    
+    show sora casual tanuki neutral with dissolve
+    
+    "Sora was sitting on top of a large piece of stone at the entrance of the cave. I took a seat next to her."
+    so "The moon, Riku."
+    "She pointed upwards, where an unusually large moon was now rising in the darkening sky."
+    so "It's pretty... but somehow also sad..."
+    ri "Yeah..."
+    "She leaned into my shoulder and held onto my hand."
+    
+    show sora casual tanuki distantleft mouthopen with dissolve
+    
+    so "So... what are we going to do from now?"
+    ri "I....."
+    "To tell the truth... I didn't know either."
+    "Running away together was obviously impossible... There wasn't anywhere that we could possibly stay without getting caught."
+    "Keeping our forbidden love a secret was pointless too, because Sora was going to live with my mother again and I was going to leave the country in a matter of days now."
+    "No matter what I tried to think of, it was hopeless."
+    "Sora could see the darkness creep upon my face."
+    ri "There really is nowhere for us, Sora..."
+    "But there was still one, last option..."
+    ri "We could turn back. You could return to just being my little sister and we could forget all this happened, if you wanted to."
+    ri "I'm sure our parents won't be able to keep us separated forever... and as long as we stayed two siblings, we'd still be able to see each other again..."
+    ri "Do you want to do that, Sora? It's the only way we'd be able save our lives from being destroyed..."
+    "All of a sudden, Sora's angry voice cut through the silence of the night."
+    
+    show sora casual tanuki angry with dissolve
+    
+    so "Stop it!"
+    "Surprised by her tone of voice, I stopped talking."
+    
+    show sora casual tanuki distantright with dissolve
+    
+    so "... ... ..."
+    so "I'm sorry..."
+    
+    show sora casual tanuki tears with dissolve
+    
+    so "But... it's too unbearable, thinking like that..."
+    ri "... ... ..."
+    
+    show sora casual tanuki tears2 with dissolve
+    
+    so "At this rate... it's already too late for me. W-whenever I think about you, my inside feels so hot and..."
+    so "Just the thought of not being with you makes my head feel like it's going to split apart... I want to rip out my own heart so it won't hurt...!"
+    ri "Sora..."
+    so "I just can't..."
+    ri "If this continues, our lives would really be over. You'd give up your future forever."
+    so "So let it all be over! I don't care!"
+    "Somehow... did I want her to say that from the beginning?"
+    "Deep inside of my heart, I knew I had come on this trip for only one reason."
+    "But I was afraid... afraid that I was making my sister destroy her entire life for my sake."
+    "Before it was too late... I wanted to give her a chance..."
+    "Was I a horrible brother? Even though I tried my best to give her the chance to back out, it was under conditions where she couldn't really refuse."
+    "Even if I had tried my best to convince her to turn back, I still knew that I didn't want her to."
+    "In the end... I was happy she chose to stay with me."
+    "She was right. It was already too late."
+    "I held onto Sora's head and lowered her into my lap."
+    ri "Thank-you, Sora..."
+    
+    show sora casual tanuki tears with dissolve
+    
+    so "I hate this...... I wish..."
+    so "I wish I was never born your sister..."
+    so "I should have been the girl next door..."
+    "I gently stroked Sora on the head."
+    ri "Uu-uhn... you're wrong."
+    ri "Your brother is the luckiest person alive to be able to call you his little sister."
+    
+    show sora casual tanuki tearssmile with dissolve
+    
+    so "... ... ..."
+    "Sora looked at me, her eyes welling up with tears, her soft, pink lips slightly a gap."
+    "I ran my fingers along her pretty lips. They felt as soft as marshmallows."
+    ri "Sora..."
+    ri "I love you."
+    "Slowly, I bent down, and discovered the taste of Sora's forbidden mouth. It wasn't bittersweet like I wanted."
+    "It tasted like instant udon."
+    
+    scene cg sorarikuh1 with dissolve
+    
+    "I raised Sora onto my lap and wrapped her arms around me."
+    "Gradually, the salty taste of the udon dissolved into sweetness as our tongues caressed each other." 
+    "Here, in this dark cave, with nothing but the darkness to keep us company... I could almost believe that Sora and I were the only two humans on the planet."
+    "What did it matter if she was my sister then...? We were the only ones who existed... the emperor and empress of this world."
+    "I ran my hands up her neck and pressed our faces closer. Consumed with the need for Sora, I tried to reach as far into her mouth as possible, but still came up far short of what I wanted."
+    "We breathed in and out through our noses as our tongues met."
+    ri "Mm... Sora...!"
+    "I wrapped my arms underneath her thighs and lifted her up, as close as she could come to me, and tried to rub her against me."
+    "But now we couldn't kiss each other with all of the motion, and our clothes were too thick to create much of a sensation anyways. It felt as if I would break if I couldn't feel the soft sensation of Sora's lips."
+    "I dropped her back on my lap and began to kiss her again. I could just try doing something else with my hands..."
+    so "Mm... mm... R-Riku..."
+    "I raised one of my hands and massaged her ear as softly as I could manage in my craze. I reached into her skirt with the other arm and stroked her soft thighs."
+    "Sora slipped her slender arms into my shirt and ran her hands against my back."
+    "I could feel her small fingers touching every part of me. They stroked my shoulder blades and then came around front and finally settled on my nipples."
+    ri "A-ah...! S-Sora..."
+    "Her nimble little fingers ran in circles around that area of soft flesh. I cried out not as much in pleasure but in surprise at what she was doing."
+    "But somehow, I was glad... because that meant she was enjoying this as much as I was..."
+    "I reached into her wool stockings and madly ran my hands against her thighs."
+    so "Mm...! Mmm...!"
+    "Finally, I managed to separate my mouth from Sora's long enough to gasp for a few breaths of air."
+    ri "H-hey Sora... let's relocate."
+    "My back was hurting from carrying Sora on top of that hard rock... Even though the adrenaline was numbing the pain, this wasn't the most comfortable spot from which to do this..."
+    
+    scene cg sorarikuh2 with dissolve
+    
+    "Sora dropped off of my lap and we both stumbled down onto the grassy dirt below us."
+    "The dirt was still pretty hard, but at least we could lie down now..."
+    "It felt embarrassing to do this out in the open, but there wasn't anyone around, so I thought it would be okay..."
+    "Besides, with only the moonlight, nobody would even be able to see anything even if they were here."
+    "I laid on top of Sora, supporting myself with my knees, and locked mouths with her again."
+    "I stuck my tongue into Sora's mouth, but this time she wrapped her lips around just my tongue and suckled."
+    "My mouth filled with pleasure as Sora's tongue circled around mine. All of a sudden, she stopped and released her tongue deep into my mouth. She must be wanting her turn now..."
+    "I did my best to do the same... Sora's chest began to heave as she breathed in and out."
+    "The sensation inside of me was almost impossible to control now. I began to rub my pelvis against Sora, gasping for air, my knees burning underneath my weight."
+    ri "Ah... Sora... I can't..."
+    "I moaned to the exhaustion in my lungs, the utter pain in my knees, and to the overwhelming pleasure inside of my jeans as our two bodies rubbed against each other."
+    "Finally, I couldn't take the pressure on my knees any more and collapsed on top of Sora."
+    ri "Ha... ha... S-sorry........"
+    so "Uu-uhn..."
+    "Trying not to lose momentum, I offered my lips to her once more and tried to re-adjust my weight."
+    
+    scene cg sorarikuh3 with dissolve
+    
+    "Our lips met once more as Sora wrapped her legs around me and used her arms to rub herself against me."
+    "I grabbed her buttocks and helped her lift herself up while keeping our mouths connected."
+    so "Ah...ah! Mm! Mm! Ugnn..."
+    "I could feel Sora's breathing accelerate. Her skirt was flipped upwards against my chest and her underwear rode up and down my jeans."
+    "She collapsed back to the ground, her shoulders heaving, momentarily out of energy."
+    so "Ha... ha..."
+    "She raised her head back up and reached for my lips, asking for more. I held my hand behind her head and pressed our mouths together."
+    
+    scene cg sorarikuh2 with dissolve
+    
+    "I slid my hands into her shirt and felt her smooth belly on my hands. I couldn't help but gently stroke her tummy, admiring Sora's soft flesh."
+    "I undid the buttons of Sora's vest and laid it aside."
+    so "Wait..."
+    "Sora reached into her shirt and unclipped her bra for me."
+    ri "Here... let me help..."
+    
+    scene cg sorarikuh4 with dissolve
+    
+    "Sora whimpered softly as I grabbed her shirt and pulled it off, exposing her petite breasts."
+    "Even though they were barely big enough to hold in my hand, they were appealing in an innocent kind of way."
+    "Noticing that I had messed up her hair while doing so, I reached for her face and gently straighted it, making sure that none of the strands were stabbing her eyes."
+    "I felt Sora's hand grasp at my shirt and try to undo its series of tiny buttons."
+    
+    scene cg sorarikuh5 with dissolve
+   
+    "Realizing what she was trying to do, I pulled off my shirt and threw it into a pile with Sora's clothing."
+    "Impatient and unwilling for any pauses in my pleasure, I returned to Sora's lips and pressed our naked chests together."
+    so "Mm... Uyn..."
+    "I felt Sora slide her hands into my pants. With one of my hands, I unbuckled my belt and opened my jeans."
+    "A tingling of pleasure traveled up my body as Sora slipped her hand into my underwear and nervously rubbed against me."
+    ri "Ah... S-Sora..."
+    "Just about at my breaking point, I leaned into Sora's ears and whispered to her while I still could."
+    ri "Sora... Is it alright if we do it?"
+    so "... .. ..."
+    ri "There'll really be no turning back..."
+    ri "Nobody will accept us. We'll be outcasts for the rest of our lives."
+    so "... ... ..."
+    "A dark silence hung in the air..."
+    so "But..."
+    so "That doesn't matter now, does it?"
+    ri "I suppose not..."
+    "I stroked Sora's face."
+    "The only piece of comfort we had... was our forbidden love."
+    "It was only next to her I felt whole. There was nobody else who could understand what it felt to be truly alone."
+    "All this time... no matter how dark the road became, I had kept a single thread of hope inside of me."
+    "...That one day, things might turn out for the better. That tomorrow would somehow bring a brighter day, no matter how bleak today felt..."
+    "But now, I realized... there was no such hope waiting for us."
+    "The only person I ever loved... was also the only person I could never have."
+    "It seemed as if everything could somehow change..."
+    "But even that turned out being a naive illusion."
+    "Our happy days together... it was only a build up for another farewell."
+    "I could feel myself unraveling. I ran my hands down Sora's torso and unbuttoned her skirt, my head swimming with sex hormones and despair."
+    "Sora seemed just as crazed and pulled down my pants, breathing in short gasps."
+    "We were outcasts from the very beginning. This was only the conclusion to our lives of loneliness."
+    "If we were to die drowning in sorrow... then at least I knew we would perish in each other's arms."    
+    
+    scene cg sorarikuh6 with dissolve
+    
+    "I grasped her underwear and finally pulled it down her legs. Sora did the same, and now we faced each other, completely naked."
+    "Overcome with emotion, I pressed our lips together. All of a sudden, I realized that I couldn't see a thing that was going on below Sora's face and had no idea where anything was located."
+    "I blindly tried to push myself inside of her, only to fail miserably."
+    "Tsch... So life was trying to thwart us even here..."
+    ri "Hey Sora... where?"
+    "I felt Sora wrap her fingers around me and guide me to her entrance."    
+    so "A-ah... here..."
+    "I pushed myself in."
+    
+    scene cg sorarikuh7  with dissolve
+    
+    so "Uynn... R-Riku's..."
+    "The tightness was unbearable. For a moment, I thought that Sora was mistaken and I was pushing into her flesh."    
+    so "A-ahh......"
+    "I tried to push myself in and out, but went out too far and fell back out within a second."
+    
+    scene cg sorarikuh6 with dissolve
+    
+    ri "S-sorry..."
+    "In the darkness of the night, I clumsily tried to find the spot again."
+    "Sora reached down again and aimed me in the right direction."
+    "I probably didn't go deep enough the last time... I pushed in, harder than before, fighting past the tightness and the burning pressure on my knees."
+    
+    scene cg sorarikuh7 with dissolve
+    
+    so "Iyyaah...!!"
+    "I pushed down on her shoulders, our arms intertwined, and squeezed myself in."
+    
+    scene cg sorarikuh8 with dissolve
+    
+    "The pain in my knees returned, but I was too enthralled by Sora to care. I squeezed my eyes shut as the warmth of Sora's interior enveloped me."
+    "Our bodies fused together and become one."
+    so "Riku... You're... finally inside of me..."
+    ri "Sora..."
+    so "Eh-heh..."
+    "Sora smiled and patted my hair."
+    so "It's... warm..."
+    "I grabbed onto Sora's hand and slowly began to slide deeper into her."
+    so "Uyn..."
+    ri "Does it hurt?"
+    so "Uu-uhn..."
+    
+    scene cg sorarikuh9 with dissolve    
+    
+    "I was beating against my own sister's moist interior."
+    "It was... supposed to be horrible... but how could it feel so good!?"
+    "Sora's face melted into an indescribable trance of pleasure."
+    "I grabbed Sora's lower lip with my mouth and suckled on it."
+    ri "Ha... ha..."
+    "I bent down and wrapped my arms around Sora's neck, thrusting with all of my strength."
+    "Our height difference was frustrating because her face was so much lower than mine. I squeezed my head as low as possible and angled it to the side so that our lips would be able to meet."
+    so "Iya! iya! ah! iya! ah! ah!"
+    "Sora cried with each thrust of my hips."
+    ri "Ah... Sora...! ha... ha..."
+    "Even though my knees felt like they were going to shatter against the hard earth, I felt the pleasure slowly build up inside of me."
+    "My head was overloaded with passion. I wanted more, more, more of my Sora..."
+    "I breathed in and out as if I had lost my mind and lost myself in the ecstasy of Sora's moistness."
+    "Finally, my knees gave out from underneath me. I crumpled on top of her, drained of all energy, my legs trembling from the pain of being pressed against the ground for so long."
+    "For a moment, I could only breathe in complete exhaustion. Sora stroked the back of my head."
+    so "Are you okay?"
+    ri "Ha... ha... yeah..."
+    "After coming this far, I couldn't let myself stop because of something like this..."
+    "I forced myself back up and began to thrust again, now using my abs instead of my knees to do most of the work."
+    so "Uhn... Riiku... Ahh...! Ahh!"
+    "I felt Sora's lips gently nip my ears. The sensation was almost as good as kissing."
+    "The speed of my thrusts intensified. Sora raised her legs and wrapped it around my waists."
+    so "Ah! Ahh! Riiku... more... more..."
+    "Her legs were beginning to fall down. I reached back and held them up with my hands."
+    so "Riiku... Riiku!!"
+    "Pleasure began to fill me as I rubbed against Sora's inside."
+    "I regained the strength to raise my head and met Sora's lips again."
+    "I could feel the pleasure building up inside of me."
+    "I momentarily let go of Sora's legs and wrapped my hands together behind her head, kissing her as deeply as I possibly could."
+    "We separated our mouths, panting in exhaustion."
+    "Despite the night chill, our bodies were now covered with perspiration. I pushed into Sora's slippery opening further, my body captured by desire and moving by its own will."
+    ri "S-Sora... I think this is it..."    
+    
+    scene cg sorarikuh10 with dissolve
+    
+    so "Ahh...!! Riiku... Riiku..."
+    ri "Sora!!!"
+    "The pleasure was about to reach its breaking point!! Any more now and..."
+    "I felt my exhausted thighs light up with joy. My hands were traveling up and down her body in ecstasy."
+    "Using the entirety of my energy reserves, I pounded my hips against Sora quicker than ever before. She wrapped herself tightly around me, her fingers digging into my flesh."
+    ri "Sora....! Sora...! I think...!"
+    so "Ah...! Iyyaahhh...!!"
+    "Sora grabbed onto my hand and intertwined our fingers."
+    so "R-Riku.... Mmm...!"
+    so "Riikkuuu!!!"
+    so "H-hold me... I'm flying...!!"
+    ri "Uhn... Sora..... I love you...."
+    "My felt my lungs constrict and my abdomen about to erupt with euphoria."
+    ri "Sora... ah... I'm really..."
+    so "Come inside Riku!!! Come inside me...!!"
+    
+    scene bg white with dissolve
+    
+    "I squeezed Sora's soft body as tightly as I could and gasped as I let myself loose inside her warm body."
+    "The euphoria was overwhelming. I felt my muscles spasming uncontrollably as I came inside of her."
+    ri "Ah... Sora!!! I'm...!!!"
+    "I thrusted myself deeper and deeper into Sora, gasping with wonder at each drive."
+    "The sensation was so overwhelming I lost the ability to speak. More and more of myself filled Sora's passageway, enveloping us with slippery warmth."
+    
+    stop music fadeout 1.5
+    scene cg sorarikuh6 with dissolve
+    
+    "Once I was finished, I fell on Sora's body and could only breathe in and out on top of her, in disbelief at what I had just done..."
+    "Not quite comprehending what had happened, I slipped my hand into Sora's passageway and looked numbly at the semen hanging from my fingers."
+    "It was mine."
+    "I looked at it in wonder."
+    so "Riku..."
+    so "Now... we'll be together for eternity."
+    
+    play music "Music/Sad_Farewell.ogg" loop
+    
+    "Sora seductively smiled and embraced me."
+    "After having been abandoned by the world... after enduring so much of its sorrows..."
+    "We had struck back at it. We had cursed at its most fundamental law."
+    "Sora whispered into my ears."
+    so "You made me the happiest girl in the world, Riku..."
+    so "Thank-you."
+    "I smiled and stroked Sora's head."
+    ri "Yeah..."
+    "We held each other as we looked up at the night sky. I lost myself in the stars."
+    ri "... ... ..."
+    so "... ... ..."
+    so "After I die... will I become one of those stars?"
+    ri "... ... ..."
+    ri "Yeah... you'll become the prettiest one."
+    "I held onto Sora's hand."
+    so "Riku..."
+    so "There's... no future waiting for us, is there?"
+    ri "Uu-uhn... We'll spend the rest of eternity together, Sora."
+    ri "It'll be just you and me... With no one else to interfere."
+    ri "No one else to tell us what we're doing is wrong."
+    ri "No one else to separate us... We'll be... happy together... among the stars."
+    so "Uhn..."
+    so "That sounds like... paradise."
+    ri "Yeah... It'll be paradise..."
+    "I wiped away my tears and gave Sora a kiss."
+    ri "It'll be soon, Sora... Just hang on a minute..."
+    ri "I'll... take you there... Where we can finally be happy..."
+    so "Uhn... I'll be waiting."
+    
+    $ renpy.music.stop(fadeout=1.5)
+    window hide dissolve
+    scene bg black with dissolvelong
+    show eyecatchlogo with dissolve
+    $ renpy.pause (4.0)
+    hide eyecatchlogo with dissolve
+    window show dissolve
+
+    play music "Music/Tilias_Flower.ogg" fadeout 1.5 loop
+    scene bg mountainday with dissolve
+    
+    "When morning arrived, we packed our belongings into our luggage bags."
+    "I guess we would just have to leave them inside the cave."
+    ri "Sora, are you ready to leave?"
+    
+    show sora casual tanuki distantleftyandere with dissolve
+    
+    so "Uhn... Just one moment."
+    
+    show sora casual armscrossed distantleftyandere with dissolve
+    
+    "She grabbed her stuffed tanuki and placed it on top of her bag."
+    "As if to say good bye, she gave it one final look, before turning away to face me."    
+    so "Okay, let's go, Riku..."
+    
+    scene bg mountainrocks with dissolve
+    show sora casual armscrossed distantleftyandere with dissolve
+    
+    "We left the stream and headed further up the mountain."
+    "I guess Sora already knew by now what we were going to do."
+    ri "You really do love Mr. Tanuki, don't you?"
+    so "Uhn. We've been through a lot together."
+    "I guess it was the only thing that looked after her when she was living with mother."
+    "Somehow, I was saddened that she had to part with it. It must have meant a lot to her."
+    "We grabbed onto each other's hands and slowed walked up to where our fates awaited us."
+
+    scene bg mountaintop with dissolve
+    show sora casual armscrossed distantleftyandere with dissolve
+    
+    "We finally reached the top of the cliff face."
+    "For a moment, we took a seat on the ground."
+    "The wind was pretty cold up here now."
+    "I guess... there was nothing left to talk about any more."
+    "We just let the morning breeze gently ruffle our hairs."
+    "I wonder... what Nonami and Haruka were doing now..."
+    "Nonami really must hate me. She had all the reason in the world to be glad when she hears that I've died..."
+    "After taking a short break, we stood back up."
+    "The cliff face was only a few steps away..."
+    
+    stop music fadeout 2.0
+    
+    "So... this was how everything would end...."
+    "We slowly stepped towards the edge, our hands grasped together."
+    "Every step felt as if we were heaving a sack of rocks on our back."
+    "But we had to do this. It was the only way."
+    "We reached the very edge. Another step and it would only be a sheer drop to the bottom."
+    "I numbly looked down the cliff. Even though the distant treetops looked almost like dots, I felt strangely distant."
+    "I wrapped my arms around Sora."
+    ri "Sora... are you ready?"
+    so "Uhn."
+    "I guess... it would be best if she didn't look down before I jumped."
+    ri "Close your eyes, Sora. I'll do it for you."
+    "I wrapped my hands around her eyes. I guess I should jump on the count of three..."
+    "What a horrible life this was. I was tired of everything..."
+    "Tired of all the farewells... tired of being being alone..."
+    "This was really going to be the end forever."    
+    "All of a sudden... an azure butterfly flew by us."
+    "It circled us twice, as if sensing our immanent death, and landed on top of the hand that was covering Sora's face."
+    "I released my grip on Sora's face to chase it away, only to realize that the palm of my hands were soaked with tears."
+    ri "Sora..."
+    
+    play music "Music/Only_You.ogg" fadeout 1.5 loop
+    show sora casual armscrossed tears2 with dissolve
+    
+    so "I'm sorry... but I'm... scared....."
+    "So... she really wasn't ready for this."
+    so "I'm sorry Riku... I'm so... sorry...." 
+    
+    show sora casual armscrossed shoutcry with dissolve
+    
+    so "I'm sorry I couldn't be like a good sister to you...! I'm sorry... I'm sorry that I pretended to kill myself in the river! I'm sorry that I made Nonami-sempai hate you!!!!!"
+    so "So... you don't have to kill yourself, okay...!? B-because I really am sorry for everything...!!!"
+    ri "Shhh... calm down, Sora... You don't need to do it with me if you don't want to. I'll just do it by myself."
+    "Sora wrapped her arm around and sobbed into my chest, pounding on my shoulder with her fist."
+    so "You dummy...!!!!! W-what would I do if you weren't here anymore!?!?"
+    ri "I..."
+    so "I really, really, really love you!!! That's why.... you can't kill yourself!!!!"
+    ri "... ... ..."
+    
+    scene bg mountaintopnormal 
+    show sora casual armscrossed shoutcry
+    with dissolvelong
+    
+    "Slowly... I felt my senses returning to me."
+    "This entire day... I had felt so numb. It was as I should have been feeling emotions, but somehow they were all missing."
+    "Hearing the sound of Sora's cries finally returned those feelings to me."
+    "I touched my eyes with my finger. Look... there were tears on it!"
+    ri "Sora... I..."
+    ri "I don't know what happened....."
+    ri "Trying to do something like this... when I have such a wonderful sister like you by my side..."
+    ri "I'm... sorry... I'm so sorry...!!!"
+    "We held each other, finally having reclaimed the emotions that had been lost to us."
+    "Suddenly, I thought back to just a moment before in horror... what would I have done had that butterfly not landed on my hand at that precise moment?"
+    ri "I'm so sorry, Sora... Please forgive me...!!"
+    
+    show sora casual armscrossed tears2 with dissolve
+    
+    so "Hey Riku... let's go back home."
+    so "I don't want to do this anymore..."
+    "That was what I had said when Sora was pretending to kill herself in the river, wasn't it...?"
+    "Look at me now... getting the same thing told to me by my sister."
+    ri "You're right..."
+    "I could finally see how far high we were. Seeing the perilous drop to the bottom suddenly made me dizzy with fear."
+    "I turned and stepped away from the cliff face."    
+    ri "Let's go home, Sora."
+    "Sora, her eyes soaked with tears, finally smiled at me."
+    
+    show sora casual armscrossed tearssmile with dissolve
+    so "Uhn...."
+    
+    play music "Music/One_Summer_Night.ogg" fadeout 1.5 loop
+    scene bg mountainstream2 with dissolve:
+        yalign 1.0
+    show sora casual tanuki tearssmile with dissolve
+    
+    "We returned to the bottom of the mountain and sat down in front of our cave."
+    "We felt exhausted. Sora leaned down and rested her head in my lap."
+    ri "Sora... Sorry. I brought you into all of this."    
+    so "Uu-uhn... It was all my fault."
+    ri "It was... lonely. I just... wanted to be with someone who could understand..."
+    ri "Not many people know what it feels, to be a stranger for our entire lives. To fit in nowhere. To have... no place to call home."
+    ri "I just wanted... someone near me."
+    so "... ... ..."
+    
+    show snow1 behind sora
+    show snow2 behind sora
+    show snow3 behind sora
+    show snow4
+
+    so "Look Riku. It's snow."
+    ri "Snow...?"
+    ri "Are you cold, Sora?"
+    so "Uhn... really cold..."
+    "I wrapped my arm around her and shielded her face from the cold with my hand."
+    ri "It's not so cold when you're with someone you love."
+    "Sora looked into my face. Her pretty eyes could have warmed the whole cave and melted all the snow that was falling around us."
+    so "Riku..."    
+    so "You're always so warm..."
+    "She clung onto my shirt, like she was afraid I'd disappear if she let go."
+    
+    show sora casual tanuki upset with dissolve
+    
+    so "I need you... I can't... ever let go."
+    so "It doesn't matter if I'm your sister... I can't... face the world without you. Everything's too... hard."
+    so "I... don't want to go outside without you. I don't want to do anything without you."
+    
+    show sora casual tanuki tears with dissolve
+    
+    so "Riku... you'll love me forever, won't you?"
+    ri "... ... ..."
+    ri "Hey Sora... Do you want me to tell you a story?"
+    so "Story...?"
+    ri "A long time ago... before our parents got divorced... when you were just a baby..."
+    ri "I heard them talking one night... When I was supposed to be in bed."
+    ri "And it was something I wasn't ever supposed to hear."
+    ri "They said you were adopted... Your real parents passed away in a car accident, and we had to raise you as one of our own..."
+    ri "Ever since then... that's been my biggest secret... But now, I guess it's all exposed."
+    "Sora giggled."
+    
+    show sora casual tanuki confident with dissolve
+    
+    so "Stupid Riku. As if I'd ever believe that. You were just three years old when our parents got divorced!"
+    ri "It's all true...! I can still remember everything!"
+    ri "So..."
+    ri "It doesn't matter if we get married. It doesn't matter if we live in the same house... It doesn't even matter if we get kids together..."
+    
+    show sora casual tanuki closedeyes with dissolve
+    
+    so "Mmm..."
+    ri "I'll always love you, Sora..."
+    ri "We'll stay together... forever."
+    "Sora closed her eyes."
+    so "Thanks Riku..."
+    so "That's... the only thing I ever want to hear..."
+    
+    scene bg black with dissolvelong
+    
+    "We eventually packed up our stuff and left the mountainside."
+    "By the time we returned home, we looked like a mess."
+    
+    scene bg livingroom with dissolve
+    show sora casual tanuki onearmdown neutral with dissolve:
+        xanchor 0.5
+        xpos 0.2
+    
+    "I opened the door to my house and was greeted by a pair of familiar faces."
+    
+    show haruka uniform handraised surprise with dissolve:
+        xanchor 0.5
+        xpos 0.8
+    
+    ha "R-Riku-kun! Where've you been? Nona-chan and I were worried sick!"
+    ri "Eh-heh... Sorry to make you two worry. I just took a short trip with Sora."
+    
+    show sora casual tanuki closedeyes with dissolve
+    
+    so "I'm sorry."
+    
+    show haruka uniform handfront sad with dissolve
+    
+    ha "Muu... You could have warned us..."
+    
+    show nonami uniform armscrossed sadlookleft with dissolve
+    
+    no "... ... ..."
+    ri "Sorry, Nonami... You probably want an explanation for all of this, huh..."
+    "Nonami walked up to me. I felt her embrace."
+    
+    show nonami uniform neutral sadcryclosedeyes with dissolve
+    
+    no "You dumbass! Do you have any idea how worried I was about you!?"
+    ri "Sorry."
+    
+    show nonami uniform armscrossed madtears with dissolve
+    
+    no "You better be!"
+    no "Don't just abandon your friends, alright!? Don't try to do everything yourself!"
+    no "You'll always have me and Haru-chan to help you out!"
+    ri "I know..."
+    ri "I just... didn't want to face saying good bye. It's too hard, when you leave behind happy memories... All you want to do is return to them..."
+    ri "And then... when you realize you'll never be able to come back... It's just unbearable, knowing what you lost."
+    
+    show nonami uniform neutral sadcryclosedeyes with dissolve
+    
+    no "You won't ever have to..."
+    
+    show nonami uniform neutral sadcrysmile with dissolve
+    
+    no "Because the life you're living now will always be better than your memories. Right, Haru-chan?"
+    
+    show haruka uniform handstogether distantsmiletear with dissolve
+    
+    ha "Nona-chan's right, Riku-kun..."
+    ha "We all have happy memories... They're our most beloved treasures."
+    ha "But we're always improving with each moment we live."
+    
+    show haruka uniform handfront distantsmilecryclosedeyesblush with dissolve
+    
+    ha "The next day will just be better. All you need is a little bit of faith, Riku-kun."
+    ri "Thanks you two..."
+    ri "You guys are the greatest friends I ever had..."
+    no "Welcome back home, Rii-kun..."
+    ha "Welcome back home, Riku-kun..."
+    ri "Yeah..."
+    ri "I'm back home."
+    
+    stop music fadeout 1.5
+    window hide dissolve
+    scene bg black with dissolvelong
+    show eyecatchlogo with dissolve
+    $ renpy.pause (4.0)
+    hide eyecatchlogo with dissolve
+    window show dissolve
+    
+    scene bg airport with dissolve
+    
+    "I walked towards the terminal with my carry on luggage."
+    "The time for me to leave had finally come. I had already said my good byes to everyone. Now, all that remained was for me to walk past the security gate..."
+    "I felt a little bit dizzy, knowing that I'll never be able to come back once I walked past that gate."
+    "Even though it was the end, I didn't want to do it."
+    "Holding back my tears, I walked towards the gate..."
+    
+    play music "Music/Take_My_Heart.ogg" fadeout 1.5 loop
+    show sora casual armscrossed distantleft with dissolve
+    
+    "A familiar face blocked my path."
+    ri "Sora...?"
+    "She followed me all the way here?"
+    so "Riku..."
+    "Sora ran to me and embraced me, tighter than I ever felt."
+    
+    show sora casual armscrossed tears2 with dissolve
+    
+    so "I can't do it... I can't just watch you leave..."
+    so "You promised, didn't you!? You promised that you'd love me forever!"
+    ri "Sora..."
+    so "We can be like two regular couples! Hey, you said I was adopted, right!?"
+    so "I believe you...! If we were really related... then would I really feel this way about you!?"
+    so "Come with me, Riku... Stay with me..."
+    so "It can be just like it used to be..."
+    so "Just please... don't leave...!"
+    so "I couldn't go on... not without you..."
+    "It felt as if I would collapse."
+    "At that moment, all I wanted to do was kiss her and tell her I'd never leave her."
+    "All I wanted to tell her was that I'd be with her forever. That I'd love her until the day I died."
+    "But I knew all of those were promises I could never keep."
+    ri "Sorry, Sora."
+    ri "Your big brother has to leave now."
+    ri "Don't worry about a thing..."
+    ri "Someone will take care of you. There's someone out there in this world who'll love you and take care of you like a real boyfriend..."
+    ri "But that person isn't me."
+    ri "I'm just... your brother."
+    
+    show sora casual armscrossed shoutcry with dissolve
+    
+    so "NO!"
+    so "That's not what you said!"
+    ri "I'm sorry, Sora."
+    ri "G-good bye..."
+    ri "We'll see each other again one day..."
+    so "No, Riku!!! Don't leave me!!!"
+    so "You promised me!!!! NO!!!"
+    so "I... I love you......."
+    
+    scene bg white with dissolvelong
+    
+    ri "... ... ..."
+    "I turned around, before Sora saw the tears that were beginning to stream down my eyes."
+    "It felt as if I was carrying the weight of the world as I walked towards the security gate."
+    
+    show sora casual armscrossed tears2 with dissolve
+    
+    so "Riku......."
+    
+    hide sora with dissolvelong
+    
+    "I wanted nothing more than to return to Sora. I wanted to hug her and tell her to stop crying."
+    "But..."
+    "Somehow, I knew this was for the best."
+    "I couldn't have Sora destroy her life for me."
+    "Good bye, Sora..."
+    "Good bye, my friends... Good bye, Japan. Good bye, my home."
+    "Our time together was... beautiful."
+    "But... it was over now."
+    "No dream could last forever. Eventually, we had to wake up..."
+    "... ... ..."
+    
+    scene bg airport with dissolve
+    
+    "I walked past the security gate and walked to the waiting area."
+    "Outside, I saw a massive plane waiting to take me back to America."
+    "I approached the window and saw the reflection of my face."
+    "It looked weary. Exhausted."
+    "But I knew... somewhere underneath the sorrow, the agony, and despair..."
+    "I wasn't ashamed of having loved my sister."
+    "My face..."
+    "I could live with it."
+    
+    scene bg black with dissolvelong
+    "... ... ..."
+    "A distant memory returned to me..."
+    "It must have been over ten years ago... Back when I visited Japan and saw Sora..."
+    
+    show sora loli crying with dissolve
+    
+    so "Sniff... sniff... No...! I don't want onii-chan to go back!"
+    ri "Sorry, Sora. But I've got to go."
+    so "NO! You're gonna stay here forever, kay!?"
+    ri "Aww man..."
+    ri "Here, take this."
+    so "Eh?"
+    ri "It's my going away present for you."
+    
+    show sora loli tanuki happy with dissolve
+    
+    so "Uwaahhh... It's so big!"
+    ri "This is Mr. Tanuki. He'll take care of you while I'm gone, okay?"
+    so "Mmm..."
+    ri "But don't worry. I'll come back one day."
+    
+    show sora loli tanuki pout with dissolve
+    
+    so "Oh all right... But you've gotta promise! You'll marry me once you come back!"
+    ri "Eeeeh!? But I don't want to play house with you all the time!"
+    so "B-but... I love onii-chan..."
+    ri "Take good care of yourself, alright? And keep Mr. Tanuki safe for me."
+    so "Uhn..."
+    ri "Good bye, Sora..."
+    so "Good bye, Riku..."
+    so "I'll never forget you, alright!? I'll keep waiting for you!"
+    so "One day, I'll even confess my heart to you! And we'll live happily ever after!"
+    so "Just you see! It'll all happen! I know it will!"
+        
+    window hide dissolvelong
+    
+    scene bg classroom with dissolvelong
+    subtitle2 "Written by Samu-kun"
+    $ renpy.pause (6.0)
+    scene bg park with dissolvelong
+    subtitle2 "Art by Samu-kun"
+    $ renpy.pause (6.0)
+    scene bg dojo with dissolvelong
+    subtitle2 "Additional art by Fawn, Lvuer, Deji, and Sixten"
+    $ renpy.pause (6.0)
+    scene bg surprisedonkey with dissolvelong
+    subtitle2 "Music by Feather Drug, Zero-Project, Walter Mazzaccaro, Yunus, Frozen Silence, Ivan Tiukov,
+    Kevin MacLeod, SAM Free Music, Christoph Pronegg"
+    $ renpy.pause (10.0)
+    scene bg beach1 with dissolvelong
+    subtitle2 "Ending Song |Take My Heart| by Fatblueman"
+    $ renpy.pause (6.0)
+    scene bg street1 with dissolvelong
+    subtitle2 "Opening Song |First Love| by MenT@i"
+    $ renpy.pause (6.0)
+    scene bg trackfield with dissolvelong
+    subtitle2 "Additional music by Yummy"
+    $ renpy.pause (6.0)
+    scene bg mall with dissolvelong
+    subtitle2 "Programming by Samu-kun"
+    $ renpy.pause (6.0)
+    scene bg outsideschool with dissolvelong
+    subtitle2 "Additional programming by Pytom"
+    $ renpy.pause (6.0)
+    scene bg gym with dissolvelong
+    subtitle2 "Ren'py Engine by Pytom"
+    $ renpy.pause (6.0)
+    scene bg hallway with dissolvelong
+    subtitle2 "Background photographs taken by Samu-kun"
+    $ renpy.pause (6.0)
+    scene bg schoolback with dissolvelong
+    subtitle2 "Additional backgrounds provided by Viton, zeraien, Colin_Eric, scottfidd, jasra, cfarivar,/n 
+    Grant Mitchell, alexabboud, Old Shoe Woman, djwudi, captaincinema, zpeckler, Gamethyme,/n
+    Buckeye Beth, timomcd, Ryo, JoeGray, JapanDave, randomwire, netjackal, framboise,/n
+    orangejack, airthru.takashi, Novelers' Material, Rick Scully, stintje, willraleigh, cseeman,/n
+    wayneandwax, and anyone else I forgot"
+    $ renpy.pause (12.0)
+    scene cg sorabeach2 with dissolvelong
+    subtitle2 "Background filtering by Samu-kun"
+    $ renpy.pause (6.0)
+    scene cg soratickle2 with dissolvelong
+    subtitle2 "Sound effects by crk365, Gniffelbaf, 7by7, OSA"
+    $ renpy.pause (6.0)
+    scene cg sorafireworks with dissolvelong
+    subtitle2 "Special Thanks to..."
+    $ renpy.pause (6.0)
+    scene cg sorarikubed with dissolvelong
+    subtitle2 "Taleweaver, Yummy, DaFool, Einherjar, Zerix, and all other beta testers"
+    $ renpy.pause (6.0)
+    scene cg sorashower with dissolvelong
+    subtitle2 "Licensed under CC License - Attribution, Noncommercial, Share-alike"
+    $ renpy.pause (6.0)
+    scene cg sorarikuh6 with dissolvelong
+    subtitle2 "Love in Space, 2011-2012"
+    $ renpy.pause (6.0)
+    subtitle2 " "
+    scene bg black with dissolvelong
+
+    window show dissolve
+    
+    play music "Music/One_Summer_Night.ogg" fadeout 1.5 loop
+    scene bg weddinglobby with dissolve
+    
+    "I guess... it's been ten years since then."
+    "I stood by myself on the balcony, gazing out into the cool night cityscape."
+    "It truly had been a while since I could return here."
+    "All of a sudden, I heard a voice behind me."
+    
+    show nonami adult neutral with dissolve
+    
+    no "Rii-kun?"
+    "I turned around and saw a familiar face."
+    ri "Hey there, Nonami."
+    
+    show nonami adult smile with dissolve
+    
+    no "It is you! Sora said that you would be coming."
+    ri "Yeah..."
+    
+    show nonami adult neutral with dissolve
+    
+    no "It's been too long. Have you been busy with work?"
+    ri "Yeah..."
+    "Just as my father was before me, I was now a diplomat. I guess I was cut out for the work, considering that I had lived in so many places."
+    "Unfortunately, my work schedule didn't really leave me much time to do anything else. It was tough always being relocated at the government's whim, but the thought that there were people who needed me else where in the world kept me going forward."
+    "I guess... now that I've been in his shoes, I could now finally understand why my father used to act that way when I was growing up."
+    
+    show nonami adult neutral with dissolve
+    
+    no "Hey by the way Rii-kun, are you married yet?"
+    ri "No."
+    
+    show nonami adult smile with dissolve
+    
+    no "Eehhh!? So you mean your little sister managed to beat you to it?"
+    ri "Yeah..."
+    "Way to poke an open wound, Nonami..."
+    no "That's too bad, eh, Rii-kun?"
+    no "Mah, don't worry, don't worry. I'm sure you'll get your chance soon enough."
+    ri "So, are you?"
+    no "Ahahaha... Nope, I've just been running the Surprise Donkey."
+    ri "You still haven't changed the name of that place?"
+    no "Eheh... I think it's pretty funny."
+    "I looked at my watch."
+    ri "I think it's time we got ready."
+    no "Uhn!"
+    
+    scene bg white with dissolve
+    
+    "We sat in the front row as Sora took her vows and was happily wedded."
+    "As the bride and groom kissed, we all stood and applauded."
+    "It was a difficult road... but it looked like she had finally found her happiness."
+    "As her brother... I was really proud of her."
+    "Nonami and I... and I thought I saw Haruka, mother, and father standing somewhere in the crowd too. I'll have to greet all of them after."
+    "We were all together again."
+    
+    show cg sorawedding1 with dissolvelong
+    
+    "The ceremony ended. Just as I was about to leave for the reception, I heard Sora call my name."
+    so "Riku."
+    ri "Sora. It's been a while..."
+    ri "Congratulations. I'm really proud of you, Sora."
+    so "Thank-you..."
+    ri "I've missed you. I'm sorry I couldn't see you again sooner."
+    so "Me too..."
+    ri "I've just been thinking back to when we were younger..."
+    ri "You really did save me then. I don't think I ever thanked you for that."
+    so "Uu-uhn. I'm sure we saved each other."
+    ri "Hah... I guess I should get going, before I sour this mood any more than I've already done, huh? Hahaha..."
+    so "By the way, Riku, I think Nonami-sempai will be sitting at table number four at the reception."
+    ri "Uhn. Thanks."
+    so "No problem."
+    ri "I'll be seeing you around, Sora."
+    so "Uhn. I'll see you..."
+    so "Onii-chan."
+    
+    $ persistent.ending_3 = True
+    
+    $ renpy.music.stop(fadeout=3.0)
+    window hide dissolve
+    scene bg black with dissolvelong
+    show fin with dissolve
+    $ renpy.pause (4.0)
+    hide fin with dissolve
+    return
+    
+label deletedscene1:
+    $ renpy.music.stop(channel="sound")
+    stop music fadeout 1.5
+    scene bg black with dissolvelong
+    
+    sa "This scene was originally supposed to occur in the Sora arc, after Riku rejects Nonami in the ferris wheel and runs back home."
+    sa "Ultimately, this scene was cut because I found it too depressing."
+    sa "I realized that the original tone of the Sora arc was too bleak, and so I made revisions to bring it in line with the other arcs."
+    sa "Among those revisions was the cutting of this scene."
+    sa "Some of the following content may disturb some people, so viewer discretion is advised."
+    
+    scene bg stairsfaded with dissolvelong
+
+    "I stumbled back home in a daze."
+    "The rain had still not let up."
+    "My shoes were soaked. I undid the shoe lace and threw them off."
+    "After taking off my socks, I hung my coat to dry and dried off my hair with a towel."
+    "All of my clothes were ruined. I probably needed to wash them now."
+    "I walked upstairs and threw them all into the laundry basket."
+    "First thing though, I needed to take a shower..."
+    "... ... ..."
+    "My head was still spinning after I washed up and donned a new set of clothes."
+    "It felt as if my insides were bleeding."
+    "I guess... everything with Nonami really was over now."
+    "I was about to return to the black seclusion of my room when I heard the sound of Sora's voice from within."
+    "That was strange... what was she doing inside of my room?"
+    
+    play music "Music/Disabled_Emotions_Part6.ogg" fadeout 1.5 loop
+    
+    "I softly opened the door."
+    
+    scene cg soramasturbation1 with dissolve
+    
+    "The sight that awaited me caused my heart to plummet to my gut."
+    so "Ah... ah..."
+    "Sora's back was turned to me, but there was no question as to what she was doing on top of my bed."
+    "In shock, I instinctively hid behind the door."
+    "It didn't look like she had noticed me."
+    "My heart was suddenly beating wildly."
+    "Watching my own sister while she..."
+    "The thought was horrifying, but for some wicked reason, it also caused my heart to beat wildly."
+    "In some dark corner of my brain, I knew that I was still crazed from yesterday's tryst..."
+    "She was really asking for it... doing something like that on my own bed..."
+    "I wanted to taste Sora's soft moans of pleasure again. I wanted to hear her gasps, her cries..."
+    "I'm sorry Sora..."
+    "But your brother was a liar. He really wanted to do you last night."
+    "To tell you the truth... I was a demon. Someone who would even go as far as predate on his own younger sister."
+    "Morals...? Norms...? Nice feelings? Who needed them..."
+    "All that mattered was me. If nobody else was going to be there for me, then I saw no reason to go out of my way to care about what others felt..."
+    "It hurted... so... I was going to just do Sora for myself."
+    "I needed to finish what I started. Or else I was truly going to go mad."
+    "But no... no..."
+    "Deep in my heart, I knew that wasn't right."
+    "In reality, that wasn't what I wanted..."
+    "I knew... I knew that I wasn't strong enough to even consider forcing Sora to reveal her naked body to me..."
+    "What happened last night... it wasn't because I was overcome with lust."
+    "I was hurt... my entire world had just been destroyed... and... I chose to lose myself in the pleasures of a girl rather than the despair that was my life..."
+    "I was just... a weakling... who couldn't face reality."
+    "And today... I was going to be a weakling again..."
+    "By watching... my sister pleasuring herself... to once again forget everything that I had done to Nonami."
+    "I wasn't the sex obsessed monster that I wished to be..."
+    "I couldn't ravage anyone. I couldn't help myself to the spoils of my sexual dominance. I couldn't be calculating and score with girls as if everything were a just a game."
+    "I just... wanted to think I was strong and was forcing Sora to do everything for me..."
+    "But... I knew..."
+    "We were only doing this because we were weak. Too powerless to change anything."
+    "All I could be was the lonely, quiet coward that I always was."
+    "I looked into my room through the crack in between the door and the door frame."
+    "Her back was still turned to me, but I could still hear her panting heavily."
+    
+    scene cg soramasturbation2 with dissolve
+    
+    "My heart rate intensified when she took off her skirt and tossed it to the floor."
+    "Soon, the thin strip of cotton that was her underwear joined the skirt at the foot of the bed."
+    "She removed her top, exposing her bare back to me."
+    "Her white buttocks were wet with sweat and clung onto the fabric of my bed sheets."
+    "This was... just too much..."
+    "By now, I was at my limit as well."
+    "Slowly, I undid the top button of my pants and slipped my hand in."
+    "Sora reached inside of herself with new intensity."
+    so "Ah... ah..."
+    so "haa... haa..."
+    so "Riku... ah..."
+    "Was it just my imagination...?"
+    "Sora..."
+    "If only she knew... what I was doing at this moment."
+    "She lifted one of her legs up and opened herself up wider. All of a sudden, her rhythm intensified."
+    so "ha...haa...ah...ahhhh!"
+    "She moved her fingers so quickly that it became more of a vibration. It was as if joy filled every part of her body."
+    "She squirmed as the pleasure filled her."
+    "Even from out here, I could hear the noise of her hands rubbing against her moist interior."
+    "I was about to lose it!"
+    
+    play music "Music/The_House_of_Leaves.ogg" fadeout 1.5 loop
+    scene cg soramasturbation3 with dissolve
+    
+    "All of a sudden, Sora turned around and faced exactly where I was standing."
+    "In surprise, I banged my elbow against the door. My heart nearly burst in horror as the door swung wide open and hit the wall with a thud, completely exposing me."
+    "For a moment, we stared each other."
+    "Sora, stark naked on top my bed, her dripping wet fingers inside of her own body, her other hand clutching her breast."
+    "And myself, my pants undone, with an erection so obvious that not even my underwear could hide it."
+    so "... ... ..."
+    ri "... ... ..."
+    "Neither of us knew what to say."
+    "Sora's face turned from shock to horror, her face flashing bright red."
+    "An eternity seemed to pass, with the both of us just staring at each other, locked in that position of eternal shame."
+    "... ... ..."
+    "... ..."
+    "..."
+    "Finally, Sora wiped her hands on her belly, grabbed her clothes, and walked out."
+    "She passed by, her naked body only inches from me, neither of us able to utter a word."
+    
+    scene bg black with dissolve
+    
+    "I stumbled onto my bed, unable to comprehend what had just happened."
+    "I could still feel her body heat radiating from my bed sheet. It was soaked with Sora's sweat."
+    "I collapsed into my pillow in horror. It was filled with her scent."
+    "Everything about today..."
+    "I just wanted to forget forever."
+
+    $ renpy.full_restart(target="deleted_scenes")
+    
+label deletedscene2:
+    
+    stop music fadeout 1.5
+    scene bg black with dissolve
+    
+    sa "This scene was supposed to take place near the beginning of the story, when Sora moved into Riku's house."
+    sa "I didn't really like it, so it was replaced with the trip to Kyoto."
+    sa "Still, I had to draw a full CG for this which couldn't be used in the real game, so enjoy!"
+    
+    play music "Music/Fragments_of_Stars.ogg" fadeout 1.5 loop        
+
+    scene bg livingroom with dissolve
+    
+    "Early the next day, the door bell rang."
+    "I opened the door, revealing Haruka with a small group of girls."
+    
+    show haruka casual handstogether smile with dissolve
+    ha "Hello Saionji-san. I've come with some girls from the cooking club."
+    ri "Come right in."
+    "As expected of the cooking club, they made their way straight to the kitchen."
+    ha "We also brought some extra things to make snacks with."
+    "Rather incredibly, each one of the girls was holding a grocery bag filled with ingredients."
+    "They got busy preparing the food for the event."
+    "Soon afterwards, the door suddenly flung open."
+    
+    hide haruka with dissolve
+    show nonami casual excited happy with dissolve
+    no "Uwahaha! I'm here!"
+    "...You could have at least knocked."
+    
+    show nonami casual neutral smile with dissolve
+    no "Oh and by the way, some folks from the kendo club also wanted to come."
+    
+    hide nonami with dissolve
+    "Soon, the house was filled with activity."
+    
+    scene bg stairs with dissolve
+    "Once all of the food was prepared, I made my way upstairs with everyone tailing behind me in a single file."
+    
+    scene bg closeddoor with dissolve
+    $ renpy.music.stop (fadeout=3.0)
+    
+    "My heart was pounding in anticipation now."
+    "I softly knocked on Sora's door."
+    ri "Sora, there are some friends who want to meet you."
+    "Silence..."
+    "This was the moment of truth..."
+    ri "Sora, are you there?"
+    so "Uhn."
+    ri "There you are. I was afraid you weren't here."
+    "But then, it's not like she ever left that room."
+    ri "So how about it? Don't you want to meet new friends, Sora?"
+    so "... ... ..."
+    
+    play music "Music/Forgotten.ogg" fadeout 1.5 loop    
+    
+    so "No."
+    "My heart sank."
+    ri "But Sora, everyone came here for you."
+    ri "Not only that, but Haruka-san worked really hard to make you special sukiyaki."
+    so "Tell them all to leave. I don't want to see them."
+    "It didn't look like things were going that well."
+    "What should I do?"
+    
+menu:
+    "Try to gentle.":
+        jump werefriends
+        
+    "Try to be forceful.":
+        jump oniisanangry
+        
+label werefriends:
+
+    $ wasgentle = True
+    $ wasangry = False
+    
+    ri "Sora, we're all your friends. Please open the door so that we can talk together."
+    so "Hmph. I don't believe you."
+    ri "We all worked really hard for your sake... If you don't open the door, then all of our efforts will be wasted."
+    "I felt encouraged when Haruka began to speak to Sora behind me. Maybe with her help, I'll be able to..."    
+    ha "Uhn, uhn. Please open the door, Sora. Let's eat tasty things together and have fun from now on."
+    "All of the girls began to encourage her."
+    ri "Sora, can't you hear everyone? Those are the voices of your friends. We're all here for you."
+    ha "Even if you don't open this door, we're still going to talk to you, Sora. We'll just eat our sukiyaki outside of your door, in this hallway if we have to."
+    ha "As long as you can hear us, you'll always know that we'll be here for you."
+    ha "So... Please don't be lonely any more!"
+    "Suddenly, the door creaked open."
+    "Did we... do it?"
+    
+    scene bg soraroom with dissolve
+
+    play music "Music/Only_You.ogg" fadeout 1.5 loop    
+    
+    show sora casual armscrossed distantleft with dissolve
+    so "It's dangerous to cook sukiyaki in the hallway..."
+    
+    show sora casual armscrossed closedeyes with dissolve
+    so "So please, come in."
+    "I looked at Haruka in disbelief. We had done it!"
+    "We all filed into Sora's room."
+    hide sora with dissolve
+    "A member of the cooking club set down a portable burner on Sora's table and Haruka placed a big pot of sukiyaki on top of it."
+    
+    show nonami casual excited happy with dissolve:
+        xanchor 0.5
+        xpos 0.2
+        
+    no "Incredible! Haru-chan, it looks great!"
+    
+    show haruka casual handfront happy with dissolve:
+        xanchor 0.5
+        xpos 0.8
+
+    ha "Are you hungry, Sora-chan?"
+    
+    show sora casual tanuki onearmdown neutral with dissolve
+    so "Uhn. Really hungry."
+    
+    show haruka casual neutral smile with dissolve:
+        xpos 0.8
+
+    ha "Eh heh. Here."
+    "Haruka passed Sora a package of rice cake strips."
+    ha "We'll all eat together."
+    
+    "We dug into the sukiyaki."
+    "Sora soaked one of her rice cake strips into the pot and ate it."
+    ri "How is it, Sora?"
+    
+    show sora casual tanuki onearmdown closedeyes with dissolve
+    so "Tasty."
+    
+    show nonami casual armsraised smile2 with dissolve:
+        xpos 0.2
+
+    no "As expected, Haru-chan's cooking is always the best!"
+    
+    show haruka casual handsbehind smileblush with dissolve:
+        xpos 0.8
+
+    ha "Eh-heh... It really was no problem."
+    "The room was soon filled with pleasant conversation."
+    "For the first time, it looked like Sora was enjoying herself."
+    "I've never felt so thankful for my friends before."
+    "Without everyone's help, none of this would have been possible."
+    "If Haruka wasn't here, who would have given us this tasty sukiyaki?"
+    "And without Nonami, who would keep these happy and funny conversations going?"
+    "I welled up with emotion."
+    ri "Everyone... Thanks."
+    
+    show nonami casual neutral surprise with dissolve:
+        xpos 0.2
+        
+    no "Eehh? Rii-kun, are you alright?"
+    ri "Yeah... I was just thinking..."
+    ri "Without any of your help, none of this would even have been possible."
+    
+    show nonami casual excited happy with dissolve:
+        xpos 0.2
+
+    no "Don't worry, don't worry! That's what friends are for!"
+    
+    show haruka casual handfront smileblush with dissolve:
+        xpos 0.8
+    
+    ha "Uhn. We'll always be here to help you."
+    ri "Nonami... Haruka-san..."
+    ri "Thanks..."
+    jump soragoesout
+
+label oniisanangry:
+
+    $ wasangry = True
+    $ wasgentle = False
+    
+    ri "Open this door right now Sora, or else onii-san's going to get angry."
+    so "Hmph. It's locked, so there's nothing you can do about it."
+    "Argh... She was right."
+    "I was hoping to bluff my way in, but it didn't look like Sora was buying it at all."
+    "I should have known... it's impossible for me to act angry."
+    "All of a sudden, Nonami appeared from behind me and shoved me aside."
+    "She banged on the door with both of her fists so loudly that I was afraid she really was going to bash it down."
+
+    play music "Music/Only_You.ogg" fadeout 1.5 loop
+
+    no "Oy! Open up!"
+    no "Don't you know!? Your older brother's been working so hard just for you! You can't just stay in there all day and put all his work to waste!"
+    no "I know you're having a bad time here... But sometimes ya just have to grit your teeth and face it!"
+    no "Because... because if you never come out, you'll miss out on all the fun!"
+    no "So... so... OPEN UP!!!!!"
+    
+    scene bg white with dissolve
+    scene bg soraroom with dissolve
+    
+    show sora casual tanuki surprise with dissolve:
+        xanchor 0.5
+        xpos 0.5
+    
+    show nonami casual neutral charged with dissolve:
+        xanchor 0.5
+        xpos 0.8
+        
+    "With a mighty kick, Nonami smashed apart the door frame and flung open the door."
+    "Sora faced her with a stunned expression on her face."
+    "To tell the truth, my face was probably just as stunned."
+    no "So... that's what you look like. I've never seen you until now."
+    
+    show nonami casual neutral smile with dissolve:
+        xpos 0.8
+    
+    no "You have a cute face. Why do you hide it behind your door all the time?"
+    no "Huh, Sora-chan?"    
+    so "I... I..."
+    no "Come on. Stand up and fight."
+    
+    show sora casual tanuki tears2 with dissolve:
+        xpos 0.5
+    
+    "Suddenly, tears came on Sora's face."
+    "Nonami grabbed Sora and held her as she cried."
+    so "I was..."
+    
+    show nonami casual armscrossed smile with dissolve:
+        xpos 0.8
+    
+    no "Don't worry, we're all here for you now."
+    "Haruka knelt down beside Nonami."
+    
+    show haruka casual handstogether smile with dissolve:
+        xanchor 0.5
+        xpos 0.2
+    
+    ha "We all want to be your friends, Sora."
+    ri "You never came to school, so we were all worried about you."
+    "Everyone gathered around Sora. One of the girls in the cooking club even offered her a piece of chocolate."
+    
+    show sora casual tanuki tears with dissolve:
+        xpos 0.5
+    
+    so "Everyone... I'm sorry..."
+    
+    show nonami casual excited happy with dissolve:
+        xpos 0.8
+    
+    no "You don't need to worry about a thing!"
+    
+    show haruka casual handfront neutral with dissolve:
+        xpos 0.2
+    
+    ha "Uhn, uhn. Are you hungry, Sora?"
+    
+    show sora casual tanuki tearssmile with dissolve:
+        xpos 0.5
+    
+    so "Uhn... I was really hungry."
+    
+    show haruka casual handfront smile with dissolve:
+        xpos 0.2
+    
+    ha "Let's eat together then. We have tasty sukiyaki."
+    "A member of the cooking club set down a portable burner on Sora's table and Haruka placed a big pot of sukiyaki on top of it."
+    "Nonami passed Sora a package of rice cake strips."
+    no "Come on, eat, eat!"
+    "I grabbed a rice cake strip for Sora with my chopsticks and soaked it in the pot."
+    "After swirling it around in the boiling broth for a bit, I took it back out."
+    ri "Come on Sora. Eat this."
+    so "Uhn..."
+    "She wiped away her tears with a tissue."
+    "I tried cooling the rice cake by blowing on it a little."
+    ri "Here. Tell me if it's too hot."
+    so "Uhn."
+    "I gave Sora the rice cake."
+    
+    show sora casual tanuki upset with dissolve:
+        xpos 0.5
+    
+    so "Umphh... it's too hot..."
+    ri "S-sorry..."
+    
+    show sora casual tanuki tearssmile with dissolve:
+        xpos 0.5
+    
+    so "But... it's tasty."
+    "For the first time I've seen, a smile came on Sora's face."
+    
+    show sora casual tanuki closedeyes with dissolve:
+        xpos 0.5
+    
+    so "It's very tasty."
+    "Everyone laughed and the mood lightened."
+    "Soon, happy conversation filled the room and everyone was enjoying the sukiyaki."
+    "I heard Sora whisper something quietly. So softly that I was probably the only person who heard it."
+    so "Everyone..."
+    so "Thank-you..."
+    jump soragoesout
+    
+label soragoesout:
+    
+    scene bg white with dissolvelong
+    play music "Music/Recommencement.ogg" fadeout 1.5 fadein 1.5 loop    
+    scene bg rikuroomday with dissolvelong
+    
+    "... ... ..."
+    "The next day brought a beautiful morning."
+    "It was still Sunday, so I still had the rest of the day off."
+    "In relief, I woke up and washed up."
+    
+    if wasgentle:
+        "On my way downstairs, I realized that the door to Sora's room was wide open."
+        
+        scene bg soraroom with dissolve
+        
+        "Upon looking inside, I saw that there was nobody inside."
+        
+    if wasangry:
+        "On my way downstairs, I saw Sora's smashed down door."
+        "I'll need to get that fixed sometime..."
+        "Suddenly, I noticed that there was nobody inside the room."
+        
+    "Could it be...?"
+    
+    scene bg stairs with dissolve
+    
+    "I ran down the stairs."
+    
+    scene bg livingroom with dissolve
+    
+    "Nobody on the first floor. Then that meant..."
+    
+    scene bg white with dissolve
+    
+    "In anticipation, I burst through the front door and was greeted by the radiant morning sky."
+    
+    show sora casual tanuki closedeyes with dissolve
+    
+    so "Riku..."
+    so "...Good morning."
+    
+    scene bg white with dissolvelong
+    scene bg rikuroomday with dissolvelong
+    
+    play music "Music/Stroll.ogg" fadeout 1.5 loop    
+    
+    "I woke up to the sound of Nonami's voice on Monday."
+    
+    show nonami uniform armsraised happy with dissolve
+    no "Ooyy... Rii-kun, aren't ya up yet? We're gonna be late for school if you don't get moving..."
+    "I opened my eyes with cheer, ready to face the world."
+    
+    show nonami uniform surprise with dissolve
+    no "U-uwah..."
+    ri "Mmmm?"
+    no "Go back to sleep! If you wake up with such a happy look on your face, then you might destroy one of the unbreakable laws of the universe!"
+    "But I had every reason to be happy."
+    "Everything was completely fixed with Sora, and not only that, but I was surrounded by my best friends."
+    "I happily buried my face into my pillow, wishing that this moment could last forever."
+    
+    show nonami uniform armscrossed irritated with dissolve
+    no "Uwah, how scary..."
+    "In a happy stupor, I washed up and wandered into Sora's room."    
+    ri "Sora, it's time for school..."
+    
+    scene cg soraunderweara with dissolve
+    
+    "Unfortunately, my timing proved rather unfortunate, as I happened upon my younger sister in a pivotal moment of undress."
+    so "Ah..."
+    
+    scene cg soraunderwearb with dissolve
+    
+    ri "Uhh..."
+    
+    scene cg soraunderwearc with dissolve
+    no "Uwah! Rii-kun!"
+    
+    if wasangry:
+        no "Ufu. Ya really should see to getting that door fixed soon, eh?"
+
+    scene cg soraunderweard with hpunch
+    so "RIKKUUU...."
+    "I was struck with a flying tanuki directly between the eyes."
+    ri "S-sorry!"
+    "I quickly ran back out and tried to bleach the mental image from my mind."
+    so "Stupid, stupid Riku! I'm never leaving this room ever again!"
+    ri "W-wait Sora, you can't-!"
+    "I ran back into her room to plead with her, only to see her half naked again."
+    so "EAAHH!!!"
+    ri "S-sorry!"
+    "Various hard objectives were hurled at me, amongst which included a dictionary, a tissue box, and a pair of slippers. Most found their mark."
+    
+    so "EAAAHHHHHHH!!!"
+   
+    scene bg white with dissolvelong
+    
+    "Somehow..."
+    "I got the feeling that living with a younger sister was going to be difficult..."
+
+    $ renpy.full_restart(target="deleted_scenes")
+    
+label deletedscene3:
+    
+    scene bg black with dissolve
+    
+    sa "This scene was a part of the original Nonami's arc."
+    sa "The original Nonami's arc was pretty bad, and was reworked heavily until it became what you saw in the game."
+    sa "Originally, there was supposed to be a date between Nonami and Riku to Arashiyama after their H scene."
+    sa "After the Nonami arc was reworked, there wasn't anywhere to put the date, so this scene remains on the cutting room floor."
+    sa "Therefore, consider this scene an 'After Story' of sorts."
+    
+    play music "Music/Fragments_of_Stars.ogg" loop
+    scene bg outsideschool with dissolve
+        
+    "I ran to the front door of the school immediately after class and looked around for Nonami."
+    
+    show nonami uniform greet happy with dissolve
+    
+    no "Oh! Rii-kun!"
+    ri "Ah, Nonami. Are you ready?"
+    no "Uhn! Let's go, let's go!"
+    "We walked out of the school, our arms crossed together."
+    
+    show nonami uniform armscrossed happy with dissolve
+    
+    no "Eah, so where we goin'?"
+    ri "First, we're going to have to ride the train."
+    no "Eeehh... So it's pretty far away, huh?"
+    ri "Mmm... It might take about an hour to get there."
+    no "Mmm... I see..."
+    
+    scene bg trainstation with dissolve
+    
+    "We arrived at the train station and got onto a train bound for Kyoto."
+    
+    show nonami uniform armscrossed confident with dissolve
+    
+    no "Ufufu... Now I see where Rii-kun's goin' with this."
+    no "A romantic date through Kyoto, huh? I couldn't have thought of a better place myself!"
+    ri "Uhn..."
+    
+    show nonami uniform happy with dissolve
+    
+    no "So, where in Kyoto are we goin'?"
+    ri "I was thinking of Arashiyama."
+    no "Oh, good choice! I haven't been there since elementary school."
+    ri "I've only seen tourist ads of it, myself. But I thought it would be nice if we could go together."
+    no "Eah, I can't wait to see the monkeys again."
+    ri "Huh?"
+    no "Didn'tcha know? There're monkeys at Arashiyama."
+    ri "R-really? Like live ones?"
+    no "Uhn!"
+    ri "Eh... I had no idea..."
+    no "We better hurry though... or else the monkey park is gonna close."
+    ri "Okay. We need to get off at Sanjo station and then ride the subway to Omiya."
+    
+    scene bg subway with dissolve
+    show nonami uniform neutral with dissolve
+    
+    "Before we knew it, we arrived at Sanjo. We left the train and switched over to the subway line."
+    "The subways in Kyoto were too noisy to talk in, so we stood silently until we finally arrived."
+    
+    scene bg black with screenwipe
+    scene bg randen with screenwipe
+    show nonami uniform neutral with dissolve
+    
+    "We got out of the station and looked around."
+    ri "Mmm... Now, I think we need to ride the Randen line to Arashiyama."
+    
+    show nonami uniform greet happy with dissolve
+    
+    no "Oh! There it is!"
+    "I noticed an ancient looking trolley car approach the station. That was our ride?"
+    "It honestly looked old enough to have been built during the Meiji Era."
+    "Not wanting to miss our ride to Arashiyama, we ran over to the embarkation station and got on."
+    "... ... ..."
+    "... ..."
+    "..."
+    
+    play music "Music/My_Love.ogg" fadeout 1.5 loop
+    scene bg arashiyama with dissolve
+    
+    "The rusty old trolley cart took us on a scenic ride through the outskirts of Kyoto and finally arrived at Arashiyama."
+    "Nonami ran out the station and waved at me."
+    
+    show nonami uniform greet happy with dissolve
+    
+    no "Oh! We're here, Rii-kun!"
+    "I followed her out and saw that she was right. This definitely was Arashiyama."
+    "An impressive mountain range stood in the distance, looking high enough to touch the clouds."
+    "The air felt surprisingly fresh and had the scent of mountain water."
+    "Nonami wrapped her hands around my arm and walked towards the bridge leading to the mountain."
+    "Small souvenir shops lined the road on both sides and were teeming with visitors."
+    "I smiled at patted Nonami on the head"
+    ri "The mountains are a lot bigger than I thought they would be."
+    ri "It looks really good, huh?"
+    
+    show nonami uniform smile with dissolve
+    
+    no "Uhn."
+    "Nonami took a deep breath."
+    no "The air's really clean too!"
+    "We walked over to a small forested area near the banks of the river where we could get a good look at the bridge."
+    
+    show nonami uniform excited with dissolve
+    
+    no "Oh! We should take a photo here."
+    "Nonami took out her cell phone and raised it in front of us."
+    "We stood in front of the bridge and put our heads together, trying to fit inside the photograph."
+    
+    show nonami uniform happy with dissolve
+    
+    no "Sei chiizu!"
+    ri "W-what?"
+    "At that moment, Nonami snapped the photo, capturing my confused expression."
+    no "Ehehehe... What a cute face you have there, Rii-kun!"
+    ri "H-hey that's no fair! Delete that one and take another photo!"
+    no "But I think I like this one the best!"
+    ri "B-but..."
+    no "New cell phone wall paper set!"
+    "I shook my head in embarrassment at her antics."
+    no "Uwaaahh isn't my Rii-kun so handsome? Uwahahahaha!"
+    "Ah for crying out loud..."
+    "That's it... it was time for revenge."
+    "I flipped out my cell phone and snapped a photograph of Nonami while she was laughing her face off."
+    ri "There. Now I have a new wall paper too."
+    
+    show nonami uniform excited surprise with dissolve
+    
+    no "H-hey, what's the big idea!?"
+    ri "My, my. I think you should be flattered that your boyfriend likes you enough to put your face on his cell phone."
+    ri "After all, your face does look like this!"
+    no "Uwah, what's that!?"
+    no "Uuu... I will not be defeated so easily!"
+    "All of a sudden, Nonami raised her cell phone again and snapped another picture of me."
+    ri "H-hey!"
+    
+    show nonami uniform neutral focused with dissolve
+    
+    no "Ufufufufu..."
+    ri "Then take this!"
+    "I aimed my cell phone at Nonami and took another photo of her. She giggled and parried to the right."
+    no "That level of attack is worthless, Rii-kun! Now feel the power of my wrath!"
+    "Nonami took cover behind a tree and poked her cell phone out, managing to capture another photo of me."
+    "We chased each other through the wooded area, running from tree to tree, snapping silly looking pictures of each other."
+    "If anyone else saw us, they must have thought we had gone absolutely nuts, but we were having a blast."
+    "Finally, I lunged for Nonami and managed to capture her."
+    ri "I gotcha!"
+    "Nonami squealed in a mock helpless princess voice."
+    
+    show nonami uniform neutral teary with dissolve
+    
+    no "Iyyaa! Be gentle with me!"
+    "I fell to my knees laughing, my arms wrapped around my stomach. Nonami laughed along with me just as loudly."
+    "Just when I began to calm down, I looked at my cell phone and saw all the silly faces of Nonami I had managed to capture and started laughing again."
+    "It took nearly ten minutes for us to calm down enough to actually cross the bridge."
+    
+    scene bg arashiyamabridge with dissolve
+    show nonami uniform neutral with dissolve
+    
+    ri "Whew... I thought I'd never stop laughing..."
+    
+    show nonami uniform armscrossed smile with dissolve
+    
+    no "Eh-heh..."
+    ri "Check that out, Nonami."
+    "I pointed to the amazing view before us. The majestic mountains seemed to go on stretch on forever into the distance."
+    "Nonami wrapped her hands around my arms."
+    no "It's really pretty, huh Rii-kun?"
+    ri "Uhn."
+    "Especially with you in the foreground. I blushed at the thought and patted Nonami on the head."
+    
+    scene bg arashiyamapark with dissolve
+    show nonami uniform armscrossed with dissolve
+    
+    "We arrived at the other side of the river and headed deeper into the mountain."
+    no "Mmm... the monkey park should be around here..."
+    no "Ah! There, look at that sign."
+    ri "Looks like we're not that far away. Come on, let's go."
+    "We hurried up and managed to find the entrance to the park right before closing time."
+    "Ah great, just our luck. We bought a pair of tickets and made our way up the mountain trail."
+    
+    scene bg monkeyparktrail with dissolve
+    
+    ri "I can't believe that there's a place in Kyoto where they just keep a bunch of monkeys out in the open. Don't they ever run away?"
+    
+    show nonami uniform armscrossed with dissolve
+    
+    no "Mmm... It says in this brochure that the monkeys always return to their home every night."
+    ri "Can you imagine what it'd be like if one of the monkeys decided to run away and made it to the city? Think of all the chaos that'll cause."
+    no "Ehehehe... I think I saw a movie like that once."
+    ri "Eehh... So it was a comedy movie?"
+    no "Nope. I think the monkey dies at the end."
+    ri "A-ah. Well, that's a pretty depressing ending."
+    
+    show nonami uniform armscrossed confident with dissolve
+    
+    no "Mmmmm... I think the moral of the story was that you needed to stay in your home to be safe or something like that."
+    ri "I guess that's right."
+    ri "Home, huh..."
+    ri "Now that you mentioned that, I think I can understand why none of the monkeys in this place run away."
+    ri "After all, who'd want to run away when you have a comfortable home waiting for you every night?"
+    
+    show nonami uniform armscrossed with dissolve
+    
+    no "Uhn... that's true."
+    ri "I feel sorry for that one monkey who ended up losing his way and forgot his way home. After all, the outside world is cold and strange."
+    ri "There really is no place like home, is there?"
+    
+    show nonami uniform happy with dissolve
+    
+    no "Mmm... but going outside can be fun too!"
+    no "You can find new places to explore and meet new people."
+    no "Sure, you might get lost, but doesn't that just make it more exciting?"
+    no "Eh-heh..."
+    no "Don't worry, Rii-kun. Home is never that far away from you."
+    no "Oh! Check it out!"
+    "Nonami pointed further up the mountain, where a red faced monkey was perched up on a tree."
+    
+    show nonami uniform smile2 with dissolve
+    
+    no "Ehehehe... It looks so funny!"
+    ri "Wait a moment... Look closer..."
+    "Four more monkeys appeared appeared from further up the tree, two of them carrying baby monkeys on their back."
+    no "Uwaahh they're so cute!!"
+    "Nonami flipped open her cell phone and snapped a picture of the baby monkeys."
+    no "I just wanna grab one of 'em and squeeze it!"
+    "Uwah, that totally didn't sound like a good idea..."
+    
+    scene bg monkeyparksummit with dissolve
+    
+    "We arrived at the summit of the monkey park, where a large observation area awaited us."
+    
+    show nonami uniform excited with dissolve
+    
+    no "Uwaahhh... check out the view, Rii-kun!"
+    "Nonami was right. An incredible view of Kyoto laid before us, continuing in all directions as far as the eye could see."
+    "The two of us sat down on one of the benches and admired the evening horizon."
+    no "Lookie, lookie! I can see Kyoto Tower."
+    ri "You're right."
+    "Nonami leaned into me and rested her head on my shoulder."
+    
+    show nonami uniform greet sadsmile with dissolve
+    
+    no "Hey Rii-kun. I want this moment to last forever."
+    no "Once you come back, we'll come back here again, and again... as many times as we want... won't we?"
+    ri "Of course we will. We'll go on dates every day. There won't ever be a boring moment again."
+    no "Eh-heh... that sounds really nice..."
+    no "When Rii-kun left eight years ago, I thought I'd really never see him again."
+    no "But here you are... sitting beside me..."
+    
+    show nonami uniform smile with dissolve
+    
+    no "So... I'm sure we'll meet again! I'm certain of it!"
+    ri "Uhn... I promise... this isn't the end."
+    no "Hey Rii-kun... kiss me..."
+    "I bent in and gently pressed our lips together."
+    "The soft sensation of Nonami's lips filled me as our lips met for the second time."
+    "I wrapped my hands around her."
+    "Just when I was about to lose myself to Nonami's sweet taste, I suddenly heard a loud thump."
+    
+    hide nonami with dissolve
+    
+    ri "W-woah...!"
+    "While I was distracted, a stupid looking baboon had jumped on top of the bench. In surprise, we both leapt off the bench and backed away."
+    ri "W-woahwoahwoah... N-N-Nonami..."
+    "All of a sudden, we realized that we were holding each other like two terrified couples in a haunted house."
+    "We couldn't help but laugh at ourselves."
+    "That sure was the weirdest way to end a kiss ever."
+    
+    show nonami uniform armsraised happy with dissolve
+    
+    no "Ehehehe... I guess it got jealous, huh?"
+    ri "Yeah..."
+    ri "Obviously, it was attracted to my good looks and couldn't stand the sight of me kissing you."
+    
+    show nonami uniform happy with dissolve
+    
+    no "Eeehhh?? I think it was more the other way around. Ehehehe..."
+    "We laughed."
+    ri "Should we got going? The sun's beginning to set and this place is closing up."
+    no "Uhn! Let's go back down."
+    
+    scene bg black with dissolvelong
+    $ renpy.full_restart(target="deleted_scenes")
+    
+label deletedscene4:
+    
+    window show
+    stop music fadeout 1.5
+    scene bg black with dissolve
+    sa "This is an alternative ending to the Sora arc. As you will see, it begins in the same way as in the real story, but diverges into another direction."
+    sa "I didn't like this ending because it felt too unbelievable and contrived."
+    sa "This was one of the many changes that were made to Sora's arc to make it as good as the other arcs."
+    sa "It has been provided here for your enjoyment, but I consider the ending provided in the story to be far better."
+    sa "As with all other deleted scenes, nothing here is canonical to the story of Homeward."
+    
+    scene bg mountaintop with dissolve
+    show sora casual armscrossed distantleftyandere with dissolve
+    
+    "We finally reached the top of the cliff face."
+    "For a moment, we took a seat on the ground."
+    "The wind was pretty cold up here now."
+    "I guess... there was nothing left to talk about any more."
+    "We just let the morning breeze gently ruffle our hairs."
+    "I wonder... what Nonami and Haruka were doing now..."
+    "Nonami really must hate me. She had all the reason in the world to be glad when she hears that I've died..."
+    "After taking a short break, we stood back up."
+    "The cliff face was only a few steps away..."
+    
+    stop music fadeout 2.0
+    
+    "So... this was how everything would end...."
+    "We slowly stepped towards the edge, our hands grasped together."
+    "Every step felt as if we were heaving a sack of rocks on our back."
+    "But we had to do this. It was the only way."
+    "We reached the very edge. Another step and it would only be a sheer drop to the bottom."
+    "I numbly looked down the cliff. Even though the distant treetops looked almost like dots, I felt strangely distant."
+    "I wrapped my arms around Sora."
+    ri "Sora... are you ready?"
+    so "Uhn."
+    "I guess... it would be best if she didn't look down before I jumped."
+    ri "Close your eyes, Sora. I'll do it for you."
+    "I wrapped my hands around her eyes. I guess I should jump on the count of three..."
+    "What a horrible life this was. I was tired of everything..."
+    "Tired of all the farewells... tired of being being alone..."
+    "This was really going to be the end forever."    
+    "All of a sudden... an azure butterfly flew by us."
+    "It circled us twice, as if sensing our immanent death, and landed on top of the hand that was covering Sora's face."
+    "I released my grip on Sora's face to chase it away, only to realize that the palm of my hands were soaked with tears."
+    ri "Sora..."
+    
+    play music "Music/Only_You.ogg" fadeout 1.5 loop
+    show sora casual armscrossed tears2 with dissolve
+    
+    so "I'm sorry... but I'm... scared....."
+    "So... she really wasn't ready for this."
+    so "I'm sorry Riku... I'm so... sorry...." 
+    
+    show sora casual armscrossed shoutcry with dissolve
+    
+    so "I'm sorry I couldn't be like a good sister to you...! I'm sorry... I'm sorry that I pretended to kill myself in the river! I'm sorry I did that on your bed!!! I'm sorry that I made Nonami-sempai hate you!!!!!"
+    so "So... you don't have to kill yourself, okay...!? B-because I really am sorry for everything...!!!"
+    ri "Shhh... calm down, Sora... You don't need to do it with me if you don't want to. I'll just do it by myself."
+    "Sora wrapped her arm around and sobbed into my chest, pounding on my shoulder with her fist."
+    so "You dummy...!!!!! W-what would I do if you weren't here anymore!?!?"
+    ri "I..."
+    so "I really, really, really love you!!! That's why.... you can't kill yourself!!!!"
+    ri "... ... ..."
+    
+    scene bg mountaintopnormal 
+    show sora casual armscrossed shoutcry
+    with dissolvelong
+    
+    "Slowly... I felt my senses returning to me."
+    "This entire day... I had felt so numb. It was as I should have been feeling emotions, but somehow they were all missing."
+    "Hearing the sound of Sora's cries finally returned those feelings to me."
+    "I touched my eyes with my finger. Look... there were tears on it!"
+    ri "Sora... I..."
+    ri "I don't know what happened....."
+    ri "Trying to do something like this... when I have such a wonderful sister like you by my side..."
+    ri "I'm... sorry... I'm so sorry...!!!"
+    "We held each other, finally having reclaimed the emotions that had been lost to us."
+    "Suddenly, I thought back to just a moment before in horror... what would I have done had that butterfly not landed on my hand at that precise moment?"
+    ri "I'm so sorry, Sora... Please forgive me!!"
+    
+    show sora casual armscrossed tears2 with dissolve
+    
+    so "Hey Riku... let's go back home."
+    so "I don't want to do this anymore..."
+    "That was what I had said when Sora was pretending to kill herself in the river, wasn't it...?"
+    "Look at me now... getting the same thing told to me by my sister."
+    ri "Uhn... you're right..."
+    "I could finally see how far high we were. Seeing the perilous drop to the bottom suddenly made me dizzy with fear."
+    "I turned and stepped away from the cliff face."
+    
+    stop music fadeout 2.0
+    
+    ri "Let's go home, Sora."
+    "Sora, her eyes soaked with tears, finally smiled at me."
+    
+    show sora casual armscrossed tearssmile with dissolve
+    so "Uhn!"
+    
+    play music "Music/A_Winter_Memory.ogg" fadeout 1.5 loop
+    scene bg white with dissolve
+    scene cg clifffall with dissolve
+    
+    "Just then, the crumbling rocks underneath Sora's far leg gave away. To my horror, I saw Sora slowly fall backwards, towards the empty abyss."
+    "Everything appeared to happen in slow motion at that moment. Sora's expression changed to stunned terror as she lost her balance and fell off the cliff."    
+    "I stared in disbelief as I saw her slip out of my grasp."
+    "I saw all of my memories of Sora flash by my eyes."
+    "No... after everything... was it all going to end here?"
+    "Was this all my fault? Was it my fault for bringing my sister out here?"
+    "Was it my fault for convincing her to kill herself for me?"
+    "Or even more fundamentally..."
+    "Was it my fault for convincing her to love me?"
+    "Was this fate's punishment for everything that I had done?"
+    "A brother-sister relationship... should never have happened... and yet, that was exactly what I did..."
+    "Was this... was this... just fate's way of restoring the world's sacred law...? By taking Sora away from me? Right when she..."
+    "No... No...... NO!!!"
+    "I couldn't let that happen!!"
+    ri "SOOORRAAAAAAAA!!!!!!!!!!!"
+
+    scene bg white with dissolve
+    scene bg cliffdrop with dissolve
+    
+    "I dived forward and grabbed onto her wrist just as she disappeared under the cliff."
+    "Sora screamed louder than I had ever heard before in my life as she dangled from my arms, with nothing but a twenty story drop and certain death awaiting her."
+    ri "SORAA!!!! HANG ON!!!"
+    so "EEAAAAAHHHHHHH!!!"
+    ri "I'LL NEVER LET GO, SORA!!!! JUST HANG ON!!!"
+    "But I could already feel my hands already beginning to go numb. My grip was slipping!"
+    "No, no, no!!! I couldn't let go......!!!!!"
+    "I tried reaching for her other hand, but it was impossible!"
+    "By now, my grip had already slipped from her wrist all the way to her fingers."
+    "Was it all hopeless...? No! no! It couldn't be...!!!!"
+    "But we had made it this far! I couldn't lose Sora now... not after all of this!"
+    "If only... if only..."
+    
+    scene bg white with dissolve
+    scene bg mountaintopnormal
+    show nonami uniform surprise
+    with dissolve
+    
+    no "Rii-kun!!!!"
+    
+    stop music fadeout 4.0
+    scene bg white with dissolve
+    scene bg cliffdrop with dissolve
+    
+    "All of a sudden, a second set of hands appeared from out of nowhere and grabbed onto Sora."
+    ri "W-wha...?"
+    no "Sora-chan, I'm here! Grab onto my hands!"
+    "With our combined strength, we managed to turn back the tide and begin to raise Sora back to safety."
+    "Finally, with one mighty heave, we managed to return Sora back to hard ground."
+    
+    play music "Music/Last_Summer.ogg" fadeout 1.5 loop
+    scene bg mountaintopnormal with dissolve
+    
+    "We all collapsed to the ground in a heap, in disbelief at what had just happened."
+    "Finally, Nonami crawled over to me and grabbed me by the scruff of the neck."
+    "She delivered a swift punch to my face."
+    
+    show nonami uniform neutral sadcry with dissolve
+    
+    no "That's for ruining my first date, you bastard!"
+    "Then she punched me again on the other side."
+    no "That's for disappearing into thin air and making all of us worry!"
+    "Finally, she finished me off with a third uppercut."
+    
+    show nonami uniform neutral sadcryclosedeyes with dissolve
+    
+    no "And that's for leading us on a wild goose chase all through Japan doing nothing but looking for you for the past two days!"
+    "At that point, she dropped me back to the dirt ground and fell backwards in exhaustion."
+    "All of a sudden, I felt myself being raised back up and wiped with a wet piece of cloth."
+    
+    hide nonami with dissolve
+    show haruka uniform handfront distantsmilecryblush with dissolve:
+        xanchor 0.5
+        xpos 0.8
+    
+    ha "Nona-chan was really worried about you, Riku-kun..."
+    "So Haruka was here too, huh...?"
+    ha "She came banging on my door as soon as she found your house completely deserted, saying something about a lovers' suicide."
+    ha "Luckily, we managed to browse through the history files on your computer and found a map search to this spot, so we managed to track you down..."
+    "So it was Haruka who did that, huh... She always was so reliable."
+    "I raised my head and faced Nonami."
+    
+    show nonami uniform neutral sadcry with dissolve:
+        xanchor 0.5
+        xpos 0.2
+    
+    ri "Nonami... I'm sorry for everything I've done... But... let's try to make the most out of the time we have left together."
+    "She crawled back over."
+    
+    show nonami uniform neutral sadcryclosedeyes with dissolve:
+        xpos 0.2
+   
+    no "Rii-kun... you dummy!"
+    "Now she was beginning to sound like my sister too..."
+    "She held my head and embraced me."
+    ri "I won't ever do anything like this ever again... I promise."
+    
+    show nonami uniform neutral sadcrysmile with dissolve:
+        xpos 0.2
+    
+    no "I'll keep you to your word then."
+    no "After all, I have a fabulous memory....."
+    ri "Nonami... it's good to see you."
+    no "Uhn. Welcome back, Rii-kun..."
+    "I managed to get up onto my knees and crawl over to Sora."
+    
+    show sora casual armscrossed tearssmile with dissolve    
+    
+    ri "Sora... I'm so relieved..."
+    ri "Let's... really go home now."
+    so "Uhn... The home where we always belonged."
+    "She was right."
+    "It was the home where we laughed together. Where we struggled over homework problems together, where we fought with pillows at nights when we were stressed out about school..."
+    "We might have happy days or sad days..."
+    "All that mattered was that we continue to go forward."
+    "No matter the distance that separated us, we would never truly be alone."
+    "We were... one family."
+    
+    scene bg black with dissolvelong
+    $ renpy.full_restart(target="deleted_scenes")
+
+label directornotes:
+    
+    window hide
+    scene bg park with dissolve
+    subtitle2 "Homeward took three years to make. That's over one tenth of my life. Those three years were probably the most eventful years of 
+    my life, since during that time span I moved, first, from Japan to Korea, then from Korea to Iowa, and then from Iowa to California. (Which are 
+    like two different countries.) Before Homeward, I moved between three countries, and countless different homes throughout my life."
+    pause
+    subtitle2 "Today, culture is not limited to just a countries' borders. It flows as people move in and out of a country to other places. 
+    Further, with the internet, culture is capable of being transmitted even quicker and more cheaply through different countries. 
+    American culture flows into Japan and Japanese culture flows into America. And throughout that process, a new third culture is created. 
+    this process continues throughout all nations of the world." 
+    pause
+    subtitle2 "The one trapped in a third culture can be a lonely existence. When you're in Japan, you miss the individuality of American culture, 
+    but when you're in Japan, you miss the peace and quiet of Japanese culture. When you're in a new country, you miss your old country, but 
+    when you're back in your old country, you realize you have little in common with it and you wish to leave. No matter where you are, you feel 
+    like a foreigner. Every time you move, you lose everyone you know and held precious. After a while, you question why you should even make 
+    friendships if all they will lead to is a painful farewell."
+    pause
+    subtitle2 "It can also be an exhilarating experience. You've been on adventures most people can only dream of. You've used different 
+    currencies, you've rode the world's fastest trains, seen the world's biggest waterfalls, ate the food of the world, and most of all, you've 
+    survived through all of it. You've gritted your teeth and learned to speak with people who do not understand a word of your language. 
+    After spending a lifetime learning to become an adult, you've become a toddler again who can't speak more than a dozen words. And 
+    you've become an adult again by learning to speak a new language. Again and again."
+    pause
+    subtitle2 "It is what makes us unique. It is not a curse. It brings both joy and misery."
+    pause
+    subtitle2 "No matter what, the today you live in now is better than what has gone by, and what will come in the future is even better - because  
+    it hasn't been written yet. It's the only part of life where you may have a choice. Nostalgia is a sweet poison. Sometimes, we rely on it to take 
+    us away from the pain of separation. But hope, and determination to make a better future for yourself, is what drives you forward."
+    pause
+    subtitle2 "There is no need to worry. If today is bad, then the probability is good that tomorrow will be better. All will work out in the end, 
+    no matter how bleak life looks at any moment."
+    pause
+    
+    window show
+    $ renpy.full_restart(target="bonus_menu")    
+    
+label opvideo:
+    $ renpy.movie_cutscene("CG/OP.mpg", stop_music=True)
+    $ renpy.full_restart(target="bonus_menu")
+
+
+</pre>

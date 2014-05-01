@@ -1,0 +1,1926 @@
+<poem>
+<nowiki>
+
+# You can place the script of your game in this file.
+
+screen main_menu:
+    tag menu
+    imagemap:
+        ground "main_menu"
+        idle "UI Graphics/menu_text_default.png"
+        insensitive "UI Graphics/menu_text_default.png"
+        hover "UI Graphics/menu_text_highlighted.png"
+
+        hotspot (500, 10, 750, 310) action None
+        hotspot (1035, 288, 1163-1035, 326-288) action Start()
+        hotspot (905, 340, 1163-905, 376-340) action FileLoad("1", page="quick", confirm=False)
+        hotspot (900, 395, 1163-900, 435-395) action ShowMenu('load')
+        hotspot (1000, 448, 1163-1000, 483-448) action ShowMenu('preferences')
+        hotspot (1030, 505, 1163-1030, 540-505) action ShowMenu("bonus_menu")
+        hotspot (1060, 555, 1163-1060, 590-555) action Quit()
+        
+    add "UI Graphics/logo.png" pos (551, 65)
+
+screen bonus_menu:
+    tag menu
+    imagemap:
+        ground "UI Graphics/bonus_ground.png"
+        idle "UI Graphics/bonus_idle.png"
+        insensitive "UI Graphics/bonus_gound.png"
+        hover "UI Graphics/bonus_hover.png"
+        
+        if persistent.ending_1 or persistent.ending_2 or persistent.ending_3:
+            hotspot (10, 244, 1000, 50) action ShowMenu('gallery_general1')
+        if persistent.ending_1 or persistent.ending_2 or persistent.ending_3:
+            hotspot (10, 318, 1000, 50) action ShowMenu('music_room')
+        if persistent.ending_1 and persistent.ending_2 and persistent.ending_3:
+            hotspot (10, 392, 1000, 50) action ShowMenu('deleted_scenes')
+        if persistent.ending_1 or persistent.ending_2 or persistent.ending_3:
+            hotspot (10, 472, 1000, 50) action Start('directornotes')
+        hotspot (930, 680, 1221-930, 742-680) action ShowMenu('main_menu')
+
+label bonus_menu:
+    call screen bonus_menu
+        
+screen deleted_scenes:
+    tag menu
+    imagemap:
+        ground "UI Graphics/deletedscenes_ground.jpg"
+        idle "UI Graphics/deletedscenes_ground.jpg"
+        insensitive "UI Graphics/deletedscenes_ground.jpg"
+        hover "UI Graphics/deletedscenes_hover.jpg"
+        
+        hotspot (10, 244, 1000, 50) action Start('deletedscene1')
+        hotspot (10, 318, 1000, 50) action Start('deletedscene2')
+        hotspot (10, 392, 1000, 50) action Start('deletedscene3')
+        hotspot (10, 472, 1000, 50) action Start('deletedscene4')
+        hotspot (930, 680, 1221-930, 742-680) action ShowMenu('bonus_menu')
+
+label deleted_scenes:
+    call screen deleted_scenes
+            
+init -2 python:
+    layout.imagemap_navigation(
+        "UI Graphics/navigation_ground.png",
+        "UI Graphics/navigation_neutral.png",
+        "UI Graphics/navigation_hover.png",
+        "UI Graphics/navigation_selected.png",
+        "UI Graphics/navigation_selectedhovor.png",
+        [
+            (1079, 488, 1210, 523, "Return"),
+            (1116, 534, 1210, 568, "Save Game"),
+            (1113, 582, 1210, 613, "Load Game"),
+            (985, 673, 1210, 707, "Preferences"),
+            (988, 628, 1210, 662, "Main Menu"),
+            (1122, 721, 1210, 758, "Quit"),
+            ])
+    
+    layout.imagemap_preferences(
+        "UI Graphics/preferences_ground.png",
+        "UI Graphics/preferences_idle.png",
+        "UI Graphics/preferences_hover.png",
+        "UI Graphics/preferences_selectedidle.png",
+        "UI Graphics/preferences_selectedhover.png",
+        [
+            (186, 245, 293, 271, "Window"),
+            (186, 280, 296, 304, "Fullscreen"),
+            (186, 380, 270, 406, "All"),
+            (186, 414, 274, 440, "None"),
+            (186, 518, 288, 546, "Seen Messages"),
+            (186, 552, 215, 577, "All Messages"),
+            (186, 650, 235, 677, "Stop Skipping"),
+            (186, 683, 330, 712, "Keep Skipping"),
+
+            (580, 396, 861, 409, "Music Volume"),
+            (580, 535, 861, 548, "Sound Volume"),
+            (580, 263, 861, 276, "Auto-Forward Time"),
+            (580, 669, 861, 682, "Text Speed"),
+
+            # Also define the game menu buttons.
+            (1079, 488, 1210, 523, "Return"),
+            (1116, 534, 1210, 568, "Save Game"),
+            (1113, 582, 1210, 613, "Load Game"),
+            (985, 673, 1210, 707, "Preferences"),
+            (988, 628, 1210, 662, "Main Menu"),
+            (1122, 721, 1210, 758, "Quit"),
+            ])
+    
+    layout.imagemap_load_save(
+        "UI Graphics/load_ground.png",
+        "UI Graphics/load_idle.png",
+        "UI Graphics/load_hover.png",
+        "UI Graphics/load_selectidle.png",
+        "UI Graphics/load_selecthover.png",
+        [
+            (336, 168, 537, 204, "previous"),
+            (336 , 708, 537, 744, "next"),
+
+            (138, 213, 423, 368, "slot_0"),
+            (449, 213, 734, 368, "slot_1"),
+            (138, 379, 423, 534, "slot_2"),
+            (449, 379, 734, 534, "slot_3"),
+            (138, 544, 423, 699, "slot_4"),
+            (449, 544, 734, 699, "slot_5"),
+
+    
+            (1079, 488, 1210, 523, "Return"),
+            (1116, 534, 1210, 568, "Save Game"),
+            (1113, 582, 1210, 613, "Load Game"),
+            (985, 673, 1210, 707, "Preferences"),
+            (988, 628, 1210, 662, "Main Menu"),
+            (1122, 721, 1210, 758, "Quit"),
+            ],variant="load")
+
+    layout.imagemap_load_save(
+        "UI Graphics/save_ground.png",
+        "UI Graphics/save_idle.png",
+        "UI Graphics/save_hover.png",
+        "UI Graphics/save_selectidle.png",
+        "UI Graphics/save_selecthover.png",
+        [
+            (336, 168, 537, 204, "previous"),
+            (336 , 708, 537, 744, "next"),
+
+            (138, 213, 423, 368, "slot_0"),
+            (449, 213, 734, 368, "slot_1"),
+            (138, 379, 423, 534, "slot_2"),
+            (449, 379, 734, 534, "slot_3"),
+            (138, 544, 423, 699, "slot_4"),
+            (449, 544, 734, 699, "slot_5"),
+            
+    
+            (1079, 488, 1210, 523, "Return"),
+            (1116, 534, 1210, 568, "Save Game"),
+            (1113, 582, 1210, 613, "Load Game"),
+            (985, 673, 1210, 707, "Preferences"),
+            (988, 628, 1210, 662, "Main Menu"),
+            (1122, 721, 1210, 758, "Quit"),
+            ],variant="save")
+
+    layout.imagemap_yesno_prompt(
+        "UI Graphics/yesno_ground.png",
+        "UI Graphics/yesno_idle.png",
+        "UI Graphics/yesno_hover.png",
+        [
+            (308, 380, 369, 412, "Yes"),
+            (308, 432, 361, 462, "No"),
+        ],
+        {
+            layout.ARE_YOU_SURE : "UI Graphics/yesno_are_you_sure.png",
+            layout.DELETE_SAVE : "UI Graphics/yesno_delete_save.png",
+            layout.OVERWRITE_SAVE : "UI Graphics/yesno_overwrite_save.png",
+            layout.LOADING : "UI Graphics/yesno_loading.png",
+            layout.QUIT : "UI Graphics/yesno_quit.png",
+            layout.MAIN_MENU : "UI Graphics/yesno_main_menu.png",
+        }
+)
+
+    style.file_picker_ss_window.xalign = 0.5
+    style.file_picker_ss_window.yalign = 0.3
+    style.file_picker_text_window.xalign = 0.5
+    style.file_picker_text_window.yalign = 1.05
+    config.thumbnail_width = 160
+    config.thumbnail_height = 100
+
+init python:
+
+    g = Gallery()
+    g.transition = Dissolve(.25)
+        
+    # EDIT POINT 1 - Define the buttons here.
+    
+    g.button("General1")
+    g.unlock_image("cg intro")
+
+    g.button("General2")
+    g.unlock_image("cg nonamikendorun")
+    g.unlock_image("cg sportsfestivalrun")
+
+    g.button("General3")
+    g.unlock_image("cg oneleggedrace")
+    g.unlock_image("cg oneleggedrace2")
+    g.unlock_image("cg oneleggedrace3")
+
+    g.button("General4")
+    g.unlock_image("cg sorabeach")
+    g.unlock_image("cg sorabeach2")
+
+    g.button("General5")
+    g.unlock_image("cg orz")
+    
+    g.button("General6")
+    g.unlock_image("cg beachcrash")
+    g.unlock_image("cg beachcrash2")
+    g.unlock_image("cg beachcrash3")
+    g.unlock_image("cg beachcrash4")
+    g.unlock_image("cg beachcrash5")
+    g.unlock_image("cg beachcrash6")
+
+    g.button("General7")
+    g.unlock_image("cg soratickle1")
+    g.unlock_image("cg soratickle2")
+
+    g.button("General8")
+    g.unlock_image("cg sorafireworks")
+    
+    g.button("General9")
+    g.unlock_image("cg harukafireworks")
+
+    g.button("General10")
+    g.unlock_image("cg nonamidance")
+    g.unlock_image("cg nonamidance2")
+    g.unlock_image("cg nonamidance3")    
+    
+    g.button("General11")
+    g.unlock_image("cg holdhands")
+    
+    g.button("Haruka1")
+    g.unlock_image("cg harukakiss")
+    g.unlock_image("cg harukakiss2")
+    
+    g.button("Haruka2")
+    g.unlock_image("cg harukah1")
+    g.unlock_image("cg harukah2")
+    g.unlock_image("cg harukah3")    
+    g.unlock_image("cg harukah4")    
+    
+    g.button("Haruka3")
+    g.unlock_image("cg nonamiferriswheel")
+    g.unlock_image("cg nonamiferriswheel2")
+    g.unlock_image("cg nonamiferriswheel3")    
+    g.unlock_image("cg nonamiferriswheel4")
+    
+    g.button("Haruka4")
+    g.unlock_image("cg harukahnonami1")
+    g.unlock_image("cg harukahnonami2")
+    g.unlock_image("cg harukahnonami3")    
+    g.unlock_image("cg harukahnonami4")    
+    g.unlock_image("cg harukahnonami5")    
+    g.unlock_image("cg harukahnonami6")    
+    g.unlock_image("cg harukahnonami7")    
+    g.unlock_image("cg harukahnonami8")    
+    g.unlock_image("cg harukahnonami9")
+    
+    g.button("Haruka5")
+    g.unlock_image("cg harukahospital")
+    g.unlock_image("cg harukahospital2")
+    g.unlock_image("cg harukahospital3")    
+
+    g.button("Haruka6")
+    g.unlock_image("cg harukahtwo")
+    g.unlock_image("cg harukahtwo2")
+
+    g.button("Haruka7")
+    g.unlock_image("cg harukahtwo3")
+    g.unlock_image("cg harukahtwo4")
+    g.unlock_image("cg harukahtwo5")
+
+    g.button("Sora1")
+    g.unlock_image("cg sorarikubed")
+    g.unlock_image("cg sorarikubed2")
+    g.unlock_image("cg sorarikubed3")
+    g.unlock_image("cg sorarikubed4")
+    g.unlock_image("cg sorarikubed5")
+    g.unlock_image("cg sorarikubed6")
+    g.unlock_image("cg sorarikubed7")
+    g.unlock_image("cg sorarikubed8")
+
+    g.button("Sora2")
+    g.unlock_image("cg nonamiferriswheel5")    
+    g.unlock_image("cg nonamiferriswheel6")    
+    
+    g.button("Sora3")
+    g.unlock_image("cg sorariver")
+    g.unlock_image("cg sorariver2")
+    g.unlock_image("cg sorariver3")    
+    g.unlock_image("cg sorariver4")    
+    
+    g.button("Sora4")
+    g.unlock_image("cg sorarikuhug")
+    
+    g.button("Sora5")
+    g.unlock_image("cg sorashower")
+    
+    g.button("Sora6")
+    g.unlock_image("cg mountainstream")
+    g.unlock_image("cg mountainstream2")
+
+    g.button("Sora7")
+    g.unlock_image("cg sorarikuh1")
+
+    g.button("Sora8")
+    g.unlock_image("cg sorarikuh2")
+    g.unlock_image("cg sorarikuh3")
+    g.unlock_image("cg sorarikuh4")
+    g.unlock_image("cg sorarikuh5")
+    g.unlock_image("cg sorarikuh6")
+    g.unlock_image("cg sorarikuh7")
+    g.unlock_image("cg sorarikuh8")
+    g.unlock_image("cg sorarikuh9")
+    g.unlock_image("cg sorarikuh10")
+    
+    g.button("Sora9")
+    g.unlock_image("cg sorawedding1")
+                          
+    g.button("Nonami1")
+    g.unlock_image("cg nonamibench")
+    g.unlock_image("cg nonamibench2")
+    g.unlock_image("cg nonamibench3")
+    g.unlock_image("cg nonamibench4")
+    g.unlock_image("cg nonamibench5")
+    
+    g.button("Nonami2")
+    g.unlock_image("cg harukaferriswheel")
+    g.unlock_image("cg harukaferriswheel2")
+    g.unlock_image("cg harukaferriswheel3")    
+    g.unlock_image("cg harukaferriswheel4")    
+    g.unlock_image("cg harukaferriswheel5")    
+    g.unlock_image("cg harukaferriswheel6")    
+    
+    g.button("Nonami3")
+    g.unlock_image("cg nonamirikukiss")
+    
+    g.button("Nonami4")
+    g.unlock_image("cg sorabed")
+    g.unlock_image("cg sorabed2")
+    
+    g.button("Nonami5")
+    g.unlock_image("cg threesome1")
+    g.unlock_image("cg threesome2")
+
+    g.button("Nonami6")
+    g.unlock_image("cg harukalap1")
+    g.unlock_image("cg harukalap2")
+    g.unlock_image("cg harukalap3")
+    g.unlock_image("cg harukalap4")
+
+    g.button("Nonami7")
+    g.unlock_image("cg nonamirikukissdream")
+    
+    g.button("Nonami8")
+    g.unlock_image("cg nonamih1")
+    g.unlock_image("cg nonamih2")
+    g.unlock_image("cg nonamih3")
+
+    g.button("Nonami9")
+    g.unlock_image("cg nonamih4")
+    g.unlock_image("cg nonamih5")
+    g.unlock_image("cg nonamih6")
+    g.unlock_image("cg nonamih7")
+    g.unlock_image("cg nonamih8")
+    g.unlock_image("cg nonamih9")
+    g.unlock_image("cg nonamih10")
+    g.unlock_image("cg nonamih11")
+    
+    g.button("Nonami10")
+    g.unlock_image("cg nonamih14")
+
+    g.button("Nonami11")
+    g.unlock_image("cg nonamih12")
+    g.unlock_image("cg nonamih13")
+    g.unlock_image("cg nonamih15")
+    g.unlock_image("cg nonamih16")
+    
+    g.button("Cut")
+    g.unlock_image("cg soraunderweara")
+    g.unlock_image("cg soraunderwearb")
+
+# Creates a gallery button.
+screen cg_button:
+    
+    $ action = g.Action(name)
+    
+    button:
+        style "default"
+        action action
+        xmaximum (287 + 20)
+        ymaximum (155 + 10)
+        xminimum (287 + 20)
+        yminimum (155 + 10)
+        xmargin 10
+        ymargin 5
+        idle_background "UI Graphics/cggallery_buttonidle.png"
+        hover_background "UI Graphics/cggallery_buttonhover.png"
+        
+        if action:
+            add thumb xalign 0.5 yalign 0.5
+        
+        
+    
+screen gallery_common:
+    imagemap:
+        ground "UI Graphics/cggallery_ground.jpg"
+        idle "UI Graphics/cggallery_idle.jpg"
+        hover "UI Graphics/cggallery_hover.jpg"
+        selected_idle "UI Graphics/cggallery_selectidle.jpg"
+        selected_hover "UI Graphics/cggallery_selecthover.jpg"
+
+        # EDIT POINT 2 - Navigation.
+        
+        # Return
+        hotspot (932, 681, 290, 63) action ShowMenu("bonus_menu")
+        
+        # Waifu picker.
+        hotspot (794, 218, 234, 59) action ShowMenu("gallery_general1")
+        hotspot (794, 284, 234, 59) action ShowMenu("gallery_nonami1")
+        hotspot (794, 353, 234, 59) action ShowMenu("gallery_haruka1")
+        hotspot (794, 421, 234, 59) action ShowMenu("gallery_sora1")
+        hotspot (794, 487, 234, 59) action ShowMenu("gallery_cut")
+        hotspot (794, 553, 234, 59) action Start("opvideo")
+        
+        # Previous, Next
+        if previous:
+            hotspot (336, 168, 201, 36) action ShowMenu(previous)
+        if next:
+            hotspot (337, 708, 201, 36) action ShowMenu(next)
+
+# EDIT POINT 3 - Gallery Screens.
+        
+screen gallery_general1:
+    
+    tag menu
+    
+    use gallery_common(previous=None, next="gallery_general2")
+    
+    # The grid contains up to 6 buttons. Unused buttons slots should be filled with null.
+        use cg_button(name="General", thumb="CG/thumbs/")
+    grid 2 3:
+        xpos 437
+        xanchor 0.5
+        ypos 210
+        
+        use cg_button(name="General1", thumb="CG/thumbs/intro.jpg")
+        use cg_button(name="General2", thumb="CG/thumbs/nonamikendorun.jpg")
+        
+        use cg_button(name="General3", thumb="CG/thumbs/oneleggedrace.jpg")
+        use cg_button(name="General4", thumb="CG/thumbs/sorabeach.jpg")
+        
+        use cg_button(name="General5", thumb="CG/thumbs/orz.jpg")
+        use cg_button(name="General6", thumb="CG/thumbs/beachcrash.jpg")
+    
+screen gallery_general2:
+    
+    tag menu
+    
+    use gallery_common(previous="gallery_general1", next=None)
+    
+    # The grid contains up to 6 buttons. Unused buttons slots should be filled with null.
+        use cg_button(name="General", thumb="CG/thumbs/")
+    grid 2 3:
+        xpos 437
+        xanchor 0.5
+        ypos 210
+        
+        use cg_button(name="General7", thumb="CG/thumbs/soratickle1.jpg")
+        use cg_button(name="General8", thumb="CG/thumbs/sorafireworks.jpg")
+        
+        use cg_button(name="General9", thumb="CG/thumbs/harukafireworks.jpg")
+        use cg_button(name="General10", thumb="CG/thumbs/nonamidance.jpg")
+        
+        use cg_button(name="General11", thumb="CG/thumbs/holdhands.jpg")
+        null
+
+
+screen gallery_nonami1:
+    
+    tag menu
+    
+    use gallery_common(previous=None, next="gallery_nonami2")
+    
+    # The grid contains up to 6 buttons. Unused buttons slots should be filled with null.
+    grid 2 3:
+        xpos 437
+        xanchor 0.5
+        ypos 210
+        
+        use cg_button(name="Nonami1", thumb="CG/thumbs/nonamibench.jpg")
+        use cg_button(name="Nonami2", thumb="CG/thumbs/harukaferriswheel.jpg")
+        
+        use cg_button(name="Nonami3", thumb="CG/thumbs/nonamirikukiss.jpg")
+        use cg_button(name="Nonami4", thumb="CG/thumbs/sorabed.jpg")
+        
+        use cg_button(name="Nonami5", thumb="CG/thumbs/threesome1.jpg")
+        use cg_button(name="Nonami6", thumb="CG/thumbs/harukalap1.jpg")
+    
+screen gallery_nonami2:
+    
+    tag menu
+    
+    use gallery_common(previous="gallery_nonami1", next=None)
+    
+    # The grid contains up to 6 buttons. Unused buttons slots should be filled with null.
+    grid 2 3:
+        xpos 437
+        xanchor 0.5
+        ypos 210
+        
+        use cg_button(name="Nonami7", thumb="CG/thumbs/nonamirikukissdream.jpg")
+        use cg_button(name="Nonami8", thumb="CG/thumbs/nonamih1.jpg")
+        
+        use cg_button(name="Nonami9", thumb="CG/thumbs/nonamih4.jpg")
+        use cg_button(name="Nonami10", thumb="CG/thumbs/nonamih14.jpg")
+        
+        use cg_button(name="Nonami11", thumb="CG/thumbs/nonamih12.jpg")
+        null
+    
+screen gallery_haruka1:
+    
+    tag menu
+    
+    use gallery_common(previous=None, next="gallery_haruka2")
+    
+    # The grid contains up to 6 buttons. Unused buttons slots should be filled with null.
+    grid 2 3:
+        xpos 437
+        xanchor 0.5
+        ypos 210
+        
+        use cg_button(name="Haruka1", thumb="CG/thumbs/harukakiss.jpg")
+        use cg_button(name="Haruka2", thumb="CG/thumbs/harukah1.jpg")
+        
+        use cg_button(name="Haruka3", thumb="CG/thumbs/nonamiferriswheel.jpg")
+        use cg_button(name="Haruka4", thumb="CG/thumbs/harukahnonami1.jpg")
+        
+        use cg_button(name="Haruka5", thumb="CG/thumbs/harukahospital.jpg")
+        use cg_button(name="Haruka6", thumb="CG/thumbs/harukahtwo.jpg")
+    
+screen gallery_haruka2:
+    
+    tag menu
+    
+    use gallery_common(previous="gallery_haruka1", next=None)
+    
+    # The grid contains up to 6 buttons. Unused buttons slots should be filled with null.
+    grid 2 3:
+        xpos 437
+        xanchor 0.5
+        ypos 210
+        
+        use cg_button(name="Haruka7", thumb="CG/thumbs/harukahtwo3.jpg")
+        null
+        
+        null
+        null
+        
+        null
+        null
+        
+screen gallery_sora1:
+    
+    tag menu
+    
+    use gallery_common(previous=None, next="gallery_sora2")
+    
+    # The grid contains up to 6 buttons. Unused buttons slots should be filled with null.
+    grid 2 3:
+        xpos 437
+        xanchor 0.5
+        ypos 210
+        
+        use cg_button(name="Sora1", thumb="CG/thumbs/sorarikubed.jpg")
+        use cg_button(name="Sora2", thumb="CG/thumbs/nonamiferriswheel.jpg")
+        
+        use cg_button(name="Sora3", thumb="CG/thumbs/sorariver.jpg")
+        use cg_button(name="Sora4", thumb="CG/thumbs/sorarikuhug.jpg")
+        
+        use cg_button(name="Sora5", thumb="CG/thumbs/sorashower.jpg")
+        use cg_button(name="Sora6", thumb="CG/thumbs/mountainstream.jpg")
+    
+screen gallery_sora2:
+    
+    tag menu
+    
+    use gallery_common(previous="gallery_sora1", next=None)
+    
+    # The grid contains up to 6 buttons. Unused buttons slots should be filled with null.
+    grid 2 3:
+        xpos 437
+        xanchor 0.5
+        ypos 210
+        
+        use cg_button(name="Sora7", thumb="CG/thumbs/sorarikuh1.jpg")
+        use cg_button(name="Sora8", thumb="CG/thumbs/sorarikuh2.jpg")
+        
+        use cg_button(name="Sora9", thumb="CG/thumbs/sorawedding.jpg")
+        null
+        
+        null
+        null
+        
+screen gallery_cut:
+    
+    tag menu
+    
+    use gallery_common(previous=None, next=None)
+    
+    # The grid contains up to 6 buttons. Unused buttons slots should be filled with null.
+    grid 2 3:
+        xpos 437
+        xanchor 0.5
+        ypos 210
+        
+        use cg_button(name="Cut", thumb="CG/thumbs/soraunderwear.jpg")
+        null
+        
+        null
+        null
+        
+        null
+        null
+        
+init python:
+
+    MUSIC_TRACKS_PER_PAGE = 9
+    
+    MUSIC_TRACKS = [
+        ( "Music/My_Love.ogg", "My Love (Nonami's theme)"),
+        ( "Music/Lullaby_to_the_World.ogg", "Lullaby to the World (Haruka's theme)"),
+        ( "Music/Only_You.ogg", "Only You (Sora's theme)"),
+        ( "Music/First_Love.ogg", "First Love (Opening theme)"),
+        ( "Music/Take_My_Heart.ogg", "Take My Heart (Ending theme)"),
+        ( "Music/My_Love_Finale.ogg", "My Love (Finale)"),
+        ( "Music/A_Winter_Memory.ogg", "A Winter Memory"),
+        ( "Music/Against_the_Storm.ogg", "Against the Storm"),
+        ( "Music/Ano_Hi_no_Sora.ogg", "That Day's Sky"),
+        ( "Music/Be_With_You.ogg", "Be With You"),
+        ( "Music/Beach_Party.ogg", "Beach Party"),
+        ( "Music/Commemoration.ogg", "Commemoration"),
+        ( "Music/Disabled_Emotions_Part1.ogg", "Disabled Emotions Part 1"),
+        ( "Music/Disabled_Emotions_Part5.ogg", "Disabled Emotions Part 5"),
+        ( "Music/Disabled_Emotions_Part6.ogg", "Disabled Emotions Part 6"),
+        ( "Music/Dream_of_a_Butterfly.ogg", "Dream of a Butterfly"),
+        ( "Music/Evening.ogg", "Evening"),
+        ( "Music/Forgotten.ogg", "Forgotten"),
+        ( "Music/Fragments_of_Stars.ogg", "Fragments of Stars"),
+        ( "Music/Gold_Rush.ogg", "Gold Rush"),
+        ( "Music/Heaven.ogg", "Heaven"),
+        ( "Music/Investigations.ogg", "Investigations"),
+        ( "Music/Julians_Auftritt.ogg", "Julians Auftritt"),
+        ( "Music/Last_Summer.ogg", "Last Summer"),
+        ( "Music/Leave_Here.ogg", "Leave Here"),
+        ( "Music/Longing.ogg", "Longing"),
+        ( "Music/Lunatic_Mind.ogg", "Lunatic Mind"),
+        ( "Music/Melancholy.ogg", "Melancholy"),
+        ( "Music/Merry_Go_Around.ogg", "Merry Go Around"),
+        ( "Music/Nightfall.ogg", "Nightfall"),
+        ( "Music/On_the_Beach.ogg", "On the Beach"),
+        ( "Music/One_Summer_Night.ogg", "One Summer Night"),
+        ( "Music/Radio_Martini.ogg", "Radio Martini"),
+        ( "Music/Recommencement.ogg", "Recommencement"),
+        ( "Music/Right_Behind_You.ogg", "Right Behind You"),
+        ( "Music/Sad_Farewell.ogg", "Sad Farewell"),
+        ( "Music/Scheming_Weasel.ogg", "Scheming Weasel"),
+        ( "Music/Sincere.ogg", "Sincere"),
+        ( "Music/Stroll.ogg", "Stroll"),
+        ( "Music/Thanks.ogg", "Thanks"),
+        ( "Music/The_House_of_Leaves.ogg", "The House of Leaves"),
+        ( "Music/The_Storm.ogg", "The Storm"),
+        ( "Music/Tilias_Flower.ogg", "Tilias_Flower"),
+        ( "Music/Truth.ogg", "Truth")
+        ]
+        
+    mr = MusicRoom(fadeout=0.5)
+    
+    for __fn, __title in MUSIC_TRACKS:
+        mr.add(__fn, always_unlocked=True)
+
+    def MusicSetTopTrack(value):
+        """
+        If value is in-range for the top track, return an action that sets the 
+        top track to the value. Otherwise, return None, to make the button 
+        insensitive.
+        """
+        
+        if value < 0:
+            return None
+        
+        if value > len(MUSIC_TRACKS) - MUSIC_TRACKS_PER_PAGE:
+            return None
+        
+        return SetScreenVariable("top_track", value)
+    
+screen music_room:
+    
+    tag menu
+
+    default top_track = 0
+
+    $ up_action = MusicSetTopTrack(top_track - 1)
+    $ down_action = MusicSetTopTrack(top_track + 1)
+    
+    if up_action:
+        key "mousedown_4" action up_action
+    if down_action:
+        key "mousedown_5" action down_action
+    
+    imagemap:
+        ground "UI Graphics/musicbox_ground.png"
+        idle "UI Graphics/musicbox_idle.png"
+        hover "UI Graphics/musicbox_hover.png"
+        
+        hotspot (932, 681, 290, 63) action ShowMenu("bonus_menu")
+        hotspot (335, 168, 201, 36) action up_action
+        hotspot (335, 708, 201, 36) action down_action
+        
+    vbox:
+        xpos 437
+        xanchor 0.5
+        ypos 215
+        style_group "mr"
+        
+        for i in range(MUSIC_TRACKS_PER_PAGE):
+            
+            $ filename, title = MUSIC_TRACKS[top_track + i]
+            
+            if mr.is_unlocked(filename):
+                textbutton "[title!q]" action mr.Play(filename)
+            else:
+                textbutton "Locked." action None
+        
+init python:
+    style.mr_button = Style(style.default)
+    style.mr_button_text = Style(style.default)
+
+    style.mr_button.xminimum = 774
+    style.mr_button.xmaximum = 774
+    style.mr_button.ymaximum = 39 + 14
+    style.mr_button.yminimum = 39 + 14
+    style.mr_button.ymargin = 7
+    style.mr_button.background = "UI Graphics/musicbutton_idle.png"
+    style.mr_button.hover_background = "UI Graphics/musicbutton_hover.png"
+    style.mr_button.selected_idle_background = "UI Graphics/musicbutton_selectidle.png"
+    style.mr_button.selected_hover_background = "UI Graphics/musicbutton_selecthover.png"
+    style.mr_button_text.xpos = 123
+    style.mr_button_text.yalign = 0.5
+    style.mr_button_text.insensitive_color = "#fff8"    
+    style.mr_button_text.selected_color = "#ff0"
+    
+init:
+
+    $ dissolvelong = Dissolve(2)
+    $ fadelong = Fade(1,1,1)
+    $ screenwipe = ImageDissolve("Backgrounds/screenwipe.jpg", 1, reverse=True)
+
+    image bg sky1 = "Backgrounds/sky1.jpg"
+    image bg emptyhouse = "Backgrounds/houseempty.jpg"
+    image bg rikuroomday = "Backgrounds/rikuroomday.jpg"
+    image bg rikuroomday2 = "Backgrounds/rikuroomday2.jpg"
+    image bg street1 = "Backgrounds/street1.jpg"
+    image bg mall = "Backgrounds/mall.jpg"
+    image bg park = "Backgrounds/park.jpg"
+    image bg stream = "Backgrounds/stream.jpg"
+    image bg playground = "Backgrounds/playground.jpg"
+    image bg nonamihouse = "Backgrounds/nonamihouse.jpg"
+    image bg rikuroomnight = "Backgrounds/rikuroomnight.jpg"
+    image bg rikuroomnight2 = "Backgrounds/rikuroomnight2.jpg"
+    image bg rikuroomnight3 = "Backgrounds/rikuroomnight3.jpg"
+    image bg black = "Backgrounds/black.jpg"
+    image bg rikuroomceiling = "Backgrounds/rikuroomceiling.jpg"
+    image bg outsideschool = "Backgrounds/outsideschool.jpg"
+    image bg street2 = "Backgrounds/street2.jpg"    
+    image bg woodenbridge = "Backgrounds/woodenbridge.jpg"
+    image bg classroom = "Backgrounds/classroom.jpg"
+    image bg dojo = "Backgrounds/dojo.jpg"
+    image bg trackfield = "Backgrounds/trackfield.jpg"
+    image bg trackfieldevening = "Backgrounds/trackfieldevening.jpg"
+    image bg white = "Backgrounds/white.jpg"
+    image bg homeeconroom = "Backgrounds/homeeconroom.jpg"
+    image bg schoolfieldevening = "Backgrounds/schoolfieldevening.jpg"
+    image bg street3 = "Backgrounds/street3.jpg"
+    image bg outsideschoolrain = "Backgrounds/outsideschoolrain.jpg"
+    image bg livingroom = "Backgrounds/livingroom.jpg"
+    image bg soraroom = "Backgrounds/soraroom.jpg"
+    image bg doorway = "Backgrounds/doorway.jpg"
+    image bg stairs = "Backgrounds/stairs.jpg"
+    image bg closeddoor = "Backgrounds/closeddoor.jpg"
+    image bg surprisedonkey = "Backgrounds/surprisedonkey.jpg"
+    image bg groceryshop = "Backgrounds/groceryshop.jpg"
+    image bg street4 = "Backgrounds/street4.jpg"
+    image bg seattlestreet1 = "Backgrounds/seattlestreet1.jpg"
+    image bg airport = "Backgrounds/airport.jpg"
+    image bg airportwashroom = "Backgrounds/airportwashroom.jpg"
+    image bg seattlestreet2 = "Backgrounds/seattlestreet2.jpg"
+    image bg spaceneedlebase = "Backgrounds/spaceneedlebase.jpg"
+    image bg spaceneedleelevator = "Backgrounds/spaceneedleelevator.jpg"
+    image bg spaceneedleinterior = "Backgrounds/spaceneedleinterior.jpg"
+    image bg spaceneedleobservationdeck = "Backgrounds/spaceneedleobservationdeck.jpg"
+    image bg ridetheduck = "Backgrounds/ridetheduck.jpg"
+    image bg seattlemariners = "Backgrounds/seattlemariners.jpg"
+    image bg americangrill = "Backgrounds/americangrill.jpg"
+    image bg sportsfield = "Backgrounds/sportsfield.jpg"
+    image bg trackfieldfar = "Backgrounds/trackfieldfar.jpg"
+    image bg schoolback = "Backgrounds/schoolback.jpg"
+    image bg beach1 = "Backgrounds/beach1.jpg"
+    image bg beach2 = "Backgrounds/beach2.jpg"
+    image bg beach3 = "Backgrounds/beach3.jpg"
+    image bg hallway = "Backgrounds/hallway.jpg"
+    image bg hallway2 = "Backgrounds/hallway2.jpg"
+    image bg culturefestfield = "Backgrounds/culturefest.jpg"
+    image bg culturefestgym = "Backgrounds/gymculturefestival.jpg"
+    image bg culturefestgrounds = "Backgrounds/groundsculturefest.jpg"
+    image bg hallway3 = "Backgrounds/hallway3.jpg"
+    image bg stars2 = "Backgrounds/stairs2.jpg"
+    image bg gym = "Backgrounds/gym.jpg"
+    image bg schoolforest = "Backgrounds/schoolforest.jpg"
+    image bg gymevening = "Backgrounds/gymevening.jpg"
+    image bg rockconcert = "Backgrounds/rockconcert.jpg"
+    image bg hauntedhouse = "Backgrounds/hauntedhouse.jpg"
+    image bg roof = "Backgrounds/roof.jpg"
+    image bg outsidehome = "Backgrounds/outsidehome.jpg"
+    image bg outsidehomealt = "Backgrounds/outsidehomealt.jpg"
+    image bg classroom2 = "Backgrounds/classroom2.jpg"
+    image bg stairs3 = "Backgrounds/stairs3.jpg"
+    image bg classroom3 = "Backgrounds/classroom3.jpg"
+    image bg schoolfieldevening2 = "Backgrounds/schoolfieldevening2.jpg"
+    image bg street3gray = "Backgrounds/street3gray.jpg"
+    image bg outsidehomealt2 = "Backgrounds/outsidehomealt2.jpg"
+    image bg kitchen = "Backgrounds/kitchen.jpg"
+    image bg closeddoor2 = "Backgrounds/closeddoor2.jpg"
+    image bg livingroomfade = "Backgrounds/livingroomfade.jpg"
+    image bg rikuroomday3 = "Backgrounds/rikuroomday3.jpg"
+    image bg mallfade = "Backgrounds/mallfade.jpg"
+    image bg uniqlo = "Backgrounds/uniqlo.jpg"
+    image bg amusementpark = "Backgrounds/amusementpark.jpg"
+    image bg towerdrop = "Backgrounds/towerdrop.jpg"
+    image bg towersky = "Backgrounds/towersky.jpg"
+    image bg amusementpark2 = "Backgrounds/amusementpark2.jpg"
+    image bg ferriswheel = "Backgrounds/ferriswheel.jpg"
+    image bg ferriswheelfront = "Backgrounds/ferriswheelfront.jpg"
+    image bg hallwayfade = "Backgrounds/hallwayfade.jpg"
+    image bg schoolbackfade = "Backgrounds/schoolbackfade.jpg"
+    image bg citynight = "Backgrounds/citynight.jpg"
+    image bg motel = "Backgrounds/motel.jpg"
+    image bg hospital = "Backgrounds/hospital.jpg"
+    image bg citynight2 = "Backgrounds/citynight2.jpg"
+    image bg hospitalroom = "Backgrounds/hospitalroom.jpg"
+    image bg philadelphia = "Backgrounds/philadelphia.jpg"
+    image bg park2 = "Backgrounds/park2.jpg"
+    image bg train = "Backgrounds/train.jpg"
+    image bg streetnight = "Backgrounds/streetnight.jpg"
+    image bg stairsfaded = "Backgrounds/stairsfaded.jpg"
+    image bg soraroom2 = "Backgrounds/soraroom2.jpg"
+    image bg streetevening = "Backgrounds/streetevening.jpg"
+    image bg eveningsky = "Backgrounds/eveningsky.jpg"
+    image bg farm = "Backgrounds/farm.jpg"
+    image bg farm2 = "Backgrounds/farm2.jpg"
+    image bg mountainstream = "Backgrounds/mountainstream.jpg"
+    image bg mountainnight = "Backgrounds/mountainnight.jpg"
+    image bg mountainday = "Backgrounds/moutainday.jpg"
+    image bg mountainrocks = "Backgrounds/mountainrocks.jpg"
+    image bg mountaintop = "Backgrounds/mountaintop.jpg"
+    image bg mountaintopnormal = "Backgrounds/mountaintopnormal.jpg"
+    image bg cliffdrop = "Backgrounds/cliffdrop.jpg"
+    image bg weddinglobby = "Backgrounds/weddinglobby.jpg"
+    image bg rollercoaster = "Backgrounds/rollercoaster.jpg"
+    image bg rollercoasterlift = "Backgrounds/rollercoasterlift.jpg"
+    image bg amusementpark3 = "Backgrounds/amusementpark3.jpg"
+    image bg red = "Backgrounds/red.jpg"
+    image bg rikuroomdream = "Backgrounds/rikuroomdream.jpg"
+    image bg mountaintrail = "Backgrounds/mountaintrail.jpg"
+    image bg mountainclearing = "Backgrounds/mountainclearing.jpg"
+    image bg harukaroom = "Backgrounds/harukaroom.jpg"
+    image bg parkdream = "Backgrounds/parkdream.jpg"
+    image bg nonamihousenight = "Backgrounds/nonamihousenight.jpg"
+    image bg nonamihouseday = "Backgrounds/nonamihouseday.jpg"
+    image bg trainstation = "Backgrounds/trainstation.jpg"
+    image bg traintracks = "Backgrounds/traintracks.jpg"
+    image bg traintracks2 = "Backgrounds/traintrack2.jpg"
+    image bg train2 = "Backgrounds/train2.jpg"
+    image bg hanamipicnic = "Backgrounds/hanamipicnic.jpg"
+    image bg gion = "Backgrounds/gion.jpg"
+    image bg kiyomizuderahill = "Backgrounds/kiyomizuderahill.jpg"
+    image bg kiyomizudera = "Backgrounds/kiyomizudera.jpg"
+    image bg kiyomizuderastage = "Backgrounds/kiyomizuderastage.jpg"
+    image bg loveshine = "Backgrounds/loveshrine.jpg"
+    image bg kiyomizuderafountain = "Backgrounds/kiyomizuderafountain.jpg"
+    image bg sanjo = "Backgrounds/sanjo.jpg"
+    image bg grave = "Backgrounds/grave.jpg"
+    image bg mountainstream2 = "Backgrounds/mountainstream2.jpg"
+    image bg sorabed3 = "Backgrounds/soraroom3.jpg"
+    image bg parknight = "Backgrounds/park_night.jpg"
+    image bg autumnsky = "Backgrounds/autumnsky.jpg"
+    image bg subway = "Backgrounds/subway.jpg"
+    image bg randen = "Backgrounds/randen.jpg"
+    image bg arashiyama = "Backgrounds/arashiyama.jpg"
+    image bg arashiyamabridge = "Backgrounds/arashiyamabridge.jpg"
+    image bg arashiyamapark = "Backgrounds/arashiyamapark.jpg"
+    image bg monkeyparktrail = "Backgrounds/monkeyparktrail.jpg"
+    image bg monkeyparksummit = "Backgrounds/monkeyparksummit.jpg"
+    
+    image menu1 = "UI Graphics/menu_back1.jpg"
+    image menu2 = "UI Graphics/menu_back2.jpg"
+    image menu3 = "UI Graphics/menu_back3.jpg"
+    image menu4 = "UI Graphics/menu_back4.jpg"
+    image menu5 = "UI Graphics/menu_back5.jpg"
+    
+    image nonami kendo cry = "Characters/nonami_kendo_cry.png"
+    image nonami kendo greet = "Characters/nonami_kendo_greet.png"
+    image nonami kendo greet alt = "Characters/nonami_kendo_greet_smile.png"
+    image nonami kendo happy = "Characters/nonami_kendo_happy_neutral.png"
+    image nonami kendo happy alt = "Characters/nonami_kendo_happy_armhold.png"    
+    image nonami kendo neutral = "Characters/nonami_kendo_neutral.png"
+    image nonami kendo neutral alt = "Characters/nonami_kendo_neutral_armhold.png"
+    image nonami kendo shock = "Characters/nonami_kendo_shock.png"
+    image nonami kendo smile = "Characters/nonami_kendo_smile_neutral.png"
+    image nonami kendo smile alt = "Characters/nonami_kendo_smile_armhold.png"
+    image nonami kendo smile2 = "Characters/nonami_kendo_smile2_neutral.png"
+    image nonami kendo smile2 alt = "Characters/nonami_kendo_smile2_armhold.png"
+    image nonami kendo excited happy = "Characters/nonami_kendo_happy_excited.png"
+    image nonami kendo excited smile2 = "Characters/nonami_kendo_smile2_excited.png"
+    image nonami kendo irritated = "Characters/nonami_kendo_irritated.png"
+    image nonami kendo explode = "Characters/nonami_kendo_explode.png"
+    image nonami kendo serious = "Characters/nonami_kendo_serious.png"
+    image nonami kendo charged = "Characters/nonami_kendo_stretch1.png"
+    image nonami kendo frustrated = "Characters/nonami_kendo_frustrated.png"
+    image nonami kendo focused = "Characters/nonami_kendo_focus.png"
+    image nonami kendo neutral explode = "Characters/nonami_kendo_neutral_explode.png"
+    image nonami kendo neutral surprise = "Characters/nonami_kendo_neutral_surprise.png"
+    image nonami kendo armhold tears = "Characters/nonami_kendo_armhold_tears.png"
+    image nonami kendo neutral serious = "Characters/nonami_kendo_neutral_serious.png"
+    image nonami kendo excited explode = "Characters/nonami_kendo_excited_explode.png"
+    image nonami kendo stretch:
+        "Characters/nonami_kendo_stretch1.png" with dissolve
+        pause 0.5
+        "Characters/nonami_kendo_stretch2.png" with dissolve
+        pause 0.5
+        repeat 4
+
+    image nonami uniform neutral = "Characters/nonami_uniform_neutral.png"
+    image nonami uniform confident = "Characters/nonami_uniform_confident.png"
+    image nonami uniform armscrossed confident = "Characters/nonami_uniform_confident_armscrossed.png"
+    image nonami uniform excited = "Characters/nonami_uniform_excited.png"
+    image nonami uniform greet happy = "Characters/nonami_uniform_greet.png"
+    image nonami uniform greet smile = "Characters/nonami_uniform_greet2.png"
+    image nonami uniform happy = "Characters/nonami_uniform_happy.png"
+    image nonami uniform armscrossed happy = "Characters/nonami_uniform_happy_armscrossed.png"    
+    image nonami uniform armsraised happy = "Characters/nonami_uniform_happy_armsraised.png"
+    image nonami uniform excited happy = "Characters/nonami_uniform_happy_excited.png"
+    image nonami uniform armsraised smile = "Characters/nonami_uniform_smile_armsraised.png"    
+    image nonami uniform happy = "Characters/nonami_uniform_happy.png"    
+    image nonami uniform smile = "Characters/nonami_uniform_smile.png"
+    image nonami uniform smile2 = "Characters/nonami_uniform_smile2.png"
+    image nonami uniform surprise = "Characters/nonami_uniform_surprise.png"
+    image nonami uniform excited surprise = "Characters/nonami_uniform_surprise_excited.png"
+    image nonami uniform suspicious = "Characters/nonami_uniform_suspicious.png"
+    image nonami uniform excited smile = "Characters/nonami_uniform_excited_smile.png"
+    image nonami uniform armsraised = "Characters/nonami_uniform_armsraised.png"
+    image nonami uniform armscrossed = "Characters/nonami_uniform_armscrossed.png"
+    image nonami uniform armsraised happy = "Characters/nonami_uniform_armsraised_happy.png"
+    image nonami uniform armscrossed irritated = "Characters/nonami_uniform_armscrossed_irritated.png"
+    image nonami uniform armscrossed smile = "Characters/nonami_uniform_armscrossed_smile.png"
+    image nonami uniform armscrossed gloom = "Characters/nonami_uniform_armscrossed_gloom.png"
+    image nonami uniform neutral teary = "Characters/nonami_uniform_neutral_tears.png"
+    image nonami uniform excited teary = "Characters/uniform_nonami_excited_tears.png"
+    image nonami uniform excited frustrated = "Characters/nonami_uniform_excited_frustrated.png"
+    image nonami uniform neutral focustalk = "Characters/nonami_uniform_neutral_focustalk.png"
+    image nonami uniform neutral irritated = "Characters/nonami_uniform_neutral_irritated.png"
+    image nonami uniform neutral baffled = "Characters/nonami_uniform_neutral_baffled.png"
+    image nonami uniform armscrossed focustalk = "Characters/nonami_uniform_armscrossed_focustalk.png"
+    image nonami uniform excited focustalk = "Characters/nonami_uniform_excited_focustalk.png"
+    image nonami uniform neutral happyblush = "Characters/nonami_uniform_neutral_happyblush.png"
+    image nonami uniform neutral embarassed = "Characters/nonami_uniform_neutral_embarassed.png"
+    image nonami uniform neutral smileblush = "Characters/nonami_uniform_neutral_smileblush.png"
+    image nonami uniform armscrossed smileblush = "Characters/nonami_uniform_armscrossed_smileblush.png"
+    image nonami uniform armscrossed embarassed = "Characters/nonami_uniform_armscrossed_embarassed.png"
+    image nonami uniform neutral focused = "Characters/nonami_uniform_neutral_focus.png"
+    image nonami uniform armscrossed tears = "Characters/nonami_uniform_armscrossed_tears.png"
+    image nonami uniform neutral comictears = "Characters/nonami_uniform_neutral_comictears.png"
+    image nonami uniform armscrossed forcedsmile = "Characters/nonami_uniform_armscrossed_forcedsmile.png"
+    image nonami uniform armscrossed mad = "Characters/nonami_uniform_armscrossed_mad.png"
+    image nonami uniform armscrossed madblush = "Characters/nonami_uniform_armscrossed_madblush.png"
+    image nonami uniform armscrossed sigh = "Characters/nonami_uniform_armscrossed_sigh.png"
+    image nonami uniform armscrossed sarcastic = "Characters/nonami_uniform_armscrossed_sarcastic.png"
+    image nonami uniform neutral cartoontears = "Characters/nonami_uniform_neutral_cartoontears.png"
+    image nonami uniform armscrossed cartoontears = "Characters/nonami_uniform_armscrossed_cartoontears.png"
+    image nonami uniform armscrossed sad = "Characters/nonami_uniform_armscrossed_sad.png"
+    image nonami uniform armscrossed sadsmile = "Characters/nonami_uniform_armscrossed_sadsmile.png"
+    image nonami uniform armscrossed sadlookleft = "Characters/nonami_uniform_sadlookleft.png"
+    image nonami uniform armscrossed neutral = "Characters/nonami_uniform_armscrossed_neutral.png"
+    image nonami uniform neutral sadtear = "Characters/nonami_uniform_neutral_sadtear.png"
+    image nonami uniform neutral sadsmileclosedeyes = "Characters/nonami_uniform_neutral_sadsmileclosedeyes.png"
+    image nonami uniform greet neutral = "Characters/nonami_uniform_greet_neutral.png"
+    image nonami uniform armscrossed mockhappy = "Characters/nonami_uniform_armscrossed_mockhappy.png"
+    image nonami uniform armscrossed focussad = "Characters/nonami_uniform_armscrossed_focussad.png"
+    image nonami uniform armscrossed sadtearsblush = "Characters/nonami_uniform_armscrossed_sadtearsblush.png"
+    image nonami uniform armscrossed sadtearsclosedeyesblush = "Characters/nonami_uniform_armscrossed_sadtearclosedeyesblush.png"
+    image nonami uniform armscrossed sadcry = "Characters/nonami_uniform_armscrossed_sadcry.png"
+    image nonami uniform armscrossed sadcrysmile = "Characters/nonami_uniform_armscrossed_sadcrysmileblush.png"
+    image nonami uniform armscrossed sadsmileclosedeyes = "Characters/nonami_uniform_armscrossed_sadsmileclosedeyes.png"
+    image nonami uniform armscrossed sadsmileblush = "Characters/nonami_uniform_armscrossed_sadsmileblush.png"
+    image nonami uniform neutral sadcry = "Characters/nonami_uniform_neutral_sadcry.png"
+    image nonami uniform neutral sadcryclosedeyes = "Characters/nonami_uniform_neutral_sadcryclosedeyes.png"
+    image nonami uniform neutral sadcrysmile = "Characters/nonami_uniform_neutal_sadcrysmile.png"
+    image nonami uniform armscrossed saddead = "Characters/nonami_uniform_armscrossed_saddead.png"
+    image nonami uniform neutral sadsmiledead = "Characters/nonami_uniform_neutral_sadsmiledead.png"
+    image nonami uniform greet sadsmileclosedeyes = "Characters/nonami_uniform_greet_sadsmileclosedeyes.png"
+    image nonami uniform greet sadsmile = "Characters/nonami_uniform_greet_sadsmile.png"
+    image nonami uniform armscrossed sadsmiledead = "Characters/nonami_uniform_armscrossed_sadsmiledead.png"
+    image nonami uniform armscrossed smile2 = "Characters/nonami_uniform_armscrossed_smile2.png"
+    image nonami uniform armscrossed blushsmile = "Characters/nonami_uniform_armscrossed_blushsmile.png"
+    image nonami uniform neutral blushhappy = "Characters/nonami_uniform_neutral_blushhappy.png"
+    image nonami uniform greet blushsmile2 = "Characters/nonami_uniform_greet_blushsmile2.png"
+    image nonami uniform armscrossed madtearsclosedeyes = "Characters/nonami_uniform_armscrossed_madtearsclosedeyes.png"
+    image nonami uniform armscrossed madtears = "Characters/nonami_uniform_armscrossed_madtears.png"
+    image nonami uniform neutral shock = "Characters/nonami_uniform_neutral_shock.png"
+    
+    image nonami casual neutral smile = "Characters/nonami_casual_neutral_smile.png"
+    image nonami casual armsraised smile2 = "Characters/nonami_casual_armsraised_smile2.png"
+    image nonami casual neutral surprise = "Characters/nonami_casual_neutral_surprise.png"
+    image nonami casual neutral happy = "Characters/nonami_casual_neutral_happy.png"
+    image nonami casual armscrossed suspicious = "Characters/nonami_casual_armscrossed_suspicious.png"
+    image nonami casual armscrossed confident = "Characters/nonami_casual_armscrossed_confident.png"
+    image nonami casual armscrossed smile2 = "Characters/nonami_casual_armscrossed_smile2.png"
+    image nonami casual armscrossed irritated = "Characters/nonami_casual_armscrossed_irritated.png"
+    image nonami casual neutral = "Characters/nonami_casual_neutral.png"
+    image nonami casual neutral irritated = "Characters/nonami_casual_neutral_irritated.png"
+    image nonami casual neutral baffled = "Characters/nonami_casual_neutral_baffled.png"
+    image nonami casual excited smile = "Characters/nonami_casual_excited_smile.png"
+    image nonami casual excited surprise = "Characters/nonami_casual_excited_surprise.png"
+    image nonami casual armscrossed neutral = "Characters/nonami_casual_armscrossed_neutral.png"
+    image nonami casual neutral frustrated = "Characters/nonami_casual_neutral_frustrated.png"
+    image nonami casual armscrossed worried = "Characters/nonami_casual_armscrossed_worried.png"
+    image nonami casual neutral forcedsmile = "Characters/nonami_casual_neutral_forcedsmile.png"
+    image nonami casual neutral gloomextreme = "Characters/nonami_casual_neutral_gloomextreme.png"
+    image nonami casual neutral irritated hat = "Characters/nonami_casual_neutral_irritated_hat.png"
+    image nonami casual neutral mockhappy hat = "Characters/nonami_casual_neutral_mockhappy_hat.png"
+    image nonami casual armscrossed gloom hat = "Characters/nonami_casual_armscrossed_gloom_hat.png"
+    image nonami casual neutral happy hat = "Characters/nonami_casual_neutral_happy_hat.png"
+    image nonami casual excited smile2 hat = "Characters/nonami_casual_excited_smile2_hat.png"
+    image nonami casual armscrossed mad = "Characters/nonami_casual_armscrossed_mad.png"
+    image nonami casual excited happy = "Characters/nonami_casual_excited_happy.png"
+    image nonami casual armscrossed happyshades = "Characters/nonami_casual_armscrossed_happyshades.png"
+    image nonami casual armscrossed gloomshades = "Characters/nonami_casual_armscrossed_gloomshades.png"
+    image nonami casual excited happyhat = "Characters/nonami_casual_excited_happyhat.png"
+    image nonami casual armscrossed irritatedhat = "Characters/nonami_casual_armscrossed_irritatedhat.png"
+    image nonami casual armscrossed smilehat = "Characters/nonami_casual_armscrossed_smilehat.png"
+    image nonami casual armscrossed smile = "Characters/nonami_casual_armscrossed_smile.png"
+    image nonami casual armscrossed sad = "Characters/nonami_casual_armscrossed_sad.png"
+    image nonami casual armscrossed sadsmile = "Characters/nonami_casual_armscrossed_sadsmile.png"
+    image nonami casual armscrossed sadlookleft = "Characters/nonami_casual_armscrossed_sadlookleft.png"
+    image nonami casual armscrossed smile = "Characters/nonami_casual_armscrossed_smile.png"
+    image nonami casual armscrossed smilesweatdrop = "Characters/nonami_casual_armscrossed_smilesweatdrop.png"
+    image nonami casual neutral smile2 = "Characters/nonami_casual_neutral_smile2.png"
+    image nonami casual excited smile2 = "Characters/nonami_casual_excited_smile2.png"
+    image nonami casual armscrossed madtears = "Characters/nonami_casual_armscrossed_madtears.png"
+    image nonami casual armscrossed madtearsclosedeyes = "Characters/nonami_casual_armscrossed_madtearsclosedeyes.png"
+    image nonami casual neutral charged = "Characters/nonami_casual_neutral_charged.png"
+    image nonami casual neutral sadsmile = "Characters/nonami_casual_neutral_sadsmile.png"
+    image nonami casual excited frustrated = "Characters/nonami_casual_excited_frustrated.png"
+    image nonami casual dark = "Characters/nonami_casual_dark.png"
+    image nonami casual neutral tearssmile = "Characters/nonami_casual_neutral_tearssmile.png"
+    image nonami casual neutral sadtears = "Characters/nonami_casual_neutral_sadtears.png"
+    
+    image nonami sports excited smile2 = "Characters/nonami_sports_excited_smile2.png"
+    image nonami sports neutral happy = "Characters/nonami_sports_neutral_happy.png"
+    image nonami sports armscrossed confident = "Characters/nonami_sports_armscrossed_confident.png"
+    image nonami sports excited explode = "Characters/nonami_sports_excited_explode.png"
+    image nonami sports stretch:
+        "Characters/nonami_sports_neutral_explode.png" with dissolve
+        pause 0.5
+        "Characters/nonami_sports_excited_explode.png" with dissolve
+        pause 0.5
+        repeat 4
+    image nonami sports neutral hurt = "Characters/nonami_sports_excited_happy.png"
+    image nonami sports armscrossed smile2 = "Characters/nonami_sports_armscrossed_smile2.png"
+    image nonami sports armscrossed tears = "Characters/nonami_sports_armscrossed_tears.png"
+    image nonami sports neutral surprise = "Characters/nonami_sports_neutral_surprise.png"
+    image nonami sports excited surprise = "Characters/nonami_sports_excited_surprise.png"
+    image nonami sports armscrossed neutral = "Characters/nonami_sports_armscrossed_neutral.png"
+    image nonami sports excited happy = "Characters/nonami_sports_excited_happy.png"
+    image nonami sports armscrossed suspicious = "Characters/nonami_sports_armscrossed_suspicious.png"
+    image nonami sports neutral smile2 = "Characters/nonami_sports_neutral_smile2.png"
+    image nonami sports neutral = "Characters/nonami_sports_neutral.png"
+    image nonami sports neutral forcedsmile = "Characters/nonami_sports_neutral_forcedsmile.png"
+    image nonami sports armscrossed focused = "Characters/nonami_sports_neutral_focus.png"
+    image nonami sports neutral focusedtalk= "Characters/nonami_sports_neutral_focustalk.png"
+    image nonami sports armscrossed irritated = "Characters/nonami_sports_armscrossed_irritated.png"
+    image nonami sports neutral explode = "Characters/nonami_sports_neutral_explode.png"
+    image nonami sports neutral tears = "Characters/nonami_sports_neutral_tears.png"
+    image nonami sports neutral baffled = "Characters/nonami_sports_neutral_baffled.png"
+    image nonami sports excited tears = "Characters/nonami_sports_excited_tears.png"
+    image nonami sports excited teary= "Characters/nonami_sports_excited_teary.png"
+    image nonami sports excited regret = "Characters/nonami_sports_excited_regret.png"
+        
+    image nonami adult neutral = "Characters/nonami_adult_neutral.png"
+    image nonami adult smile = "Characters/nonami_adult_smile.png"
+    
+    image haruka uniform concerned = "Characters/haruka_uniform_concerned.png"
+    image haruka uniform handstogether embarrassed = "Characters/haruka_uniform_embarrassed_handstogether.png"
+    image haruka uniform forcedsmile = "Characters/haruka_uniform_forcedsmile.png"
+    image haruka uniform handstogether forcedsmile = "Characters/haruka_uniform_forcedsmile_handstogether.png"
+    image haruka uniform handraised forcedsmile = "Characters/haruka_uniform_forcedsmile_handraised.png"
+    image haruka uniform neutral = "Characters/haruka_uniform_neutral.png"
+    image haruka uniform handstogether neutral = "Characters/haruka_uniform_neutral_handstogether.png"
+    image haruka uniform pain = "Characters/haruka_uniform_pain.png"
+    image haruka uniform handraised pain = "Characters/haruka_uniform_pain_handraised.png"
+    image haruka uniform smile = "Characters/haruka_uniform_smile.png"
+    image haruka uniform handraised smile = "Characters/haruka_uniform_smile_handraised.png"
+    image haruka uniform handstogether smile = "Characters/haruka_uniform_smile_handstogether.png"
+    image haruka uniform handraised surprise = "Characters/haruka_uniform_surprise_handraised.png"
+    image haruka uniform onehandraised forcedsmile = "Characters/haruka_uniform_forcedsmile_onehandraised.png"
+    image haruka uniform handsbehind forcedsmile = "Characters/haruka_uniform_forcedsmile_handsbehind.png"
+    image haruka uniform handsbehind = "Characters/haruka_uniform_handsbehind.png"
+    image haruka uniform happy = "Characters/haruka_uniform_happy.png"
+    image haruka uniform handraised = "Characters/haruka_uniform_handraised.png"
+    image haruka uniform handsbehind smile = "Characters/haruka_uniform_smile_armsbehind.png"
+    image haruka uniform onehandraised smile = "Characters/haruka_uniform_smile_onehandraised.png"
+    image haruka uniform excited happy = "Characters/haruka_uniform_excited_happy.png"
+    image haruka uniform handstogether sad = "Characters/haruka_uniform_handstogether_sad.png"
+    image haruka uniform handstogether sad2 = "Characters/haruka_uniform_handstogether_sad2.png"
+    image haruka uniform handfront happy = "Characters/haruka_uniform_handfront_happy.png"
+    image haruka uniform excited reallysurprised = "Characters/haruka_uniform_excited_reallysurprised.png"
+    image haruka uniform excited shout = "Characters/haruka_uniform_excited_shout.png"
+    image haruka uniform facecover pain = "Characters/haruka_uniform_facecover_pain.png"
+    image haruka uniform excited surprise = "Characters/haruka_uniform_excited_surprise.png"
+    image haruka uniform handfront sad = "Characters/haruka_uniform_handfront_sad.png"
+    image haruka uniform handsbehind embarassed = "Characters/haruka_uniform_handsbehind_embarassed.png"
+    image haruka uniform onehandface smileblush = "Characters/haruka_uniform_onehandface_smileblush.png"
+    image haruka uniform handfront smileblush = "Characters/haruka_uniform_handfront_smileblush.png"
+    image haruka uniform neutral happyblush = "Characters/haruka_uniform_neutral_happyblush.png"
+    image haruka uniform handfront embarassed = "Characters/haruka_uniform_handfront_embarassed.png"
+    image haruka uniform handsbehind forcedsmileblush = "Characters/haruka_uniform_handsbehind_forcedsmileblush.png"
+    image haruka uniform handsbehind reallyembarassed = "Characters/haruka_uniform_handsbehind_reallyembarassed.png"
+    image haruka uniform handsbehind smilereallyblush = "Characters/haruka_uniform_handsbehind_smilereallyblush.png"
+    image haruka uniform handfront smilereallyblush = "Characters/haruka_uniform_handfront_smilereallyblush.png"
+    image haruka uniform handstogether smilereallyblush = "Characters/haruka_uniform_handstogether_smilereallyblush.png"
+    image haruka uniform excited happyreallyblush = "Characters/haruka_uniform_excited_happyreallyblush.png"
+    image haruka uniform handstogether happyreallyblush = "Characters/haruka_uniform_handstogether_happyreallyblush.png"
+    image haruka uniform neutral smilereallyblush = "Characters/haruka_uniform_neutral_smilereallyblush.png"
+    image haruka uniform handfront happyreallyblush = "Characters/haruka_uniform_handfront_happyreallyblush.png"
+    image haruka uniform handsbehind sad = "Characters/haruka_uniform_handsbehind_sad.png"
+    image haruka uniform handstogether happy = "Characters/haruka_uniform_handstogther_happy.png"
+    image haruka uniform handsbehind neutralblush = "Characters/haruka_uniform_handsbehind_neutralblush.png"
+    image haruka uniform handstogether distantblush = "Characters/haruka_uniform_handstogether_distantblush.png"
+    image haruka uniform handstogether distantsmileblush = "Characters/haruka_uniform_handstogether_distantsmileblush.png"
+    image haruka uniform handstogether sad2blush = "Characters/haruka_uniform_handstogether_sad2blush.png"
+    image haruka uniform handstogether distantsmileclosedeyesblush = "Characters/haruka_uniform_handstogether_distantsmileclosedeyesblush.png"
+    image haruka uniform handsbehind distantsmile = "Characters/haruka_uniform_handsbehind_distantsmile.png"
+    image haruka uniform handsbehind distantsmiletear = "Characters/haruka_uniform_handsbehind_distantsmiletear.png"
+    image haruka uniform handraised forcedsmileblush = "Characters/haruka_uniform_handraised_forcedsmileblush.png"
+    image haruka uniform handstogether forcedsmileblush = "Characters/haruka_uniform_handstogther_forcedsmileblush.png"
+    image haruka uniform handstogether distantsmileclosedeyes = "Characters/haruka_uniform_handstogether_distantsmileclosedeyes.png"    
+    image haruka uniform handstogether distantsmile = "Characters/haruka_uniform_handstogether_distantsmile.png"
+    image haruka uniform excited focused = "Characters/haruka_uniform_excited_focus.png"
+    image haruka uniform neutral focused = "Characters/haruka_uniform_neutral_focus.png"
+    image haruka uniform handstogether distant = "Characters/haruka_uniform_handstogether_distant.png"
+    image haruka uniform handfront sad2 = "Characters/haruka_uniform_handraised_sad2.png"
+    image haruka uniform handsbehind sadtear = "Characters/haruka_uniform_handsbehind_sadtear.png"
+    image haruka uniform handsbehind forcedsmiletear = "Characters/haruka_uniform_handsbehind_forcedsmiletear.png"
+    image haruka uniform handfront distantsmile = "Characters/haruka_uniform_handfront_distantsmile.png"
+    image haruka uniform handfront distantsmileclosedeyes = "Characters/haruka_uniform_handfront_distantsmileclosedeyes.png"
+    image haruka uniform excited neutral = "Characters/haruka_uniform_excited_neutral.png"
+    image haruka uniform neutral smile = "Characters/haruka_uniform_neutral_smile.png"
+    image haruka uniform handstogether concern = "Characters/haruka_uniform_handstogether_concern.png"
+    image haruka uniform onehandraised embarassed = "Characters/haruka_uniform_onehandraised_embarassed.png"
+    image haruka uniform facecover sad = "Characters/haruka_uniform_facecover_sad.png"
+    image haruka uniform handfront distantsmiletearblush = "Characters/haruka_uniform_handfront_distantsmiletearblush.png"
+    image haruka uniform handfront distantsmilecryblush = "Characters/haruka_uniform_handfront_distantsmilecry.png"
+    image haruka uniform handfront distantsmilecryclosedeyesblush = "Characters/haruka_uniform_handfront_distantsmileclosedeyescryblush.png"
+    image haruka uniform neutral yandere = "Characters/haruka_uniform_neutral_yandere.png"
+    image haruka uniform neutral yandereopenmouth = "Characters/haruka_uniform_neutral_yandereopenmouth.png"
+    image haruka uniform neutral yanderetears = "Characters/haruka_uniform_neutral_yanderetears.png"
+    image haruka uniform neutral yandereshock = "Characters/haruka_uniform_neutral_yandereshock.png"
+    image haruka uniform armsbehind distanttear = "Characters/haruka_uniform_handsbehind_distanttear.png"
+    image haruka uniform handfront distanttear = "Characters/haruka_uniform_handfront_distanttear.png"
+    image haruka uniform handfront distantsmiletear = "Characters/haruka_uniform_handfront_distantsmiletear.png"
+    image haruka uniform excited cry = "Characters/haruka_uniform_excited_cry.png"
+    image haruka uniform excited cryeyes = "Characters/haruka_uniform_excited_cryeyes.png"
+    image haruka uniform facecover cryeyes = "Characters/haruka_uniform_facecover_cryeyes.png"
+    image haruka uniform handstogether cryeyes = "Characters/haruka_uniform_handstogether_cryeyes.png"
+    image haruka uniform handfront mad = "Characters/haruka_uniform_handfront_mad.png"
+    image haruka uniform handstogether distanttear = "Characters/haruka_uniform_handstogether_distanttear.png"
+    image haruka uniform handstogether distantsmiletear = "Characters/haruka_uniform_handstogether_distantsmiletear.png"
+    image haruka uniform handstogether concernblush = "Characters/haruka_uniform_handstogether_concernblush.png"
+    image haruka uniform handstogether yandere = "Characters/haruka_uniform_handstogether_yandere.png"
+    image haruka uniform handfront concernblush = "Characters/haruka_uniform_handfront_concernblush.png"
+    image haruka uniform handfront distantblush = "Characters/haruka_uniform_handfront_distantblush.png"
+    image haruka uniform onehandraised distantsmiletearblush = "Characters/haruka_uniform_onehandraised_distantsmiletearblush.png"
+    image haruka uniform facecover sadblush = "Characters/haruka_uniform_facecover_sadblush.png"
+    image haruka uniform handfront distantsad = "Characters/haruka_uniform_handfront_distantsad.png"
+    image haruka uniform handfront cry = "Characters/haruka_uniform_handfront_cry.png"
+    image haruka uniform handfront distant = "Characters/haruka_uniform_handfront_distant.png"
+    
+    
+    image haruka cook handsbehind forcedsmile = "Characters/haruka_cook_forcedsmile_handsbehind.png"
+    image haruka cook handsbehind neutral = "Characters/haruka_cook_neutral_armsbehind.png"
+    image haruka cook onehandraised forcedsmile = "Characters/haruka_cook_forcedsmile_onehandface.png"
+    image haruka cook onehandraised smileblush = "Characters/haruka_cook_smileblush_onehandraised.png"
+    image haruka cook onehandraised surprise = "Characters/haruka_cook_surprise_onehandraised.png"
+    image haruka cook handraised smile = "Characters/haruka_cook_smile_handraised.png"
+    image haruka cook onehandraised surprise = "Characters/haruka_cook_surprise_onehandraised.png"
+    image haruka cook handraised concern = "Characters/haruka_cook_concern_handraised.png"
+    image haruka cook handraised forcedsmile = "Characters/haruka_cook_forcedsmile_handraised.png"
+    image haruka cook neutral = "Characters/haruka_cook_neutral.png"
+    image haruka cook smile = "Characters/haruka_cook_smile.png"
+    image haruka cook happy = "Characters/haruka_cook_happy.png"
+    image haruka cook sad = "Characters/haruka_cook_sad.png"
+    image haruka cook excited happy = "Characters/haruka_cook_happy_excited.png"
+    image haruka cook excited surprise = "Characters/haruka_cook_surprise_excited.png"
+    image haruka cook onehandface sad = "Characters/haruka_cook_onehandface_sad.png"
+    image haruka cook handsbehind smile = "Characters/haruka_cook_handsbehind_smile.png"
+    image haruka cook onehandraised surprise = "Characters/haruka_cook_onehandraised_surprise.png"
+    image haruka cook handsbehind concern = "Characters/haruka_cook_handsbehind_concern.png"
+    image haruka cook handfront neutral = "Characters/haruka_cook_handfront_neutral.png"
+    image haruka cook handfront happy = "Characters/haruka_cook_handfront_happy.png"
+    image haruka cook handfront smile = "Characters/haruka_cook_handfront_smile.png"
+    image haruka cook excited forcedsmile = "Characters/haruka_cook_excited_forcedsmile.png"
+    
+    image haruka casual handstogether smile = "Characters/haruka_casual_handstogether_smile.png"
+    image haruka casual handfront happy = "Characters/haruka_casual_handfront_happy.png"
+    image haruka casual neutral smile = "Characters/haruka_casual_neutral_smile.png"
+    image haruka casual handsbehind smileblush = "Characters/haruka_casual_handsbehind_smileblush.png"
+    image haruka casual handfront smileblush = "Characters/haruka_casual_handfront_smileblush.png"    
+    image haruka casual handsbehind forcedsmile = "Characters/haruka_casual_handsbehind_forcedsmile.png"
+    image haruka casual handstogether neutral = "Characters/haruka_casual_handstogether_neutral.png"
+    image haruka casual neutral = "Characters/haruka_casual_neutral.png"
+    image haruka casual handfront forcedsmile = "Characters/haruka_casual_handfront_forcedsmile.png"
+    image haruka casual handstogether forcedsmile = "Characters/haruka_casual_handstogether_forcedsmile.png"
+    image haruka casual handstogether happy = "Characters/haruka_casual_handstogether_happy.png"
+    image haruka casual handstogether sweatdrop = "Characters/haruka_casual_handstogether_sweatdrop.png"
+    image haruka casual excited hurt = "Characters/haruka_casual_excited_hurt.png"
+    image haruka casual excited embarassed = "Characters/haruka_casual_excited_embarassed.png"
+    image haruka casual excited embarassed sweatdrop = "Characters/haruka_casual_excited_embarassed_sweatdrop.png"
+    image haruka casual neutral concern = "Characters/haruka_casual_neutral_concern.png"
+    image haruka casual excited surprise = "Characters/haruka_casual_excited_surprise.png"
+    image haruka casual neutral surprise sweatdrop = "Characters/haruka_casual_neutral_surprise_sweatdrop.png"
+    image haruka casual neutral forcedsmile sweatdrop = "Characters/haruka_casual_neutral_forcedsmile_sweatdrop.png"
+    image haruka casual handfront forcedsmile blush = "Characters/haruka_casual_handfront_forcedsmile_blush.png"
+    image haruka casual handsbehind neutral = "Characters/haruka_casual_handsbehind_neutral.png"
+    image haruka casual handstogether hurt = "Characters/haruka_casual_handstogether_hurt.png"
+    image haruka casual handstogether hurt2 = "Characters/haruka_casual_handstogether_hurt2.png"
+    image haruka casual handsbehind surprise = "Characters/haruka_casual_handsbehind_surprise.png"
+    image haruka casual handfront cry = "Characters/haruka_casual_handfront_cry.png"
+    image haruka casual handstogether embarassed = "Characters/haruka_casual_handtogether_embarassed.png"
+    image haruka casual handstogether shout = "Characters/haruka_casual_handtogether_shout.png"
+    image haruka casual handstogether smileblush = "Characters/haruka_casual_handtogether_smileblush.png"
+    image haruka casual handfront blush = "Characters/haruka_casual_handfront_blush.png"
+    image haruka casual handfront forcedsmileblush = "Characters/haruka_casual_handfront_forcedsmileblush.png"
+    image haruka casual handsbehind embarassed = "Characters/haruka_casual_handsbehind_embarassed.png"
+    image haruka casual handsbehind sad = "Characters/haruka_casual_handsbehind_sad.png"
+    image haruka casual handfront smile = "Characters/haruka_casual_handfront_smile.png"
+    image haruka casual handfront surprise = "Characters/haruka_casual_handfront_surprise.png"
+    image haruka casual excited forcedsmileblush = "Characters/haruka_casual_excited_forcedsmileblush.png"
+    image haruka casual handstogether pout = "Characters/haruka_casual_handstogether_pout.png"
+    image haruka casual handfront concern = "Characters/haruka_casual_handfront_concern.png"
+    image haruka casual handsbehind sad2 = "Characters/haruka_casual_handsbehind_sad2.png"
+    image haruka casual handfront sad2 = "Characters/haruka_casual_handfront_sad2.png"
+    image haruka casual handfront neutral = "Characters/haruka_casual_handfront_neutral.png"
+    
+    
+    image haruka sports neutral = "Characters/haruka_sports_neutral_neutral.png"
+    image haruka sports handfront focused = "Characters/haruka_sports_handfront_focus.png"
+    image haruka sports neutral forcedsmile = "Characters/haruka_sports_neutral_forcedsmile.png"
+    image haruka sports excited forcedsmile = "Characters/haruka_sports_excited_forcedsmile.png"
+    image haruka sports excited smile = "Characters/haruka_sports_excited_smile.png"
+    image haruka sports neutral hurt = "Characters/haruka_sports_neutral_hurt.png"
+    image haruka sports neutral smile = "Characters/haruka_sports_neutral_smile.png"
+    image haruka sports neutral = "Characters/haruka_sports_neutral.png"
+    image haruka sports handfront smile = "Characters/haruka_sports_handfront_smile.png"
+    image haruka sports handfront embarassed = "Characters/haruka_sports_handfront_embarassed.png"
+    image haruka sports handfront forcesmileblush = "Characters/haruka_sports_handfront_forcesmileblush.png"
+    image haruka sports neutral surpriseblush = "Characters/haruka_sports_neutral_surpriseblush.png"
+    image haruka sports handfront neutralblush = "Characters/haruka_sports_handfront_neutralblush.png"
+    image haruka sports handfront smileblush = "Characters/haruka_sports_handfront_smileblush.png"
+    image haruka sports neutral concerned = "Characters/haruka_sports_neutral_concerned.png"
+    image haruka sports excited happy = "Characters/haruka_sports_excited_happy.png"
+    image haruka sports neutral hurt2 = "Characters/haruka_sports_neutral_hurt2.png"
+    image haruka sports excited surprise = "Characters/haruka_sports_excited_surprise.png"
+    image haruka sports handfront concerned = "Characters/haruka_sports_handfront_concerned.png"
+    image haruka sports handfront forcesmile = "Characters/haruka_sports_handfront_forcesmile.png"
+    image haruka sports handfront surprise = "Characters/haruka_sports_handfront_surprise.png"
+    image haruka sports neutral happy = "Characters/haruka_sports_neutral_happy.png"
+    
+    image haruka ghost scary = "Characters/haruka_ghost_scary.png"
+    image haruka ghost surprise = "Characters/haruka_ghost_surprise.png"
+    image haruka ghost embarassed = "Characters/haruka_ghost_embarassed.png"
+    image haruka ghost forcedsmileblush = "Characters/haruka_ghost_forcedsmileblush.png"
+    image haruka ghost focused = "Characters/haruka_ghost_focus.png"
+    image haruka ghost smile = "Characters/haruka_ghost_smile.png"
+    image haruka ghost neutral = "Characters/haruka_ghost_neutral.png"
+    image haruka ghost happy = "Characters/haruka_ghost_happy.png"
+    image haruka ghost forcedsmile = "Characters/haruka_ghost_forcedsmile.png"
+    
+    image sora casual tanuki distantleft = "Characters/sora_casual_tanuki_distantleft.png"
+    image sora casual tanuki distantleft mouthopen = "Characters/sora_casual_tanuki_distantleft_mouthopen.png"
+    image sora casual tanuki distantright = "Characters/sora_casual_tanuki_distantright.png"
+    image sora casual tanuki distantright mouthopen = "Characters/sora_casual_tanuki_distantright_mouthopen.png"
+    image sora casual tanuki onearmdown distantleft = "Characters/sora_casual_tanuki_onearmdown_distantleft.png"
+    image sora casual tanuki onearmdown distantleft mouthopen = "Characters/sora_casual_tanuki_onearmdown_distantleft_mouthopen.png"
+    image sora casual tanuki onearmdown distantright = "Characters/sora_casual_tanuki_onearmdown_distantright.png"
+    image sora casual tanuki onearmdown distantright mouthopen = "Characters/sora_casual_tanuki_onearmdown_distantright_mouthopen.png"
+    image sora casual tanuki onearmdown neutral = "Characters/sora_casual_tanuki_onearmdown_neutral.png"    
+    image sora casual tanuki onearmdown closedeyes = "Characters/sora_casual_tanuki_onearmdown_closedeyes.png"    
+    image sora casual armscrossed distantleft = "Characters/sora_casual_armscrossed_distantleft.png"
+    image sora casual armscrossed closedeyes = "Characters/sora_casual_armscrossed_closedeyes.png"
+    image sora casual tanuki neutral = "Characters/sora_casual_tanuki_neutral.png"
+    image sora casual tanuki sweatdrop = "Characters/sora_casual_tanuki_sweatdrop.png"
+    image sora casual tanuki suspicious = "Characters/sora_casual_tanuki_suspicious.png"
+    image sora casual tanuki closedeyes = "Characters/sora_casual_tanuki_closedeyes.png"
+    image sora casual tanuki irritated = "Characters/sora_casual_tanuki_irritated.png"
+    image sora casual tanuki swirly = "Characters/sora_casual_tanuki_swirly.png"
+    image sora casual tanuki confident = "Characters/sora_casual_tanuki_confident.png"
+    image sora casual tanuki onearmdown confident = "Characters/sora_casual_tanuki_onearmdown_confident.png"
+    image sora casual tanuki surprise = "Characters/sora_casual_tanuki_surprise.png"
+    image sora casual tanuki point angry = "Characters/sora_casual_tanuki_point_angry.png"
+    image sora casual tanuki pout = "Characters/sora_casual_tanuki_pout.png"
+    image sora casual tanuki tsundere = "Characters/sora_casual_tanuki_tsundere.png"
+    image sora casual armscrossed irritated = "Characters/sora_casual_armscrossed_irritated.png"
+    image sora casual armscrossed tsundere = "Characters/sora_casual_armscrossed_tsundere.png"
+    image sora casual armscrossed pout = "Characters/sora_casual_armscrossed_pout.png"
+    image sora casual armscrossed neutral = "Characters/sora_casual_armscrossed_neutral.png"
+    image sora casual armscrossed boast = "Characters/sora_casual_armscrossed_boast.png"
+    image sora casual armscrossed angry = "Characters/sora_casual_armscrossed_angry.png"
+    image sora casual armscrossed tears = "Characters/sora_casual_armscrossed_tears.png"
+    image sora casual armscrossed tearsclosedeyes = "Characters/sora_casual_armscrossed_tearsclosedeyes.png"
+    image sora casual armscrossed distantleftyandere = "Characters/sora_casual_armscrossed_distantleftyandere.png"
+    image sora casual armscrossed tears2 = "Characters/sora_casual_armscrossed_tears2.png"
+    image sora casual armscrossed shoutcry = "Characters/sora_casual_armscrossed_shoutcry.png"
+    image sora casual armscrossed tearssmile = "Characters/sora_casual_armscrossed_tearssmile.png"
+    image sora casual tanuki angry = "Characters/sora_casual_tanuki_angry.png"
+    image sora casual tanuki tears = "Characters/sora_casual_tanuki_tears.png"
+    image sora casual tanuki tears2 = "Characters/sora_casual_tanuki_tears2.png"
+    image sora casual tanuki tearssmile = "Characters/sora_casual_tanuki_tearssmile.png"
+    image sora casual tanuki distantleftyandere = "Characters/sora_casual_tanuki_distantleftyandere.png"
+    image sora casual point pout = "Characters/sora_casual_point_pout.png"
+    image sora casual tanuki hesitant = "Characters/sora_casual_tanuki_hesitant.png"
+    image sora casual point tears2 = "Characters/sora_casual_point_tears2.png"
+    image sora casual tanuki upset = "Characters/sora_casual_tanuki_upset.png"
+    image sora casual point irritated = "Characters/sora_casual_point_irritated.png"
+    image sora casual onearmdown irritated = "Characters/sora_casual_onearmdown_irritated.png"
+    image sora casual onearmdown tsundere = "Characters/sora_casual_armonedown_tsundere.png"
+    image sora casual onearmdown upset = "Characters/sora_casual_onearmdown_upset.png"
+    image sora casual armscrossed distantright = "Characters/sora_casual_armscrossed_distantright.png"
+    image sora casual armscrossed yandere = "Characters/sora_casual_armscrossed_yandere.png"
+    image sora casual armscrossed poutblush = "Characters/sora_casual_armscrossed_poutblush.png"
+    
+    image sora uniform armscrossed neutral = "Characters/sora_uniform_armscrossed_neutral.png"
+    image sora uniform neutral = "Characters/sora_uniform_neutral.png"
+    image sora uniform armscrossed eyesclosed = "Characters/sora_uniform_armscrossed_eyesclosed.png"
+    image sora uniform neutral eyesclosed = "Characters/sora_uniform_neutral_closedeyes.png"
+    image sora uniform armscrossed distantleft = "Characters/sora_uniform_armscrossed_distantleft.png"
+    image sora uniform armscrossed pout = "Characters/sora_uniform_armscrossed_pout.png"
+    image sora uniform armscrossed irritated = "Characters/sora_uniform_armscrossed_irritated.png"
+    image sora uniform armscrossed confident = "Characters/sora_uniform_armscrossed_confident.png"
+    image sora uniform neutral gloom = "Characters/sora_uniform_neutral_gloom.png"
+    image sora uniform armscrossed gloom = "Characters/sora_uniform_armscrossed_gloom.png"
+    image sora uniform armscrossed hesitant = "Characters/sora_uniform_armscrossed_hesitant.png"
+    image sora uniform armscrossed distantleftopenmouth = "Characters/sora_uniform_armscrossed_distantleftopenmouth.png"
+    image sora uniform neutral sleepy = "Characters/sora_uniform_neutral_sleepy.png"
+    image sora uniform armscrossed distantrightopenmouth = "Characters/sora_uniform_armscrossed_distantrightopenmouth.png"
+    image sora uniform neutral smile = "Characters/sora_uniform_neutral_smile.png"
+    image sora uniform point angryblush = "Characters/sora_uniform_point_angryblush.png"
+    image sora uniform armscrossed tsundere = "Characters/sora_uniform_armscrossed_tsundere.png"
+    image sora uniform neutral mock = "Characters/sora_uniform_neutral_mock.png"
+    image sora uniform armscrossed confidentclosedeyes = "Characters/sora_uniform_armscrossed_confidentclosedeyes.png"
+    image sora uniform point tsundere = "Characters/sora_uniform_point_tsundere.png"
+    image sora uniform neutral surprise = "Characters/sora_uniform_neutral_surprise.png"
+    image sora uniform armscrossed smilesweatdrop = "Characters/sora_uniform_armscrossed_smilesweatdrop.png"
+    image sora uniform point angry = "Characters/sora_uniform_point_angry.png"
+    image sora uniform armscrossed mock = "Characters/sora_uniform_armscrossed_mock.png"
+    image sora uniform neutral suspicious = "Characters/sora_uniform_neutral_suspicious.png"
+    image sora uniform neutral laugh = "Characters/sora_uniform_neutral_laugh.png"
+    image sora uniform neutral laughtalk = "Characters/sora_uniform_neutral_laughtalk.png"
+    image sora uniforn armscrossed laughtalk = "Characters/sora_uniform_armscrossed_laughtalk.png"
+    image sora uniform armscrossed surprise = "Characters/sora_uniform_armscrossed_surprise.png"
+    image sora uniform armscrossed poutblush = "Characters/sora_uniform_armscrossed_poutblush.png"
+    image sora uniform armscrossed suspicious = "Characters/sora_uniform_armscrossed_suspicious.png"
+    image sora uniform neutral distantright = "Characters/sora_uniform_neutral_distantright.png"
+    image sora uniform neutral distantleftopenmouth = "Characters/sora_uniform_neutral_distantleftmouth.png"
+    image sora uniform armscrossed distantright = "Characters/sora_uniform_armscrossed_distantright.png"
+    image sora uniform neutral tears = "Characters/sora_uniform_neutral_tears.png"
+    image sora uniform armscrossed tears2 = "Characters/sora_uniform_armscrossed_tears2.png"
+    image sora uniform armscrossed tears = "Characters/sora_uniform_armscrossed_tears.png"
+    image sora uniform neutral tears2 = "Characters/sora_uniform_neutral_tears2.png"
+    image sora uniform neutral tearssmile = "Characters/sora_uniform_neutral_tearssmile.png"
+    image sora uniform neutral tearslaugh = "Characters/sora_uniform_neutral_tearslaugh.png"
+    image sora uniform neutral pout = "Characters/sora_uniform_neutral_pout.png"
+    image sora uniform armscrossed boast = "Characters/sora_uniform_armscrossed_boast.png"
+    image sora uniform neutral happy = "Characters/sora_uniform_neutral_happy.png"
+    image sora uniform neutral surpriseopenmouth = "Characters/sora_uniform_neutral_surpriseopenmouth.png"
+    image sora uniform neutral irritated = "Characters/sora_uniform_neutral_irritated.png"
+    
+    
+    image sora sports neutral = "Characters/sora_sports_neutral.png"
+    image sora sports neutral closedeyes = "Characters/sora_sports_neutral_closedeyes.png"
+    image sora sports armscrossed neutral = "Characters/sora_sports_armscrossed_neutral.png"
+    image sora sports armscrossed confident = "Characters/sora_sports_armscrossed_confident.png"
+    image sora sports armscrossed hesitant = "Characters/sora_sports_armscrossed_hesitant.png"
+    image sora sports armscrossed irritated = "Characters/sora_sports_armscrossed_irritated.png"
+    image sora sports armscrossed suspicious = "Characters/sora_sports_armscrossed_suspicious.png"
+    image sora sports neutral confident = "Characters/sora_sports_neutral_confident.png"
+    
+    image sora loli crying = "Characters/sora_loli_crying.png"
+    image sora loli tanuki happy = "Characters/sora_loli_tanuki_happy.png"
+    image sora loli tanuki pout = "Characters/sora_loli_tanuki_pout.png"
+    
+    image nonami beach excited happy = "Characters/nonami_beach_excited_happy.png"
+    image nonami beach excited smile2 = "Characters/nonami_beach_excited_smile2.png"
+    image nonami beach neutral happy = "Characters/nonami_beach_neutral_happy.png"
+    image nonami beach neutral smile2 = "Characters/nonami_beach_neutral_smile2.png"
+    image nonami beach excited focustalk = "Characters/nonami_beach_excitedfocustalk.png"
+    image nonami beach neutral focustalk = "Characters/nonami_beach_neutral_focustalk.png"
+    image nonami beach neutral surprise = "Characters/nonami_beach_neutral_surprise.png"
+    image nonami beach excited regretseaweed = "Characters/nonami_beach_excited_regretseaweed.png"
+    image nonami beach excited angryseaweed = "Characters/nonami_beach_excited_angryseaweed.png"
+    image nonami beach neutral surpriseseaweed = "Characters/nonami_beach_neutral_surpriseseaweed.png"
+    image nonami beach excited surpriseseaweed = "Characters/nonami_beach_excited_surpriseseaweed.png"
+    image nonami beach neutral gloom = "Characters/nonami_beach_neutral_tears.png"
+    image nonami beach neutral smilehalftail = "Characters/nonami_beach_neutral_smilehalftail.png"
+    image nonami beach neutralhalftail = "Characters/nonami_beach_neutralhalf.png"
+    
+    image nonami beach neutralhairdown = "Characters/nonami_beach_neutralhairdown.png"
+    image nonami beach neutral smilehairdown = "Characters/nonami_beach_neutral_smilehairdown.png"
+    image nonami beach armscrossed confidenthairdown = "Characters/nonami_beach_armscrossed_confidenthairdown.png"
+    image nonami beach neutral smile2hairdown = "Characters/nonami_beach_neutral_smile2hairdown.png"
+    image nonami beach neutral surprisehairdown = "Characters/nonami_beach_neutral_surprisehairdown.png"
+    image nonami beach excited happyhairdown = "Characters/nonami_beach_excited_happyhairdown.png"
+    image nonami beach neutral happyhairdown = "Characters/nonami_beach_neutral_happyhairdown.png"
+    image nonami beach neutral focustalkhairdown = "Characters/nonami_beach_neutral_forcustalk.png"
+    image nonami beach armscrossed irritatedhairdown = "Characters/nonami_beach_armscrossed_irritated.png"
+    image nonami beach armscrossed neutralhairdown = "Characters/nonami_beach_armscrossed_neutralhairdown.png"
+    image nonami beach armscrossed suspicioushairdown = "Characters/nonami_beach_armscrossed_suspicioushairdown.png"
+    image nonami beach neutral tearshairdown = "Characters/nonami_beach_neutral_tearshairdown.png"
+    image nonami beach neutral gloomhairdown = "Characters/nonami_beach_neutral_gloomhairdown.png"
+    image nonami beach armscrossed gloomhairdown = "Characters/nonami_beach_armscrossed_gloomhairdown.png"
+    image sora beach neutral = "Characters/sora_beach_neutral.png"
+    image sora beach neutral smile = "Characters/sora_beach_neutral_smile.png"
+    image sora beach armscrossed irritated = "Characters/sora_beach_armscrossed_irritated.png"
+    image sora beach tanuki sleep = "Characters/sora_beach_tanuki_sleepy.png"
+    image sora beach tanuki neutral = "Characters/sora_beach_tanuki_neutral.png"
+    image sora beach tanuki smile = "Characters/sora_beach_tanuki_smile.png"
+    image sora beach tanuki surprise = "Characters/sora_beach_tanuki_surprise"
+    image haruka beach neutral = "Characters/haruka_beach_neutral.png"
+    image haruka beach handfront happy = "Characters/haruka_beach_handfront_happy.png"
+    image haruka beach handfront blushforcedsmile = "Characters/haruka_beach_handfront_blushforcedsmile.png"
+    image haruka beach handfront smile = "Characters/haruka_beach_handfront_smile.png"
+    image haruka beach handfront forcedsmilesweatdrop = "Characters/haruka_beach_handfront_forcedsmilesweatdrop.png"
+    image haruka beach neutral surprise = "Characters/haruka_beach_neutral_surprise.png"
+    image haruka beach handfront concern = "Characters/haruka_beach_handfront_concern.png"
+    image haruka beach neutral smile = "Characters/haruka_beach_neutral_smile.png"
+    image haruka beach neutral happy = "Characters/haruka_beach_neutral_happy.png"
+    image haruka beach handfront forcedsmile = "Characters/haruka_beach_handfront_forcedsmile.png"
+    image haruka beach excited happy = "Characters/haruka_beach_excited_happy.png"
+    image haruka beach excited surprise = "Characters/haruka_beach_excited_surprise.png"
+    image haruka beach neutral scream = "Characters/haruka_beach_neutral_scream.png"
+    image haruka beach handfront embarassed = "Characters/haruka_beach_handfront_embarassed.png"
+    
+    image father neutral = "Characters/father_neutral.png"
+    image father mad = "Characters/father_mad.png"
+    
+    image ceasarsalad = "Characters/ceasarsalad.jpg"
+    image hamburger = "Characters/hamburger.jpg"
+    image primerib = "Characters/primerib.jpg"
+    image steak = "Characters/steak.jpg"
+    image loverock = "Characters/loverock.jpg"
+
+    image cg intro = "CG/intro.jpg"
+    image cg nonamikendorun = "CG/nonamikendorun.jpg"
+    image cg soraunderweara = "CG/soraunderwear.jpg"
+    image cg soraunderwearb = "CG/soraunderwear3.jpg"
+    image cg soraunderwearc = "CG/soraunderwear4.jpg"
+    image cg soraunderweard = "CG/soraunderwear2.jpg"
+    image cg polkadots = "CG/polkadots.jpg"
+    image cg watchout1 = "CG/watchout1.png"
+    image cg watchout2 = "CG/watchout2.png"
+    image cg watchout3 = "CG/watchout3.png"
+    image cg oneleggedrace = "CG/oneleggedrace.jpg"
+    image cg oneleggedrace2 = "CG/oneleggedrace2.jpg"
+    image cg oneleggedrace3 = "CG/oneleggedrace3.jpg"
+    image cg sportsfestivalrun = "CG/sportsfestivalrun.jpg"
+    image cg sorabeach = "CG/sorabeach.jpg"
+    image cg sorabeach2 = "CG/sorabeach2.jpg"
+    image cg orz = "CG/orz.jpg"
+    image cg beachcrash = "CG/beachcrash.jpg"
+    image cg beachcrash2 = "CG/beachcrash2.jpg"
+    image cg beachcrash3 = "CG/beachcrash3.jpg"
+    image cg beachcrash4 = "CG/beachcrash4.jpg"
+    image cg beachcrash5 = "CG/beachcrash5.jpg"
+    image cg beachcrash6 = "CG/beachcrash6.jpg"
+    image cg soratickle1 = "CG/soratickle1.jpg"
+    image cg soratickle2 = "CG/soratickle2.jpg"
+    image cg sorafireworks = "CG/sorafireworks.jpg"
+    image cg harukafireworks = "CG/harukafireworks.jpg"
+    image cg nonamidance = "CG/nonamidance.jpg"
+    image cg nonamidance2 = "CG/nonamidance2.jpg"
+    image cg nonamidance3 = "CG/nonamidance3.jpg"
+    image cg holdhands = "CG/holdhands.jpg"
+    image cg childhoodfriend = "CG/childhoodfriend.jpg"
+    image cg classmate = "CG/classmate.jpg"
+    image cg littlesister = "CG/littlesister.jpg"
+    image cg harukakiss = "CG/harukakiss.jpg"
+    image cg harukah1 = "CG/harukah1.jpg"
+    image cg harukah2 = "CG/harukah2.jpg"
+    image cg harukah3 = "CG/harukah3.jpg"
+    image cg harukah4 = "CG/harukah4.jpg"
+    image cg nonamiferriswheel = "CG/nonamiferriswheel.jpg"
+    image cg nonamiferriswheel2 = "CG/nonamiferriswheel2.jpg"
+    image cg nonamiferriswheel3 = "CG/nonamiferriswheel3.jpg"
+    image cg nonamiferriswheel4 = "CG/nonamiferriswheel4.jpg"
+    image cg nonamiferriswheel5 = "CG/nonamiferriswheel5.jpg"
+    image cg nonamiferriswheel6 = "CG/nonamiferriswheel6.jpg"
+    image cg harukahnonami1 = "CG/harukahnonami1.jpg"
+    image cg harukahnonami2 = "CG/harukahnonami2.jpg"
+    image cg harukahnonami3 = "CG/harukahnonami3.jpg"
+    image cg harukahnonami4 = "CG/harukahnonami4.jpg"
+    image cg harukahnonami5 = "CG/harukahnonami5.jpg"
+    image cg harukahnonami6 = "CG/harukahnonami6.jpg"
+    image cg harukahnonami7 = "CG/harukahnonami7.jpg"
+    image cg harukahnonami8 = "CG/harukahnonami8.jpg"
+    image cg harukahnonami9 = "CG/harukahnonami9.jpg"
+    image cg harukaflashback1 = "CG/harukaflashback1.jpg"
+    image cg harukaflashback2 = "CG/harukaflashback2.jpg"
+    image cg harukaflashback3 = "CG/harukaflashback3.jpg"
+    image cg harukaflashback4 = "CG/harukaflashback4.jpg"
+    image cg harukaflashback5 = "CG/harukaflashback5.jpg"
+    image cg harukahospital = "CG/harukahospital.jpg"
+    image cg harukahospital2 = "CG/harukahospital2.jpg"
+    image cg harukahospital3 = "CG/harukahospital3.jpg"
+    image cg harukakiss2 = "CG/harukakiss2.jpg"
+    image cg harukahtwo = "CG/harukahtwo.jpg"
+    image cg harukahtwo2 = "CG/harukahtwo2.jpg"
+    image cg harukahtwo3 = "CG/harukahtwo3.jpg"
+    image cg harukahtwo4 = "CG/harukahtwo4.jpg"
+    image cg harukahtwo5 = "CG/harukahtwo5.jpg"
+    image cg sorarikubed = "CG/sorarikubed.jpg"
+    image cg sorarikubed2 = "CG/sorarikubed2.jpg"
+    image cg sorarikubed3 = "CG/sorarikubed3.jpg"
+    image cg sorarikubed4 = "CG/sorarikubed4.jpg"
+    image cg sorarikubed5 = "CG/sorarikubed5.jpg"
+    image cg sorarikubed6 = "CG/sorarikubed6.jpg"
+    image cg sorarikubed7 = "CG/sorarikubed7.jpg"
+    image cg sorarikubed8 = "CG/sorarikubed8.jpg"
+    image cg sorariver = "CG/sorariver.jpg"
+    image cg sorariver2 = "CG/sorariver2.jpg"
+    image cg sorariver3 = "CG/sorariver3.jpg"
+    image cg sorariver4 = "CG/sorariver4.jpg"
+    image cg sorarikuhug = "CG/sorarikuhug.jpg"
+    image cg sorashower = "CG/sorashower.jpg"
+    image cg mountainstream = "CG/mountainstream.jpg"
+    image cg mountainstream2 = "CG/mountainstream2.jpg"
+    image cg sorarikuh1 = "CG/sorarikuh1.jpg"
+    image cg sorarikuh2 = "CG/sorarikuh2.jpg"
+    image cg sorarikuh3 = "CG/sorarikuh3.jpg"
+    image cg sorarikuh4 = "CG/sorarikuh4.jpg"
+    image cg sorarikuh5 = "CG/sorarikuh5.jpg"
+    image cg sorarikuh6 = "CG/sorarikuh6.jpg"
+    image cg sorarikuh7 = "CG/sorarikuh7.jpg"
+    image cg sorarikuh8 = "CG/sorarikuh8.jpg"
+    image cg sorarikuh9 = "CG/sorarikuh9.jpg"
+    image cg sorarikuh10 = "CG/sorarikuh10.jpg"
+    image cg clifffall = "CG/clifffall.png"
+    image cg sorawedding1 = "CG/sorawedding.jpg"
+    image cg nonamibench = "CG/nonamibench.jpg"
+    image cg nonamibench2 = "CG/nonamibench2.jpg"
+    image cg nonamibench3 = "CG/nonamibench3.jpg"
+    image cg nonamibench4 = "CG/nonamibench4.jpg"
+    image cg nonamibench5 = "CG/nonamibench5.jpg"
+    image cg harukaferriswheel = "CG/harukaferriswheel.jpg"
+    image cg harukaferriswheel2 = "CG/harukaferriswheel2.jpg"
+    image cg harukaferriswheel3 = "CG/harukaferriswheel3.jpg"
+    image cg harukaferriswheel4 = "CG/harukaferriswheel4.jpg"
+    image cg harukaferriswheel5 = "CG/harukaferriswheel5.jpg"
+    image cg harukaferriswheel6 = "CG/harukaferriswheel6.jpg"
+    image cg nonamirikukiss = "CG/nonamirikukiss.jpg"
+    image cg sorabed = "CG/sorabed.jpg"
+    image cg sorabed2 = "CG/sorabed2.jpg"
+    image cg threesome1 = "CG/threesome1.jpg"
+    image cg threesome2 = "CG/threesome2.jpg"
+    image cg harukalap1 = "CG/harukalap1.jpg"
+    image cg harukalap2 = "CG/harukalap2.jpg"
+    image cg harukalap3 = "CG/harukalap3.jpg"
+    image cg harukalap4 = "CG/harukalap4.jpg"
+    image cg nonamirikukissdream = "CG/nonamirikukissdream.jpg"
+    image cg nonamih1 = "CG/nonamih1.jpg"
+    image cg nonamih2 = "CG/nonamih2.jpg"
+    image cg nonamih3 = "CG/nonamih3.jpg"
+    image cg nonamih4 = "CG/nonamih4.jpg"
+    image cg nonamih5 = "CG/nonamih5.jpg"
+    image cg nonamih6 = "CG/nonamih6.jpg"
+    image cg nonamih7 = "CG/nonamih7.jpg"
+    image cg nonamih8 = "CG/nonamih8.jpg"
+    image cg nonamih9 = "CG/nonamih9.jpg"
+    image cg nonamih10 = "CG/nonamih10.jpg"
+    image cg nonamih11 = "CG/nonamih11.jpg"
+    image cg nonamih12 = "CG/nonamih12.jpg"
+    image cg nonamih13 = "CG/nonamih13.jpg"
+    image cg nonamih14 = "CG/nonamih14.jpg"
+    image cg nonamih15 = "CG/nonamih15.jpg"
+    image cg nonamih16 = "CG/nonamih16.jpg"
+    image cg soramasturbation1 = "CG/soramastubation1.jpg"
+    image cg soramasturbation2 = "CG/soramastubation2.jpg"
+    image cg soramasturbation3 = "CG/soramastubation3.jpg"
+    
+    image cg tug of war neutral:
+        "CG/tug_of_war_neutral.png"
+        xanchor 0.5 yanchor 0.5 xpos 0.5 ypos 0.5
+        block:
+            linear 0.5 xpos 0.505
+            linear 0.5 xpos 0.495
+            repeat
+
+    image cg tug of war nonami:
+        xanchor 0.5 yanchor 0.5 xpos 0.5 ypos 0.5
+        block:
+                "CG/tug_of_war_nonamiwin1.png"
+                linear 0.5 xpos 0.55
+                "CG/tug_of_war_nonamiwin2.png"
+                linear 0.5 xpos 0.5
+                repeat
+                
+    image cg tug of war haruka:
+        xanchor 0.5 yanchor 0.5 xpos 0.5 ypos 0.5
+        block:
+                "CG/tug_of_war_harukawin.png"
+                linear 0.5 xpos 0.45
+                "CG/tug_of_war_neutral.png"
+                linear 0.5 xpos 0.5
+                repeat
+
+    image snow1 = SnowBlossom("UI Graphics/snow4.png", count=120, border=400, xspeed=(-10, 10), yspeed=(40, 50), start=30.0, fast=False, horizontal=False)
+    image snow2 = SnowBlossom("UI Graphics/snow2.png", count=70, border=300, xspeed=(-12, 12), yspeed=(50, 70), start=30.0, fast=False, horizontal=False)
+    image snow3 = SnowBlossom("UI Graphics/snow1.png", count=30, border=200, xspeed=(-14, 14), yspeed=(70, 90), start=30.0, fast=False, horizontal=False)
+    image snow4 = SnowBlossom("UI Graphics/snow5.png", count=20, border=100, xspeed=(-16, 16), yspeed=(80, 120), start=30.0, fast=False, horizontal=False)
+
+    image snow1s = SnowBlossom("UI Graphics/snow4.png", count=120, border=400, xspeed=(-10, 10), yspeed=(40, 50), start=5.0, fast=True, horizontal=False)
+    image snow2s = SnowBlossom("UI Graphics/snow2.png", count=70, border=300, xspeed=(-12, 12), yspeed=(50, 70), start=5.0, fast=True, horizontal=False)
+    image snow3s = SnowBlossom("UI Graphics/snow1.png", count=30, border=200, xspeed=(-14, 14), yspeed=(70, 90), start=5.0, fast=True, horizontal=False)
+    image snow4s = SnowBlossom("UI Graphics/snow5.png", count=20, border=100, xspeed=(-16, 16), yspeed=(80, 120), start=5.0, fast=True, horizontal=False)
+    
+    image rain1 = SnowBlossom("UI Graphics/rain1.png", count=30, border=0, xspeed=(-30, 30), yspeed=(1600, 1800), start=5.0, fast=True, horizontal=False)
+    image rain2 = SnowBlossom("UI Graphics/rain2.png", count=80, border=0, xspeed=(-30, 30), yspeed=(1300, 1500), start=5.0, fast=True, horizontal=False)
+    image rain3 = SnowBlossom("UI Graphics/rain3.png", count=160, border=0, xspeed=(-30, 30), yspeed=(800, 1000), start=5.0, fast=True, horizontal=False)
+    
+    image rain1s = SnowBlossom("UI Graphics/rain1.png", count=30, border=0, xspeed=(-30, 30), yspeed=(1600, 1800), start=5.0, fast=False, horizontal=False)
+    image rain2s = SnowBlossom("UI Graphics/rain2.png", count=80, border=0, xspeed=(-30, 30), yspeed=(1300, 1500), start=5.0, fast=False, horizontal=False)
+    image rain3s = SnowBlossom("UI Graphics/rain3.png", count=160, border=0, xspeed=(-30, 30), yspeed=(800, 1000), start=5.0, fast=False, horizontal=False)    
+
+    image nonamiflash:
+        "Backgrounds/white.jpg" with Dissolve(1.0, alpha=True)
+        1.0
+        "Backgrounds/houseempty.jpg" with Dissolve(1.0, alpha=True)
+        1.0
+        "Backgrounds/white.jpg" with Dissolve(0.8, alpha=True)
+        0.8
+        "Backgrounds/street1.jpg" with Dissolve(0.8, alpha=True)
+        0.8
+        "Backgrounds/white.jpg" with Dissolve(0.8, alpha=True)
+        0.8
+        "Backgrounds/outsideschool.jpg" with Dissolve(0.7, alpha=True)
+        0.7
+        "Backgrounds/white.jpg" with Dissolve(0.7, alpha=True)
+        0.7
+        "Backgrounds/classroom.jpg" with Dissolve(0.7, alpha=True)
+        0.7
+        "Backgrounds/white.jpg" with Dissolve(0.6, alpha=True)
+        0.6
+        "Backgrounds/dojo.jpg" with Dissolve(0.6, alpha=True)
+        0.6
+        "Backgrounds/white.jpg" with Dissolve(0.6, alpha=True)
+        0.6
+        "Backgrounds/trackfield.jpg" with Dissolve(0.5, alpha=True)
+        0.5
+        "Backgrounds/white.jpg" with Dissolve(0.5, alpha=True)
+        0.5
+        "Backgrounds/surprisedonkey.jpg" with Dissolve(0.5, alpha=True)
+        0.5
+        "Backgrounds/white.jpg" with Dissolve(0.4, alpha=True)
+        0.4
+        "Backgrounds/seattlestreet2.jpg" with Dissolve(0.4, alpha=True)        
+        0.4
+        "Backgrounds/white.jpg" with Dissolve(0.4, alpha=True)
+        0.4
+        "Backgrounds/sportsfield.jpg" with Dissolve(0.4, alpha=True)
+        0.4
+        "Backgrounds/white.jpg" with Dissolve(0.4, alpha=True)
+        0.4
+        "Backgrounds/beach1.jpg" with Dissolve(0.4, alpha=True)
+        0.4
+        "Backgrounds/white.jpg" with Dissolve(0.3, alpha=True)
+        0.3
+        "Backgrounds/hallway.jpg" with Dissolve(0.3, alpha=True)
+        0.3
+        "Backgrounds/white.jpg" with Dissolve(0.3, alpha=True)
+        0.3
+        "Backgrounds/culturefest.jpg" with Dissolve(0.3, alpha=True)
+        0.3
+        "Backgrounds/white.jpg" with Dissolve(0.3, alpha=True)
+        0.3
+        "Backgrounds/hauntedhouse.jpg" with Dissolve(0.3, alpha=True)
+        
+        
+    define no = Character("Nonami")
+    define ri = Character("Riku")
+    define ha = Character("Haruka")
+    define so = Character("Sora")
+    define ol = Character("Old Lady")
+    define gi = Character("Girl")
+    define fa = Character("Father")
+    define sa = Character("Samu-kun")
+    
+    screen subtitle:
+        text what:
+            id "what"
+            xalign 0.5
+            yalign 0.5
+
+    define subtitle = Character(None,
+                            screen="subtitle",
+                            what_size=25,
+                            what_outlines=[ (2, "#000", 0, 0) ],
+                            what_layout="subtitle",
+                            what_xalign=0.5,
+                            what_text_align=0.5)
+
+    define subtitle2 = Character(kind=subtitle, interact=False)
+    
+    image main_menu:
+        on start:
+            choice:
+                 event a
+            choice:
+                 event b
+            choice:
+                 event c
+            choice:
+                event d
+            choice:
+                event e
+
+        on a:
+            "UI Graphics/menu_back1.jpg" with dissolvelong
+            pause 7
+            event b
+        on b:
+            "UI Graphics/menu_back2.jpg" with dissolvelong
+            pause 7
+            event c
+        on c:
+            "UI Graphics/menu_back3.jpg" with dissolvelong
+            pause 7
+            event d
+        on d:
+            "UI Graphics/menu_back4.jpg" with dissolvelong
+            pause 7
+            event e
+        on e:
+            "UI Graphics/menu_back5.jpg" with dissolvelong
+            pause 7
+            event a
+
+    image introtext1:
+        "Characters/introtext1.png"
+        parallel:
+            xalign 0.0 yalign 0.3
+            easein 7.0 xalign 0.45
+        parallel:
+            alpha 0.0
+            linear 3.5 alpha 1.0
+
+    image introtext2:
+        "Characters/introtext2.png"
+        parallel:
+            xalign 1.0 yalign 0.4
+            easein 5.0 xalign 0.85
+        parallel:
+            alpha 0.0
+            linear 3.5 alpha 1.0
+
+    image introtext3:
+        "Characters/introtext3.png"
+        parallel:
+            xalign 0.0 yalign 0.5
+            easein 5.0 xalign 0.1
+        parallel:
+            alpha 0.0
+            linear 2.5 alpha 1.0
+            
+    image eyecatchlogo:
+        "Characters/eyecatchlogo.png"
+        xalign 0.95 yalign 0.95
+
+    image fin:
+        "UI Graphics/fin.png"
+        xalign 0.95 yalign 0.95
+
+        
+screen choice:
+
+    vbox:
+        ypos .4
+        spacing 30
+
+        # Create one textbutton per label, action pair.
+        for label, action, chosen in items:
+            button:
+                action action
+                xmargin 140
+                xfill True
+                background "UI Graphics/choicebutton1.png"
+                hover_background "UI Graphics/choicebutton2.png"
+
+                text label:
+                    size 25
+                    outlines [ (2, "#000", 0, 0) ]
+                    text_align 0.5
+                    xalign 0.5
+
+# Enable toggling of auto-forward mode.
+init python:
+    config.default_afm_enable = False
+    style.mm_root.background = "main_menu"
+
+##############################################################################
+# Tout - by doing Show('tout', message='My Message'), we cause a message to
+# show up in the upper-left corner of the screen for 2 seconds, then to
+# automatically hide.
+
+# The transform used for the tout text.
+transform tout_transform:
+    on show:
+        alpha 0.0
+        linear 0.25 alpha 1.0
+    on hide:
+        linear 0.25 alpha 0.0
+
+# The tout screen.
+screen tout:
+    zorder 1
+
+    text message:
+        at tout_transform
+        align (.01, .01) 
+        size 30
+        outlines [ (2, "#000") ]
+        
+    timer 4.0 action Hide('tout')
+
+##############################################################################
+# The customized say screen.
+    
+screen say:
+    imagemap:
+        # The height of the imagemap.
+        ymaximum 233
+
+        # Align things vertically.
+        yalign 1.0
+        
+        ground "UI Graphics/ui_messagebox.png"
+        idle "UI Graphics/ui_buttons_default.png"
+        insensitive "UI Graphics/ui_buttons_default.png"
+        hover "UI Graphics/ui_buttons_highlighted.png"
+        selected_idle "UI Graphics/ui_buttons_highlighted.png"
+        selected_hover "UI Graphics/ui_buttons_highlighted.png"
+                 
+        hotspot (15, 77, 88, 25) action [ FileSave("1", page="quick", newest=False, confirm=False),
+                                          Show('tout', message="Quick Save completed.") ]
+        hotspot (31, 113, 88, 25) action FileLoad("1", page="quick", confirm=True)
+        hotspot (56, 148, 88, 25) action ShowMenu('save')
+        hotspot (82, 183, 88, 25) action ShowMenu('load')
+
+        # Log (850, 207, 65, 13)
+
+        hotspot (920, 203, 86, 25) action Skip()
+        hotspot (1007, 203, 86, 25) action Preference("auto-forward", "toggle")
+        hotspot (1092, 203, 86, 25) action [ Screenshot(), Show('tout', message="Saved screenshot") ]
+        hotspot (1180, 203, 86, 25) action ShowMenu('preferences')
+
+        # x = to hide things.
+        hotspot (1242, 27, 23, 23) action [ With(dissolve), ui.callsinnewcontext("_hide_windows"), With(dissolve) ]
+
+        # If we have who text, show it.
+        if who:
+            text who:
+                id "who"
+                pos (175, 32)
+                size 30
+                bold False
+                outlines [ (3, "#000", 0, 0) ]
+                
+        # Show the what text.
+        text what:
+            id "what"
+            area (190, 85, 952, 114)
+            size 25
+            outlines [ (2, "#000", 0, 0) ]    
+    
+
+init:
+    image splash = "UI Graphics/warning.jpg"
+
+label splashscreen:
+    $ renpy.pause(0)
+    scene black 
+    with Pause(0.5)
+    
+    show splash 
+    with dissolve
+    with Pause(8.0)
+    
+    scene black 
+    with dissolve
+    with Pause(0.5)
+
+    return
+</nowiki>
+</poem>
